@@ -310,37 +310,44 @@
                             <div class="swiper-wrapper pt-5">
                                 <div class="swiper-slide">
                                     <div class="list-products-5">
-                                        <div class="card-grid-style-3">
-                                            <div class="card-grid-inner">
-                                                <div class="tools">
-                                                    <a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                </div>
-                                                <div class="image-box">
-                                                    <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp3.png" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="font-xs color-gray-500" href="shop-vendor-single.html">Dell</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Dell Optiplex 9020 Small Form Business Desktop
-                                                        Tower PC</a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
+                                        <?php
+                                        $show_featured = $product->show_product();
+                                        foreach ($show_featured as $item) {
+                                        ?>
+                                            <div class="card-grid-style-3">
+                                                <div class="card-grid-inner">
+                                                    <div class="tools">
+                                                        <a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
                                                     </div>
-                                                    <div class="price-info">
-                                                        <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
+                                                    <div class="image-box">
+                                                        <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./admin/assets/media/imageproduct/<?php echo $item['productImage'] ?>" alt="Ecom" /></a>
                                                     </div>
-                                                    <div class="mt-20 box-btn-cart">
-                                                        <a class="btn btn-cart" href="shop-cart.html">Add To Cart</a>
+                                                    <div class="info-right">
+                                                        <a class="font-xs color-gray-500" href="shop-vendor-single.html">Dell</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Dell Optiplex 9020 Small Form Business Desktop
+                                                            Tower PC</a>
+                                                        <div class="rating">
+                                                            <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
+                                                        </div>
+                                                        <div class="price-info">
+                                                            <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['productPrice'] ?></strong><span class="color-gray-500 price-line">$3225.6</span>
+                                                        </div>
+                                                        <div class="mt-20 box-btn-cart">
+                                                            <a class="btn btn-cart" href="shop-cart.html">Add To Cart</a>
+                                                        </div>
+                                                        <ul class="list-features">
+                                                            <li>27-inch (diagonal) Retina 5K display</li>
+                                                            <li>
+                                                                3.1GHz 6-core 10th-generation Intel Core i5
+                                                            </li>
+                                                            <li>AMD Radeon Pro 5300 graphics</li>
+                                                        </ul>
                                                     </div>
-                                                    <ul class="list-features">
-                                                        <li>27-inch (diagonal) Retina 5K display</li>
-                                                        <li>
-                                                            3.1GHz 6-core 10th-generation Intel Core i5
-                                                        </li>
-                                                        <li>AMD Radeon Pro 5300 graphics</li>
-                                                    </ul>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="card-grid-style-3">
+                                        <?php
+                                        }
+                                        ?>
+                                        <!-- <div class="card-grid-style-3">
                                             <div class="card-grid-inner">
                                                 <div class="tools">
                                                     <a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
@@ -459,7 +466,7 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -2170,23 +2177,32 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card-grid-style-2">
-                        <div class="image-box">
-                            <a href="#"><img src="./views/assets/imgs/page/homepage1/imgsp1.png" alt="Ecom" /></a>
-                        </div>
-                        <div class="info-right">
-                            <span class="font-xs color-gray-500">SAMSUNG</span><br /><a class="color-brand-3 font-sm-bold" href="#">SAMSUNG Galaxy Tab S7 Plus 12.4&quot; 128GB Mystic Black</a>
-                            <div class="rating">
-                                <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
+                <?php
+                $showTest = $product->show_product();
+                foreach ($showTest as $itemTest) {
+                ?>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card-grid-style-2">
+                            <div class="image-box">
+                                <!-- <a href="#"><img src="./views/assets/imgs/page/homepage1/imgsp2.png" alt="Ecom" /></a> -->
+                                <a href="?page=shop-single-product&id=<?php echo $itemTest['productId'] ?>"><img style="height:120px; width:120px;" src="./admin/assets/media/imageproduct/<?php echo $itemTest['productImage']  ?>" alt="<?php echo $itemTest['productImage']  ?>" /></a>
                             </div>
-                            <div class="price-info">
-                                <strong class="font-lg-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 price-line">$3225.6</span>
+                            <div class="info-right">
+                                <span class="font-xs color-gray-500"><?php $brandName = $product->getNameBrandByIdProduct($itemTest['brandId']);
+                                                                        echo $brandName[0]['brandName'];  ?></span><br /><a class="color-brand-3 font-sm-bold" href="#"><?php echo $itemTest['productName'] ?></a>
+                                <div class="rating">
+                                    <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
+                                </div>
+                                <div class="price-info">
+                                    <strong class="font-lg-bold color-brand-3 price-main"><?php echo $itemTest['productPrice'] ?></strong><span class="color-gray-500 price-line">$3225.6</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <?php
+                }
+                ?>
+                <!-- <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card-grid-style-2">
                         <div class="image-box">
                             <a href="#"><img src="./views/assets/imgs/page/homepage1/imgsp2.png" alt="Ecom" /></a>
@@ -2234,88 +2250,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card-grid-style-2">
-                        <div class="image-box">
-                            <a href="#"><img src="./views/assets/imgs/page/homepage1/imgsp1.png" alt="Ecom" /></a>
-                        </div>
-                        <div class="info-right">
-                            <span class="font-xs color-gray-500">LG</span><br /><a class="color-brand-3 font-sm-bold" href="#">LG 65&quot; Class 4K UHD Smart TV OLED A1 Series
-                            </a>
-                            <div class="rating">
-                                <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                            </div>
-                            <div class="price-info">
-                                <strong class="font-lg-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card-grid-style-2">
-                        <div class="image-box">
-                            <a href="#"><img src="./views/assets/imgs/page/homepage1/imgsp2.png" alt="Ecom" /></a>
-                        </div>
-                        <div class="info-right">
-                            <span class="font-xs color-gray-500">SAMSUNG</span><br /><a class="color-brand-3 font-sm-bold" href="#">SAMSUNG Galaxy Tab A7 Lite, 8.7&quot; Tablet 32GB</a>
-                            <div class="rating">
-                                <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                            </div>
-                            <div class="price-info">
-                                <strong class="font-lg-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card-grid-style-2">
-                        <div class="image-box">
-                            <a href="#"><img src="./views/assets/imgs/page/homepage1/imgsp2.png" alt="Ecom" /></a>
-                        </div>
-                        <div class="info-right">
-                            <span class="font-xs color-gray-500">Apple</span><br /><a class="color-brand-3 font-sm-bold" href="#">2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB
-                                SSD</a>
-                            <div class="rating">
-                                <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                            </div>
-                            <div class="price-info">
-                                <strong class="font-lg-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card-grid-style-2">
-                        <div class="image-box">
-                            <a href="#"><img src="./views/assets/imgs/page/homepage1/imgsp1.png" alt="Ecom" /></a>
-                        </div>
-                        <div class="info-right">
-                            <span class="font-xs color-gray-500">Apple</span><br /><a class="color-brand-3 font-sm-bold" href="#">Apple AirPods Pro with MagSafe Charging Case</a>
-                            <div class="rating">
-                                <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                            </div>
-                            <div class="price-info">
-                                <strong class="font-lg-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card-grid-style-2">
-                        <div class="image-box">
-                            <a href="#"><img src="./views/assets/imgs/page/homepage1/imgsp2.png" alt="Ecom" /></a>
-                        </div>
-                        <div class="info-right">
-                            <span class="font-xs color-gray-500">HP</span><br /><a class="color-brand-3 font-sm-bold" href="#">HP Slim Desktop, Intel Celeron J4025, 4GB RAM</a>
-                            <div class="rating">
-                                <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                            </div>
-                            <div class="price-info">
-                                <strong class="font-lg-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              -->
             </div>
         </div>
     </section>

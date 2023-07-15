@@ -1,7 +1,8 @@
 <?php
-$filepath = realpath(dirname(__FILE__));
-include_once($filepath . '/../lib/database.php');
-include_once($filepath . '/../helpers/format.php');
+// $filepath = realpath(dirname(__FILE__));
+// include_once($filepath . '../lib/database.php');
+// include_once($filepath . '../helpers/format.php');
+// include '../lib/database.php';
 ?>
 <?php
 class user
@@ -12,36 +13,63 @@ class user
     public function __construct()
     {
         $this->db = new Database();
-        $this->fm = new Format();
+        // $this->fm = new Format();
     }
-    public function show_customer()
-    {
-        $query = "SELECT * FROM tbl_customer ORDER BY id desc ";
-        $result = $this->db->select($query);
-        return $result;
-    }
-    public function show_index()
-    {
-        $query = "SELECT * FROM tbl_product";
-        $result = $this->db->select($query);
-        return $result;
-    }
-    public function update_profile($id, $hovaten, $sodienthoai, $tendangnhap)
-    {
 
-        $query = "UPDATE tbl_customer SET hovaten ='$hovaten',sodienthoai ='$sodienthoai',tendangnhap ='$tendangnhap'  WHERE id='$id'";
+    public function add_user($name, $email, $password, $address, $avatar, $role, $phone)
+    {
+        $query = "INSERT INTO users (name, email, password, address, avatar, role, phone) VALUES ('$name', '$email', '$password', '$address', '$avatar', '$role', '$phone')";
+        $result = $this->db->insert($query);
+    }
+    public function select_user()
+    {
+        $query = "SELECT * FROM users ORDER BY id desc ";
+        $result = $this->db->select($query);
+        return $result;
+    }
+    public function select_user_id($id)
+    {
+        $query = "SELECT * FROM users WHERE id = '$id' ";
+        $result = $this->db->select($query);
+        return $result;
+    }
+    public function auth_user($email, $password)
+    {
+        $query = "SELECT * FROM users WHERE email = '$email' and password = '$password'";
+        $result = $this->db->select($query);
+        return $result;
+    }
+
+    public function del_user_id($id)
+    {
+        $query = "DELETE FROM users WHERE id='$id'";
+        $this->db->delete($query);
+    }
+    public function del_all_user()
+    {
+        $query = "DELETE FROM users";
+        $this->db->delete($query);
+    }
+    public function update_user_id($name, $email, $password, $address, $avatar, $role, $phone, $id)
+    {
+        $query = "UPDATE users SET name ='$name',email ='$email',password ='$password',address = '$address',avatar= '$avatar',role='$role',phone='$phone'  WHERE id='$id'";
         $result = $this->db->update($query);
-        if ($result) {
-            Session::set('customer_login', true);
-            Session::set('customer_id', $id);
-            Session::set('customer_name', $hovaten);
-            header('Location:profile.php');
-            // $alert = '
-            //     <div class="alert alert-success" role="alert">
-            //     Cập nhật thành công 
-            //     </div>
-            //     ';
-            // return $alert;
+    }
+
+    public function uploadImage()
+    {
+        $path = "../admin/assets/media/avatars/";
+        $target_file = $path . basename($_FILES["avatar"]["name"]);
+        $uploadOk = 1;
+        if ($uploadOk == 0) {
+            echo "Sorry, your file was not uploaded.";
+            // if everything is ok, try to upload file
+        } else {
+            if (move_uploaded_file($_FILES["avatar"]["tmp_name"], $target_file)) {
+                // echo "The file ". basename( $_FILES["avatar"]["tmp_name"]). " has been uploaded.";
+            } else {
+                // echo "Sorry, there was an error uploading your file.";
+            }
         }
     }
 }

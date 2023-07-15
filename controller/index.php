@@ -40,6 +40,15 @@ if (!isset($_GET['page'])) {
         case 'shop-cart':
             include 'views/include/shop-cart.php';
             break;
+        case 'test':
+            include 'views/include/test.php';
+            break;
+        case 'shop-single-product':
+            $id = $_GET['id'];
+            echo $id;
+            include 'views/include/shop-single-product.php';
+            break;
+
         default:
             include 'views/include/404.php';
             break;
