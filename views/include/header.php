@@ -1,3 +1,20 @@
+<?php
+include_once  './module/lib/database.php';
+include_once './module/helpers/format.php';
+spl_autoload_register(function ($className) {
+    include_once './module/classes/' . $className . '.php';
+});
+$db = new Database();
+$fm = new Format();
+$ct = new cart();
+$cs = new customer();
+$us = new user();
+$cat = new category();
+$product = new product();
+$brand = new brand();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +29,7 @@
     <meta name="author" content="" />
     <link rel="shortcut icon" type="image/x-icon" href="./views/assets/imgs/template/favicon.svg" />
     <link href="./views/assets/css/style2513.css?v=3.0.0" rel="stylesheet" />
-    <title>Home 4 - Ecom Marketplace Template</title>
+    <title>AntiPHP</title>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -87,7 +104,7 @@
                 <div class="header-left">
                     <div class="header-logo">
 
-                        <a href="?page=home"><img alt="Ecom" src="./views/assets/imgs/template/logo.svg" /></a>
+                        <a href="?page=home">Logo ở đây</a>
                     </div>
                     <div class="header-search">
                         <div class="box-header-search">

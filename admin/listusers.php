@@ -1,5 +1,16 @@
 <!DOCTYPE html>
-
+<!--
+Author: Keenthemes
+Product Name: Metronic 
+Product Version: 8.1.8
+Purchase: https://1.envato.market/EA4JP
+Website: http://www.keenthemes.com
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
+-->
 <html lang="en">
 <!--begin::Head-->
 <!-- Added by HTTrack -->
@@ -29,20 +40,19 @@
     <meta property="og:url" content="https://keenthemes.com/metronic" />
     <meta property="og:site_name" content="Keenthemes | Metronic" />
     <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
-    <link rel="shortcut icon" href="./assets/media/logos/favicon.ico" />
+    <link rel="shortcut icon" href=" ./assets/media/logos/favicon.ico" />
 
     <!--begin::Fonts(mandatory for all pages)-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" /> <!--end::Fonts-->
 
     <!--begin::Vendor Stylesheets(used for this page only)-->
-    <link href="./assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="./assets/plugins/custom/vis-timeline/vis-timeline.bundle.css" rel="stylesheet" type="text/css" />
+    <link href=" ./assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
     <!--end::Vendor Stylesheets-->
 
 
     <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
-    <link href="./assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="./assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href=" ./assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href=" ./assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
     <!--end::Global Stylesheets Bundle-->
 
     <!--Begin::Google Tag Manager -->
@@ -58,7 +68,7 @@
                 dl = l != 'dataLayer' ? '&l=' + l : '';
             j.async = true;
             j.src =
-                '././././www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+                ' ./ ./www.googletagmanager.com/gtm5445.html?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-5FS8GGP');
     </script>
@@ -99,2998 +109,1847 @@
             document.documentElement.setAttribute("data-bs-theme", themeMode);
         }
     </script>
-
+    <!--end::Theme mode setup on page load-->
     <?php
-    include 'header.php';
+    include './header.php'
     ?>
+    <!--end::Header-->
+    <!--begin::Wrapper-->
+    <div class="app-wrapper  flex-column flex-row-fluid " id="kt_app_wrapper">
 
-    <!--begin::App-->
-    <div class="d-flex flex-column flex-root app-root" id="kt_app_root">
-        <!--begin::Page-->
-        <div class="app-page  flex-column flex-column-fluid " id="kt_app_page">
+        <!--begin::Toolbar-->
+        <div id="kt_app_toolbar" class="app-toolbar  py-6 ">
 
+            <!--begin::Toolbar container-->
+            <div id="kt_app_toolbar_container" class="app-container  container-xxl d-flex align-items-start ">
+                <!--begin::Toolbar container-->
+                <div class="d-flex flex-column flex-row-fluid">
+                    <!--begin::Toolbar wrapper-->
+                    <div class="d-flex align-items-center pt-1">
 
-            <!--begin::Header-->
+                        <!--begin::Breadcrumb-->
+                        <ul class="breadcrumb breadcrumb-separatorless fw-semibold">
 
-            <!--begin::Wrapper-->
-            <div class="app-wrapper  flex-column flex-row-fluid " id="kt_app_wrapper">
+                            <!--begin::Item-->
+                            <li class="breadcrumb-item text-white fw-bold lh-1">
+                                <a href=" ./index.html" class="text-white">
+                                    <i class="ki-outline ki-home text-white fs-3"></i>
+                                </a>
+                            </li>
+                            <!--end::Item-->
 
-                <!--begin::Toolbar-->
-                <div id="kt_app_toolbar" class="app-toolbar  py-6 ">
-
-                    <!--begin::Toolbar container-->
-                    <div id="kt_app_toolbar_container" class="app-container  container-xxl d-flex align-items-start ">
-                        <!--begin::Toolbar container-->
-                        <div class="d-flex flex-column flex-row-fluid">
-                            <!--begin::Toolbar wrapper-->
-                            <div class="d-flex align-items-center pt-1">
-
-                                <!--begin::Breadcrumb-->
-                                <ul class="breadcrumb breadcrumb-separatorless fw-semibold">
-
-                                    <!--begin::Item-->
-                                    <li class="breadcrumb-item text-white fw-bold lh-1">
-                                        <a href="./index.html" class="text-white">
-                                            <i class="ki-outline ki-home text-white fs-3"></i>
-                                        </a>
-                                    </li>
-                                    <!--end::Item-->
-
-                                    <!--begin::Item-->
-                                    <li class="breadcrumb-item">
-                                        <i class="ki-outline ki-right fs-4 text-white mx-n1"></i>
-                                    </li>
-                                    <!--end::Item-->
+                            <!--begin::Item-->
+                            <li class="breadcrumb-item">
+                                <i class="ki-outline ki-right fs-4 text-white mx-n1"></i>
+                            </li>
+                            <!--end::Item-->
 
 
-                                    <!--begin::Item-->
-                                    <li class="breadcrumb-item text-white fw-bold lh-1">
-                                        Dashboards </li>
-                                    <!--end::Item-->
+                            <!--begin::Item-->
+                            <li class="breadcrumb-item text-white fw-bold lh-1">
+                                User Management </li>
+                            <!--end::Item-->
+
+                            <!--begin::Item-->
+                            <li class="breadcrumb-item">
+                                <i class="ki-outline ki-right fs-4 text-white mx-n1"></i>
+                            </li>
+                            <!--end::Item-->
 
 
-                                </ul>
-                                <!--end::Breadcrumb-->
+                            <!--begin::Item-->
+                            <li class="breadcrumb-item text-white fw-bold lh-1">
+                                Users </li>
+                            <!--end::Item-->
 
-                            </div>
-                            <!--end::Toolbar wrapper--->
 
-                            <!--begin::Toolbar wrapper--->
-                            <div class="d-flex flex-stack flex-wrap flex-lg-nowrap gap-4 gap-lg-10 pt-6 pb-18 py-lg-13">
+                        </ul>
+                        <!--end::Breadcrumb-->
 
-                                <!--begin::Page title-->
-                                <div class="page-title d-flex align-items-center me-3">
-                                    <img alt="Logo" src="./assets/media/svg/misc/layer.svg" class="h-60px me-5" />
-
-                                    <!--begin::Title-->
-                                    <h1 class="page-heading d-flex text-white fw-bolder fs-2 flex-column justify-content-center my-0">
-                                        eCommerce Dashboard
-                                        <!--begin::Description-->
-                                        <span class="page-desc text-white opacity-50 fs-6 fw-bold pt-4">
-                                            Page Description </span>
-                                        <!--end::Description-->
-                                    </h1>
-                                    <!--end::Title-->
-                                </div>
-                                <!--end::Page title-->
-
-                                <!--begin::Items-->
-                                <div class="d-flex gap-4 gap-lg-13">
-                                    <!--begin::Item-->
-                                    <div class="d-flex flex-column">
-                                        <!--begin::Number-->
-                                        <span class="text-white fw-bold fs-3 mb-1">$23,467.92</span>
-                                        <!--end::Number-->
-
-                                        <!--begin::Section-->
-                                        <div class="text-white opacity-50 fw-bold">Avg. Monthly Sales</div>
-                                        <!--end::Section-->
-                                    </div>
-                                    <!--end::Item-->
-                                    <!--begin::Item-->
-                                    <div class="d-flex flex-column">
-                                        <!--begin::Number-->
-                                        <span class="text-white fw-bold fs-3 mb-1">$1,748.03</span>
-                                        <!--end::Number-->
-
-                                        <!--begin::Section-->
-                                        <div class="text-white opacity-50 fw-bold">Today Spending</div>
-                                        <!--end::Section-->
-                                    </div>
-                                    <!--end::Item-->
-                                    <!--begin::Item-->
-                                    <div class="d-flex flex-column">
-                                        <!--begin::Number-->
-                                        <span class="text-white fw-bold fs-3 mb-1">3.8%</span>
-                                        <!--end::Number-->
-
-                                        <!--begin::Section-->
-                                        <div class="text-white opacity-50 fw-bold">Overall Share</div>
-                                        <!--end::Section-->
-                                    </div>
-                                    <!--end::Item-->
-                                    <!--begin::Item-->
-                                    <div class="d-flex flex-column">
-                                        <!--begin::Number-->
-                                        <span class="text-white fw-bold fs-3 mb-1">-7.4%</span>
-                                        <!--end::Number-->
-
-                                        <!--begin::Section-->
-                                        <div class="text-white opacity-50 fw-bold">7 Days</div>
-                                        <!--end::Section-->
-                                    </div>
-                                    <!--end::Item-->
-
-                                </div>
-                                <!--end::Items-->
-                            </div>
-                            <!--end::Toolbar wrapper--->
-                        </div>
-                        <!--end::Toolbar container--->
                     </div>
-                    <!--end::Toolbar container-->
+                    <!--end::Toolbar wrapper--->
+
+                    <!--begin::Toolbar wrapper--->
+                    <div class="d-flex flex-stack flex-wrap flex-lg-nowrap gap-4 gap-lg-10 pt-6 pb-18 py-lg-13">
+
+                        <!--begin::Page title-->
+                        <div class="page-title d-flex align-items-center me-3">
+                            <img alt="Logo" src=" ./assets/media/svg/misc/layer.svg" class="h-60px me-5" />
+
+                            <!--begin::Title-->
+                            <h1 class="page-heading d-flex text-white fw-bolder fs-2 flex-column justify-content-center my-0">
+                                Users List
+                                <!--begin::Description-->
+                                <span class="page-desc text-white opacity-50 fs-6 fw-bold pt-4">
+                                    Page Description </span>
+                                <!--end::Description-->
+                            </h1>
+                            <!--end::Title-->
+                        </div>
+                        <!--end::Page title-->
+
+                        <!--begin::Items-->
+                        <div class="d-flex gap-4 gap-lg-13">
+                            <!--begin::Item-->
+                            <div class="d-flex flex-column">
+                                <!--begin::Number-->
+                                <span class="text-white fw-bold fs-3 mb-1">$23,467.92</span>
+                                <!--end::Number-->
+
+                                <!--begin::Section-->
+                                <div class="text-white opacity-50 fw-bold">Avg. Monthly Sales</div>
+                                <!--end::Section-->
+                            </div>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <div class="d-flex flex-column">
+                                <!--begin::Number-->
+                                <span class="text-white fw-bold fs-3 mb-1">$1,748.03</span>
+                                <!--end::Number-->
+
+                                <!--begin::Section-->
+                                <div class="text-white opacity-50 fw-bold">Today Spending</div>
+                                <!--end::Section-->
+                            </div>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <div class="d-flex flex-column">
+                                <!--begin::Number-->
+                                <span class="text-white fw-bold fs-3 mb-1">3.8%</span>
+                                <!--end::Number-->
+
+                                <!--begin::Section-->
+                                <div class="text-white opacity-50 fw-bold">Overall Share</div>
+                                <!--end::Section-->
+                            </div>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <div class="d-flex flex-column">
+                                <!--begin::Number-->
+                                <span class="text-white fw-bold fs-3 mb-1">-7.4%</span>
+                                <!--end::Number-->
+
+                                <!--begin::Section-->
+                                <div class="text-white opacity-50 fw-bold">7 Days</div>
+                                <!--end::Section-->
+                            </div>
+                            <!--end::Item-->
+
+                        </div>
+                        <!--end::Items-->
+                    </div>
+                    <!--end::Toolbar wrapper--->
                 </div>
-                <!--end::Toolbar-->
+                <!--end::Toolbar container--->
+            </div>
+            <!--end::Toolbar container-->
+        </div>
+        <!--end::Toolbar-->
 
 
-                <!--begin::Wrapper container-->
-                <div class="app-container  container-xxl ">
+        <!--begin::Wrapper container-->
+        <div class="app-container  container-xxl ">
 
 
 
-                    <!--begin::Main-->
-                    <div class="app-main flex-column flex-row-fluid" id="kt_app_main">
-                        <!--begin::Content wrapper-->
-                        <div class="d-flex flex-column flex-column-fluid">
+            <!--begin::Main-->
+            <div class="app-main flex-column flex-row-fluid" id="kt_app_main">
+                <!--begin::Content wrapper-->
+                <div class="d-flex flex-column flex-column-fluid">
 
 
-                            <!--begin::Content-->
-                            <div id="kt_app_content" class="app-content ">
+                    <!--begin::Content-->
+                    <div id="kt_app_content" class="app-content ">
 
-                                <!--begin::Row-->
-                                <div class="row g-5 g-xl-10 mb-xl-10">
-                                    <!--begin::Col-->
-                                    <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10">
-
-                                        <!--begin::Card widget 4-->
-                                        <div class="card card-flush h-md-50 mb-5 mb-xl-10">
-                                            <!--begin::Header-->
-                                            <div class="card-header pt-5">
-                                                <!--begin::Title-->
-                                                <div class="card-title d-flex flex-column">
-                                                    <!--begin::Info-->
-                                                    <div class="d-flex align-items-center">
-                                                        <!--begin::Currency-->
-                                                        <span class="fs-4 fw-semibold text-gray-400 me-1 align-self-start">$</span>
-                                                        <!--end::Currency-->
-
-                                                        <!--begin::Amount-->
-                                                        <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2">69,700</span>
-                                                        <!--end::Amount-->
-
-                                                        <!--begin::Badge-->
-                                                        <span class="badge badge-light-success fs-base">
-                                                            <i class="ki-outline ki-arrow-up fs-5 text-success ms-n1"></i>
-                                                            2.2%
-                                                        </span>
-                                                        <!--end::Badge-->
-                                                    </div>
-                                                    <!--end::Info-->
-
-                                                    <!--begin::Subtitle-->
-                                                    <span class="text-gray-400 pt-1 fw-semibold fs-6">Expected Earnings</span>
-                                                    <!--end::Subtitle-->
-                                                </div>
-                                                <!--end::Title-->
-                                            </div>
-                                            <!--end::Header-->
-
-                                            <!--begin::Card body-->
-                                            <div class="card-body pt-2 pb-4 d-flex align-items-center">
-                                                <!--begin::Chart-->
-                                                <div class="d-flex flex-center me-5 pt-2">
-                                                    <div id="kt_card_widget_4_chart" style="min-width: 70px; min-height: 70px" data-kt-size="70" data-kt-line="11">
-                                                    </div>
-                                                </div>
-                                                <!--end::Chart-->
-
-                                                <!--begin::Labels-->
-                                                <div class="d-flex flex-column content-justify-center w-100">
-                                                    <!--begin::Label-->
-                                                    <div class="d-flex fs-6 fw-semibold align-items-center">
-                                                        <!--begin::Bullet-->
-                                                        <div class="bullet w-8px h-6px rounded-2 bg-danger me-3"></div>
-                                                        <!--end::Bullet-->
-
-                                                        <!--begin::Label-->
-                                                        <div class="text-gray-500 flex-grow-1 me-4">Shoes</div>
-                                                        <!--end::Label-->
-
-                                                        <!--begin::Stats-->
-                                                        <div class="fw-bolder text-gray-700 text-xxl-end">$7,660</div>
-                                                        <!--end::Stats-->
-                                                    </div>
-                                                    <!--end::Label-->
-
-                                                    <!--begin::Label-->
-                                                    <div class="d-flex fs-6 fw-semibold align-items-center my-3">
-                                                        <!--begin::Bullet-->
-                                                        <div class="bullet w-8px h-6px rounded-2 bg-primary me-3"></div>
-                                                        <!--end::Bullet-->
-
-                                                        <!--begin::Label-->
-                                                        <div class="text-gray-500 flex-grow-1 me-4">Gaming</div>
-                                                        <!--end::Label-->
-
-                                                        <!--begin::Stats-->
-                                                        <div class="fw-bolder text-gray-700 text-xxl-end">$2,820</div>
-                                                        <!--end::Stats-->
-                                                    </div>
-                                                    <!--end::Label-->
-
-                                                    <!--begin::Label-->
-                                                    <div class="d-flex fs-6 fw-semibold align-items-center">
-                                                        <!--begin::Bullet-->
-                                                        <div class="bullet w-8px h-6px rounded-2 me-3" style="background-color: #E4E6EF"></div>
-                                                        <!--end::Bullet-->
-
-                                                        <!--begin::Label-->
-                                                        <div class="text-gray-500 flex-grow-1 me-4">Others</div>
-                                                        <!--end::Label-->
-
-                                                        <!--begin::Stats-->
-                                                        <div class=" fw-bolder text-gray-700 text-xxl-end">$45,257</div>
-                                                        <!--end::Stats-->
-                                                    </div>
-                                                    <!--end::Label-->
-                                                </div>
-                                                <!--end::Labels-->
-                                            </div>
-                                            <!--end::Card body-->
-                                        </div>
-                                        <!--end::Card widget 4-->
-
-                                        <!--begin::Card widget 5-->
-                                        <div class="card card-flush h-md-50 mb-xl-10">
-                                            <!--begin::Header-->
-                                            <div class="card-header pt-5">
-                                                <!--begin::Title-->
-                                                <div class="card-title d-flex flex-column">
-                                                    <!--begin::Info-->
-                                                    <div class="d-flex align-items-center">
-                                                        <!--begin::Amount-->
-                                                        <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2">1,836</span>
-                                                        <!--end::Amount-->
-
-                                                        <!--begin::Badge-->
-                                                        <span class="badge badge-light-danger fs-base">
-                                                            <i class="ki-outline ki-arrow-down fs-5 text-danger ms-n1"></i>
-                                                            2.2%
-                                                        </span>
-                                                        <!--end::Badge-->
-                                                    </div>
-                                                    <!--end::Info-->
-
-                                                    <!--begin::Subtitle-->
-                                                    <span class="text-gray-400 pt-1 fw-semibold fs-6">Orders This Month</span>
-                                                    <!--end::Subtitle-->
-                                                </div>
-                                                <!--end::Title-->
-                                            </div>
-                                            <!--end::Header-->
-
-                                            <!--begin::Card body-->
-                                            <div class="card-body d-flex align-items-end pt-0">
-                                                <!--begin::Progress-->
-                                                <div class="d-flex align-items-center flex-column mt-3 w-100">
-                                                    <div class="d-flex justify-content-between w-100 mt-auto mb-2">
-                                                        <span class="fw-bolder fs-6 text-dark">1,048 to Goal</span>
-                                                        <span class="fw-bold fs-6 text-gray-400">62%</span>
-                                                    </div>
-
-                                                    <div class="h-8px mx-3 w-100 bg-light-success rounded">
-                                                        <div class="bg-success rounded h-8px" role="progressbar" style="width: 62%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                                <!--end::Progress-->
-                                            </div>
-                                            <!--end::Card body-->
-                                        </div>
-                                        <!--end::Card widget 5-->
+                        <!--begin::Card-->
+                        <div class="card">
+                            <!--begin::Card header-->
+                            <div class="card-header border-0 pt-6">
+                                <!--begin::Card title-->
+                                <div class="card-title">
+                                    <!--begin::Search-->
+                                    <div class="d-flex align-items-center position-relative my-1">
+                                        <i class="ki-outline ki-magnifier fs-3 position-absolute ms-5"></i> <input type="text" data-kt-user-table-filter="search" class="form-control form-control-solid w-250px ps-13" placeholder="Search user" />
                                     </div>
-                                    <!--end::Col-->
+                                    <!--end::Search-->
+                                </div>
+                                <!--begin::Card title-->
 
-                                    <!--begin::Col-->
-                                    <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10">
-                                        <!--begin::Card widget 6-->
-                                        <div class="card card-flush  h-md-50 mb-5 mb-xl-10">
+                                <!--begin::Card toolbar-->
+                                <div class="card-toolbar">
+                                    <!--begin::Toolbar-->
+                                    <div class="d-flex justify-content-end" data-kt-user-table-toolbar="base">
+                                        <!--begin::Filter-->
+                                        <button type="button" class="btn btn-light-primary me-3" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                            <i class="ki-outline ki-filter fs-2"></i> Filter
+                                        </button>
+                                        <!--begin::Menu 1-->
+                                        <div class="menu menu-sub menu-sub-dropdown w-300px w-md-325px" data-kt-menu="true">
                                             <!--begin::Header-->
-                                            <div class="card-header pt-5">
-                                                <!--begin::Title-->
-                                                <div class="card-title d-flex flex-column">
-                                                    <!--begin::Info-->
-                                                    <div class="d-flex align-items-center">
-                                                        <!--begin::Currency-->
-                                                        <span class="fs-4 fw-semibold text-gray-400 me-1 align-self-start">$</span>
-                                                        <!--end::Currency-->
-
-                                                        <!--begin::Amount-->
-                                                        <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2">2,420</span>
-                                                        <!--end::Amount-->
-
-                                                        <!--begin::Badge-->
-                                                        <span class="badge badge-light-success fs-base">
-                                                            <i class="ki-outline ki-arrow-up fs-5 text-success ms-n1"></i>
-                                                            2.6%
-                                                        </span>
-                                                        <!--end::Badge-->
-                                                    </div>
-                                                    <!--end::Info-->
-
-                                                    <!--begin::Subtitle-->
-                                                    <span class="text-gray-400 pt-1 fw-semibold fs-6">Average Daily Sales</span>
-                                                    <!--end::Subtitle-->
-                                                </div>
-                                                <!--end::Title-->
+                                            <div class="px-7 py-5">
+                                                <div class="fs-5 text-dark fw-bold">Filter Options</div>
                                             </div>
                                             <!--end::Header-->
 
-                                            <!--begin::Card body-->
-                                            <div class="card-body d-flex align-items-end px-0 pb-0">
-                                                <!--begin::Chart-->
-                                                <div id="kt_card_widget_6_chart" class="w-100" style="height: 80px"></div>
-                                                <!--end::Chart-->
+                                            <!--begin::Separator-->
+                                            <div class="separator border-gray-200"></div>
+                                            <!--end::Separator-->
+
+                                            <!--begin::Content-->
+                                            <div class="px-7 py-5" data-kt-user-table-filter="form">
+                                                <!--begin::Input group-->
+                                                <div class="mb-10">
+                                                    <label class="form-label fs-6 fw-semibold">Role:</label>
+                                                    <select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select option" data-allow-clear="true" data-kt-user-table-filter="role" data-hide-search="true">
+                                                        <option></option>
+                                                        <option value="Administrator">Administrator</option>
+                                                        <option value="Analyst">Analyst</option>
+                                                        <option value="Developer">Developer</option>
+                                                        <option value="Support">Support</option>
+                                                        <option value="Trial">Trial</option>
+                                                    </select>
+                                                </div>
+                                                <!--end::Input group-->
+
+                                                <!--begin::Input group-->
+                                                <div class="mb-10">
+                                                    <label class="form-label fs-6 fw-semibold">Two Step Verification:</label>
+                                                    <select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select option" data-allow-clear="true" data-kt-user-table-filter="two-step" data-hide-search="true">
+                                                        <option></option>
+                                                        <option value="Enabled">Enabled</option>
+                                                    </select>
+                                                </div>
+                                                <!--end::Input group-->
+
+                                                <!--begin::Actions-->
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="reset" class="btn btn-light btn-active-light-primary fw-semibold me-2 px-6" data-kt-menu-dismiss="true" data-kt-user-table-filter="reset">Reset</button>
+                                                    <button type="submit" class="btn btn-primary fw-semibold px-6" data-kt-menu-dismiss="true" data-kt-user-table-filter="filter">Apply</button>
+                                                </div>
+                                                <!--end::Actions-->
                                             </div>
-                                            <!--end::Card body-->
+                                            <!--end::Content-->
                                         </div>
-                                        <!--end::Card widget 6-->
+                                        <!--end::Menu 1--> <!--end::Filter-->
 
+                                        <!--begin::Export-->
+                                        <button type="button" class="btn btn-light-primary me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_export_users">
+                                            <i class="ki-outline ki-exit-up fs-2"></i> Export
+                                        </button>
+                                        <!--end::Export-->
 
-                                        <!--begin::Card widget 7-->
-                                        <div class="card card-flush h-md-50 mb-xl-10">
-                                            <!--begin::Header-->
-                                            <div class="card-header pt-5">
-                                                <!--begin::Title-->
-                                                <div class="card-title d-flex flex-column">
-                                                    <!--begin::Amount-->
-                                                    <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2">6.3k</span>
-                                                    <!--end::Amount-->
+                                        <!--begin::Add user-->
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user">
+                                            <i class="ki-outline ki-plus fs-2"></i> Add User
+                                        </button>
+                                        <!--end::Add user-->
+                                    </div>
+                                    <!--end::Toolbar-->
 
-                                                    <!--begin::Subtitle-->
-                                                    <span class="text-gray-400 pt-1 fw-semibold fs-6">New Customers This Month</span>
-                                                    <!--end::Subtitle-->
+                                    <!--begin::Group actions-->
+                                    <div class="d-flex justify-content-end align-items-center d-none" data-kt-user-table-toolbar="selected">
+                                        <div class="fw-bold me-5">
+                                            <span class="me-2" data-kt-user-table-select="selected_count"></span> Selected
+                                        </div>
+
+                                        <button type="button" class="btn btn-danger" data-kt-user-table-select="delete_selected">
+                                            Delete Selected
+                                        </button>
+                                    </div>
+                                    <!--end::Group actions-->
+
+                                    <!--begin::Modal - Adjust Balance-->
+                                    <div class="modal fade" id="kt_modal_export_users" tabindex="-1" aria-hidden="true">
+                                        <!--begin::Modal dialog-->
+                                        <div class="modal-dialog modal-dialog-centered mw-650px">
+                                            <!--begin::Modal content-->
+                                            <div class="modal-content">
+                                                <!--begin::Modal header-->
+                                                <div class="modal-header">
+                                                    <!--begin::Modal title-->
+                                                    <h2 class="fw-bold">Export Users</h2>
+                                                    <!--end::Modal title-->
+
+                                                    <!--begin::Close-->
+                                                    <div class="btn btn-icon btn-sm btn-active-icon-primary" data-kt-users-modal-action="close">
+                                                        <i class="ki-outline ki-cross fs-1"></i>
+                                                    </div>
+                                                    <!--end::Close-->
                                                 </div>
-                                                <!--end::Title-->
+                                                <!--end::Modal header-->
+
+                                                <!--begin::Modal body-->
+                                                <div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
+                                                    <!--begin::Form-->
+                                                    <form id="kt_modal_export_users_form" class="form" action="#">
+                                                        <!--begin::Input group-->
+                                                        <div class="fv-row mb-10">
+                                                            <!--begin::Label-->
+                                                            <label class="fs-6 fw-semibold form-label mb-2">Select Roles:</label>
+                                                            <!--end::Label-->
+
+                                                            <!--begin::Input-->
+                                                            <select name="role" data-control="select2" data-placeholder="Select a role" data-hide-search="true" class="form-select form-select-solid fw-bold">
+                                                                <option></option>
+                                                                <option value="Administrator">Administrator</option>
+                                                                <option value="Analyst">Analyst</option>
+                                                                <option value="Developer">Developer</option>
+                                                                <option value="Support">Support</option>
+                                                                <option value="Trial">Trial</option>
+                                                            </select>
+                                                            <!--end::Input-->
+                                                        </div>
+                                                        <!--end::Input group-->
+
+                                                        <!--begin::Input group-->
+                                                        <div class="fv-row mb-10">
+                                                            <!--begin::Label-->
+                                                            <label class="required fs-6 fw-semibold form-label mb-2">Select Export Format:</label>
+                                                            <!--end::Label-->
+
+                                                            <!--begin::Input-->
+                                                            <select name="format" data-control="select2" data-placeholder="Select a format" data-hide-search="true" class="form-select form-select-solid fw-bold">
+                                                                <option></option>
+                                                                <option value="excel">Excel</option>
+                                                                <option value="pdf">PDF</option>
+                                                                <option value="cvs">CVS</option>
+                                                                <option value="zip">ZIP</option>
+                                                            </select>
+                                                            <!--end::Input-->
+                                                        </div>
+                                                        <!--end::Input group-->
+
+                                                        <!--begin::Actions-->
+                                                        <div class="text-center">
+                                                            <button type="reset" class="btn btn-light me-3" data-kt-users-modal-action="cancel">
+                                                                Discard
+                                                            </button>
+
+                                                            <button type="submit" class="btn btn-primary" data-kt-users-modal-action="submit">
+                                                                <span class="indicator-label">
+                                                                    Submit
+                                                                </span>
+                                                                <span class="indicator-progress">
+                                                                    Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <!--end::Actions-->
+                                                    </form>
+                                                    <!--end::Form-->
+                                                </div>
+                                                <!--end::Modal body-->
                                             </div>
-                                            <!--end::Header-->
+                                            <!--end::Modal content-->
+                                        </div>
+                                        <!--end::Modal dialog-->
+                                    </div>
+                                    <!--end::Modal - New Card-->
 
-                                            <!--begin::Card body-->
-                                            <div class="card-body d-flex flex-column justify-content-end pe-0">
-                                                <!--begin::Title-->
-                                                <span class="fs-6 fw-bolder text-gray-800 d-block mb-2">Today’s Heroes</span>
-                                                <!--end::Title-->
+                                    <!--begin::Modal - Add task-->
+                                    <div class="modal fade" id="kt_modal_add_user" tabindex="-1" aria-hidden="true">
+                                        <!--begin::Modal dialog-->
+                                        <div class="modal-dialog modal-dialog-centered mw-650px">
+                                            <!--begin::Modal content-->
+                                            <div class="modal-content">
+                                                <!--begin::Modal header-->
+                                                <div class="modal-header" id="kt_modal_add_user_header">
+                                                    <!--begin::Modal title-->
+                                                    <h2 class="fw-bold">Add User</h2>
+                                                    <!--end::Modal title-->
 
-                                                <!--begin::Users group-->
-                                                <div class="symbol-group symbol-hover flex-nowrap">
-                                                    <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Alan Warden">
-                                                        <span class="symbol-label bg-warning text-inverse-warning fw-bold">A</span>
+                                                    <!--begin::Close-->
+                                                    <div class="btn btn-icon btn-sm btn-active-icon-primary" data-kt-users-modal-action="close">
+                                                        <i class="ki-outline ki-cross fs-1"></i>
                                                     </div>
-                                                    <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Michael Eberon">
-                                                        <img alt="Pic" src="./assets/media/avatars/300-11.jpg" />
-                                                    </div>
-                                                    <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Susan Redwood">
-                                                        <span class="symbol-label bg-primary text-inverse-primary fw-bold">S</span>
-                                                    </div>
-                                                    <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Melody Macy">
-                                                        <img alt="Pic" src="./assets/media/avatars/300-2.jpg" />
-                                                    </div>
-                                                    <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Perry Matthew">
-                                                        <span class="symbol-label bg-danger text-inverse-danger fw-bold">P</span>
-                                                    </div>
-                                                    <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Barry Walter">
-                                                        <img alt="Pic" src="./assets/media/avatars/300-12.jpg" />
-                                                    </div>
-                                                    <a href="#" class="symbol symbol-35px symbol-circle" data-bs-toggle="modal" data-bs-target="#kt_modal_view_users">
-                                                        <span class="symbol-label bg-light text-gray-400 fs-8 fw-bold">+42</span>
+                                                    <!--end::Close-->
+                                                </div>
+                                                <!--end::Modal header-->
+
+                                                <!--begin::Modal body-->
+                                                <div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
+                                                    <!--begin::Form-->
+                                                    <form id="kt_modal_add_user_form" class="form" action="#">
+                                                        <!--begin::Scroll-->
+                                                        <div class="d-flex flex-column scroll-y me-n7 pe-7" id="kt_modal_add_user_scroll" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-max-height="auto" data-kt-scroll-dependencies="#kt_modal_add_user_header" data-kt-scroll-wrappers="#kt_modal_add_user_scroll" data-kt-scroll-offset="300px">
+                                                            <!--begin::Input group-->
+                                                            <div class="fv-row mb-7">
+                                                                <!--begin::Label-->
+                                                                <label class="d-block fw-semibold fs-6 mb-5">Avatar</label>
+                                                                <!--end::Label-->
+
+
+                                                                <!--begin::Image placeholder-->
+                                                                <style>
+                                                                    .image-input-placeholder {
+                                                                        background-image: url(' ./assets/media/svg/files/blank-image.svg');
+                                                                    }
+
+                                                                    [data-bs-theme="dark"] .image-input-placeholder {
+                                                                        background-image: url(' ./assets/media/svg/files/blank-image-dark.svg');
+                                                                    }
+                                                                </style>
+                                                                <!--end::Image placeholder-->
+                                                                <!--begin::Image input-->
+                                                                <div class="image-input image-input-outline image-input-placeholder" data-kt-image-input="true">
+                                                                    <!--begin::Preview existing avatar-->
+                                                                    <div class="image-input-wrapper w-125px h-125px" style="background-image: url( ./assets/media/avatars/300-6.jpg);"></div>
+                                                                    <!--end::Preview existing avatar-->
+
+                                                                    <!--begin::Label-->
+                                                                    <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change avatar">
+                                                                        <i class="ki-outline ki-pencil fs-7"></i>
+                                                                        <!--begin::Inputs-->
+                                                                        <input type="file" name="avatar" accept=".png, .jpg, .jpeg" />
+                                                                        <input type="hidden" name="avatar_remove" />
+                                                                        <!--end::Inputs-->
+                                                                    </label>
+                                                                    <!--end::Label-->
+
+                                                                    <!--begin::Cancel-->
+                                                                    <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title="Cancel avatar">
+                                                                        <i class="ki-outline ki-cross fs-2"></i> </span>
+                                                                    <!--end::Cancel-->
+
+                                                                    <!--begin::Remove-->
+                                                                    <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="remove" data-bs-toggle="tooltip" title="Remove avatar">
+                                                                        <i class="ki-outline ki-cross fs-2"></i> </span>
+                                                                    <!--end::Remove-->
+                                                                </div>
+                                                                <!--end::Image input-->
+
+                                                                <!--begin::Hint-->
+                                                                <div class="form-text">Allowed file types: png, jpg, jpeg.</div>
+                                                                <!--end::Hint-->
+                                                            </div>
+                                                            <!--end::Input group-->
+
+                                                            <!--begin::Input group-->
+                                                            <div class="fv-row mb-7">
+                                                                <!--begin::Label-->
+                                                                <label class="required fw-semibold fs-6 mb-2">Full Name</label>
+                                                                <!--end::Label-->
+
+                                                                <!--begin::Input-->
+                                                                <input type="text" name="user_name" class="form-control form-control-solid mb-3 mb-lg-0" placeholder="Full name" value="Emma Smith" />
+                                                                <!--end::Input-->
+                                                            </div>
+                                                            <!--end::Input group-->
+
+                                                            <!--begin::Input group-->
+                                                            <div class="fv-row mb-7">
+                                                                <!--begin::Label-->
+                                                                <label class="required fw-semibold fs-6 mb-2">Email</label>
+                                                                <!--end::Label-->
+
+                                                                <!--begin::Input-->
+                                                                <input type="email" name="user_email" class="form-control form-control-solid mb-3 mb-lg-0" placeholder="example@domain.com" value="smith@kpmg.com" />
+                                                                <!--end::Input-->
+                                                            </div>
+                                                            <!--end::Input group-->
+
+                                                            <!--begin::Input group-->
+                                                            <div class="mb-7">
+                                                                <!--begin::Label-->
+                                                                <label class="required fw-semibold fs-6 mb-5">Role</label>
+                                                                <!--end::Label-->
+
+                                                                <!--begin::Roles-->
+                                                                <!--begin::Input row-->
+                                                                <div class="d-flex fv-row">
+                                                                    <!--begin::Radio-->
+                                                                    <div class="form-check form-check-custom form-check-solid">
+                                                                        <!--begin::Input-->
+                                                                        <input class="form-check-input me-3" name="user_role" type="radio" value="0" id="kt_modal_update_role_option_0" checked='checked' />
+                                                                        <!--end::Input-->
+
+                                                                        <!--begin::Label-->
+                                                                        <label class="form-check-label" for="kt_modal_update_role_option_0">
+                                                                            <div class="fw-bold text-gray-800">Administrator</div>
+                                                                            <div class="text-gray-600">Best for business owners and company administrators</div>
+                                                                        </label>
+                                                                        <!--end::Label-->
+                                                                    </div>
+                                                                    <!--end::Radio-->
+                                                                </div>
+                                                                <!--end::Input row-->
+
+                                                                <div class='separator separator-dashed my-5'></div> <!--begin::Input row-->
+                                                                <div class="d-flex fv-row">
+                                                                    <!--begin::Radio-->
+                                                                    <div class="form-check form-check-custom form-check-solid">
+                                                                        <!--begin::Input-->
+                                                                        <input class="form-check-input me-3" name="user_role" type="radio" value="1" id="kt_modal_update_role_option_1" />
+                                                                        <!--end::Input-->
+
+                                                                        <!--begin::Label-->
+                                                                        <label class="form-check-label" for="kt_modal_update_role_option_1">
+                                                                            <div class="fw-bold text-gray-800">Developer</div>
+                                                                            <div class="text-gray-600">Best for developers or people primarily using the API</div>
+                                                                        </label>
+                                                                        <!--end::Label-->
+                                                                    </div>
+                                                                    <!--end::Radio-->
+                                                                </div>
+                                                                <!--end::Input row-->
+
+                                                                <div class='separator separator-dashed my-5'></div> <!--begin::Input row-->
+                                                                <div class="d-flex fv-row">
+                                                                    <!--begin::Radio-->
+                                                                    <div class="form-check form-check-custom form-check-solid">
+                                                                        <!--begin::Input-->
+                                                                        <input class="form-check-input me-3" name="user_role" type="radio" value="2" id="kt_modal_update_role_option_2" />
+                                                                        <!--end::Input-->
+
+                                                                        <!--begin::Label-->
+                                                                        <label class="form-check-label" for="kt_modal_update_role_option_2">
+                                                                            <div class="fw-bold text-gray-800">Analyst</div>
+                                                                            <div class="text-gray-600">Best for people who need full access to analytics data, but don't need to update business settings</div>
+                                                                        </label>
+                                                                        <!--end::Label-->
+                                                                    </div>
+                                                                    <!--end::Radio-->
+                                                                </div>
+                                                                <!--end::Input row-->
+
+                                                                <div class='separator separator-dashed my-5'></div> <!--begin::Input row-->
+                                                                <div class="d-flex fv-row">
+                                                                    <!--begin::Radio-->
+                                                                    <div class="form-check form-check-custom form-check-solid">
+                                                                        <!--begin::Input-->
+                                                                        <input class="form-check-input me-3" name="user_role" type="radio" value="3" id="kt_modal_update_role_option_3" />
+                                                                        <!--end::Input-->
+
+                                                                        <!--begin::Label-->
+                                                                        <label class="form-check-label" for="kt_modal_update_role_option_3">
+                                                                            <div class="fw-bold text-gray-800">Support</div>
+                                                                            <div class="text-gray-600">Best for employees who regularly refund payments and respond to disputes</div>
+                                                                        </label>
+                                                                        <!--end::Label-->
+                                                                    </div>
+                                                                    <!--end::Radio-->
+                                                                </div>
+                                                                <!--end::Input row-->
+
+                                                                <div class='separator separator-dashed my-5'></div> <!--begin::Input row-->
+                                                                <div class="d-flex fv-row">
+                                                                    <!--begin::Radio-->
+                                                                    <div class="form-check form-check-custom form-check-solid">
+                                                                        <!--begin::Input-->
+                                                                        <input class="form-check-input me-3" name="user_role" type="radio" value="4" id="kt_modal_update_role_option_4" />
+                                                                        <!--end::Input-->
+
+                                                                        <!--begin::Label-->
+                                                                        <label class="form-check-label" for="kt_modal_update_role_option_4">
+                                                                            <div class="fw-bold text-gray-800">Trial</div>
+                                                                            <div class="text-gray-600">Best for people who need to preview content data, but don't need to make any updates</div>
+                                                                        </label>
+                                                                        <!--end::Label-->
+                                                                    </div>
+                                                                    <!--end::Radio-->
+                                                                </div>
+                                                                <!--end::Input row-->
+
+                                                                <!--end::Roles-->
+                                                            </div>
+                                                            <!--end::Input group-->
+                                                        </div>
+                                                        <!--end::Scroll-->
+
+                                                        <!--begin::Actions-->
+                                                        <div class="text-center pt-15">
+                                                            <button type="reset" class="btn btn-light me-3" data-kt-users-modal-action="cancel">
+                                                                Discard
+                                                            </button>
+
+                                                            <button type="submit" class="btn btn-primary" data-kt-users-modal-action="submit">
+                                                                <span class="indicator-label">
+                                                                    Submit
+                                                                </span>
+                                                                <span class="indicator-progress">
+                                                                    Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <!--end::Actions-->
+                                                    </form>
+                                                    <!--end::Form-->
+                                                </div>
+                                                <!--end::Modal body-->
+                                            </div>
+                                            <!--end::Modal content-->
+                                        </div>
+                                        <!--end::Modal dialog-->
+                                    </div>
+                                    <!--end::Modal - Add task-->
+                                </div>
+                                <!--end::Card toolbar-->
+                            </div>
+                            <!--end::Card header-->
+
+                            <!--begin::Card body-->
+                            <div class="card-body py-4">
+
+                                <!--begin::Table-->
+                                <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_table_users">
+                                    <thead>
+                                        <tr class="text-start text-muted fw-bold fs-7 text-uppercase gs-0">
+                                            <th class="w-10px pe-2">
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid me-3">
+                                                    <input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#kt_table_users .form-check-input" value="1" />
+                                                </div>
+                                            </th>
+                                            <th class="min-w-125px">User</th>
+                                            <th class="min-w-125px">Role</th>
+                                            <th class="min-w-125px">Last login</th>
+                                            <th class="min-w-125px">Two-step </th>
+                                            <th class="min-w-125px">Joined Date</th>
+                                            <th class="text-end min-w-100px">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-gray-600 fw-semibold">
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label">
+                                                            <img src=" ./assets/media/avatars/300-6.jpg" alt="Emma Smith" class="w-100" />
+                                                        </div>
                                                     </a>
                                                 </div>
-                                                <!--end::Users group-->
-                                            </div>
-                                            <!--end::Card body-->
-                                        </div>
-                                        <!--end::Card widget 7-->
-                                    </div>
-                                    <!--end::Col-->
-
-                                    <!--begin::Col-->
-                                    <div class="col-lg-12 col-xl-12 col-xxl-6 mb-5 mb-xl-0">
-                                        <!--begin::Chart widget 3-->
-                                        <div class="card card-flush overflow-hidden h-md-100">
-                                            <!--begin::Header-->
-                                            <div class="card-header py-5">
-                                                <!--begin::Title-->
-                                                <h3 class="card-title align-items-start flex-column">
-                                                    <span class="card-label fw-bold text-dark">Sales This Months</span>
-                                                    <span class="text-gray-400 mt-1 fw-semibold fs-6">Users from all channels</span>
-                                                </h3>
-                                                <!--end::Title-->
-
-                                                <!--begin::Toolbar-->
-                                                <div class="card-toolbar">
-                                                    <!--begin::Menu-->
-                                                    <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
-
-                                                        <i class="ki-outline ki-dots-square fs-1"></i>
-                                                    </button>
-
-
-                                                    <!--begin::Menu 2-->
-                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu separator-->
-                                                        <div class="separator mb-3 opacity-75"></div>
-                                                        <!--end::Menu separator-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <a href="#" class="menu-link px-3">
-                                                                New Ticket
-                                                            </a>
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <a href="#" class="menu-link px-3">
-                                                                New Customer
-                                                            </a>
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                            <!--begin::Menu item-->
-                                                            <a href="#" class="menu-link px-3">
-                                                                <span class="menu-title">New Group</span>
-                                                                <span class="menu-arrow"></span>
-                                                            </a>
-                                                            <!--end::Menu item-->
-
-                                                            <!--begin::Menu sub-->
-                                                            <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                                <!--begin::Menu item-->
-                                                                <div class="menu-item px-3">
-                                                                    <a href="#" class="menu-link px-3">
-                                                                        Admin Group
-                                                                    </a>
-                                                                </div>
-                                                                <!--end::Menu item-->
-
-                                                                <!--begin::Menu item-->
-                                                                <div class="menu-item px-3">
-                                                                    <a href="#" class="menu-link px-3">
-                                                                        Staff Group
-                                                                    </a>
-                                                                </div>
-                                                                <!--end::Menu item-->
-
-                                                                <!--begin::Menu item-->
-                                                                <div class="menu-item px-3">
-                                                                    <a href="#" class="menu-link px-3">
-                                                                        Member Group
-                                                                    </a>
-                                                                </div>
-                                                                <!--end::Menu item-->
-                                                            </div>
-                                                            <!--end::Menu sub-->
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <a href="#" class="menu-link px-3">
-                                                                New Contact
-                                                            </a>
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu separator-->
-                                                        <div class="separator mt-3 opacity-75"></div>
-                                                        <!--end::Menu separator-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <div class="menu-content px-3 py-3">
-                                                                <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                    Generate Reports
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <!--end::Menu item-->
-                                                    </div>
-                                                    <!--end::Menu 2-->
-
-                                                    <!--end::Menu-->
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Emma Smith</a>
+                                                    <span>smith@kpmg.com</span>
                                                 </div>
-                                                <!--end::Toolbar-->
-                                            </div>
-                                            <!--end::Header-->
-
-                                            <!--begin::Card body-->
-                                            <div class="card-body d-flex justify-content-between flex-column pb-1 px-0">
-                                                <!--begin::Statistics-->
-                                                <div class="px-9 mb-5">
-                                                    <!--begin::Statistics-->
-                                                    <div class="d-flex mb-2">
-                                                        <span class="fs-4 fw-semibold text-gray-400 me-1">$</span>
-                                                        <span class="fs-2hx fw-bold text-gray-800 me-2 lh-1 ls-n2">14,094</span>
-                                                    </div>
-                                                    <!--end::Statistics-->
-
-                                                    <!--begin::Description-->
-                                                    <span class="fs-6 fw-semibold text-gray-400">Another $48,346 to Goal</span>
-                                                    <!--end::Description-->
-                                                </div>
-                                                <!--end::Statistics-->
-
-                                                <!--begin::Chart-->
-                                                <div id="kt_charts_widget_3" class="min-h-auto ps-4 pe-6" style="height: 300px"></div>
-                                                <!--end::Chart-->
-                                            </div>
-                                            <!--end::Card body-->
-                                        </div>
-                                        <!--end::Chart widget 3-->
-                                    </div>
-                                    <!--end::Col-->
-                                </div>
-                                <!--end::Row-->
-
-                                <!--begin::Row-->
-                                <div class="row gy-5 g-xl-10">
-                                    <!--begin::Col-->
-                                    <div class="col-xl-6 mb-xl-10">
-
-                                        <!--begin::Table widget 2-->
-                                        <div class="card h-md-100">
-                                            <!--begin::Header-->
-                                            <div class="card-header align-items-center border-0">
-                                                <!--begin::Title-->
-                                                <h3 class="fw-bold text-gray-900 m-0">Recent Orders</h3>
-                                                <!--end::Title-->
-
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Administrator </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">Yesterday</div>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td>
+                                                24 Jun 2023, 6:05 pm </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
                                                 <!--begin::Menu-->
-                                                <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
-
-                                                    <i class="ki-outline ki-dots-square fs-1"></i>
-                                                </button>
-
-                                                <!--begin::Menu 2-->
-                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                    </div>
-                                                    <!--end::Menu item-->
-
-                                                    <!--begin::Menu separator-->
-                                                    <div class="separator mb-3 opacity-75"></div>
-                                                    <!--end::Menu separator-->
-
-                                                    <!--begin::Menu item-->
-                                                    <div class="menu-item px-3">
-                                                        <a href="#" class="menu-link px-3">
-                                                            New Ticket
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
                                                         </a>
                                                     </div>
                                                     <!--end::Menu item-->
 
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="#" class="menu-link px-3">
-                                                            New Customer
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
                                                         </a>
-                                                    </div>
-                                                    <!--end::Menu item-->
-
-                                                    <!--begin::Menu item-->
-                                                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                        <!--begin::Menu item-->
-                                                        <a href="#" class="menu-link px-3">
-                                                            <span class="menu-title">New Group</span>
-                                                            <span class="menu-arrow"></span>
-                                                        </a>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu sub-->
-                                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                            <!--begin::Menu item-->
-                                                            <div class="menu-item px-3">
-                                                                <a href="#" class="menu-link px-3">
-                                                                    Admin Group
-                                                                </a>
-                                                            </div>
-                                                            <!--end::Menu item-->
-
-                                                            <!--begin::Menu item-->
-                                                            <div class="menu-item px-3">
-                                                                <a href="#" class="menu-link px-3">
-                                                                    Staff Group
-                                                                </a>
-                                                            </div>
-                                                            <!--end::Menu item-->
-
-                                                            <!--begin::Menu item-->
-                                                            <div class="menu-item px-3">
-                                                                <a href="#" class="menu-link px-3">
-                                                                    Member Group
-                                                                </a>
-                                                            </div>
-                                                            <!--end::Menu item-->
-                                                        </div>
-                                                        <!--end::Menu sub-->
-                                                    </div>
-                                                    <!--end::Menu item-->
-
-                                                    <!--begin::Menu item-->
-                                                    <div class="menu-item px-3">
-                                                        <a href="#" class="menu-link px-3">
-                                                            New Contact
-                                                        </a>
-                                                    </div>
-                                                    <!--end::Menu item-->
-
-                                                    <!--begin::Menu separator-->
-                                                    <div class="separator mt-3 opacity-75"></div>
-                                                    <!--end::Menu separator-->
-
-                                                    <!--begin::Menu item-->
-                                                    <div class="menu-item px-3">
-                                                        <div class="menu-content px-3 py-3">
-                                                            <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                Generate Reports
-                                                            </a>
-                                                        </div>
                                                     </div>
                                                     <!--end::Menu item-->
                                                 </div>
-                                                <!--end::Menu 2-->
-
                                                 <!--end::Menu-->
-                                            </div>
-                                            <!--end::Header-->
-
-                                            <!--begin::Body-->
-                                            <div class="card-body pt-2">
-                                                <!--begin::Nav-->
-                                                <ul class="nav nav-pills nav-pills-custom mb-3">
-                                                    <!--begin::Item-->
-                                                    <li class="nav-item mb-3 me-3 me-lg-6">
-                                                        <!--begin::Link-->
-                                                        <a class="nav-link d-flex justify-content-between flex-column flex-center overflow-hidden active w-80px h-85px py-4" data-bs-toggle="pill" href="#kt_stats_widget_2_tab_1">
-                                                            <!--begin::Icon-->
-                                                            <div class="nav-icon">
-                                                                <img alt="" src="./assets/media/svg/products-categories/t-shirt.svg" class="" />
-                                                            </div>
-                                                            <!--end::Icon-->
-
-                                                            <!--begin::Subtitle-->
-                                                            <span class="nav-text text-gray-700 fw-bold fs-6 lh-1">
-                                                                T-shirt
-                                                            </span>
-                                                            <!--end::Subtitle-->
-
-                                                            <!--begin::Bullet-->
-                                                            <span class="bullet-custom position-absolute bottom-0 w-100 h-4px bg-primary"></span>
-                                                            <!--end::Bullet-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label fs-3 bg-light-danger text-danger">
+                                                            M </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Melody Macy</a>
+                                                    <span>melody@altbox.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Analyst </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">20 mins ago</div>
+                                            </td>
+                                            <td>
+                                                <div class="badge badge-light-success fw-bold">Enabled</div>
+                                            </td>
+                                            <td>
+                                                25 Oct 2023, 8:43 pm </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
                                                         </a>
-                                                        <!--end::Link-->
-                                                    </li>
-                                                    <!--end::Item-->
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                                    <!--begin::Item-->
-                                                    <li class="nav-item mb-3 me-3 me-lg-6">
-                                                        <!--begin::Link-->
-                                                        <a class="nav-link d-flex justify-content-between flex-column flex-center overflow-hidden w-80px h-85px py-4" data-bs-toggle="pill" href="#kt_stats_widget_2_tab_2">
-                                                            <!--begin::Icon-->
-                                                            <div class="nav-icon">
-                                                                <img alt="" src="./assets/media/svg/products-categories/gaming.svg" class="" />
-                                                            </div>
-                                                            <!--end::Icon-->
-
-                                                            <!--begin::Subtitle-->
-                                                            <span class="nav-text text-gray-700 fw-bold fs-6 lh-1">
-                                                                Gaming
-                                                            </span>
-                                                            <!--end::Subtitle-->
-
-                                                            <!--begin::Bullet-->
-                                                            <span class="bullet-custom position-absolute bottom-0 w-100 h-4px bg-primary"></span>
-                                                            <!--end::Bullet-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
                                                         </a>
-                                                        <!--end::Link-->
-                                                    </li>
-                                                    <!--end::Item-->
-
-                                                    <!--begin::Item-->
-                                                    <li class="nav-item mb-3 me-3 me-lg-6">
-                                                        <!--begin::Link-->
-                                                        <a class="nav-link d-flex justify-content-between flex-column flex-center overflow-hidden w-80px h-85px py-4" data-bs-toggle="pill" href="#kt_stats_widget_2_tab_3">
-                                                            <!--begin::Icon-->
-                                                            <div class="nav-icon">
-                                                                <img alt="" src="./assets/media/svg/products-categories/watch.svg" class="" />
-                                                            </div>
-                                                            <!--end::Icon-->
-
-                                                            <!--begin::Subtitle-->
-                                                            <span class="nav-text text-gray-600 fw-bold fs-6 lh-1">
-                                                                Watch
-                                                            </span>
-                                                            <!--end::Subtitle-->
-
-                                                            <!--begin::Bullet-->
-                                                            <span class="bullet-custom position-absolute bottom-0 w-100 h-4px bg-primary"></span>
-                                                            <!--end::Bullet-->
+                                                    </div>
+                                                    <!--end::Menu item-->
+                                                </div>
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label">
+                                                            <img src=" ./assets/media/avatars/300-1.jpg" alt="Max Smith" class="w-100" />
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Max Smith</a>
+                                                    <span>max@kt.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Developer </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">3 days ago</div>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td>
+                                                10 Nov 2023, 10:10 pm </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
                                                         </a>
-                                                        <!--end::Link-->
-                                                    </li>
-                                                    <!--end::Item-->
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                                    <!--begin::Item-->
-                                                    <li class="nav-item mb-3 me-3 me-lg-6">
-                                                        <!--begin::Link-->
-                                                        <a class="nav-link d-flex justify-content-between flex-column flex-center overflow-hidden w-80px h-85px py-4" data-bs-toggle="pill" href="#kt_stats_widget_2_tab_4">
-                                                            <!--begin::Icon-->
-                                                            <div class="nav-icon">
-                                                                <img alt="" src="./assets/media/svg/products-categories/gloves.svg" class="nav-icon" />
-                                                            </div>
-                                                            <!--end::Icon-->
-
-                                                            <!--begin::Subtitle-->
-                                                            <span class="nav-text text-gray-600 fw-bold fs-6 lh-1">
-                                                                Gloves
-                                                            </span>
-                                                            <!--end::Subtitle-->
-
-                                                            <!--begin::Bullet-->
-                                                            <span class="bullet-custom position-absolute bottom-0 w-100 h-4px bg-primary"></span>
-                                                            <!--end::Bullet-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
                                                         </a>
-                                                        <!--end::Link-->
-                                                    </li>
-                                                    <!--end::Item-->
-
-                                                    <!--begin::Item-->
-                                                    <li class="nav-item mb-3">
-                                                        <!--begin::Link-->
-                                                        <a class="nav-link d-flex justify-content-between flex-column flex-center overflow-hidden w-80px h-85px py-4" data-bs-toggle="pill" href="#kt_stats_widget_2_tab_5">
-                                                            <!--begin::Icon-->
-                                                            <div class="nav-icon">
-                                                                <img alt="" src="./assets/media/svg/products-categories/shoes.svg" class="nav-icon" />
-                                                            </div>
-                                                            <!--end::Icon-->
-
-                                                            <!--begin::Subtitle-->
-                                                            <span class="nav-text text-gray-600 fw-bold fs-6 lh-1">
-                                                                Shoes
-                                                            </span>
-                                                            <!--end::Subtitle-->
-
-                                                            <!--begin::Bullet-->
-                                                            <span class="bullet-custom position-absolute bottom-0 w-100 h-4px bg-primary"></span>
-                                                            <!--end::Bullet-->
+                                                    </div>
+                                                    <!--end::Menu item-->
+                                                </div>
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label">
+                                                            <img src=" ./assets/media/avatars/300-5.jpg" alt="Sean Bean" class="w-100" />
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Sean Bean</a>
+                                                    <span>sean@dellito.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Support </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">5 hours ago</div>
+                                            </td>
+                                            <td>
+                                                <div class="badge badge-light-success fw-bold">Enabled</div>
+                                            </td>
+                                            <td>
+                                                15 Apr 2023, 2:40 pm </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
                                                         </a>
-                                                        <!--end::Link-->
-                                                    </li>
-                                                    <!--end::Item-->
-                                                </ul>
-                                                <!--end::Nav-->
-
-                                                <!--begin::Tab Content-->
-                                                <div class="tab-content">
-
-                                                    <!--begin::Tap pane-->
-                                                    <div class="tab-pane fade show active" id="kt_stats_widget_2_tab_1">
-                                                        <!--begin::Table container-->
-                                                        <div class="table-responsive">
-                                                            <!--begin::Table-->
-                                                            <table class="table table-row-dashed align-middle gs-0 gy-4 my-0">
-                                                                <!--begin::Table head-->
-                                                                <thead>
-                                                                    <tr class="fs-7 fw-bold text-gray-500 border-bottom-0">
-                                                                        <th class="ps-0 w-50px">ITEM</th>
-                                                                        <th class="min-w-125px"></th>
-                                                                        <th class="text-end min-w-100px">QTY</th>
-                                                                        <th class="pe-0 text-end min-w-100px">PRICE</th>
-                                                                        <th class="pe-0 text-end min-w-100px">TOTAL PRICE</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <!--end::Table head-->
-
-                                                                <!--begin::Table body-->
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/210.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Elephant 1802</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-2347</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x1</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$72.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$126.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/215.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Red Laga</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-1321</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x2</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$45.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$76.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/209.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">RiseUP</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-4312</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x3</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$84.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$168.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                                <!--end::Table body-->
-                                                            </table>
-                                                            <!--end::Table-->
-                                                        </div>
-                                                        <!--end::Table container-->
                                                     </div>
-                                                    <!--end::Tap pane-->
+                                                    <!--end::Menu item-->
 
-                                                    <!--begin::Tap pane-->
-                                                    <div class="tab-pane fade " id="kt_stats_widget_2_tab_2">
-                                                        <!--begin::Table container-->
-                                                        <div class="table-responsive">
-                                                            <!--begin::Table-->
-                                                            <table class="table table-row-dashed align-middle gs-0 gy-4 my-0">
-                                                                <!--begin::Table head-->
-                                                                <thead>
-                                                                    <tr class="fs-7 fw-bold text-gray-500 border-bottom-0">
-                                                                        <th class="ps-0 w-50px">ITEM</th>
-                                                                        <th class="min-w-125px"></th>
-                                                                        <th class="text-end min-w-100px">QTY</th>
-                                                                        <th class="pe-0 text-end min-w-100px">PRICE</th>
-                                                                        <th class="pe-0 text-end min-w-100px">TOTAL PRICE</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <!--end::Table head-->
-
-                                                                <!--begin::Table body-->
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/197.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Elephant 1802</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-4312</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x1</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$32.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$312.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/178.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Red Laga</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-3122</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x2</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$53.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$62.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/22.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">RiseUP</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-1142</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x3</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$74.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$139.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                                <!--end::Table body-->
-                                                            </table>
-                                                            <!--end::Table-->
-                                                        </div>
-                                                        <!--end::Table container-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
                                                     </div>
-                                                    <!--end::Tap pane-->
-
-                                                    <!--begin::Tap pane-->
-                                                    <div class="tab-pane fade " id="kt_stats_widget_2_tab_3">
-                                                        <!--begin::Table container-->
-                                                        <div class="table-responsive">
-                                                            <!--begin::Table-->
-                                                            <table class="table table-row-dashed align-middle gs-0 gy-4 my-0">
-                                                                <!--begin::Table head-->
-                                                                <thead>
-                                                                    <tr class="fs-7 fw-bold text-gray-500 border-bottom-0">
-                                                                        <th class="ps-0 w-50px">ITEM</th>
-                                                                        <th class="min-w-125px"></th>
-                                                                        <th class="text-end min-w-100px">QTY</th>
-                                                                        <th class="pe-0 text-end min-w-100px">PRICE</th>
-                                                                        <th class="pe-0 text-end min-w-100px">TOTAL PRICE</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <!--end::Table head-->
-
-                                                                <!--begin::Table body-->
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/1.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Elephant 1324</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-1523</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x1</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$43.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$231.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/24.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Red Laga</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-5314</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x2</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$71.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$53.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/71.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">RiseUP</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-4222</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x3</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$23.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$213.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                                <!--end::Table body-->
-                                                            </table>
-                                                            <!--end::Table-->
-                                                        </div>
-                                                        <!--end::Table container-->
-                                                    </div>
-                                                    <!--end::Tap pane-->
-
-                                                    <!--begin::Tap pane-->
-                                                    <div class="tab-pane fade " id="kt_stats_widget_2_tab_4">
-                                                        <!--begin::Table container-->
-                                                        <div class="table-responsive">
-                                                            <!--begin::Table-->
-                                                            <table class="table table-row-dashed align-middle gs-0 gy-4 my-0">
-                                                                <!--begin::Table head-->
-                                                                <thead>
-                                                                    <tr class="fs-7 fw-bold text-gray-500 border-bottom-0">
-                                                                        <th class="ps-0 w-50px">ITEM</th>
-                                                                        <th class="min-w-125px"></th>
-                                                                        <th class="text-end min-w-100px">QTY</th>
-                                                                        <th class="pe-0 text-end min-w-100px">PRICE</th>
-                                                                        <th class="pe-0 text-end min-w-100px">TOTAL PRICE</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <!--end::Table head-->
-
-                                                                <!--begin::Table body-->
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/41.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Elephant 2635</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-1523</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x1</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$65.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$163.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/63.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Red Laga</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-2745</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x2</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$64.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$73.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/59.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">RiseUP</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-5173</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x3</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$54.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$173.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                                <!--end::Table body-->
-                                                            </table>
-                                                            <!--end::Table-->
-                                                        </div>
-                                                        <!--end::Table container-->
-                                                    </div>
-                                                    <!--end::Tap pane-->
-
-                                                    <!--begin::Tap pane-->
-                                                    <div class="tab-pane fade " id="kt_stats_widget_2_tab_5">
-                                                        <!--begin::Table container-->
-                                                        <div class="table-responsive">
-                                                            <!--begin::Table-->
-                                                            <table class="table table-row-dashed align-middle gs-0 gy-4 my-0">
-                                                                <!--begin::Table head-->
-                                                                <thead>
-                                                                    <tr class="fs-7 fw-bold text-gray-500 border-bottom-0">
-                                                                        <th class="ps-0 w-50px">ITEM</th>
-                                                                        <th class="min-w-125px"></th>
-                                                                        <th class="text-end min-w-100px">QTY</th>
-                                                                        <th class="pe-0 text-end min-w-100px">PRICE</th>
-                                                                        <th class="pe-0 text-end min-w-100px">TOTAL PRICE</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <!--end::Table head-->
-
-                                                                <!--begin::Table body-->
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/10.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Nike</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-2163</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x1</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$64.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$287.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/96.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Adidas</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-2162</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x2</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$76.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$51.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/13.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Puma</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-1537</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x3</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$27.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$167.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                                <!--end::Table body-->
-                                                            </table>
-                                                            <!--end::Table-->
-                                                        </div>
-                                                        <!--end::Table container-->
-                                                    </div>
-                                                    <!--end::Tap pane-->
+                                                    <!--end::Menu item-->
                                                 </div>
-                                                <!--end::Tab Content-->
-                                            </div>
-                                            <!--end: Card Body-->
-                                        </div>
-                                        <!--end::Table widget 2-->
-                                    </div>
-                                    <!--end::Col-->
-
-                                    <!--begin::Col-->
-                                    <div class="col-xl-6 mb-5 mb-xl-10">
-                                        <!--begin::Chart widget 4-->
-                                        <div class="card card-flush overflow-hidden h-md-100">
-                                            <!--begin::Header-->
-                                            <div class="card-header py-5">
-                                                <!--begin::Title-->
-                                                <h3 class="card-title align-items-start flex-column">
-                                                    <span class="card-label fw-bold text-dark">Discounted Product Sales</span>
-                                                    <span class="text-gray-400 mt-1 fw-semibold fs-6">Users from all channels</span>
-                                                </h3>
-                                                <!--end::Title-->
-
-                                                <!--begin::Toolbar-->
-                                                <div class="card-toolbar">
-                                                    <!--begin::Menu-->
-                                                    <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
-
-                                                        <i class="ki-outline ki-dots-square fs-1"></i>
-                                                    </button>
-
-
-                                                    <!--begin::Menu 2-->
-                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu separator-->
-                                                        <div class="separator mb-3 opacity-75"></div>
-                                                        <!--end::Menu separator-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <a href="#" class="menu-link px-3">
-                                                                New Ticket
-                                                            </a>
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <a href="#" class="menu-link px-3">
-                                                                New Customer
-                                                            </a>
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                            <!--begin::Menu item-->
-                                                            <a href="#" class="menu-link px-3">
-                                                                <span class="menu-title">New Group</span>
-                                                                <span class="menu-arrow"></span>
-                                                            </a>
-                                                            <!--end::Menu item-->
-
-                                                            <!--begin::Menu sub-->
-                                                            <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                                <!--begin::Menu item-->
-                                                                <div class="menu-item px-3">
-                                                                    <a href="#" class="menu-link px-3">
-                                                                        Admin Group
-                                                                    </a>
-                                                                </div>
-                                                                <!--end::Menu item-->
-
-                                                                <!--begin::Menu item-->
-                                                                <div class="menu-item px-3">
-                                                                    <a href="#" class="menu-link px-3">
-                                                                        Staff Group
-                                                                    </a>
-                                                                </div>
-                                                                <!--end::Menu item-->
-
-                                                                <!--begin::Menu item-->
-                                                                <div class="menu-item px-3">
-                                                                    <a href="#" class="menu-link px-3">
-                                                                        Member Group
-                                                                    </a>
-                                                                </div>
-                                                                <!--end::Menu item-->
-                                                            </div>
-                                                            <!--end::Menu sub-->
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <a href="#" class="menu-link px-3">
-                                                                New Contact
-                                                            </a>
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu separator-->
-                                                        <div class="separator mt-3 opacity-75"></div>
-                                                        <!--end::Menu separator-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <div class="menu-content px-3 py-3">
-                                                                <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                    Generate Reports
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <!--end::Menu item-->
-                                                    </div>
-                                                    <!--end::Menu 2-->
-
-                                                    <!--end::Menu-->
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
                                                 </div>
-                                                <!--end::Toolbar-->
-                                            </div>
-                                            <!--end::Header-->
-
-                                            <!--begin::Card body-->
-                                            <div class="card-body d-flex justify-content-between flex-column pb-1 px-0">
-                                                <!--begin::Info-->
-                                                <div class="px-9 mb-5">
-                                                    <!--begin::Statistics-->
-                                                    <div class="d-flex align-items-center mb-2">
-                                                        <!--begin::Currency-->
-                                                        <span class="fs-4 fw-semibold text-gray-400 align-self-start me-1">$</span>
-                                                        <!--end::Currency-->
-
-                                                        <!--begin::Value-->
-                                                        <span class="fs-2hx fw-bold text-gray-800 me-2 lh-1 ls-n2">3,706</span>
-                                                        <!--end::Value-->
-
-                                                        <!--begin::Label-->
-                                                        <span class="badge badge-light-success fs-base">
-                                                            <i class="ki-outline ki-arrow-down fs-5 text-success ms-n1"></i> 4.5%
-                                                        </span>
-                                                        <!--end::Label-->
-                                                    </div>
-                                                    <!--end::Statistics-->
-
-                                                    <!--begin::Description-->
-                                                    <span class="fs-6 fw-semibold text-gray-400">Total Discounted Sales This Month</span>
-                                                    <!--end::Description-->
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label">
+                                                            <img src=" ./assets/media/avatars/300-25.jpg" alt="Brian Cox" class="w-100" />
+                                                        </div>
+                                                    </a>
                                                 </div>
-                                                <!--end::Info-->
-
-                                                <!--begin::Chart-->
-                                                <div id="kt_charts_widget_4" class="min-h-auto ps-4 pe-6" style="height: 300px"></div>
-                                                <!--end::Chart-->
-                                            </div>
-                                            <!--end::Card body-->
-                                        </div>
-                                        <!--end::Chart widget 4-->
-                                    </div>
-                                    <!--end::Col-->
-                                </div>
-                                <!--end::Row-->
-
-                                <!--begin::Row-->
-                                <div class="row gy-5 g-xl-10">
-                                    <!--begin::Col-->
-                                    <div class="col-xl-4 mb-xl-10">
-
-                                        <!--begin::Engage widget 1-->
-                                        <div class="card h-md-100" dir="ltr">
-                                            <!--begin::Body-->
-                                            <div class="card-body d-flex flex-column flex-center">
-                                                <!--begin::Heading-->
-                                                <div class="mb-2">
-                                                    <!--begin::Title-->
-                                                    <h1 class="fw-semibold text-gray-800 text-center lh-lg">
-                                                        Have you tried <br /> new
-                                                        <span class="fw-bolder"> eCommerce App ?</span>
-                                                    </h1>
-                                                    <!--end::Title-->
-
-                                                    <!--begin::Illustration-->
-                                                    <div class="py-10 text-center">
-                                                        <img src="./assets/media/svg/illustrations/easy/2.svg" class="theme-light-show w-200px" alt="" />
-                                                        <img src="./assets/media/svg/illustrations/easy/2-dark.svg" class="theme-dark-show w-200px" alt="" />
-                                                    </div>
-                                                    <!--end::Illustration-->
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Brian Cox</a>
+                                                    <span>brian@exchange.com</span>
                                                 </div>
-                                                <!--end::Heading-->
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Developer </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">2 days ago</div>
+                                            </td>
+                                            <td>
+                                                <div class="badge badge-light-success fw-bold">Enabled</div>
+                                            </td>
+                                            <td>
+                                                15 Apr 2023, 11:30 am </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                                <!--begin::Links-->
-                                                <div class="text-center mb-1">
-                                                    <!--begin::Link-->
-                                                    <a class="btn btn-sm btn-primary me-2" href="./apps/ecommerce/sales/listing.html">
-                                                        View App </a>
-                                                    <!--end::Link-->
-
-                                                    <!--begin::Link-->
-                                                    <a class="btn btn-sm btn-light" href="./apps/ecommerce/catalog/add-product.html">
-                                                        New Product </a>
-                                                    <!--end::Link-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
                                                 </div>
-                                                <!--end::Links-->
-                                            </div>
-                                            <!--end::Body-->
-                                        </div>
-                                        <!--end::Engage widget 1-->
-
-                                    </div>
-                                    <!--end::Col-->
-
-                                    <!--begin::Col-->
-                                    <div class="col-xl-8 mb-5 mb-xl-10">
-
-                                        <!--begin::Table Widget 4-->
-                                        <div class="card card-flush h-xl-100">
-                                            <!--begin::Card header-->
-                                            <div class="card-header pt-7">
-                                                <!--begin::Title-->
-                                                <h3 class="card-title align-items-start flex-column">
-                                                    <span class="card-label fw-bold text-gray-800">Product Orders</span>
-                                                    <span class="text-gray-400 mt-1 fw-semibold fs-6">Avg. 57 orders per day</span>
-                                                </h3>
-                                                <!--end::Title-->
-
-                                                <!--begin::Actions-->
-                                                <div class="card-toolbar">
-                                                    <!--begin::Filters-->
-                                                    <div class="d-flex flex-stack flex-wrap gap-4">
-                                                        <!--begin::Destination-->
-                                                        <div class="d-flex align-items-center fw-bold">
-                                                            <!--begin::Label-->
-                                                            <div class="text-gray-400 fs-7 me-2">Cateogry</div>
-                                                            <!--end::Label-->
-
-                                                            <!--begin::Select-->
-                                                            <select class="form-select form-select-transparent text-graY-800 fs-base lh-1 fw-bold py-0 ps-3 w-auto" data-control="select2" data-hide-search="true" data-dropdown-css-class="w-150px" data-placeholder="Select an option">
-                                                                <option></option>
-                                                                <option value="Show All" selected>Show All</option>
-                                                                <option value="a">Category A</option>
-                                                                <option value="b">Category A</option>
-                                                            </select>
-                                                            <!--end::Select-->
-                                                        </div>
-                                                        <!--end::Destination-->
-
-                                                        <!--begin::Status-->
-                                                        <div class="d-flex align-items-center fw-bold">
-                                                            <!--begin::Label-->
-                                                            <div class="text-gray-400 fs-7 me-2">Status</div>
-                                                            <!--end::Label-->
-
-                                                            <!--begin::Select-->
-                                                            <select class="form-select form-select-transparent text-dark fs-7 lh-1 fw-bold py-0 ps-3 w-auto" data-control="select2" data-hide-search="true" data-dropdown-css-class="w-150px" data-placeholder="Select an option" data-kt-table-widget-4="filter_status">
-                                                                <option></option>
-                                                                <option value="Show All" selected>Show All</option>
-                                                                <option value="Shipped">Shipped</option>
-                                                                <option value="Confirmed">Confirmed</option>
-                                                                <option value="Rejected">Rejected</option>
-                                                                <option value="Pending">Pending</option>
-                                                            </select>
-                                                            <!--end::Select-->
-                                                        </div>
-                                                        <!--end::Status-->
-
-                                                        <!--begin::Search-->
-                                                        <div class="position-relative my-1">
-                                                            <i class="ki-outline ki-magnifier fs-2 position-absolute top-50 translate-middle-y ms-4"></i> <input type="text" data-kt-table-widget-4="search" class="form-control w-150px fs-7 ps-12" placeholder="Search" />
-                                                        </div>
-                                                        <!--end::Search-->
-                                                    </div>
-                                                    <!--begin::Filters-->
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
                                                 </div>
-                                                <!--end::Actions-->
-                                            </div>
-                                            <!--end::Card header-->
-
-                                            <!--begin::Card body-->
-                                            <div class="card-body pt-2">
-                                                <!--begin::Table-->
-                                                <table class="table align-middle table-row-dashed fs-6 gy-3" id="kt_table_widget_4_table">
-                                                    <!--begin::Table head-->
-                                                    <thead>
-                                                        <!--begin::Table row-->
-                                                        <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
-                                                            <th class="min-w-100px">Order ID</th>
-                                                            <th class="text-end min-w-100px">Created</th>
-                                                            <th class="text-end min-w-125px">Customer</th>
-                                                            <th class="text-end min-w-100px">Total</th>
-                                                            <th class="text-end min-w-100px">Profit</th>
-                                                            <th class="text-end min-w-50px">Status</th>
-                                                            <th class="text-end"></th>
-                                                        </tr>
-                                                        <!--end::Table row-->
-                                                    </thead>
-                                                    <!--end::Table head-->
-
-                                                    <!--begin::Table body-->
-                                                    <tbody class="fw-bold text-gray-600">
-                                                        <tr data-kt-table-widget-4="subtable_template" class="d-none">
-                                                            <td colspan="2">
-                                                                <div class="d-flex align-items-center gap-3">
-                                                                    <a href="#" class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
-                                                                        <img src="#" data-kt-src-path="/metronic8/demo30/assets/media/stock/ecommerce/" alt="" data-kt-table-widget-4="template_image" />
-                                                                    </a>
-                                                                    <div class="d-flex flex-column text-muted">
-                                                                        <a href="#" class="text-gray-800 text-hover-primary fw-bold" data-kt-table-widget-4="template_name">Product name</a>
-                                                                        <div class="fs-7" data-kt-table-widget-4="template_description">Product description</div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <div class="text-gray-800 fs-7">Cost</div>
-                                                                <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_cost">1</div>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <div class="text-gray-800 fs-7">Qty</div>
-                                                                <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_qty">1</div>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <div class="text-gray-800 fs-7">Total</div>
-                                                                <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_total">name</div>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <div class="text-gray-800 fs-7 me-3">On hand</div>
-                                                                <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_stock">32</div>
-                                                            </td>
-                                                            <td></td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#XGY-346</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                7 min ago
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <a href="#" class="text-gray-600 text-hover-primary">Albert Flores</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                $630.00 </td>
-
-                                                            <td class="text-end">
-                                                                <span class="text-gray-800 fw-bolder">$86.70</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-warning">Pending</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-4="expand_row">
-                                                                    <i class="ki-outline ki-plus fs-4 m-0 toggle-off"></i> <i class="ki-outline ki-minus fs-4 m-0 toggle-on"></i> </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#YHD-047</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                52 min ago
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <a href="#" class="text-gray-600 text-hover-primary">Jenny Wilson</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                $25.00 </td>
-
-                                                            <td class="text-end">
-                                                                <span class="text-gray-800 fw-bolder">$4.20</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-primary">Confirmed</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-4="expand_row">
-                                                                    <i class="ki-outline ki-plus fs-4 m-0 toggle-off"></i> <i class="ki-outline ki-minus fs-4 m-0 toggle-on"></i> </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#SRR-678</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                1 hour ago
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <a href="#" class="text-gray-600 text-hover-primary">Robert Fox</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                $1,630.00 </td>
-
-                                                            <td class="text-end">
-                                                                <span class="text-gray-800 fw-bolder">$203.90</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-warning">Pending</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-4="expand_row">
-                                                                    <i class="ki-outline ki-plus fs-4 m-0 toggle-off"></i> <i class="ki-outline ki-minus fs-4 m-0 toggle-on"></i> </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#PXF-534</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                3 hour ago
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <a href="#" class="text-gray-600 text-hover-primary">Cody Fisher</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                $119.00 </td>
-
-                                                            <td class="text-end">
-                                                                <span class="text-gray-800 fw-bolder">$12.00</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-success">Shipped</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-4="expand_row">
-                                                                    <i class="ki-outline ki-plus fs-4 m-0 toggle-off"></i> <i class="ki-outline ki-minus fs-4 m-0 toggle-on"></i> </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#XGD-249</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                2 day ago
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <a href="#" class="text-gray-600 text-hover-primary">Arlene McCoy</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                $660.00 </td>
-
-                                                            <td class="text-end">
-                                                                <span class="text-gray-800 fw-bolder">$52.26</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-success">Shipped</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-4="expand_row">
-                                                                    <i class="ki-outline ki-plus fs-4 m-0 toggle-off"></i> <i class="ki-outline ki-minus fs-4 m-0 toggle-on"></i> </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#SKP-035</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                2 day ago
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <a href="#" class="text-gray-600 text-hover-primary">Eleanor Pena</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                $290.00 </td>
-
-                                                            <td class="text-end">
-                                                                <span class="text-gray-800 fw-bolder">$29.00</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-danger">Rejected</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-4="expand_row">
-                                                                    <i class="ki-outline ki-plus fs-4 m-0 toggle-off"></i> <i class="ki-outline ki-minus fs-4 m-0 toggle-on"></i> </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#SKP-567</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                7 min ago
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <a href="#" class="text-gray-600 text-hover-primary">Dan Wilson</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                $590.00 </td>
-
-                                                            <td class="text-end">
-                                                                <span class="text-gray-800 fw-bolder">$50.00</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-success">Shipped</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-4="expand_row">
-                                                                    <i class="ki-outline ki-plus fs-4 m-0 toggle-off"></i> <i class="ki-outline ki-minus fs-4 m-0 toggle-on"></i> </button>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <!--end::Table body-->
-                                                </table>
-                                                <!--end::Table-->
-                                            </div>
-                                            <!--end::Card body-->
-                                        </div>
-                                        <!--end::Table Widget 4-->
-                                    </div>
-                                    <!--end::Col-->
-                                </div>
-                                <!--end::Row-->
-
-                                <!--begin::Row-->
-                                <div class="row gy-5 g-xl-10">
-                                    <!--begin::Col-->
-                                    <div class="col-xl-4">
-
-                                        <!--begin::List widget 5-->
-                                        <div class="card card-flush h-xl-100">
-                                            <!--begin::Header-->
-                                            <div class="card-header pt-7">
-                                                <!--begin::Title-->
-                                                <h3 class="card-title align-items-start flex-column">
-                                                    <span class="card-label fw-bold text-dark">Product Delivery</span>
-                                                    <span class="text-gray-400 mt-1 fw-semibold fs-6">1M Products Shipped so far</span>
-                                                </h3>
-                                                <!--end::Title-->
-
-                                                <!--begin::Toolbar-->
-                                                <div class="card-toolbar">
-                                                    <a href="./apps/ecommerce/sales/details.html" class="btn btn-sm btn-light">Order Details</a>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label fs-3 bg-light-warning text-warning">
+                                                            C </div>
+                                                    </a>
                                                 </div>
-                                                <!--end::Toolbar-->
-                                            </div>
-                                            <!--end::Header-->
-
-                                            <!--begin::Body-->
-                                            <div class="card-body">
-                                                <!--begin::Scroll-->
-                                                <div class="hover-scroll-overlay-y pe-6 me-n6" style="height: 415px">
-                                                    <!--begin::Item-->
-                                                    <div class="border border-dashed border-gray-300 rounded px-7 py-3 mb-6">
-                                                        <!--begin::Info-->
-                                                        <div class="d-flex flex-stack mb-3">
-                                                            <!--begin::Wrapper-->
-                                                            <div class="me-3">
-                                                                <!--begin::Icon-->
-                                                                <img src="./assets/media/stock/ecommerce/210.gif" class="w-50px ms-n1 me-1" alt="" />
-                                                                <!--end::Icon-->
-
-                                                                <!--begin::Title-->
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fw-bold">Elephant 1802</a>
-                                                                <!--end::Title-->
-                                                            </div>
-                                                            <!--end::Wrapper-->
-
-                                                            <!--begin::Action-->
-                                                            <div class="m-0">
-                                                                <!--begin::Menu-->
-                                                                <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
-
-                                                                    <i class="ki-outline ki-dots-square fs-1"></i>
-                                                                </button>
-
-                                                                <!--begin::Menu 2-->
-                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mb-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Ticket
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Customer
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                                        <!--begin::Menu item-->
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            <span class="menu-title">New Group</span>
-                                                                            <span class="menu-arrow"></span>
-                                                                        </a>
-                                                                        <!--end::Menu item-->
-
-                                                                        <!--begin::Menu sub-->
-                                                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Admin Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Staff Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Member Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-                                                                        </div>
-                                                                        <!--end::Menu sub-->
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Contact
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mt-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content px-3 py-3">
-                                                                            <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                                Generate Reports
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-                                                                </div>
-                                                                <!--end::Menu 2-->
-
-                                                                <!--end::Menu-->
-                                                            </div>
-                                                            <!--end::Action-->
-                                                        </div>
-                                                        <!--end::Info-->
-
-                                                        <!--begin::Customer-->
-                                                        <div class="d-flex flex-stack">
-                                                            <!--begin::Name-->
-                                                            <span class="text-gray-400 fw-bold">To:
-                                                                <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fw-bold">
-                                                                    Jason Bourne </a>
-                                                            </span>
-                                                            <!--end::Name-->
-
-                                                            <!--begin::Label-->
-                                                            <span class="badge badge-light-success">Delivered</span>
-                                                            <!--end::Label-->
-                                                        </div>
-                                                        <!--end::Customer-->
-                                                    </div>
-                                                    <!--end::Item-->
-                                                    <!--begin::Item-->
-                                                    <div class="border border-dashed border-gray-300 rounded px-7 py-3 mb-6">
-                                                        <!--begin::Info-->
-                                                        <div class="d-flex flex-stack mb-3">
-                                                            <!--begin::Wrapper-->
-                                                            <div class="me-3">
-                                                                <!--begin::Icon-->
-                                                                <img src="./assets/media/stock/ecommerce/209.gif" class="w-50px ms-n1 me-1" alt="" />
-                                                                <!--end::Icon-->
-
-                                                                <!--begin::Title-->
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fw-bold">RiseUP</a>
-                                                                <!--end::Title-->
-                                                            </div>
-                                                            <!--end::Wrapper-->
-
-                                                            <!--begin::Action-->
-                                                            <div class="m-0">
-                                                                <!--begin::Menu-->
-                                                                <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
-
-                                                                    <i class="ki-outline ki-dots-square fs-1"></i>
-                                                                </button>
-
-                                                                <!--begin::Menu 2-->
-                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mb-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Ticket
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Customer
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                                        <!--begin::Menu item-->
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            <span class="menu-title">New Group</span>
-                                                                            <span class="menu-arrow"></span>
-                                                                        </a>
-                                                                        <!--end::Menu item-->
-
-                                                                        <!--begin::Menu sub-->
-                                                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Admin Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Staff Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Member Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-                                                                        </div>
-                                                                        <!--end::Menu sub-->
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Contact
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mt-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content px-3 py-3">
-                                                                            <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                                Generate Reports
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-                                                                </div>
-                                                                <!--end::Menu 2-->
-
-                                                                <!--end::Menu-->
-                                                            </div>
-                                                            <!--end::Action-->
-                                                        </div>
-                                                        <!--end::Info-->
-
-                                                        <!--begin::Customer-->
-                                                        <div class="d-flex flex-stack">
-                                                            <!--begin::Name-->
-                                                            <span class="text-gray-400 fw-bold">To:
-                                                                <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fw-bold">
-                                                                    Marie Durant </a>
-                                                            </span>
-                                                            <!--end::Name-->
-
-                                                            <!--begin::Label-->
-                                                            <span class="badge badge-light-primary">Shipping</span>
-                                                            <!--end::Label-->
-                                                        </div>
-                                                        <!--end::Customer-->
-                                                    </div>
-                                                    <!--end::Item-->
-                                                    <!--begin::Item-->
-                                                    <div class="border border-dashed border-gray-300 rounded px-7 py-3 mb-6">
-                                                        <!--begin::Info-->
-                                                        <div class="d-flex flex-stack mb-3">
-                                                            <!--begin::Wrapper-->
-                                                            <div class="me-3">
-                                                                <!--begin::Icon-->
-                                                                <img src="./assets/media/stock/ecommerce/214.gif" class="w-50px ms-n1 me-1" alt="" />
-                                                                <!--end::Icon-->
-
-                                                                <!--begin::Title-->
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fw-bold">Yellow Stone</a>
-                                                                <!--end::Title-->
-                                                            </div>
-                                                            <!--end::Wrapper-->
-
-                                                            <!--begin::Action-->
-                                                            <div class="m-0">
-                                                                <!--begin::Menu-->
-                                                                <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
-
-                                                                    <i class="ki-outline ki-dots-square fs-1"></i>
-                                                                </button>
-
-                                                                <!--begin::Menu 2-->
-                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mb-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Ticket
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Customer
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                                        <!--begin::Menu item-->
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            <span class="menu-title">New Group</span>
-                                                                            <span class="menu-arrow"></span>
-                                                                        </a>
-                                                                        <!--end::Menu item-->
-
-                                                                        <!--begin::Menu sub-->
-                                                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Admin Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Staff Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Member Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-                                                                        </div>
-                                                                        <!--end::Menu sub-->
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Contact
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mt-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content px-3 py-3">
-                                                                            <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                                Generate Reports
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-                                                                </div>
-                                                                <!--end::Menu 2-->
-
-                                                                <!--end::Menu-->
-                                                            </div>
-                                                            <!--end::Action-->
-                                                        </div>
-                                                        <!--end::Info-->
-
-                                                        <!--begin::Customer-->
-                                                        <div class="d-flex flex-stack">
-                                                            <!--begin::Name-->
-                                                            <span class="text-gray-400 fw-bold">To:
-                                                                <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fw-bold">
-                                                                    Dan Wilson </a>
-                                                            </span>
-                                                            <!--end::Name-->
-
-                                                            <!--begin::Label-->
-                                                            <span class="badge badge-light-danger">Confirmed</span>
-                                                            <!--end::Label-->
-                                                        </div>
-                                                        <!--end::Customer-->
-                                                    </div>
-                                                    <!--end::Item-->
-                                                    <!--begin::Item-->
-                                                    <div class="border border-dashed border-gray-300 rounded px-7 py-3 mb-6">
-                                                        <!--begin::Info-->
-                                                        <div class="d-flex flex-stack mb-3">
-                                                            <!--begin::Wrapper-->
-                                                            <div class="me-3">
-                                                                <!--begin::Icon-->
-                                                                <img src="./assets/media/stock/ecommerce/211.gif" class="w-50px ms-n1 me-1" alt="" />
-                                                                <!--end::Icon-->
-
-                                                                <!--begin::Title-->
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fw-bold">Elephant 1802</a>
-                                                                <!--end::Title-->
-                                                            </div>
-                                                            <!--end::Wrapper-->
-
-                                                            <!--begin::Action-->
-                                                            <div class="m-0">
-                                                                <!--begin::Menu-->
-                                                                <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
-
-                                                                    <i class="ki-outline ki-dots-square fs-1"></i>
-                                                                </button>
-
-                                                                <!--begin::Menu 2-->
-                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mb-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Ticket
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Customer
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                                        <!--begin::Menu item-->
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            <span class="menu-title">New Group</span>
-                                                                            <span class="menu-arrow"></span>
-                                                                        </a>
-                                                                        <!--end::Menu item-->
-
-                                                                        <!--begin::Menu sub-->
-                                                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Admin Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Staff Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Member Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-                                                                        </div>
-                                                                        <!--end::Menu sub-->
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Contact
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mt-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content px-3 py-3">
-                                                                            <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                                Generate Reports
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-                                                                </div>
-                                                                <!--end::Menu 2-->
-
-                                                                <!--end::Menu-->
-                                                            </div>
-                                                            <!--end::Action-->
-                                                        </div>
-                                                        <!--end::Info-->
-
-                                                        <!--begin::Customer-->
-                                                        <div class="d-flex flex-stack">
-                                                            <!--begin::Name-->
-                                                            <span class="text-gray-400 fw-bold">To:
-                                                                <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fw-bold">
-                                                                    Lebron Wayde </a>
-                                                            </span>
-                                                            <!--end::Name-->
-
-                                                            <!--begin::Label-->
-                                                            <span class="badge badge-light-success">Delivered</span>
-                                                            <!--end::Label-->
-                                                        </div>
-                                                        <!--end::Customer-->
-                                                    </div>
-                                                    <!--end::Item-->
-                                                    <!--begin::Item-->
-                                                    <div class="border border-dashed border-gray-300 rounded px-7 py-3 mb-6">
-                                                        <!--begin::Info-->
-                                                        <div class="d-flex flex-stack mb-3">
-                                                            <!--begin::Wrapper-->
-                                                            <div class="me-3">
-                                                                <!--begin::Icon-->
-                                                                <img src="./assets/media/stock/ecommerce/215.gif" class="w-50px ms-n1 me-1" alt="" />
-                                                                <!--end::Icon-->
-
-                                                                <!--begin::Title-->
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fw-bold">RiseUP</a>
-                                                                <!--end::Title-->
-                                                            </div>
-                                                            <!--end::Wrapper-->
-
-                                                            <!--begin::Action-->
-                                                            <div class="m-0">
-                                                                <!--begin::Menu-->
-                                                                <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
-
-                                                                    <i class="ki-outline ki-dots-square fs-1"></i>
-                                                                </button>
-
-                                                                <!--begin::Menu 2-->
-                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mb-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Ticket
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Customer
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                                        <!--begin::Menu item-->
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            <span class="menu-title">New Group</span>
-                                                                            <span class="menu-arrow"></span>
-                                                                        </a>
-                                                                        <!--end::Menu item-->
-
-                                                                        <!--begin::Menu sub-->
-                                                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Admin Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Staff Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Member Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-                                                                        </div>
-                                                                        <!--end::Menu sub-->
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Contact
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mt-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content px-3 py-3">
-                                                                            <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                                Generate Reports
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-                                                                </div>
-                                                                <!--end::Menu 2-->
-
-                                                                <!--end::Menu-->
-                                                            </div>
-                                                            <!--end::Action-->
-                                                        </div>
-                                                        <!--end::Info-->
-
-                                                        <!--begin::Customer-->
-                                                        <div class="d-flex flex-stack">
-                                                            <!--begin::Name-->
-                                                            <span class="text-gray-400 fw-bold">To:
-                                                                <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fw-bold">
-                                                                    Ana Simmons </a>
-                                                            </span>
-                                                            <!--end::Name-->
-
-                                                            <!--begin::Label-->
-                                                            <span class="badge badge-light-primary">Shipping</span>
-                                                            <!--end::Label-->
-                                                        </div>
-                                                        <!--end::Customer-->
-                                                    </div>
-                                                    <!--end::Item-->
-                                                    <!--begin::Item-->
-                                                    <div class="border border-dashed border-gray-300 rounded px-7 py-3 ">
-                                                        <!--begin::Info-->
-                                                        <div class="d-flex flex-stack mb-3">
-                                                            <!--begin::Wrapper-->
-                                                            <div class="me-3">
-                                                                <!--begin::Icon-->
-                                                                <img src="./assets/media/stock/ecommerce/192.gif" class="w-50px ms-n1 me-1" alt="" />
-                                                                <!--end::Icon-->
-
-                                                                <!--begin::Title-->
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fw-bold">Yellow Stone</a>
-                                                                <!--end::Title-->
-                                                            </div>
-                                                            <!--end::Wrapper-->
-
-                                                            <!--begin::Action-->
-                                                            <div class="m-0">
-                                                                <!--begin::Menu-->
-                                                                <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
-
-                                                                    <i class="ki-outline ki-dots-square fs-1"></i>
-                                                                </button>
-
-                                                                <!--begin::Menu 2-->
-                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mb-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Ticket
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Customer
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                                        <!--begin::Menu item-->
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            <span class="menu-title">New Group</span>
-                                                                            <span class="menu-arrow"></span>
-                                                                        </a>
-                                                                        <!--end::Menu item-->
-
-                                                                        <!--begin::Menu sub-->
-                                                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Admin Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Staff Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Member Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-                                                                        </div>
-                                                                        <!--end::Menu sub-->
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Contact
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mt-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content px-3 py-3">
-                                                                            <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                                Generate Reports
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-                                                                </div>
-                                                                <!--end::Menu 2-->
-
-                                                                <!--end::Menu-->
-                                                            </div>
-                                                            <!--end::Action-->
-                                                        </div>
-                                                        <!--end::Info-->
-
-                                                        <!--begin::Customer-->
-                                                        <div class="d-flex flex-stack">
-                                                            <!--begin::Name-->
-                                                            <span class="text-gray-400 fw-bold">To:
-                                                                <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fw-bold">
-                                                                    Kevin Leonard </a>
-                                                            </span>
-                                                            <!--end::Name-->
-
-                                                            <!--begin::Label-->
-                                                            <span class="badge badge-light-danger">Confirmed</span>
-                                                            <!--end::Label-->
-                                                        </div>
-                                                        <!--end::Customer-->
-                                                    </div>
-                                                    <!--end::Item-->
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Mikaela Collins</a>
+                                                    <span>mik@pex.com</span>
                                                 </div>
-                                                <!--end::Scroll-->
-                                            </div>
-                                            <!--end::Body-->
-                                        </div>
-                                        <!--end::List widget 5-->
-
-
-                                    </div>
-                                    <!--end::Col-->
-
-                                    <!--begin::Col-->
-                                    <div class="col-xl-8">
-
-                                        <!--begin::Table Widget 5-->
-                                        <div class="card card-flush h-xl-100">
-                                            <!--begin::Card header-->
-                                            <div class="card-header pt-7">
-                                                <!--begin::Title-->
-                                                <h3 class="card-title align-items-start flex-column">
-                                                    <span class="card-label fw-bold text-dark">Stock Report</span>
-                                                    <span class="text-gray-400 mt-1 fw-semibold fs-6">Total 2,356 Items in the Stock</span>
-                                                </h3>
-                                                <!--end::Title-->
-
-                                                <!--begin::Actions-->
-                                                <div class="card-toolbar">
-                                                    <!--begin::Filters-->
-                                                    <div class="d-flex flex-stack flex-wrap gap-4">
-                                                        <!--begin::Destination-->
-                                                        <div class="d-flex align-items-center fw-bold">
-                                                            <!--begin::Label-->
-                                                            <div class="text-muted fs-7 me-2">Cateogry</div>
-                                                            <!--end::Label-->
-
-                                                            <!--begin::Select-->
-                                                            <select class="form-select form-select-transparent text-dark fs-7 lh-1 fw-bold py-0 ps-3 w-auto" data-control="select2" data-hide-search="true" data-dropdown-css-class="w-150px" data-placeholder="Select an option">
-                                                                <option></option>
-                                                                <option value="Show All" selected>Show All</option>
-                                                                <option value="a">Category A</option>
-                                                                <option value="b">Category B</option>
-                                                            </select>
-                                                            <!--end::Select-->
-                                                        </div>
-                                                        <!--end::Destination-->
-
-                                                        <!--begin::Status-->
-                                                        <div class="d-flex align-items-center fw-bold">
-                                                            <!--begin::Label-->
-                                                            <div class="text-muted fs-7 me-2">Status</div>
-                                                            <!--end::Label-->
-
-                                                            <!--begin::Select-->
-                                                            <select class="form-select form-select-transparent text-dark fs-7 lh-1 fw-bold py-0 ps-3 w-auto" data-control="select2" data-hide-search="true" data-dropdown-css-class="w-150px" data-placeholder="Select an option" data-kt-table-widget-5="filter_status">
-                                                                <option></option>
-                                                                <option value="Show All" selected>Show All</option>
-                                                                <option value="In Stock">In Stock</option>
-                                                                <option value="Out of Stock">Out of Stock</option>
-                                                                <option value="Low Stock">Low Stock</option>
-                                                            </select>
-                                                            <!--end::Select-->
-                                                        </div>
-                                                        <!--end::Status-->
-
-                                                        <!--begin::Search-->
-                                                        <a href="./apps/ecommerce/catalog/products.html" class="btn btn-light btn-sm">View Stock</a>
-                                                        <!--end::Search-->
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Administrator </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">5 days ago</div>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td>
+                                                15 Apr 2023, 6:43 am </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
+                                                        </a>
                                                     </div>
-                                                    <!--begin::Filters-->
+                                                    <!--end::Menu item-->
+
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
                                                 </div>
-                                                <!--end::Actions-->
-                                            </div>
-                                            <!--end::Card header-->
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label">
+                                                            <img src=" ./assets/media/avatars/300-9.jpg" alt="Francis Mitcham" class="w-100" />
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Francis Mitcham</a>
+                                                    <span>f.mit@kpmg.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Trial </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">3 weeks ago</div>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td>
+                                                22 Sep 2023, 5:20 pm </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                            <!--begin::Card body-->
-                                            <div class="card-body">
-                                                <!--begin::Table-->
-                                                <table class="table align-middle table-row-dashed fs-6 gy-3" id="kt_table_widget_5_table">
-                                                    <!--begin::Table head-->
-                                                    <thead>
-                                                        <!--begin::Table row-->
-                                                        <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
-                                                            <th class="min-w-150px">Item</th>
-                                                            <th class="text-end pe-3 min-w-100px">Product ID</th>
-                                                            <th class="text-end pe-3 min-w-150px">Date Added</th>
-                                                            <th class="text-end pe-3 min-w-100px">Price</th>
-                                                            <th class="text-end pe-3 min-w-100px">Status</th>
-                                                            <th class="text-end pe-0 min-w-75px">Qty</th>
-                                                        </tr>
-                                                        <!--end::Table row-->
-                                                    </thead>
-                                                    <!--end::Table head-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
+                                                </div>
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label fs-3 bg-light-danger text-danger">
+                                                            O </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Olivia Wild</a>
+                                                    <span>olivia@corpmail.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Administrator </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">Yesterday</div>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td>
+                                                19 Aug 2023, 11:30 am </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                                    <!--begin::Table body-->
-                                                    <tbody class="fw-bold text-gray-600">
-                                                        <tr>
-                                                            <!--begin::Item-->
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-dark text-hover-primary">Macbook Air M1</a>
-                                                            </td>
-                                                            <!--end::Item-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
+                                                </div>
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label fs-3 bg-light-primary text-primary">
+                                                            N </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Neil Owen</a>
+                                                    <span>owen.neil@gmail.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Analyst </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">20 mins ago</div>
+                                            </td>
+                                            <td>
+                                                <div class="badge badge-light-success fw-bold">Enabled</div>
+                                            </td>
+                                            <td>
+                                                19 Aug 2023, 5:30 pm </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                                            <!--begin::Product ID-->
-                                                            <td class="text-end">
-                                                                #XGY-356 </td>
-                                                            <!--end::Product ID-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
+                                                </div>
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label">
+                                                            <img src=" ./assets/media/avatars/300-23.jpg" alt="Dan Wilson" class="w-100" />
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Dan Wilson</a>
+                                                    <span>dam@consilting.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Developer </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">3 days ago</div>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td>
+                                                20 Dec 2023, 5:20 pm </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                                            <!--begin::Date added-->
-                                                            <td class="text-end">
-                                                                02 Apr, 2023 </td>
-                                                            <!--end::Date added-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
+                                                </div>
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label fs-3 bg-light-danger text-danger">
+                                                            E </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Emma Bold</a>
+                                                    <span>emma@intenso.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Support </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">5 hours ago</div>
+                                            </td>
+                                            <td>
+                                                <div class="badge badge-light-success fw-bold">Enabled</div>
+                                            </td>
+                                            <td>
+                                                15 Apr 2023, 11:30 am </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                                            <!--begin::Price-->
-                                                            <td class="text-end">
-                                                                $1,230 </td>
-                                                            <!--end::Price-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
+                                                </div>
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label">
+                                                            <img src=" ./assets/media/avatars/300-12.jpg" alt="Ana Crown" class="w-100" />
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Ana Crown</a>
+                                                    <span>ana.cf@limtel.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Developer </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">2 days ago</div>
+                                            </td>
+                                            <td>
+                                                <div class="badge badge-light-success fw-bold">Enabled</div>
+                                            </td>
+                                            <td>
+                                                10 Mar 2023, 6:43 am </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                                            <!--begin::Status-->
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-primary">In Stock</span>
-                                                            </td>
-                                                            <!--end::Status-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
+                                                </div>
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label fs-3 bg-light-info text-info">
+                                                            A </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Robert Doe</a>
+                                                    <span>robert@benko.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Administrator </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">5 days ago</div>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td>
+                                                21 Feb 2023, 2:40 pm </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                                            <!--begin::Qty-->
-                                                            <td class="text-end" data-order="58">
-                                                                <span class="text-dark fw-bold">58 PCS</span>
-                                                            </td>
-                                                            <!--end::Qty-->
-                                                        </tr>
-                                                        <tr>
-                                                            <!--begin::Item-->
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-dark text-hover-primary">Surface Laptop 4</a>
-                                                            </td>
-                                                            <!--end::Item-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
+                                                </div>
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label">
+                                                            <img src=" ./assets/media/avatars/300-13.jpg" alt="John Miller" class="w-100" />
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">John Miller</a>
+                                                    <span>miller@mapple.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Trial </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">3 weeks ago</div>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td>
+                                                20 Dec 2023, 10:30 am </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                                            <!--begin::Product ID-->
-                                                            <td class="text-end">
-                                                                #YHD-047 </td>
-                                                            <!--end::Product ID-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
+                                                </div>
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label fs-3 bg-light-success text-success">
+                                                            L </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Lucy Kunic</a>
+                                                    <span>lucy.m@fentech.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Administrator </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">Yesterday</div>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td>
+                                                15 Apr 2023, 11:05 am </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                                            <!--begin::Date added-->
-                                                            <td class="text-end">
-                                                                01 Apr, 2023 </td>
-                                                            <!--end::Date added-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
+                                                </div>
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label fs-3 bg-light-danger text-danger">
+                                                            M </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Melody Macy</a>
+                                                    <span>melody@altbox.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Analyst </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">20 mins ago</div>
+                                            </td>
+                                            <td>
+                                                <div class="badge badge-light-success fw-bold">Enabled</div>
+                                            </td>
+                                            <td>
+                                                25 Jul 2023, 10:10 pm </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                                            <!--begin::Price-->
-                                                            <td class="text-end">
-                                                                $1,060 </td>
-                                                            <!--end::Price-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
+                                                </div>
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label">
+                                                            <img src=" ./assets/media/avatars/300-1.jpg" alt="Max Smith" class="w-100" />
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Max Smith</a>
+                                                    <span>max@kt.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Developer </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">3 days ago</div>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td>
+                                                10 Mar 2023, 10:10 pm </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                                            <!--begin::Status-->
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-danger">Out of Stock</span>
-                                                            </td>
-                                                            <!--end::Status-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
+                                                </div>
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label">
+                                                            <img src=" ./assets/media/avatars/300-5.jpg" alt="Sean Bean" class="w-100" />
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Sean Bean</a>
+                                                    <span>sean@dellito.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Support </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">5 hours ago</div>
+                                            </td>
+                                            <td>
+                                                <div class="badge badge-light-success fw-bold">Enabled</div>
+                                            </td>
+                                            <td>
+                                                20 Dec 2023, 9:23 pm </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                                            <!--begin::Qty-->
-                                                            <td class="text-end" data-order="0">
-                                                                <span class="text-dark fw-bold">0 PCS</span>
-                                                            </td>
-                                                            <!--end::Qty-->
-                                                        </tr>
-                                                        <tr>
-                                                            <!--begin::Item-->
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-dark text-hover-primary">Logitech MX 250</a>
-                                                            </td>
-                                                            <!--end::Item-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
+                                                </div>
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label">
+                                                            <img src=" ./assets/media/avatars/300-25.jpg" alt="Brian Cox" class="w-100" />
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Brian Cox</a>
+                                                    <span>brian@exchange.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Developer </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">2 days ago</div>
+                                            </td>
+                                            <td>
+                                                <div class="badge badge-light-success fw-bold">Enabled</div>
+                                            </td>
+                                            <td>
+                                                19 Aug 2023, 2:40 pm </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                                            <!--begin::Product ID-->
-                                                            <td class="text-end">
-                                                                #SRR-678 </td>
-                                                            <!--end::Product ID-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
+                                                </div>
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label fs-3 bg-light-warning text-warning">
+                                                            C </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Mikaela Collins</a>
+                                                    <span>mik@pex.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Administrator </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">5 days ago</div>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td>
+                                                10 Mar 2023, 5:30 pm </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                                            <!--begin::Date added-->
-                                                            <td class="text-end">
-                                                                24 Mar, 2023 </td>
-                                                            <!--end::Date added-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
+                                                </div>
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="1" />
+                                                </div>
+                                            </td>
+                                            <td class="d-flex align-items-center">
+                                                <!--begin:: Avatar -->
+                                                <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                    <a href="view.html">
+                                                        <div class="symbol-label">
+                                                            <img src=" ./assets/media/avatars/300-9.jpg" alt="Francis Mitcham" class="w-100" />
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::User details-->
+                                                <div class="d-flex flex-column">
+                                                    <a href="view.html" class="text-gray-800 text-hover-primary mb-1">Francis Mitcham</a>
+                                                    <span>f.mit@kpmg.com</span>
+                                                </div>
+                                                <!--begin::User details-->
+                                            </td>
+                                            <td>
+                                                Trial </td>
+                                            <td>
+                                                <div class="badge badge-light fw-bold">3 weeks ago</div>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td>
+                                                21 Feb 2023, 6:05 pm </td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    Actions
+                                                    <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                <!--begin::Menu-->
+                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="view.html" class="menu-link px-3">
+                                                            Edit
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
 
-                                                            <!--begin::Price-->
-                                                            <td class="text-end">
-                                                                $64 </td>
-                                                            <!--end::Price-->
-
-                                                            <!--begin::Status-->
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-primary">In Stock</span>
-                                                            </td>
-                                                            <!--end::Status-->
-
-                                                            <!--begin::Qty-->
-                                                            <td class="text-end" data-order="290">
-                                                                <span class="text-dark fw-bold">290 PCS</span>
-                                                            </td>
-                                                            <!--end::Qty-->
-                                                        </tr>
-                                                        <tr>
-                                                            <!--begin::Item-->
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-dark text-hover-primary">AudioEngine HD3</a>
-                                                            </td>
-                                                            <!--end::Item-->
-
-                                                            <!--begin::Product ID-->
-                                                            <td class="text-end">
-                                                                #PXF-578 </td>
-                                                            <!--end::Product ID-->
-
-                                                            <!--begin::Date added-->
-                                                            <td class="text-end">
-                                                                24 Mar, 2023 </td>
-                                                            <!--end::Date added-->
-
-                                                            <!--begin::Price-->
-                                                            <td class="text-end">
-                                                                $1,060 </td>
-                                                            <!--end::Price-->
-
-                                                            <!--begin::Status-->
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-danger">Out of Stock</span>
-                                                            </td>
-                                                            <!--end::Status-->
-
-                                                            <!--begin::Qty-->
-                                                            <td class="text-end" data-order="46">
-                                                                <span class="text-dark fw-bold">46 PCS</span>
-                                                            </td>
-                                                            <!--end::Qty-->
-                                                        </tr>
-                                                        <tr>
-                                                            <!--begin::Item-->
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-dark text-hover-primary">HP Hyper LTR</a>
-                                                            </td>
-                                                            <!--end::Item-->
-
-                                                            <!--begin::Product ID-->
-                                                            <td class="text-end">
-                                                                #PXF-778 </td>
-                                                            <!--end::Product ID-->
-
-                                                            <!--begin::Date added-->
-                                                            <td class="text-end">
-                                                                16 Jan, 2023 </td>
-                                                            <!--end::Date added-->
-
-                                                            <!--begin::Price-->
-                                                            <td class="text-end">
-                                                                $4500 </td>
-                                                            <!--end::Price-->
-
-                                                            <!--begin::Status-->
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-primary">In Stock</span>
-                                                            </td>
-                                                            <!--end::Status-->
-
-                                                            <!--begin::Qty-->
-                                                            <td class="text-end" data-order="78">
-                                                                <span class="text-dark fw-bold">78 PCS</span>
-                                                            </td>
-                                                            <!--end::Qty-->
-                                                        </tr>
-                                                        <tr>
-                                                            <!--begin::Item-->
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-dark text-hover-primary">Dell 32 UltraSharp</a>
-                                                            </td>
-                                                            <!--end::Item-->
-
-                                                            <!--begin::Product ID-->
-                                                            <td class="text-end">
-                                                                #XGY-356 </td>
-                                                            <!--end::Product ID-->
-
-                                                            <!--begin::Date added-->
-                                                            <td class="text-end">
-                                                                22 Dec, 2023 </td>
-                                                            <!--end::Date added-->
-
-                                                            <!--begin::Price-->
-                                                            <td class="text-end">
-                                                                $1,060 </td>
-                                                            <!--end::Price-->
-
-                                                            <!--begin::Status-->
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-warning">Low Stock</span>
-                                                            </td>
-                                                            <!--end::Status-->
-
-                                                            <!--begin::Qty-->
-                                                            <td class="text-end" data-order="8">
-                                                                <span class="text-dark fw-bold">8 PCS</span>
-                                                            </td>
-                                                            <!--end::Qty-->
-                                                        </tr>
-                                                        <tr>
-                                                            <!--begin::Item-->
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-dark text-hover-primary">Google Pixel 6 Pro</a>
-                                                            </td>
-                                                            <!--end::Item-->
-
-                                                            <!--begin::Product ID-->
-                                                            <td class="text-end">
-                                                                #XVR-425 </td>
-                                                            <!--end::Product ID-->
-
-                                                            <!--begin::Date added-->
-                                                            <td class="text-end">
-                                                                27 Dec, 2023 </td>
-                                                            <!--end::Date added-->
-
-                                                            <!--begin::Price-->
-                                                            <td class="text-end">
-                                                                $1,060 </td>
-                                                            <!--end::Price-->
-
-                                                            <!--begin::Status-->
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-primary">In Stock</span>
-                                                            </td>
-                                                            <!--end::Status-->
-
-                                                            <!--begin::Qty-->
-                                                            <td class="text-end" data-order="124">
-                                                                <span class="text-dark fw-bold">124 PCS</span>
-                                                            </td>
-                                                            <!--end::Qty-->
-                                                        </tr>
-                                                    </tbody>
-                                                    <!--end::Table body-->
-                                                </table>
-                                                <!--end::Table-->
-                                            </div>
-                                            <!--end::Card body-->
-                                        </div>
-                                        <!--end::Table Widget 5-->
-                                    </div>
-                                    <!--end::Col-->
-                                </div>
-                                <!--end::Row-->
+                                                    <!--begin::Menu item-->
+                                                    <div class="menu-item px-3">
+                                                        <a href="#" class="menu-link px-3" data-kt-users-table-filter="delete_row">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <!--end::Menu item-->
+                                                </div>
+                                                <!--end::Menu-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!--end::Table-->
                             </div>
-                            <!--end::Content-->
+                            <!--end::Card body-->
                         </div>
-                        <!--end::Content wrapper-->
-
-
-                        <!--begin::Footer-->
-                        <div id="kt_app_footer" class="app-footer  d-flex flex-column flex-md-row align-items-center flex-center flex-md-stack py-2 py-lg-4 ">
-                            <!--begin::Copyright-->
-                            <div class="text-dark order-2 order-md-1">
-                                <span class="text-muted fw-semibold me-1">2023&copy;</span>
-                                <a href="https://keenthemes.com/" target="_blank" class="text-gray-800 text-hover-primary">Keenthemes</a>
-                            </div>
-                            <!--end::Copyright-->
-
-                            <!--begin::Menu-->
-                            <ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
-                                <li class="menu-item"><a href="https://keenthemes.com/" target="_blank" class="menu-link px-2">About</a></li>
-
-                                <li class="menu-item"><a href="https://devs.keenthemes.com/" target="_blank" class="menu-link px-2">Support</a></li>
-
-                                <li class="menu-item"><a href="https://1.envato.market/EA4JP" target="_blank" class="menu-link px-2">Purchase</a></li>
-                            </ul>
-                            <!--end::Menu-->
-                        </div>
-                        <!--end::Footer-->
+                        <!--end::Card-->
                     </div>
-                    <!--end:::Main-->
-
-
+                    <!--end::Content-->
                 </div>
-                <!--end::Wrapper container-->
+                <!--end::Content wrapper-->
+
+
+                <!--begin::Footer-->
+                <div id="kt_app_footer" class="app-footer  d-flex flex-column flex-md-row align-items-center flex-center flex-md-stack py-2 py-lg-4 ">
+                    <!--begin::Copyright-->
+                    <div class="text-dark order-2 order-md-1">
+                        <span class="text-muted fw-semibold me-1">2023&copy;</span>
+                        <a href="https://keenthemes.com/" target="_blank" class="text-gray-800 text-hover-primary">Keenthemes</a>
+                    </div>
+                    <!--end::Copyright-->
+
+                    <!--begin::Menu-->
+                    <ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
+                        <li class="menu-item"><a href="https://keenthemes.com/" target="_blank" class="menu-link px-2">About</a></li>
+
+                        <li class="menu-item"><a href="https://devs.keenthemes.com/" target="_blank" class="menu-link px-2">Support</a></li>
+
+                        <li class="menu-item"><a href="https://1.envato.market/EA4JP" target="_blank" class="menu-link px-2">Purchase</a></li>
+                    </ul>
+                    <!--end::Menu-->
+                </div>
+                <!--end::Footer-->
             </div>
-            <!--end::Wrapper-->
+            <!--end:::Main-->
 
 
         </div>
-        <!--end::Page-->
+        <!--end::Wrapper container-->
+    </div>
+    <!--end::Wrapper-->
+
+
+    </div>
+    <!--end::Page-->
     </div>
     <!--end::App-->
 
@@ -3101,7 +1960,7 @@
         <!--begin::Card-->
         <div class="card border-0 shadow-none rounded-0 w-100">
             <!--begin::Card header-->
-            <div class="card-header bgi-position-y-bottom bgi-position-x-end bgi-size-cover bgi-no-repeat rounded-0 border-0 py-4" id="kt_app_layout_builder_header" style="background-image:url('./assets/media/misc/layout/customizer-header-bg.jpg')">
+            <div class="card-header bgi-position-y-bottom bgi-position-x-end bgi-size-cover bgi-no-repeat rounded-0 border-0 py-4" id="kt_app_layout_builder_header" style="background-image:url(' ./assets/media/misc/layout/customizer-header-bg.jpg')">
 
                 <!--begin::Card title-->
                 <h3 class="card-title fs-3 fw-bold text-white flex-column m-0">
@@ -3154,7 +2013,7 @@
                                         <label class="form-check-image form-check-success">
                                             <!--begin::Image-->
                                             <div class="form-check-wrapper border-gray-200 border-2">
-                                                <img src="./assets/media/preview/demos/demo30/light-ltr.png" class="form-check-rounded mw-100" alt="" />
+                                                <img src=" ./assets/media/preview/demos/demo30/light-ltr.png" class="form-check-rounded mw-100" alt="" />
                                             </div>
                                             <!--end::Image-->
 
@@ -3178,7 +2037,7 @@
                                         <label class="form-check-image form-check-success">
                                             <!--begin::Image-->
                                             <div class="form-check-wrapper border-gray-200 border-2">
-                                                <img src="./assets/media/preview/demos/demo30/dark-ltr.png" class="form-check-rounded mw-100" alt="" />
+                                                <img src=" ./assets/media/preview/demos/demo30/dark-ltr.png" class="form-check-rounded mw-100" alt="" />
                                             </div>
                                             <!--end::Image-->
 
@@ -3306,7 +2165,7 @@
                                         <!--end::Image-->
 
                                         <!--begin::Check-->
-                                        <div style="visibility: hidden; height: 0 !important; width: 0 ; overflow:hidden">
+                                        <div style="visibility: hidden; height: 0 !important; width: 0  ; overflow:hidden">
                                             <input class="form-check-input" type="radio" value="duotone" name="layout-builder[layout][app][general][icons]" />
                                         </div>
                                         <!--end::Check-->
@@ -3323,7 +2182,7 @@
                                         <!--end::Image-->
 
                                         <!--begin::Check-->
-                                        <div style="visibility: hidden; height: 0 !important; width: 0 ; overflow:hidden">
+                                        <div style="visibility: hidden; height: 0 !important; width: 0  ; overflow:hidden">
                                             <input class="form-check-input" type="radio" value="outline" checked name="layout-builder[layout][app][general][icons]" />
                                         </div>
                                         <!--end::Check-->
@@ -3340,7 +2199,7 @@
                                         <!--end::Image-->
 
                                         <!--begin::Check-->
-                                        <div style="visibility: hidden; height: 0 !important; width: 0 ; overflow:hidden">
+                                        <div style="visibility: hidden; height: 0 !important; width: 0  ; overflow:hidden">
                                             <input class="form-check-input" type="radio" value="solid" name="layout-builder[layout][app][general][icons]" />
                                         </div>
                                         <!--end::Check-->
@@ -3363,7 +2222,7 @@
                                     <div class="fs-7 fw-semibold text-muted">
                                         Enable sticky header
 
-                                        <a href="./layout-builder.html" class="fw-semibold text-primary">
+                                        <a href=" ./layout-builder.html" class="fw-semibold text-primary">
                                             More layout options
                                         </a>
                                     </div>
@@ -3485,7 +2344,7 @@
 
                                         <!--begin::User-->
                                         <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
-                                            <img src="./assets/media/avatars/300-14.jpg" alt="img" />
+                                            <img src=" ./assets/media/avatars/300-14.jpg" alt="img" />
                                         </div>
                                         <!--end::User-->
                                     </div>
@@ -3498,7 +2357,7 @@
                                     <!--begin::Record-->
                                     <div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-750px px-7 py-3 mb-5">
                                         <!--begin::Title-->
-                                        <a href="./apps/projects/project.html" class="fs-5 text-dark text-hover-primary fw-semibold w-375px min-w-200px">Meeting with customer</a>
+                                        <a href="../../projects/project.html" class="fs-5 text-dark text-hover-primary fw-semibold w-375px min-w-200px">Meeting with customer</a>
                                         <!--end::Title-->
 
                                         <!--begin::Label-->
@@ -3511,13 +2370,13 @@
                                         <div class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px pe-2">
                                             <!--begin::User-->
                                             <div class="symbol symbol-circle symbol-25px">
-                                                <img src="./assets/media/avatars/300-2.jpg" alt="img" />
+                                                <img src=" ./assets/media/avatars/300-2.jpg" alt="img" />
                                             </div>
                                             <!--end::User-->
 
                                             <!--begin::User-->
                                             <div class="symbol symbol-circle symbol-25px">
-                                                <img src="./assets/media/avatars/300-14.jpg" alt="img" />
+                                                <img src=" ./assets/media/avatars/300-14.jpg" alt="img" />
                                             </div>
                                             <!--end::User-->
 
@@ -3536,7 +2395,7 @@
                                         <!--end::Progress-->
 
                                         <!--begin::Action-->
-                                        <a href="./apps/projects/project.html" class="btn btn-sm btn-light btn-active-light-primary">View</a>
+                                        <a href="../../projects/project.html" class="btn btn-sm btn-light btn-active-light-primary">View</a>
                                         <!--end::Action-->
                                     </div>
                                     <!--end::Record-->
@@ -3544,7 +2403,7 @@
                                     <!--begin::Record-->
                                     <div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-750px px-7 py-3 mb-0">
                                         <!--begin::Title-->
-                                        <a href="./apps/projects/project.html" class="fs-5 text-dark text-hover-primary fw-semibold w-375px min-w-200px">Project Delivery Preparation</a>
+                                        <a href="../../projects/project.html" class="fs-5 text-dark text-hover-primary fw-semibold w-375px min-w-200px">Project Delivery Preparation</a>
                                         <!--end::Title-->
 
                                         <!--begin::Label-->
@@ -3557,7 +2416,7 @@
                                         <div class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px">
                                             <!--begin::User-->
                                             <div class="symbol symbol-circle symbol-25px">
-                                                <img src="./assets/media/avatars/300-20.jpg" alt="img" />
+                                                <img src=" ./assets/media/avatars/300-20.jpg" alt="img" />
                                             </div>
                                             <!--end::User-->
 
@@ -3576,7 +2435,7 @@
                                         <!--end::Progress-->
 
                                         <!--begin::Action-->
-                                        <a href="./apps/projects/project.html" class="btn btn-sm btn-light btn-active-light-primary">View</a>
+                                        <a href="../../projects/project.html" class="btn btn-sm btn-light btn-active-light-primary">View</a>
                                         <!--end::Action-->
                                     </div>
                                     <!--end::Record-->
@@ -3616,7 +2475,7 @@
 
                                         <!--begin::User-->
                                         <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Alan Nilson">
-                                            <img src="./assets/media/avatars/300-1.jpg" alt="img" />
+                                            <img src=" ./assets/media/avatars/300-1.jpg" alt="img" />
                                         </div>
                                         <!--end::User-->
                                     </div>
@@ -3657,7 +2516,7 @@
 
                                         <!--begin::User-->
                                         <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Jan Hummer">
-                                            <img src="./assets/media/avatars/300-23.jpg" alt="img" />
+                                            <img src=" ./assets/media/avatars/300-23.jpg" alt="img" />
                                         </div>
                                         <!--end::User-->
                                     </div>
@@ -3671,13 +2530,13 @@
                                         <!--begin::Item-->
                                         <div class="d-flex flex-aligns-center pe-10 pe-lg-20">
                                             <!--begin::Icon-->
-                                            <img alt="" class="w-30px me-3" src="./assets/media/svg/files/pdf.svg" />
+                                            <img alt="" class="w-30px me-3" src=" ./assets/media/svg/files/pdf.svg" />
                                             <!--end::Icon-->
 
                                             <!--begin::Info-->
                                             <div class="ms-1 fw-semibold">
                                                 <!--begin::Desc-->
-                                                <a href="./apps/projects/project.html" class="fs-6 text-hover-primary fw-bold">Finance KPI App Guidelines</a>
+                                                <a href="../../projects/project.html" class="fs-6 text-hover-primary fw-bold">Finance KPI App Guidelines</a>
                                                 <!--end::Desc-->
 
                                                 <!--begin::Number-->
@@ -3691,7 +2550,7 @@
                                         <!--begin::Item-->
                                         <div class="d-flex flex-aligns-center pe-10 pe-lg-20">
                                             <!--begin::Icon-->
-                                            <img alt="/metronic8/demo30/./demo30/apps/projects/project.html" class="w-30px me-3" src="./assets/media/svg/files/doc.svg" />
+                                            <img alt="/metronic8/demo30/../demo30/apps/projects/project.html" class="w-30px me-3" src=" ./assets/media/svg/files/doc.svg" />
                                             <!--end::Icon-->
 
                                             <!--begin::Info-->
@@ -3711,7 +2570,7 @@
                                         <!--begin::Item-->
                                         <div class="d-flex flex-aligns-center">
                                             <!--begin::Icon-->
-                                            <img alt="/metronic8/demo30/./demo30/apps/projects/project.html" class="w-30px me-3" src="./assets/media/svg/files/css.svg" />
+                                            <img alt="/metronic8/demo30/../demo30/apps/projects/project.html" class="w-30px me-3" src=" ./assets/media/svg/files/css.svg" />
                                             <!--end::Icon-->
 
                                             <!--begin::Info-->
@@ -3767,7 +2626,7 @@
 
                                         <!--begin::User-->
                                         <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
-                                            <img src="./assets/media/avatars/300-14.jpg" alt="img" />
+                                            <img src=" ./assets/media/avatars/300-14.jpg" alt="img" />
                                         </div>
                                         <!--end::User-->
                                     </div>
@@ -3808,7 +2667,7 @@
 
                                         <!--begin::User-->
                                         <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Marcus Dotson">
-                                            <img src="./assets/media/avatars/300-2.jpg" alt="img" />
+                                            <img src=" ./assets/media/avatars/300-2.jpg" alt="img" />
                                         </div>
                                         <!--end::User-->
                                     </div>
@@ -3823,7 +2682,7 @@
                                         <div class="overlay me-10">
                                             <!--begin::Image-->
                                             <div class="overlay-wrapper">
-                                                <img alt="img" class="rounded w-150px" src="./assets/media/stock/600x400/img-29.jpg" />
+                                                <img alt="img" class="rounded w-150px" src=" ./assets/media/stock/600x400/img-29.jpg" />
                                             </div>
                                             <!--end::Image-->
 
@@ -3839,7 +2698,7 @@
                                         <div class="overlay me-10">
                                             <!--begin::Image-->
                                             <div class="overlay-wrapper">
-                                                <img alt="img" class="rounded w-150px" src="./assets/media/stock/600x400/img-31.jpg" />
+                                                <img alt="img" class="rounded w-150px" src=" ./assets/media/stock/600x400/img-31.jpg" />
                                             </div>
                                             <!--end::Image-->
 
@@ -3855,7 +2714,7 @@
                                         <div class="overlay">
                                             <!--begin::Image-->
                                             <div class="overlay-wrapper">
-                                                <img alt="img" class="rounded w-150px" src="./assets/media/stock/600x400/img-40.jpg" />
+                                                <img alt="img" class="rounded w-150px" src=" ./assets/media/stock/600x400/img-40.jpg" />
                                             </div>
                                             <!--end::Image-->
 
@@ -3949,7 +2808,7 @@
 
                                         <!--begin::User-->
                                         <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Robert Rich">
-                                            <img src="./assets/media/avatars/300-4.jpg" alt="img" />
+                                            <img src=" ./assets/media/avatars/300-4.jpg" alt="img" />
                                         </div>
                                         <!--end::User-->
                                     </div>
@@ -4041,7 +2900,7 @@
 
             <!--begin::Footer-->
             <div class="card-footer py-5 text-center" id="kt_activities_footer">
-                <a href="./pages/user-profile/activity.html" class="btn btn-bg-body text-primary">
+                <a href=" ./pages/user-profile/activity.html" class="btn btn-bg-body text-primary">
                     View All Activities <i class="ki-outline ki-arrow-right fs-3 text-primary"></i> </a>
             </div>
             <!--end::Footer-->
@@ -4182,7 +3041,7 @@
                             <!--begin::User-->
                             <div class="d-flex align-items-center mb-2">
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="./assets/media/avatars/300-25.jpg" /></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src=" ./assets/media/avatars/300-25.jpg" /></div><!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
                                     <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
@@ -4216,7 +3075,7 @@
                                 <!--end::Details-->
 
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="./assets/media/avatars/300-1.jpg" /></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src=" ./assets/media/avatars/300-1.jpg" /></div><!--end::Avatar-->
                             </div>
                             <!--end::User-->
 
@@ -4236,7 +3095,7 @@
                             <!--begin::User-->
                             <div class="d-flex align-items-center mb-2">
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="./assets/media/avatars/300-25.jpg" /></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src=" ./assets/media/avatars/300-25.jpg" /></div><!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
                                     <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
@@ -4270,7 +3129,7 @@
                                 <!--end::Details-->
 
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="./assets/media/avatars/300-1.jpg" /></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src=" ./assets/media/avatars/300-1.jpg" /></div><!--end::Avatar-->
                             </div>
                             <!--end::User-->
 
@@ -4290,7 +3149,7 @@
                             <!--begin::User-->
                             <div class="d-flex align-items-center mb-2">
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="./assets/media/avatars/300-25.jpg" /></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src=" ./assets/media/avatars/300-25.jpg" /></div><!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
                                     <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
@@ -4324,7 +3183,7 @@
                                 <!--end::Details-->
 
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="./assets/media/avatars/300-1.jpg" /></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src=" ./assets/media/avatars/300-1.jpg" /></div><!--end::Avatar-->
                             </div>
                             <!--end::User-->
 
@@ -4344,7 +3203,7 @@
                             <!--begin::User-->
                             <div class="d-flex align-items-center mb-2">
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="./assets/media/avatars/300-25.jpg" /></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src=" ./assets/media/avatars/300-25.jpg" /></div><!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
                                     <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
@@ -4378,7 +3237,7 @@
                                 <!--end::Details-->
 
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="./assets/media/avatars/300-1.jpg" /></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src=" ./assets/media/avatars/300-1.jpg" /></div><!--end::Avatar-->
                             </div>
                             <!--end::User-->
 
@@ -4398,7 +3257,7 @@
                             <!--begin::User-->
                             <div class="d-flex align-items-center mb-2">
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="./assets/media/avatars/300-25.jpg" /></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src=" ./assets/media/avatars/300-25.jpg" /></div><!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
                                     <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
@@ -4485,7 +3344,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">Iblender</a>
+                            <a href="../../ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">Iblender</a>
 
                             <span class="text-gray-400 fw-semibold d-block">The best kitchen gadget in 2022</span>
                         </div>
@@ -4509,7 +3368,7 @@
 
                     <!--begin::Pic-->
                     <div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-                        <img src="./assets/media/stock/600x400/img-1.jpg" alt="" />
+                        <img src=" ./assets/media/stock/600x400/img-1.jpg" alt="" />
                     </div>
                     <!--end::Pic-->
                 </div>
@@ -4526,7 +3385,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">SmartCleaner</a>
+                            <a href="../../ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">SmartCleaner</a>
 
                             <span class="text-gray-400 fw-semibold d-block">Smart tool for cooking</span>
                         </div>
@@ -4550,7 +3409,7 @@
 
                     <!--begin::Pic-->
                     <div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-                        <img src="./assets/media/stock/600x400/img-3.jpg" alt="" />
+                        <img src=" ./assets/media/stock/600x400/img-3.jpg" alt="" />
                     </div>
                     <!--end::Pic-->
                 </div>
@@ -4567,7 +3426,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">CameraMaxr</a>
+                            <a href="../../ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">CameraMaxr</a>
 
                             <span class="text-gray-400 fw-semibold d-block">Professional camera for edge</span>
                         </div>
@@ -4591,7 +3450,7 @@
 
                     <!--begin::Pic-->
                     <div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-                        <img src="./assets/media/stock/600x400/img-8.jpg" alt="" />
+                        <img src=" ./assets/media/stock/600x400/img-8.jpg" alt="" />
                     </div>
                     <!--end::Pic-->
                 </div>
@@ -4608,7 +3467,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">$D Printer</a>
+                            <a href="../../ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">$D Printer</a>
 
                             <span class="text-gray-400 fw-semibold d-block">Manfactoring unique objekts</span>
                         </div>
@@ -4632,7 +3491,7 @@
 
                     <!--begin::Pic-->
                     <div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-                        <img src="./assets/media/stock/600x400/img-26.jpg" alt="" />
+                        <img src=" ./assets/media/stock/600x400/img-26.jpg" alt="" />
                     </div>
                     <!--end::Pic-->
                 </div>
@@ -4649,7 +3508,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">MotionWire</a>
+                            <a href="../../ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">MotionWire</a>
 
                             <span class="text-gray-400 fw-semibold d-block">Perfect animation tool</span>
                         </div>
@@ -4673,7 +3532,7 @@
 
                     <!--begin::Pic-->
                     <div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-                        <img src="./assets/media/stock/600x400/img-21.jpg" alt="" />
+                        <img src=" ./assets/media/stock/600x400/img-21.jpg" alt="" />
                     </div>
                     <!--end::Pic-->
                 </div>
@@ -4690,7 +3549,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">Samsung</a>
+                            <a href="../../ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">Samsung</a>
 
                             <span class="text-gray-400 fw-semibold d-block">Profile info,Timeline etc</span>
                         </div>
@@ -4714,7 +3573,7 @@
 
                     <!--begin::Pic-->
                     <div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-                        <img src="./assets/media/stock/600x400/img-34.jpg" alt="" />
+                        <img src=" ./assets/media/stock/600x400/img-34.jpg" alt="" />
                     </div>
                     <!--end::Pic-->
                 </div>
@@ -4731,7 +3590,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">$D Printer</a>
+                            <a href="../../ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">$D Printer</a>
 
                             <span class="text-gray-400 fw-semibold d-block">Manfactoring unique objekts</span>
                         </div>
@@ -4755,7 +3614,7 @@
 
                     <!--begin::Pic-->
                     <div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-                        <img src="./assets/media/stock/600x400/img-27.jpg" alt="" />
+                        <img src=" ./assets/media/stock/600x400/img-27.jpg" alt="" />
                     </div>
                     <!--end::Pic-->
                 </div>
@@ -4969,7 +3828,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo1.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo1.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -4990,7 +3849,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo2.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo2.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5003,7 +3862,7 @@
 
 
                                                 <!--begin::Preview-->
-                                                <a href="./index.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href=" ./index.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Sales Tracking App </h3>
@@ -5011,7 +3870,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo30.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo30.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5032,7 +3891,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo39.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo39.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5053,7 +3912,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo31.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo31.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5074,7 +3933,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo27.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo27.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5095,7 +3954,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo6.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo6.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5116,7 +3975,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo3.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo3.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5137,7 +3996,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo23.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo23.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5158,7 +4017,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo38.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo38.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5179,7 +4038,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo36.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo36.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5200,7 +4059,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo10.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo10.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5221,7 +4080,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo35.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo35.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5242,7 +4101,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo8.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo8.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5263,7 +4122,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo25.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo25.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5284,7 +4143,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo20.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo20.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5305,7 +4164,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo7.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo7.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5326,7 +4185,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo50.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo50.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5347,7 +4206,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo32.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo32.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5368,7 +4227,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo42.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo42.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5389,7 +4248,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo44.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo44.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5410,7 +4269,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo33.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo33.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5431,7 +4290,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo37.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo37.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5452,7 +4311,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo11.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo11.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5473,7 +4332,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo16.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo16.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5494,7 +4353,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo26.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo26.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5515,7 +4374,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo22.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo22.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5536,7 +4395,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo19.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo19.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5557,7 +4416,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo40.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo40.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5578,7 +4437,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo29.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo29.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5599,7 +4458,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo24.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo24.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5620,7 +4479,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo4.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo4.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5641,7 +4500,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo41.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo41.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5662,7 +4521,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo18.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo18.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5683,7 +4542,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo21.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo21.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5704,7 +4563,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo34.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo34.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5725,7 +4584,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo15.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo15.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5746,7 +4605,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo14.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo14.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5767,7 +4626,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo9.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo9.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5788,7 +4647,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo5.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo5.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5809,7 +4668,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo13.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo13.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5830,7 +4689,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo12.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo12.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5851,7 +4710,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo48.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo48.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5872,7 +4731,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo28.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo28.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5893,7 +4752,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo17.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo17.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5914,7 +4773,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo49.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo49.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5935,7 +4794,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo43.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo43.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5956,7 +4815,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo45.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo45.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5977,7 +4836,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo47.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo47.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -5998,7 +4857,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo46.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/demos/demo46.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6025,7 +4884,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="marketing.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href=" ./dashboards/marketing.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Marketing </h3>
@@ -6033,7 +4892,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/marketing.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/marketing.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6045,7 +4904,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="social.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href=" ./dashboards/social.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Social </h3>
@@ -6053,7 +4912,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/social.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/social.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6065,7 +4924,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="ecommerce.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href=" ./dashboards/ecommerce.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Ecommerce </h3>
@@ -6073,7 +4932,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/ecommerce.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/ecommerce.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6085,7 +4944,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="store-analytics.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href=" ./dashboards/store-analytics.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Store-analytics </h3>
@@ -6093,7 +4952,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/store-analytics.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/store-analytics.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6105,7 +4964,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="logistics.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href=" ./dashboards/logistics.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Logistics </h3>
@@ -6113,7 +4972,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/logistics.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/logistics.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6125,7 +4984,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="delivery.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href=" ./dashboards/delivery.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Delivery </h3>
@@ -6133,7 +4992,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/delivery.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/delivery.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6145,7 +5004,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="online-courses.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href=" ./dashboards/online-courses.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Online-courses </h3>
@@ -6153,7 +5012,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/online-courses.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/online-courses.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6165,7 +5024,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="school.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href=" ./dashboards/school.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         School </h3>
@@ -6173,7 +5032,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/school.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/school.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6185,7 +5044,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="crypto.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href=" ./dashboards/crypto.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Crypto </h3>
@@ -6193,7 +5052,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/crypto.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/crypto.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6205,7 +5064,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="finance-performance.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href=" ./dashboards/finance-performance.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Finance-performance </h3>
@@ -6213,7 +5072,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/finance-performance.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/finance-performance.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6225,7 +5084,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="website-analytics.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href=" ./dashboards/website-analytics.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Website-analytics </h3>
@@ -6233,7 +5092,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/website-analytics.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/website-analytics.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6245,7 +5104,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="bidding.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href=" ./dashboards/bidding.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Bidding </h3>
@@ -6253,7 +5112,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/bidding.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/bidding.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6265,7 +5124,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="podcast.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href=" ./dashboards/podcast.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Podcast </h3>
@@ -6273,7 +5132,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/podcast.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/podcast.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6285,7 +5144,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="projects.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href=" ./dashboards/projects.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Projects </h3>
@@ -6293,7 +5152,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/projects.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/projects.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6305,7 +5164,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="call-center.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href=" ./dashboards/call-center.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Call-center </h3>
@@ -6313,7 +5172,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/call-center.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/call-center.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6325,7 +5184,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="pos.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href=" ./dashboards/pos.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         POS </h3>
@@ -6333,7 +5192,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/pos.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/dashboards/pos.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6358,7 +5217,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/projects/list/list.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../projects/list/list.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Projects </h3>
@@ -6366,7 +5225,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/projects.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/projects.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6378,7 +5237,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/ecommerce/catalog/products/products.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../ecommerce/catalog/products/products.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Ecommerce </h3>
@@ -6386,7 +5245,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/ecommerce.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/ecommerce.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6398,7 +5257,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/customers/list/list.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../customers/list/list.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Customers </h3>
@@ -6406,7 +5265,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/customers.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/customers.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6418,7 +5277,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/subscriptions/list/list.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../subscriptions/list/list.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Subscriptions </h3>
@@ -6426,7 +5285,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/subscriptions.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/subscriptions.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6438,7 +5297,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/user-management/users/list/list.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="list/list.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         User Management </h3>
@@ -6446,7 +5305,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/user-management.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/user-management.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6458,7 +5317,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/invoices/create/main.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../invoices/create/main.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Invoices </h3>
@@ -6466,7 +5325,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/invoices.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/invoices.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6478,7 +5337,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/support-center/overview/main.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../support-center/overview/main.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Support Center </h3>
@@ -6486,7 +5345,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/support-center.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/support-center.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6498,7 +5357,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/chat/private.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../chat/private.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Chat </h3>
@@ -6506,7 +5365,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/chat.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/chat.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6518,7 +5377,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/calendar/calendar.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../calendar/calendar.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Calendar </h3>
@@ -6526,7 +5385,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/calendar.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/calendar.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6538,7 +5397,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/file-manager/list/folders.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../file-manager/list/folders.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         File Manager </h3>
@@ -6546,7 +5405,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/file-manager.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/file-manager.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6558,7 +5417,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/inbox/listing/listing.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../inbox/listing/listing.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Inbox </h3>
@@ -6566,7 +5425,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/inbox.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/inbox.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6578,7 +5437,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/contacts/getting-started.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../contacts/getting-started.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Contacts </h3>
@@ -6586,7 +5445,7 @@
 
                                                     <!--begin::Thumbnail-->
                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/contacts.png" class="lozad w-100 rounded" />
+                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/apps/contacts.png" class="lozad w-100 rounded" />
                                                     </span>
                                                     <!--end::Thumbnail-->
                                                 </a>
@@ -6708,7 +5567,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/layouts/corporate/sign-in.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/layouts/corporate/sign-in.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Corporate </h3>
@@ -6716,7 +5575,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-corporate.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-corporate.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -6728,7 +5587,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/layouts/creative/sign-in.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/layouts/creative/sign-in.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Creative </h3>
@@ -6736,7 +5595,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-creative.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-creative.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -6748,7 +5607,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/layouts/fancy/sign-in.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/layouts/fancy/sign-in.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Fancy </h3>
@@ -6756,7 +5615,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-fancy.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-fancy.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -6768,7 +5627,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/layouts/overlay/sign-in.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/layouts/overlay/sign-in.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Overlay </h3>
@@ -6776,7 +5635,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-overlay.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-overlay.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -6788,7 +5647,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/extended/multi-steps-sign-up.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/extended/multi-steps-sign-up.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Multi-Step </h3>
@@ -6796,7 +5655,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-multistep.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-multistep.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -6808,7 +5667,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/layouts/corporate/two-factor.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/layouts/corporate/two-factor.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Two-Factor </h3>
@@ -6816,7 +5675,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-2factor.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-2factor.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -6828,7 +5687,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/general/password-confirmation.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/general/password-confirmation.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Password Changed </h3>
@@ -6836,7 +5695,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-passwordchanged.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-passwordchanged.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -6848,7 +5707,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/general/verify-email.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/general/verify-email.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Verify Email </h3>
@@ -6856,7 +5715,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-verifyemail.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-verifyemail.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -6868,7 +5727,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/general/welcome.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/general/welcome.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Welcome </h3>
@@ -6876,7 +5735,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-welcome.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-welcome.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -6888,7 +5747,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/general/coming-soon.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/general/coming-soon.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Coming Soon </h3>
@@ -6896,7 +5755,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-comingsoon.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-comingsoon.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -6908,7 +5767,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/general/account-deactivated.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/general/account-deactivated.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Account Deactivated </h3>
@@ -6916,7 +5775,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-accountdeactivated.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-accountdeactivated.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -6928,7 +5787,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/general/error-404.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/general/error-404.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 404 Page </h3>
@@ -6936,7 +5795,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-404.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-404.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -6948,7 +5807,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/general/error-500.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/general/error-500.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 505 Page </h3>
@@ -6956,7 +5815,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-500.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/auth-500.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -6991,7 +5850,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/user-profile/overview.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/user-profile/overview.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         Profile Overview </h3>
@@ -6999,7 +5858,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/profile-overview.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/profile-overview.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7011,7 +5870,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/user-profile/projects.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/user-profile/projects.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         User Projects </h3>
@@ -7019,7 +5878,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/profile-overview.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/profile-overview.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7031,7 +5890,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/user-profile/campaigns.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/user-profile/campaigns.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         User Campaigns </h3>
@@ -7039,7 +5898,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/profile-campaigns.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/profile-campaigns.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7051,7 +5910,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/user-profile/documents.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/user-profile/documents.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         User Documents </h3>
@@ -7059,7 +5918,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/profile-documents.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/profile-documents.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7071,7 +5930,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/user-profile/followers.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/user-profile/followers.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         User Followers </h3>
@@ -7079,7 +5938,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/profile-followers.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/profile-followers.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7091,7 +5950,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/user-profile/activity.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/user-profile/activity.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         User Activity </h3>
@@ -7099,7 +5958,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/profile-activity.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/profile-activity.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7132,7 +5991,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/about.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/about.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         About Us </h3>
@@ -7140,7 +5999,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/corporate-aboutus.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/corporate-aboutus.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7152,7 +6011,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/contact.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/contact.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         Contact Us </h3>
@@ -7160,7 +6019,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/corporate-contactus.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/corporate-contactus.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7172,7 +6031,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/licenses.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/licenses.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         License </h3>
@@ -7180,7 +6039,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/corporate-license.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/corporate-license.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7192,7 +6051,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/team.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/team.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         Our Team </h3>
@@ -7200,7 +6059,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/corporate-ourteam.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/corporate-ourteam.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7212,7 +6071,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/sitemap.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/sitemap.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         Sitemap </h3>
@@ -7220,7 +6079,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/corporate-sitemap.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/corporate-sitemap.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7253,7 +6112,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/social/feeds.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/social/feeds.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         Activity </h3>
@@ -7261,7 +6120,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/social-activity.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/social-activity.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7273,7 +6132,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/social/activity.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/social/activity.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         Feeds </h3>
@@ -7281,7 +6140,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/social-feeds.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/social-feeds.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7293,7 +6152,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/social/followers.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/social/followers.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         Followers </h3>
@@ -7301,7 +6160,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/social-followers.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/social-followers.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7313,7 +6172,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/social/settings.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/social/settings.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         Settings </h3>
@@ -7321,7 +6180,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/social-settings.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/social-settings.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7354,7 +6213,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/faq/classic.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/faq/classic.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         FAQ Classic </h3>
@@ -7362,7 +6221,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/faq-classic.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/faq-classic.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7374,7 +6233,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/faq/extended.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/faq/extended.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         FAQ Extended </h3>
@@ -7382,7 +6241,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/faq-extended.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/faq-extended.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7394,7 +6253,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/blog/home.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/blog/home.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         Blog Home </h3>
@@ -7402,7 +6261,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/blog-home.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/blog-home.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7414,7 +6273,7 @@
                                                             <div class="col-lg-4">
 
                                                                 <!--begin::Preview-->
-                                                                <a href="./pages/blog/post.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                                <a href=" ./pages/blog/post.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                                     <!--begin::Title-->
                                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                         Blog Post </h3>
@@ -7422,7 +6281,7 @@
 
                                                                     <!--begin::Thumbnail-->
                                                                     <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                        <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/blog-post.png" class="lozad w-100 rounded" />
+                                                                        <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/blog-post.png" class="lozad w-100 rounded" />
                                                                     </span>
                                                                     <!--end::Thumbnail-->
                                                                 </a>
@@ -7447,7 +6306,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./account/overview.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./account/overview.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Overview </h3>
@@ -7455,7 +6314,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-overview.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-overview.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7467,7 +6326,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./account/settings.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./account/settings.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Settings </h3>
@@ -7475,7 +6334,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-settings.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-settings.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7487,7 +6346,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./account/billing.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./account/billing.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Billing </h3>
@@ -7495,7 +6354,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-billing.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-billing.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7507,7 +6366,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./account/security.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./account/security.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Security </h3>
@@ -7515,7 +6374,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-security.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-security.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7527,7 +6386,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./account/referrals.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./account/referrals.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Referrals </h3>
@@ -7535,7 +6394,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-referrals.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-referrals.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7547,7 +6406,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./account/logs.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./account/logs.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Logs </h3>
@@ -7555,7 +6414,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-logs.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-logs.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7567,7 +6426,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./account/api-keys.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./account/api-keys.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 API Keys </h3>
@@ -7575,7 +6434,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-apikeys.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-apikeys.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7587,7 +6446,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./account/statements.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./account/statements.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Statements </h3>
@@ -7595,7 +6454,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-statements.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-statements.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7607,7 +6466,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./account/billing.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./account/billing.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Billing </h3>
@@ -7615,7 +6474,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-billing.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/account-billing.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7636,7 +6495,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/modals/general/view-users.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/modals/general/view-users.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 View Friends </h3>
@@ -7644,7 +6503,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-viewfriends.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-viewfriends.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7656,7 +6515,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/modals/general/upgrade-plan.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/modals/general/upgrade-plan.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Upgrade Plan </h3>
@@ -7664,7 +6523,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-upgradeplan.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-upgradeplan.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7676,7 +6535,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/modals/wizards/top-up-wallet.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/modals/wizards/top-up-wallet.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Topup Wallet </h3>
@@ -7684,7 +6543,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-topupwallet.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-topupwallet.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7696,7 +6555,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/modals/general/share-earn.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/modals/general/share-earn.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Share & Earn </h3>
@@ -7704,7 +6563,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-shareandearn.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-shareandearn.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7716,7 +6575,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/modals/general/select-users.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/modals/general/select-users.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Select User </h3>
@@ -7724,7 +6583,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-selectuser.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-selectuser.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7736,7 +6595,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/modals/forms/bidding.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/modals/forms/bidding.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Place Bid </h3>
@@ -7744,7 +6603,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-placeyourbid.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-placeyourbid.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7756,7 +6615,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/modals/wizards/offer-a-deal.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/modals/wizards/offer-a-deal.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Offer Deal </h3>
@@ -7764,7 +6623,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-offeradeal.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-offeradeal.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7776,7 +6635,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/modals/forms/new-target.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/modals/forms/new-target.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 New Target </h3>
@@ -7784,7 +6643,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-newtarget.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-newtarget.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7796,7 +6655,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/modals/forms/new-card.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/modals/forms/new-card.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 New Card </h3>
@@ -7804,7 +6663,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-newcard.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-newcard.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7816,7 +6675,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/modals/forms/new-address.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/modals/forms/new-address.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 New Address </h3>
@@ -7824,7 +6683,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-newaddress.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-newaddress.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7836,7 +6695,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/modals/general/invite-friends.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/modals/general/invite-friends.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Invite Friend </h3>
@@ -7844,7 +6703,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-invitefriend.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-invitefriend.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7856,7 +6715,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/modals/wizards/create-project.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/modals/wizards/create-project.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Create Project </h3>
@@ -7864,7 +6723,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-createproject.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-createproject.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7876,7 +6735,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/modals/wizards/create-campaign.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/modals/wizards/create-campaign.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Create Campaign </h3>
@@ -7884,7 +6743,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-createcampaign.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-createcampaign.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7896,7 +6755,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/modals/wizards/create-account.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/modals/wizards/create-account.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Create Business Account </h3>
@@ -7904,7 +6763,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-createbusinessacc.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-createbusinessacc.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7916,7 +6775,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/modals/wizards/create-app.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/modals/wizards/create-app.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Create App </h3>
@@ -7924,7 +6783,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-createapp.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-createapp.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7936,7 +6795,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/modals/forms/create-api-key.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/modals/forms/create-api-key.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Create Api Key </h3>
@@ -7944,7 +6803,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-createapikey.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-createapikey.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7956,7 +6815,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/modals/wizards/two-factor-authentication.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/modals/wizards/two-factor-authentication.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 2 Factor Auth </h3>
@@ -7964,7 +6823,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-2factorauth.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/modal-2factorauth.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -7985,7 +6844,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/wizards/horizontal.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/wizards/horizontal.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 2 Factor Auth </h3>
@@ -7993,7 +6852,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/wizard-2factorauth.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/wizard-2factorauth.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8005,7 +6864,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/wizards/horizontal.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/wizards/horizontal.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Horizontal </h3>
@@ -8013,7 +6872,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/wizard-horizontal.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/wizard-horizontal.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8025,7 +6884,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/wizards/vertical.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/wizards/vertical.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Vertical </h3>
@@ -8033,7 +6892,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/wizard-vertical.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/wizard-vertical.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8054,7 +6913,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/search/users.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/search/users.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Search Users </h3>
@@ -8062,7 +6921,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/search-users.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/search-users.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8074,7 +6933,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/search/horizontal.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/search/horizontal.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Search Horizontal </h3>
@@ -8082,7 +6941,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/search-horizontal.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/search-horizontal.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8094,7 +6953,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/search/vertical.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/search/vertical.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Search Vertical </h3>
@@ -8102,7 +6961,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/search-vertical.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/search-vertical.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8114,7 +6973,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./utilities/search/select-location.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./utilities/search/select-location.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Search Location </h3>
@@ -8122,7 +6981,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/search-location.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/search-location.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8143,7 +7002,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./widgets/charts.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./widgets/charts.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Charts </h3>
@@ -8151,7 +7010,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/widgets-charts.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/widgets-charts.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8163,7 +7022,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./widgets/feeds.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./widgets/feeds.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Feeds </h3>
@@ -8171,7 +7030,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/widgets-feeds.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/widgets-feeds.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8183,7 +7042,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./widgets/lists.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./widgets/lists.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Lists </h3>
@@ -8191,7 +7050,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/widgets-lists.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/widgets-lists.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8203,7 +7062,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./widgets/mixed.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./widgets/mixed.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Mixed </h3>
@@ -8211,7 +7070,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/widgets-mixed.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/widgets-mixed.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8223,7 +7082,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./widgets/statistics.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./widgets/statistics.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Statistics </h3>
@@ -8231,7 +7090,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/widgets-stats.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/widgets-stats.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8243,7 +7102,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./widgets/tables.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./widgets/tables.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Tables </h3>
@@ -8251,7 +7110,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/widgets-tables.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/widgets-tables.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8272,7 +7131,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/email/welcome-message.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/email/welcome-message.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Welcome </h3>
@@ -8280,7 +7139,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/email-welcome.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/email-welcome.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8292,7 +7151,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/email/subscription-confirmed.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/email/subscription-confirmed.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Subscription Confirmed </h3>
@@ -8300,7 +7159,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/email-subscriptionconfirmed.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/email-subscriptionconfirmed.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8312,7 +7171,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/email/reset-password.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/email/reset-password.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Reset Password </h3>
@@ -8320,7 +7179,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/email-resetpassword.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/email-resetpassword.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8332,7 +7191,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/email/card-declined.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/email/card-declined.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Card Declined </h3>
@@ -8340,7 +7199,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/email-creditcarddeclined.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/email-creditcarddeclined.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8352,7 +7211,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/email/promo-1.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/email/promo-1.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Promotion 1 </h3>
@@ -8360,7 +7219,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/email-promo1.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/email-promo1.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8372,7 +7231,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/email/promo-2.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/email/promo-2.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Promotion 2 </h3>
@@ -8380,7 +7239,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/email-promo2.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/email-promo2.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8392,7 +7251,7 @@
                                                     <div class="col-lg-4">
 
                                                         <!--begin::Preview-->
-                                                        <a href="./authentication/email/promo-3.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                        <a href=" ./authentication/email/promo-3.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                             <!--begin::Title-->
                                                             <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                                 Promotion 3 </h3>
@@ -8400,7 +7259,7 @@
 
                                                             <!--begin::Thumbnail-->
                                                             <span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-                                                                <img src="./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/email-promo3.png" class="lozad w-100 rounded" />
+                                                                <img src=" ./assets/media/preview/demos/placeholder.jpg" data-src="/metronic8/demo30/assets/media/preview/prebuilts/pages/email-promo3.png" class="lozad w-100 rounded" />
                                                             </span>
                                                             <!--end::Thumbnail-->
                                                         </a>
@@ -8460,7 +7319,7 @@
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./index.html">
+                                                <a class="fw-6 fw-semibold" href=" ./index.html">
                                                     Sales Tracking App </a>
 
 
@@ -8798,31 +7657,31 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./index.html">
+                                                <a class="fw-6 fw-semibold" href=" ./index.html">
                                                     Chartmix - Finance Team </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="marketing.html">
+                                                <a class="fw-6 fw-semibold" href=" ./dashboards/marketing.html">
                                                     Marketing Dashboard </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="social.html">
+                                                <a class="fw-6 fw-semibold" href=" ./dashboards/social.html">
                                                     Social Dashboard </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="ecommerce.html">
+                                                <a class="fw-6 fw-semibold" href=" ./dashboards/ecommerce.html">
                                                     eCommerce Dashboard </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="store-analytics.html">
+                                                <a class="fw-6 fw-semibold" href=" ./dashboards/store-analytics.html">
                                                     Store Analytics </a>
 
                                             </div>
@@ -8836,31 +7695,31 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="logistics.html">
+                                                <a class="fw-6 fw-semibold" href=" ./dashboards/logistics.html">
                                                     Logistics </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="delivery.html">
+                                                <a class="fw-6 fw-semibold" href=" ./dashboards/delivery.html">
                                                     Delivery </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="online-courses.html">
+                                                <a class="fw-6 fw-semibold" href=" ./dashboards/online-courses.html">
                                                     Online Courses </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="school.html">
+                                                <a class="fw-6 fw-semibold" href=" ./dashboards/school.html">
                                                     Hello Tyler </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="crypto.html">
+                                                <a class="fw-6 fw-semibold" href=" ./dashboards/crypto.html">
                                                     My Balance: 37,045$ </a>
 
                                             </div>
@@ -8874,31 +7733,31 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="finance-performance.html">
+                                                <a class="fw-6 fw-semibold" href=" ./dashboards/finance-performance.html">
                                                     Finance Performance </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="website-analytics.html">
+                                                <a class="fw-6 fw-semibold" href=" ./dashboards/website-analytics.html">
                                                     Website Analytics </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="bidding.html">
+                                                <a class="fw-6 fw-semibold" href=" ./dashboards/bidding.html">
                                                     Bidding Dashboard </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="podcast.html">
+                                                <a class="fw-6 fw-semibold" href=" ./dashboards/podcast.html">
                                                     Podcast Dashboard </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="projects.html">
+                                                <a class="fw-6 fw-semibold" href=" ./dashboards/projects.html">
                                                     Projects Dashboard </a>
 
                                             </div>
@@ -8912,13 +7771,13 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="call-center.html">
+                                                <a class="fw-6 fw-semibold" href=" ./dashboards/call-center.html">
                                                     Call Center </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="pos.html">
+                                                <a class="fw-6 fw-semibold" href=" ./dashboards/pos.html">
                                                     POS System </a>
 
                                             </div>
@@ -8956,22 +7815,22 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/layouts/corporate/sign-in.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/layouts/corporate/sign-in.html">
                                                     Corporate </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/layouts/creative/sign-in.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/layouts/creative/sign-in.html">
                                                     Creative </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/layouts/fancy/sign-in.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/layouts/fancy/sign-in.html">
                                                     Fancy </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/layouts/overlay/sign-in.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/layouts/overlay/sign-in.html">
                                                     Overlay </a>
 
                                             </div>
@@ -8984,22 +7843,22 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/extended/multi-steps-sign-up.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/extended/multi-steps-sign-up.html">
                                                     Multi-Step </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/layouts/corporate/two-factor.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/layouts/corporate/two-factor.html">
                                                     Two-Factor </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/general/password-confirmation.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/general/password-confirmation.html">
                                                     Password Changed </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/general/verify-email.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/general/verify-email.html">
                                                     Verify Email </a>
 
                                             </div>
@@ -9012,22 +7871,22 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/general/welcome.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/general/welcome.html">
                                                     Welcome </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/general/coming-soon.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/general/coming-soon.html">
                                                     Coming Soon </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/general/account-deactivated.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/general/account-deactivated.html">
                                                     Account Deactivated </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/general/error-404.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/general/error-404.html">
                                                     404 Page </a>
 
                                             </div>
@@ -9040,7 +7899,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/general/error-500.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/general/error-500.html">
                                                     505 Page </a>
 
                                             </div>
@@ -9066,17 +7925,17 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./account/overview.html">
+                                                <a class="fw-6 fw-semibold" href=" ./account/overview.html">
                                                     Overview </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./account/settings.html">
+                                                <a class="fw-6 fw-semibold" href=" ./account/settings.html">
                                                     Settings </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./account/billing.html">
+                                                <a class="fw-6 fw-semibold" href=" ./account/billing.html">
                                                     Billing </a>
 
                                             </div>
@@ -9089,17 +7948,17 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./account/security.html">
+                                                <a class="fw-6 fw-semibold" href=" ./account/security.html">
                                                     Security </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./account/referrals.html">
+                                                <a class="fw-6 fw-semibold" href=" ./account/referrals.html">
                                                     Referrals </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./account/logs.html">
+                                                <a class="fw-6 fw-semibold" href=" ./account/logs.html">
                                                     Logs </a>
 
                                             </div>
@@ -9112,17 +7971,17 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./account/api-keys.html">
+                                                <a class="fw-6 fw-semibold" href=" ./account/api-keys.html">
                                                     API Keys </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./account/statements.html">
+                                                <a class="fw-6 fw-semibold" href=" ./account/statements.html">
                                                     Statements </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./account/billing.html">
+                                                <a class="fw-6 fw-semibold" href=" ./account/billing.html">
                                                     Billing </a>
 
                                             </div>
@@ -9148,27 +8007,27 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/modals/general/view-users.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/modals/general/view-users.html">
                                                     View Friends </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/modals/general/upgrade-plan.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/modals/general/upgrade-plan.html">
                                                     Upgrade Plan </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/modals/wizards/top-up-wallet.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/modals/wizards/top-up-wallet.html">
                                                     Topup Wallet </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/modals/general/share-earn.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/modals/general/share-earn.html">
                                                     Share & Earn </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/modals/general/select-users.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/modals/general/select-users.html">
                                                     Select User </a>
 
                                             </div>
@@ -9181,27 +8040,27 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/modals/forms/bidding.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/modals/forms/bidding.html">
                                                     Place Bid </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/modals/wizards/offer-a-deal.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/modals/wizards/offer-a-deal.html">
                                                     Offer Deal </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/modals/forms/new-target.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/modals/forms/new-target.html">
                                                     New Target </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/modals/forms/new-card.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/modals/forms/new-card.html">
                                                     New Card </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/modals/forms/new-address.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/modals/forms/new-address.html">
                                                     New Address </a>
 
                                             </div>
@@ -9214,27 +8073,27 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/modals/general/invite-friends.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/modals/general/invite-friends.html">
                                                     Invite Friend </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/modals/wizards/create-project.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/modals/wizards/create-project.html">
                                                     Create Project </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/modals/wizards/create-campaign.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/modals/wizards/create-campaign.html">
                                                     Create Campaign </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/modals/wizards/create-account.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/modals/wizards/create-account.html">
                                                     Create Business Account </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/modals/wizards/create-app.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/modals/wizards/create-app.html">
                                                     Create App </a>
 
                                             </div>
@@ -9247,12 +8106,12 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/modals/forms/create-api-key.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/modals/forms/create-api-key.html">
                                                     Create Api Key </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/modals/wizards/two-factor-authentication.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/modals/wizards/two-factor-authentication.html">
                                                     2 Factor Auth </a>
 
                                             </div>
@@ -9278,7 +8137,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/wizards/horizontal.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/wizards/horizontal.html">
                                                     2 Factor Auth </a>
 
                                             </div>
@@ -9291,7 +8150,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/wizards/horizontal.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/wizards/horizontal.html">
                                                     Horizontal </a>
 
                                             </div>
@@ -9304,7 +8163,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/wizards/vertical.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/wizards/vertical.html">
                                                     Vertical </a>
 
                                             </div>
@@ -9330,7 +8189,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/search/users.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/search/users.html">
                                                     Search Users </a>
 
                                             </div>
@@ -9343,7 +8202,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/search/horizontal.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/search/horizontal.html">
                                                     Search Horizontal </a>
 
                                             </div>
@@ -9356,7 +8215,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/search/vertical.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/search/vertical.html">
                                                     Search Vertical </a>
 
                                             </div>
@@ -9369,7 +8228,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./utilities/search/select-location.html">
+                                                <a class="fw-6 fw-semibold" href=" ./utilities/search/select-location.html">
                                                     Search Location </a>
 
                                             </div>
@@ -9395,12 +8254,12 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./widgets/charts.html">
+                                                <a class="fw-6 fw-semibold" href=" ./widgets/charts.html">
                                                     Charts </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./widgets/feeds.html">
+                                                <a class="fw-6 fw-semibold" href=" ./widgets/feeds.html">
                                                     Feeds </a>
 
                                             </div>
@@ -9413,12 +8272,12 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./widgets/lists.html">
+                                                <a class="fw-6 fw-semibold" href=" ./widgets/lists.html">
                                                     Lists </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./widgets/mixed.html">
+                                                <a class="fw-6 fw-semibold" href=" ./widgets/mixed.html">
                                                     Mixed </a>
 
                                             </div>
@@ -9431,12 +8290,12 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./widgets/statistics.html">
+                                                <a class="fw-6 fw-semibold" href=" ./widgets/statistics.html">
                                                     Statistics </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./widgets/tables.html">
+                                                <a class="fw-6 fw-semibold" href=" ./widgets/tables.html">
                                                     Tables </a>
 
                                             </div>
@@ -9462,12 +8321,12 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/email/welcome-message.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/email/welcome-message.html">
                                                     Welcome </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/email/subscription-confirmed.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/email/subscription-confirmed.html">
                                                     Subscription Confirmed </a>
 
                                             </div>
@@ -9480,12 +8339,12 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/email/reset-password.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/email/reset-password.html">
                                                     Reset Password </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/email/card-declined.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/email/card-declined.html">
                                                     Card Declined </a>
 
                                             </div>
@@ -9498,12 +8357,12 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/email/promo-1.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/email/promo-1.html">
                                                     Promotion 1 </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/email/promo-2.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/email/promo-2.html">
                                                     Promotion 2 </a>
 
                                             </div>
@@ -9516,7 +8375,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./authentication/email/promo-3.html">
+                                                <a class="fw-6 fw-semibold" href=" ./authentication/email/promo-3.html">
                                                     Promotion 3 </a>
 
                                             </div>
@@ -9542,12 +8401,12 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./pages/user-profile/overview.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/user-profile/overview.html">
                                                     Profile Overview </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./pages/user-profile/projects.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/user-profile/projects.html">
                                                     User Projects </a>
 
                                             </div>
@@ -9560,12 +8419,12 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./pages/user-profile/campaigns.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/user-profile/campaigns.html">
                                                     User Campaigns </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./pages/user-profile/documents.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/user-profile/documents.html">
                                                     User Documents </a>
 
                                             </div>
@@ -9578,12 +8437,12 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./pages/user-profile/followers.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/user-profile/followers.html">
                                                     User Followers </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./pages/user-profile/activity.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/user-profile/activity.html">
                                                     User Activity </a>
 
                                             </div>
@@ -9609,12 +8468,12 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./pages/about.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/about.html">
                                                     About Us </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./pages/contact.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/contact.html">
                                                     Contact Us </a>
 
                                             </div>
@@ -9627,12 +8486,12 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./pages/licenses.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/licenses.html">
                                                     License </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./pages/team.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/team.html">
                                                     Our Team </a>
 
                                             </div>
@@ -9645,7 +8504,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./pages/sitemap.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/sitemap.html">
                                                     Sitemap </a>
 
                                             </div>
@@ -9671,7 +8530,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./pages/social/feeds.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/social/feeds.html">
                                                     Activity </a>
 
                                             </div>
@@ -9684,7 +8543,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./pages/social/activity.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/social/activity.html">
                                                     Feeds </a>
 
                                             </div>
@@ -9697,7 +8556,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./pages/social/followers.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/social/followers.html">
                                                     Followers </a>
 
                                             </div>
@@ -9710,7 +8569,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./pages/social/settings.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/social/settings.html">
                                                     Settings </a>
 
                                             </div>
@@ -9736,7 +8595,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./pages/faq/classic.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/faq/classic.html">
                                                     FAQ Classic </a>
 
                                             </div>
@@ -9749,7 +8608,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./pages/faq/extended.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/faq/extended.html">
                                                     FAQ Extended </a>
 
                                             </div>
@@ -9762,7 +8621,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./pages/blog/home.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/blog/home.html">
                                                     Blog Home </a>
 
                                             </div>
@@ -9775,7 +8634,7 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./pages/blog/post.html">
+                                                <a class="fw-6 fw-semibold" href=" ./pages/blog/post.html">
                                                     Blog Post </a>
 
                                             </div>
@@ -9806,17 +8665,17 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./apps/projects/list/list.html">
+                                                <a class="fw-6 fw-semibold" href="../../projects/list/list.html">
                                                     Projects </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./apps/ecommerce/catalog/products/products.html">
+                                                <a class="fw-6 fw-semibold" href="../../ecommerce/catalog/products/products.html">
                                                     Ecommerce </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./apps/customers/list/list.html">
+                                                <a class="fw-6 fw-semibold" href="../../customers/list/list.html">
                                                     Customers </a>
 
                                             </div>
@@ -9829,17 +8688,17 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./apps/subscriptions/list/list.html">
+                                                <a class="fw-6 fw-semibold" href="../../subscriptions/list/list.html">
                                                     Subscriptions </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./apps/user-management/users/list/list.html">
+                                                <a class="fw-6 fw-semibold" href="list/list.html">
                                                     User Management </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./apps/invoices/create/main.html">
+                                                <a class="fw-6 fw-semibold" href="../../invoices/create/main.html">
                                                     Invoices </a>
 
                                             </div>
@@ -9852,17 +8711,17 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./apps/support-center/overview/main.html">
+                                                <a class="fw-6 fw-semibold" href="../../support-center/overview/main.html">
                                                     Support Center </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./apps/chat/private.html">
+                                                <a class="fw-6 fw-semibold" href="../../chat/private.html">
                                                     Chat </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./apps/calendar/calendar.html">
+                                                <a class="fw-6 fw-semibold" href="../../calendar/calendar.html">
                                                     Calendar </a>
 
                                             </div>
@@ -9875,17 +8734,17 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./apps/file-manager/list/folders.html">
+                                                <a class="fw-6 fw-semibold" href="../../file-manager/list/folders.html">
                                                     File Manager </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./apps/inbox/listing/listing.html">
+                                                <a class="fw-6 fw-semibold" href="../../inbox/listing/listing.html">
                                                     Inbox </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./apps/contacts/getting-started.html">
+                                                <a class="fw-6 fw-semibold" href="../../contacts/getting-started.html">
                                                     Contacts </a>
 
                                             </div>
@@ -10424,630 +9283,7 @@
         </div>
         <!--end::Modal dialog-->
     </div>
-    <!--end::Modal - Upgrade plan-->
-    <!--begin::Modal - View Users-->
-    <div class="modal fade" id="kt_modal_view_users" tabindex="-1" aria-hidden="true">
-        <!--begin::Modal dialog-->
-        <div class="modal-dialog mw-650px">
-            <!--begin::Modal content-->
-            <div class="modal-content">
-                <!--begin::Modal header-->
-                <div class="modal-header pb-0 border-0 justify-content-end">
-                    <!--begin::Close-->
-                    <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
-                        <i class="ki-outline ki-cross fs-1"></i>
-                    </div>
-                    <!--end::Close-->
-                </div>
-                <!--begin::Modal header-->
-
-                <!--begin::Modal body-->
-                <div class="modal-body scroll-y mx-5 mx-xl-18 pt-0 pb-15">
-                    <!--begin::Heading-->
-                    <div class="text-center mb-13">
-                        <!--begin::Title-->
-                        <h1 class="mb-3">Browse Users</h1>
-                        <!--end::Title-->
-
-                        <!--begin::Description-->
-                        <div class="text-muted fw-semibold fs-5">
-                            If you need more info, please check out our
-                            <a href="#" class="link-primary fw-bold">Users Directory</a>.
-                        </div>
-                        <!--end::Description-->
-                    </div>
-                    <!--end::Heading-->
-
-                    <!--begin::Users-->
-                    <div class="mb-15">
-                        <!--begin::List-->
-                        <div class="mh-375px scroll-y me-n7 pe-7">
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="./assets/media/avatars/300-6.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Emma Smith
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Art Director </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">smith@kpmg.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$23,000</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-danger text-danger fw-semibold">
-                                            M </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Melody Macy
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Marketing Analytic </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">melody@altbox.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$50,500</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="./assets/media/avatars/300-1.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Max Smith
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Software Enginer </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">max@kt.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$75,900</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="./assets/media/avatars/300-5.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Sean Bean
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Web Developer </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">sean@dellito.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$10,500</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="./assets/media/avatars/300-25.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Brian Cox
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                UI/UX Designer </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">brian@exchange.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$20,000</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-warning text-warning fw-semibold">
-                                            C </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Mikaela Collins
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Head Of Marketing </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">mik@pex.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$9,300</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="./assets/media/avatars/300-9.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Francis Mitcham
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Software Arcitect </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">f.mit@kpmg.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$15,000</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-danger text-danger fw-semibold">
-                                            O </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Olivia Wild
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                System Admin </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">olivia@corpmail.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$23,000</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-primary text-primary fw-semibold">
-                                            N </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Neil Owen
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Account Manager </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">owen.neil@gmail.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$45,800</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="./assets/media/avatars/300-23.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Dan Wilson
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Web Desinger </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">dam@consilting.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$90,500</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-danger text-danger fw-semibold">
-                                            E </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Emma Bold
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Corporate Finance </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">emma@intenso.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$5,000</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="./assets/media/avatars/300-12.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Ana Crown
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Customer Relationship </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">ana.cf@limtel.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$70,000</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 ">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-info text-info fw-semibold">
-                                            A </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Robert Doe
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Marketing Executive </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">robert@benko.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$45,500</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                        </div>
-                        <!--end::List-->
-                    </div>
-                    <!--end::Users-->
-
-                    <!--begin::Notice-->
-                    <div class="d-flex justify-content-between">
-                        <!--begin::Label-->
-                        <div class="fw-semibold">
-                            <label class="fs-6">Adding Users by Team Members</label>
-
-                            <div class="fs-7 text-muted">If you need more info, please check budget planning</div>
-                        </div>
-                        <!--end::Label-->
-
-                        <!--begin::Switch-->
-                        <label class="form-check form-switch form-check-custom form-check-solid">
-                            <input class="form-check-input" type="checkbox" value="" checked="checked" />
-
-                            <span class="form-check-label fw-semibold text-muted">
-                                Allowed
-                            </span>
-                        </label>
-                        <!--end::Switch-->
-                    </div>
-                    <!--end::Notice-->
-                </div>
-                <!--end::Modal body-->
-            </div>
-            <!--end::Modal content-->
-        </div>
-        <!--end::Modal dialog-->
-    </div>
-    <!--end::Modal - View Users--><!--begin::Modal - Users Search-->
+    <!--end::Modal - Upgrade plan--><!--begin::Modal - Users Search-->
     <div class="modal fade" id="kt_modal_users_search" tabindex="-1" aria-hidden="true">
         <!--begin::Modal dialog-->
         <div class="modal-dialog modal-dialog-centered mw-650px">
@@ -11118,7 +9354,7 @@
                                     <a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
                                         <!--begin::Avatar-->
                                         <div class="symbol symbol-35px symbol-circle me-5">
-                                            <img alt="Pic" src="./assets/media/avatars/300-6.jpg" />
+                                            <img alt="Pic" src=" ./assets/media/avatars/300-6.jpg" />
                                         </div>
                                         <!--end::Avatar-->
 
@@ -11151,7 +9387,7 @@
                                     <a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
                                         <!--begin::Avatar-->
                                         <div class="symbol symbol-35px symbol-circle me-5">
-                                            <img alt="Pic" src="./assets/media/avatars/300-1.jpg" />
+                                            <img alt="Pic" src=" ./assets/media/avatars/300-1.jpg" />
                                         </div>
                                         <!--end::Avatar-->
 
@@ -11167,7 +9403,7 @@
                                     <a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
                                         <!--begin::Avatar-->
                                         <div class="symbol symbol-35px symbol-circle me-5">
-                                            <img alt="Pic" src="./assets/media/avatars/300-5.jpg" />
+                                            <img alt="Pic" src=" ./assets/media/avatars/300-5.jpg" />
                                         </div>
                                         <!--end::Avatar-->
 
@@ -11183,7 +9419,7 @@
                                     <a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
                                         <!--begin::Avatar-->
                                         <div class="symbol symbol-35px symbol-circle me-5">
-                                            <img alt="Pic" src="./assets/media/avatars/300-25.jpg" />
+                                            <img alt="Pic" src=" ./assets/media/avatars/300-25.jpg" />
                                         </div>
                                         <!--end::Avatar-->
 
@@ -11216,7 +9452,7 @@
 
                                             <!--begin::Avatar-->
                                             <div class="symbol symbol-35px symbol-circle">
-                                                <img alt="Pic" src="./assets/media/avatars/300-6.jpg" />
+                                                <img alt="Pic" src=" ./assets/media/avatars/300-6.jpg" />
                                             </div>
                                             <!--end::Avatar-->
 
@@ -11301,7 +9537,7 @@
 
                                             <!--begin::Avatar-->
                                             <div class="symbol symbol-35px symbol-circle">
-                                                <img alt="Pic" src="./assets/media/avatars/300-1.jpg" />
+                                                <img alt="Pic" src=" ./assets/media/avatars/300-1.jpg" />
                                             </div>
                                             <!--end::Avatar-->
 
@@ -11343,7 +9579,7 @@
 
                                             <!--begin::Avatar-->
                                             <div class="symbol symbol-35px symbol-circle">
-                                                <img alt="Pic" src="./assets/media/avatars/300-5.jpg" />
+                                                <img alt="Pic" src=" ./assets/media/avatars/300-5.jpg" />
                                             </div>
                                             <!--end::Avatar-->
 
@@ -11385,7 +9621,7 @@
 
                                             <!--begin::Avatar-->
                                             <div class="symbol symbol-35px symbol-circle">
-                                                <img alt="Pic" src="./assets/media/avatars/300-25.jpg" />
+                                                <img alt="Pic" src=" ./assets/media/avatars/300-25.jpg" />
                                             </div>
                                             <!--end::Avatar-->
 
@@ -11470,7 +9706,7 @@
 
                                             <!--begin::Avatar-->
                                             <div class="symbol symbol-35px symbol-circle">
-                                                <img alt="Pic" src="./assets/media/avatars/300-9.jpg" />
+                                                <img alt="Pic" src=" ./assets/media/avatars/300-9.jpg" />
                                             </div>
                                             <!--end::Avatar-->
 
@@ -11598,7 +9834,7 @@
 
                                             <!--begin::Avatar-->
                                             <div class="symbol symbol-35px symbol-circle">
-                                                <img alt="Pic" src="./assets/media/avatars/300-23.jpg" />
+                                                <img alt="Pic" src=" ./assets/media/avatars/300-23.jpg" />
                                             </div>
                                             <!--end::Avatar-->
 
@@ -11683,7 +9919,7 @@
 
                                             <!--begin::Avatar-->
                                             <div class="symbol symbol-35px symbol-circle">
-                                                <img alt="Pic" src="./assets/media/avatars/300-12.jpg" />
+                                                <img alt="Pic" src=" ./assets/media/avatars/300-12.jpg" />
                                             </div>
                                             <!--end::Avatar-->
 
@@ -11768,7 +10004,7 @@
 
                                             <!--begin::Avatar-->
                                             <div class="symbol symbol-35px symbol-circle">
-                                                <img alt="Pic" src="./assets/media/avatars/300-13.jpg" />
+                                                <img alt="Pic" src=" ./assets/media/avatars/300-13.jpg" />
                                             </div>
                                             <!--end::Avatar-->
 
@@ -11853,7 +10089,7 @@
 
                                             <!--begin::Avatar-->
                                             <div class="symbol symbol-35px symbol-circle">
-                                                <img alt="Pic" src="./assets/media/avatars/300-21.jpg" />
+                                                <img alt="Pic" src=" ./assets/media/avatars/300-21.jpg" />
                                             </div>
                                             <!--end::Avatar-->
 
@@ -11895,15 +10131,15 @@
 
                                             <!--begin::Avatar-->
                                             <div class="symbol symbol-35px symbol-circle">
-                                                <img alt="Pic" src="./assets/media/avatars/300-12.jpg" />
+                                                <img alt="Pic" src=" ./assets/media/avatars/300-5.jpg" />
                                             </div>
                                             <!--end::Avatar-->
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ana Crown</a>
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Sean Bean</a>
 
-                                                <div class="fw-semibold text-muted">ana.cf@limtel.com</div>
+                                                <div class="fw-semibold text-muted">sean@dellito.com</div>
                                             </div>
                                             <!--end::Details-->
                                         </div>
@@ -11950,7 +10186,7 @@
 
                                 <!--begin::Illustration-->
                                 <div class="text-center px-5">
-                                    <img src="./assets/media/illustrations/sketchy-1/1.png" alt="" class="w-100 h-200px h-sm-325px" />
+                                    <img src=" ./assets/media/illustrations/sketchy-1/1.png" alt="" class="w-100 h-200px h-sm-325px" />
                                 </div>
                                 <!--end::Illustration-->
                             </div>
@@ -11968,7 +10204,630 @@
     </div>
     <!--end::Modal - Users Search-->
     <!--begin::Modal - Invite Friends-->
+    <div class="modal fade" id="kt_modal_invite_friends" tabindex="-1" aria-hidden="true">
+        <!--begin::Modal dialog-->
+        <div class="modal-dialog mw-650px">
+            <!--begin::Modal content-->
+            <div class="modal-content">
+                <!--begin::Modal header-->
+                <div class="modal-header pb-0 border-0 justify-content-end">
+                    <!--begin::Close-->
+                    <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+                        <i class="ki-outline ki-cross fs-1"></i>
+                    </div>
+                    <!--end::Close-->
+                </div>
+                <!--begin::Modal header-->
 
+                <!--begin::Modal body-->
+                <div class="modal-body scroll-y mx-5 mx-xl-18 pt-0 pb-15">
+                    <!--begin::Heading-->
+                    <div class="text-center mb-13">
+                        <!--begin::Title-->
+                        <h1 class="mb-3">Invite a Friend</h1>
+                        <!--end::Title-->
+
+                        <!--begin::Description-->
+                        <div class="text-muted fw-semibold fs-5">
+                            If you need more info, please check out
+                            <a href="#" class="link-primary fw-bold">FAQ Page</a>.
+                        </div>
+                        <!--end::Description-->
+                    </div>
+                    <!--end::Heading-->
+
+                    <!--begin::Google Contacts Invite-->
+                    <div class="btn btn-light-primary fw-bold w-100 mb-8">
+                        <img alt="Logo" src=" ./assets/media/svg/brand-logos/google-icon.svg" class="h-20px me-3" />
+                        Invite Gmail Contacts
+                    </div>
+                    <!--end::Google Contacts Invite-->
+
+                    <!--begin::Separator-->
+                    <div class="separator d-flex flex-center mb-8">
+                        <span class="text-uppercase bg-body fs-7 fw-semibold text-muted px-3">or</span>
+                    </div>
+                    <!--end::Separator-->
+
+                    <!--begin::Textarea-->
+                    <textarea class="form-control form-control-solid mb-8" rows="3" placeholder="Type or paste emails here">
+                </textarea>
+                    <!--end::Textarea-->
+
+                    <!--begin::Users-->
+                    <div class="mb-10">
+                        <!--begin::Heading-->
+                        <div class="fs-6 fw-semibold mb-2">Your Invitations</div>
+                        <!--end::Heading-->
+
+                        <!--begin::List-->
+                        <div class="mh-300px scroll-y me-n7 pe-7">
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src=" ./assets/media/avatars/300-6.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Emma Smith</a>
+
+                                        <div class="fw-semibold text-muted">smith@kpmg.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2" selected>Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <span class="symbol-label bg-light-danger text-danger fw-semibold">
+                                            M </span>
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Melody Macy</a>
+
+                                        <div class="fw-semibold text-muted">melody@altbox.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1" selected>Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src=" ./assets/media/avatars/300-1.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Max Smith</a>
+
+                                        <div class="fw-semibold text-muted">max@kt.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3" selected>Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src=" ./assets/media/avatars/300-5.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Sean Bean</a>
+
+                                        <div class="fw-semibold text-muted">sean@dellito.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2" selected>Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src=" ./assets/media/avatars/300-25.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Brian Cox</a>
+
+                                        <div class="fw-semibold text-muted">brian@exchange.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3" selected>Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <span class="symbol-label bg-light-warning text-warning fw-semibold">
+                                            C </span>
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Mikaela Collins</a>
+
+                                        <div class="fw-semibold text-muted">mik@pex.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2" selected>Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src=" ./assets/media/avatars/300-9.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Francis Mitcham</a>
+
+                                        <div class="fw-semibold text-muted">f.mit@kpmg.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3" selected>Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <span class="symbol-label bg-light-danger text-danger fw-semibold">
+                                            O </span>
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Olivia Wild</a>
+
+                                        <div class="fw-semibold text-muted">olivia@corpmail.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2" selected>Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <span class="symbol-label bg-light-primary text-primary fw-semibold">
+                                            N </span>
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Neil Owen</a>
+
+                                        <div class="fw-semibold text-muted">owen.neil@gmail.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1" selected>Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src=" ./assets/media/avatars/300-23.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Dan Wilson</a>
+
+                                        <div class="fw-semibold text-muted">dam@consilting.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3" selected>Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <span class="symbol-label bg-light-danger text-danger fw-semibold">
+                                            E </span>
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Emma Bold</a>
+
+                                        <div class="fw-semibold text-muted">emma@intenso.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2" selected>Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src=" ./assets/media/avatars/300-12.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ana Crown</a>
+
+                                        <div class="fw-semibold text-muted">ana.cf@limtel.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1" selected>Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <span class="symbol-label bg-light-info text-info fw-semibold">
+                                            A </span>
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Robert Doe</a>
+
+                                        <div class="fw-semibold text-muted">robert@benko.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3" selected>Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src=" ./assets/media/avatars/300-13.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">John Miller</a>
+
+                                        <div class="fw-semibold text-muted">miller@mapple.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3" selected>Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <span class="symbol-label bg-light-success text-success fw-semibold">
+                                            L </span>
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Lucy Kunic</a>
+
+                                        <div class="fw-semibold text-muted">lucy.m@fentech.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2" selected>Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src=" ./assets/media/avatars/300-21.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ethan Wilder</a>
+
+                                        <div class="fw-semibold text-muted">ethan@loop.com.au</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1" selected>Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 ">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src=" ./assets/media/avatars/300-23.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Dan Wilson</a>
+
+                                        <div class="fw-semibold text-muted">dam@consilting.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3" selected>Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                        </div>
+                        <!--end::List-->
+                    </div>
+                    <!--end::Users-->
+
+                    <!--begin::Notice-->
+                    <div class="d-flex flex-stack">
+                        <!--begin::Label-->
+                        <div class="me-5 fw-semibold">
+                            <label class="fs-6">Adding Users by Team Members</label>
+                            <div class="fs-7 text-muted">If you need more info, please check budget planning</div>
+                        </div>
+                        <!--end::Label-->
+
+                        <!--begin::Switch-->
+                        <label class="form-check form-switch form-check-custom form-check-solid">
+                            <input class="form-check-input" type="checkbox" value="1" checked="checked" />
+
+                            <span class="form-check-label fw-semibold text-muted">
+                                Allowed
+                            </span>
+                        </label>
+                        <!--end::Switch-->
+                    </div>
+                    <!--end::Notice-->
+                </div>
+                <!--end::Modal body-->
+            </div>
+            <!--end::Modal content-->
+        </div>
+        <!--end::Modal dialog-->
+    </div>
     <!--end::Modal - Invite Friend--> <!--end::Modals-->
 
     <!--begin::Javascript-->

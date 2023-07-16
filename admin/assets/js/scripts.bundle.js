@@ -7592,8 +7592,8 @@ var KTAppLayoutBuilder = function() {
 			engagePrebuiltsModal = document.querySelector('#kt_app_engage_prebuilts_modal');
 
 			if ( engage && engagePrebuiltsModal) {
-				handleEngagePrebuilts();
-				handleEngagePrebuiltsViewMenu();
+				// handleEngagePrebuilts();
+				// handleEngagePrebuiltsViewMenu();
 			}
 
 			if ( engage && engageToggleOn && engageToggleOff ) {

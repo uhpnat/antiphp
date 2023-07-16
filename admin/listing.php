@@ -1,5 +1,16 @@
 <!DOCTYPE html>
-
+<!--
+Author: Keenthemes
+Product Name: Metronic 
+Product Version: 8.1.8
+Purchase: https://1.envato.market/EA4JP
+Website: http://www.keenthemes.com
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
+-->
 <html lang="en">
 <!--begin::Head-->
 <!-- Added by HTTrack -->
@@ -36,7 +47,6 @@
 
     <!--begin::Vendor Stylesheets(used for this page only)-->
     <link href="./assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="./assets/plugins/custom/vis-timeline/vis-timeline.bundle.css" rel="stylesheet" type="text/css" />
     <!--end::Vendor Stylesheets-->
 
 
@@ -58,7 +68,7 @@
                 dl = l != 'dataLayer' ? '&l=' + l : '';
             j.async = true;
             j.src =
-                '././././www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+                '././www.googletagmanager.com/gtm5445.html?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-5FS8GGP');
     </script>
@@ -99,19 +109,10 @@
             document.documentElement.setAttribute("data-bs-theme", themeMode);
         }
     </script>
-
+    <!--end::Theme mode setup on page load-->
     <?php
-    include 'header.php';
+    include './header.php';
     ?>
-
-    <!--begin::App-->
-    <div class="d-flex flex-column flex-root app-root" id="kt_app_root">
-        <!--begin::Page-->
-        <div class="app-page  flex-column flex-column-fluid " id="kt_app_page">
-
-
-            <!--begin::Header-->
-
             <!--begin::Wrapper-->
             <div class="app-wrapper  flex-column flex-row-fluid " id="kt_app_wrapper">
 
@@ -145,7 +146,19 @@
 
                                     <!--begin::Item-->
                                     <li class="breadcrumb-item text-white fw-bold lh-1">
-                                        Dashboards </li>
+                                        eCommerce </li>
+                                    <!--end::Item-->
+
+                                    <!--begin::Item-->
+                                    <li class="breadcrumb-item">
+                                        <i class="ki-outline ki-right fs-4 text-white mx-n1"></i>
+                                    </li>
+                                    <!--end::Item-->
+
+
+                                    <!--begin::Item-->
+                                    <li class="breadcrumb-item text-white fw-bold lh-1">
+                                        Customers </li>
                                     <!--end::Item-->
 
 
@@ -164,7 +177,7 @@
 
                                     <!--begin::Title-->
                                     <h1 class="page-heading d-flex text-white fw-bolder fs-2 flex-column justify-content-center my-0">
-                                        eCommerce Dashboard
+                                        Customer Listing
                                         <!--begin::Description-->
                                         <span class="page-desc text-white opacity-50 fs-6 fw-bold pt-4">
                                             Page Description </span>
@@ -247,2812 +260,2514 @@
                             <!--begin::Content-->
                             <div id="kt_app_content" class="app-content ">
 
-                                <!--begin::Row-->
-                                <div class="row g-5 g-xl-10 mb-xl-10">
-                                    <!--begin::Col-->
-                                    <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10">
-
-                                        <!--begin::Card widget 4-->
-                                        <div class="card card-flush h-md-50 mb-5 mb-xl-10">
-                                            <!--begin::Header-->
-                                            <div class="card-header pt-5">
-                                                <!--begin::Title-->
-                                                <div class="card-title d-flex flex-column">
-                                                    <!--begin::Info-->
-                                                    <div class="d-flex align-items-center">
-                                                        <!--begin::Currency-->
-                                                        <span class="fs-4 fw-semibold text-gray-400 me-1 align-self-start">$</span>
-                                                        <!--end::Currency-->
-
-                                                        <!--begin::Amount-->
-                                                        <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2">69,700</span>
-                                                        <!--end::Amount-->
-
-                                                        <!--begin::Badge-->
-                                                        <span class="badge badge-light-success fs-base">
-                                                            <i class="ki-outline ki-arrow-up fs-5 text-success ms-n1"></i>
-                                                            2.2%
-                                                        </span>
-                                                        <!--end::Badge-->
-                                                    </div>
-                                                    <!--end::Info-->
-
-                                                    <!--begin::Subtitle-->
-                                                    <span class="text-gray-400 pt-1 fw-semibold fs-6">Expected Earnings</span>
-                                                    <!--end::Subtitle-->
-                                                </div>
-                                                <!--end::Title-->
+                                <!--begin::Card-->
+                                <div class="card">
+                                    <!--begin::Card header-->
+                                    <div class="card-header border-0 pt-6">
+                                        <!--begin::Card title-->
+                                        <div class="card-title">
+                                            <!--begin::Search-->
+                                            <div class="d-flex align-items-center position-relative my-1">
+                                                <i class="ki-outline ki-magnifier fs-3 position-absolute ms-5"></i> <input type="text" data-kt-customer-table-filter="search" class="form-control form-control-solid w-250px ps-13" placeholder="Search Customers" />
                                             </div>
-                                            <!--end::Header-->
-
-                                            <!--begin::Card body-->
-                                            <div class="card-body pt-2 pb-4 d-flex align-items-center">
-                                                <!--begin::Chart-->
-                                                <div class="d-flex flex-center me-5 pt-2">
-                                                    <div id="kt_card_widget_4_chart" style="min-width: 70px; min-height: 70px" data-kt-size="70" data-kt-line="11">
-                                                    </div>
-                                                </div>
-                                                <!--end::Chart-->
-
-                                                <!--begin::Labels-->
-                                                <div class="d-flex flex-column content-justify-center w-100">
-                                                    <!--begin::Label-->
-                                                    <div class="d-flex fs-6 fw-semibold align-items-center">
-                                                        <!--begin::Bullet-->
-                                                        <div class="bullet w-8px h-6px rounded-2 bg-danger me-3"></div>
-                                                        <!--end::Bullet-->
-
-                                                        <!--begin::Label-->
-                                                        <div class="text-gray-500 flex-grow-1 me-4">Shoes</div>
-                                                        <!--end::Label-->
-
-                                                        <!--begin::Stats-->
-                                                        <div class="fw-bolder text-gray-700 text-xxl-end">$7,660</div>
-                                                        <!--end::Stats-->
-                                                    </div>
-                                                    <!--end::Label-->
-
-                                                    <!--begin::Label-->
-                                                    <div class="d-flex fs-6 fw-semibold align-items-center my-3">
-                                                        <!--begin::Bullet-->
-                                                        <div class="bullet w-8px h-6px rounded-2 bg-primary me-3"></div>
-                                                        <!--end::Bullet-->
-
-                                                        <!--begin::Label-->
-                                                        <div class="text-gray-500 flex-grow-1 me-4">Gaming</div>
-                                                        <!--end::Label-->
-
-                                                        <!--begin::Stats-->
-                                                        <div class="fw-bolder text-gray-700 text-xxl-end">$2,820</div>
-                                                        <!--end::Stats-->
-                                                    </div>
-                                                    <!--end::Label-->
-
-                                                    <!--begin::Label-->
-                                                    <div class="d-flex fs-6 fw-semibold align-items-center">
-                                                        <!--begin::Bullet-->
-                                                        <div class="bullet w-8px h-6px rounded-2 me-3" style="background-color: #E4E6EF"></div>
-                                                        <!--end::Bullet-->
-
-                                                        <!--begin::Label-->
-                                                        <div class="text-gray-500 flex-grow-1 me-4">Others</div>
-                                                        <!--end::Label-->
-
-                                                        <!--begin::Stats-->
-                                                        <div class=" fw-bolder text-gray-700 text-xxl-end">$45,257</div>
-                                                        <!--end::Stats-->
-                                                    </div>
-                                                    <!--end::Label-->
-                                                </div>
-                                                <!--end::Labels-->
-                                            </div>
-                                            <!--end::Card body-->
+                                            <!--end::Search-->
                                         </div>
-                                        <!--end::Card widget 4-->
+                                        <!--begin::Card title-->
 
-                                        <!--begin::Card widget 5-->
-                                        <div class="card card-flush h-md-50 mb-xl-10">
-                                            <!--begin::Header-->
-                                            <div class="card-header pt-5">
-                                                <!--begin::Title-->
-                                                <div class="card-title d-flex flex-column">
-                                                    <!--begin::Info-->
-                                                    <div class="d-flex align-items-center">
-                                                        <!--begin::Amount-->
-                                                        <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2">1,836</span>
-                                                        <!--end::Amount-->
-
-                                                        <!--begin::Badge-->
-                                                        <span class="badge badge-light-danger fs-base">
-                                                            <i class="ki-outline ki-arrow-down fs-5 text-danger ms-n1"></i>
-                                                            2.2%
-                                                        </span>
-                                                        <!--end::Badge-->
-                                                    </div>
-                                                    <!--end::Info-->
-
-                                                    <!--begin::Subtitle-->
-                                                    <span class="text-gray-400 pt-1 fw-semibold fs-6">Orders This Month</span>
-                                                    <!--end::Subtitle-->
+                                        <!--begin::Card toolbar-->
+                                        <div class="card-toolbar">
+                                            <!--begin::Toolbar-->
+                                            <div class="d-flex justify-content-end" data-kt-customer-table-toolbar="base">
+                                                <!--begin::Filter-->
+                                                <div class="w-150px me-3">
+                                                    <!--begin::Select2-->
+                                                    <select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Status" data-kt-ecommerce-order-filter="status">
+                                                        <option></option>
+                                                        <option value="all">All</option>
+                                                        <option value="active">Active</option>
+                                                        <option value="locked">Locked</option>
+                                                    </select>
+                                                    <!--end::Select2-->
                                                 </div>
-                                                <!--end::Title-->
-                                            </div>
-                                            <!--end::Header-->
+                                                <!--end::Filter-->
 
-                                            <!--begin::Card body-->
-                                            <div class="card-body d-flex align-items-end pt-0">
-                                                <!--begin::Progress-->
-                                                <div class="d-flex align-items-center flex-column mt-3 w-100">
-                                                    <div class="d-flex justify-content-between w-100 mt-auto mb-2">
-                                                        <span class="fw-bolder fs-6 text-dark">1,048 to Goal</span>
-                                                        <span class="fw-bold fs-6 text-gray-400">62%</span>
-                                                    </div>
-
-                                                    <div class="h-8px mx-3 w-100 bg-light-success rounded">
-                                                        <div class="bg-success rounded h-8px" role="progressbar" style="width: 62%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                                <!--end::Progress-->
-                                            </div>
-                                            <!--end::Card body-->
-                                        </div>
-                                        <!--end::Card widget 5-->
-                                    </div>
-                                    <!--end::Col-->
-
-                                    <!--begin::Col-->
-                                    <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10">
-                                        <!--begin::Card widget 6-->
-                                        <div class="card card-flush  h-md-50 mb-5 mb-xl-10">
-                                            <!--begin::Header-->
-                                            <div class="card-header pt-5">
-                                                <!--begin::Title-->
-                                                <div class="card-title d-flex flex-column">
-                                                    <!--begin::Info-->
-                                                    <div class="d-flex align-items-center">
-                                                        <!--begin::Currency-->
-                                                        <span class="fs-4 fw-semibold text-gray-400 me-1 align-self-start">$</span>
-                                                        <!--end::Currency-->
-
-                                                        <!--begin::Amount-->
-                                                        <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2">2,420</span>
-                                                        <!--end::Amount-->
-
-                                                        <!--begin::Badge-->
-                                                        <span class="badge badge-light-success fs-base">
-                                                            <i class="ki-outline ki-arrow-up fs-5 text-success ms-n1"></i>
-                                                            2.6%
-                                                        </span>
-                                                        <!--end::Badge-->
-                                                    </div>
-                                                    <!--end::Info-->
-
-                                                    <!--begin::Subtitle-->
-                                                    <span class="text-gray-400 pt-1 fw-semibold fs-6">Average Daily Sales</span>
-                                                    <!--end::Subtitle-->
-                                                </div>
-                                                <!--end::Title-->
-                                            </div>
-                                            <!--end::Header-->
-
-                                            <!--begin::Card body-->
-                                            <div class="card-body d-flex align-items-end px-0 pb-0">
-                                                <!--begin::Chart-->
-                                                <div id="kt_card_widget_6_chart" class="w-100" style="height: 80px"></div>
-                                                <!--end::Chart-->
-                                            </div>
-                                            <!--end::Card body-->
-                                        </div>
-                                        <!--end::Card widget 6-->
-
-
-                                        <!--begin::Card widget 7-->
-                                        <div class="card card-flush h-md-50 mb-xl-10">
-                                            <!--begin::Header-->
-                                            <div class="card-header pt-5">
-                                                <!--begin::Title-->
-                                                <div class="card-title d-flex flex-column">
-                                                    <!--begin::Amount-->
-                                                    <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2">6.3k</span>
-                                                    <!--end::Amount-->
-
-                                                    <!--begin::Subtitle-->
-                                                    <span class="text-gray-400 pt-1 fw-semibold fs-6">New Customers This Month</span>
-                                                    <!--end::Subtitle-->
-                                                </div>
-                                                <!--end::Title-->
-                                            </div>
-                                            <!--end::Header-->
-
-                                            <!--begin::Card body-->
-                                            <div class="card-body d-flex flex-column justify-content-end pe-0">
-                                                <!--begin::Title-->
-                                                <span class="fs-6 fw-bolder text-gray-800 d-block mb-2">Today’s Heroes</span>
-                                                <!--end::Title-->
-
-                                                <!--begin::Users group-->
-                                                <div class="symbol-group symbol-hover flex-nowrap">
-                                                    <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Alan Warden">
-                                                        <span class="symbol-label bg-warning text-inverse-warning fw-bold">A</span>
-                                                    </div>
-                                                    <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Michael Eberon">
-                                                        <img alt="Pic" src="./assets/media/avatars/300-11.jpg" />
-                                                    </div>
-                                                    <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Susan Redwood">
-                                                        <span class="symbol-label bg-primary text-inverse-primary fw-bold">S</span>
-                                                    </div>
-                                                    <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Melody Macy">
-                                                        <img alt="Pic" src="./assets/media/avatars/300-2.jpg" />
-                                                    </div>
-                                                    <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Perry Matthew">
-                                                        <span class="symbol-label bg-danger text-inverse-danger fw-bold">P</span>
-                                                    </div>
-                                                    <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Barry Walter">
-                                                        <img alt="Pic" src="./assets/media/avatars/300-12.jpg" />
-                                                    </div>
-                                                    <a href="#" class="symbol symbol-35px symbol-circle" data-bs-toggle="modal" data-bs-target="#kt_modal_view_users">
-                                                        <span class="symbol-label bg-light text-gray-400 fs-8 fw-bold">+42</span>
-                                                    </a>
-                                                </div>
-                                                <!--end::Users group-->
-                                            </div>
-                                            <!--end::Card body-->
-                                        </div>
-                                        <!--end::Card widget 7-->
-                                    </div>
-                                    <!--end::Col-->
-
-                                    <!--begin::Col-->
-                                    <div class="col-lg-12 col-xl-12 col-xxl-6 mb-5 mb-xl-0">
-                                        <!--begin::Chart widget 3-->
-                                        <div class="card card-flush overflow-hidden h-md-100">
-                                            <!--begin::Header-->
-                                            <div class="card-header py-5">
-                                                <!--begin::Title-->
-                                                <h3 class="card-title align-items-start flex-column">
-                                                    <span class="card-label fw-bold text-dark">Sales This Months</span>
-                                                    <span class="text-gray-400 mt-1 fw-semibold fs-6">Users from all channels</span>
-                                                </h3>
-                                                <!--end::Title-->
-
-                                                <!--begin::Toolbar-->
-                                                <div class="card-toolbar">
-                                                    <!--begin::Menu-->
-                                                    <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
-
-                                                        <i class="ki-outline ki-dots-square fs-1"></i>
-                                                    </button>
-
-
-                                                    <!--begin::Menu 2-->
-                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu separator-->
-                                                        <div class="separator mb-3 opacity-75"></div>
-                                                        <!--end::Menu separator-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <a href="#" class="menu-link px-3">
-                                                                New Ticket
-                                                            </a>
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <a href="#" class="menu-link px-3">
-                                                                New Customer
-                                                            </a>
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                            <!--begin::Menu item-->
-                                                            <a href="#" class="menu-link px-3">
-                                                                <span class="menu-title">New Group</span>
-                                                                <span class="menu-arrow"></span>
-                                                            </a>
-                                                            <!--end::Menu item-->
-
-                                                            <!--begin::Menu sub-->
-                                                            <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                                <!--begin::Menu item-->
-                                                                <div class="menu-item px-3">
-                                                                    <a href="#" class="menu-link px-3">
-                                                                        Admin Group
-                                                                    </a>
-                                                                </div>
-                                                                <!--end::Menu item-->
-
-                                                                <!--begin::Menu item-->
-                                                                <div class="menu-item px-3">
-                                                                    <a href="#" class="menu-link px-3">
-                                                                        Staff Group
-                                                                    </a>
-                                                                </div>
-                                                                <!--end::Menu item-->
-
-                                                                <!--begin::Menu item-->
-                                                                <div class="menu-item px-3">
-                                                                    <a href="#" class="menu-link px-3">
-                                                                        Member Group
-                                                                    </a>
-                                                                </div>
-                                                                <!--end::Menu item-->
-                                                            </div>
-                                                            <!--end::Menu sub-->
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <a href="#" class="menu-link px-3">
-                                                                New Contact
-                                                            </a>
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu separator-->
-                                                        <div class="separator mt-3 opacity-75"></div>
-                                                        <!--end::Menu separator-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <div class="menu-content px-3 py-3">
-                                                                <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                    Generate Reports
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <!--end::Menu item-->
-                                                    </div>
-                                                    <!--end::Menu 2-->
-
-                                                    <!--end::Menu-->
-                                                </div>
-                                                <!--end::Toolbar-->
-                                            </div>
-                                            <!--end::Header-->
-
-                                            <!--begin::Card body-->
-                                            <div class="card-body d-flex justify-content-between flex-column pb-1 px-0">
-                                                <!--begin::Statistics-->
-                                                <div class="px-9 mb-5">
-                                                    <!--begin::Statistics-->
-                                                    <div class="d-flex mb-2">
-                                                        <span class="fs-4 fw-semibold text-gray-400 me-1">$</span>
-                                                        <span class="fs-2hx fw-bold text-gray-800 me-2 lh-1 ls-n2">14,094</span>
-                                                    </div>
-                                                    <!--end::Statistics-->
-
-                                                    <!--begin::Description-->
-                                                    <span class="fs-6 fw-semibold text-gray-400">Another $48,346 to Goal</span>
-                                                    <!--end::Description-->
-                                                </div>
-                                                <!--end::Statistics-->
-
-                                                <!--begin::Chart-->
-                                                <div id="kt_charts_widget_3" class="min-h-auto ps-4 pe-6" style="height: 300px"></div>
-                                                <!--end::Chart-->
-                                            </div>
-                                            <!--end::Card body-->
-                                        </div>
-                                        <!--end::Chart widget 3-->
-                                    </div>
-                                    <!--end::Col-->
-                                </div>
-                                <!--end::Row-->
-
-                                <!--begin::Row-->
-                                <div class="row gy-5 g-xl-10">
-                                    <!--begin::Col-->
-                                    <div class="col-xl-6 mb-xl-10">
-
-                                        <!--begin::Table widget 2-->
-                                        <div class="card h-md-100">
-                                            <!--begin::Header-->
-                                            <div class="card-header align-items-center border-0">
-                                                <!--begin::Title-->
-                                                <h3 class="fw-bold text-gray-900 m-0">Recent Orders</h3>
-                                                <!--end::Title-->
-
-                                                <!--begin::Menu-->
-                                                <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
-
-                                                    <i class="ki-outline ki-dots-square fs-1"></i>
+                                                <!--begin::Export-->
+                                                <button type="button" class="btn btn-light-primary me-3" data-bs-toggle="modal" data-bs-target="#kt_customers_export_modal">
+                                                    <i class="ki-outline ki-exit-up fs-2"></i> Export
                                                 </button>
+                                                <!--end::Export-->
 
-                                                <!--begin::Menu 2-->
-                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                                                    <!--begin::Menu item-->
-                                                    <div class="menu-item px-3">
-                                                        <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                    </div>
-                                                    <!--end::Menu item-->
-
-                                                    <!--begin::Menu separator-->
-                                                    <div class="separator mb-3 opacity-75"></div>
-                                                    <!--end::Menu separator-->
-
-                                                    <!--begin::Menu item-->
-                                                    <div class="menu-item px-3">
-                                                        <a href="#" class="menu-link px-3">
-                                                            New Ticket
-                                                        </a>
-                                                    </div>
-                                                    <!--end::Menu item-->
-
-                                                    <!--begin::Menu item-->
-                                                    <div class="menu-item px-3">
-                                                        <a href="#" class="menu-link px-3">
-                                                            New Customer
-                                                        </a>
-                                                    </div>
-                                                    <!--end::Menu item-->
-
-                                                    <!--begin::Menu item-->
-                                                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                        <!--begin::Menu item-->
-                                                        <a href="#" class="menu-link px-3">
-                                                            <span class="menu-title">New Group</span>
-                                                            <span class="menu-arrow"></span>
-                                                        </a>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu sub-->
-                                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                            <!--begin::Menu item-->
-                                                            <div class="menu-item px-3">
-                                                                <a href="#" class="menu-link px-3">
-                                                                    Admin Group
-                                                                </a>
-                                                            </div>
-                                                            <!--end::Menu item-->
-
-                                                            <!--begin::Menu item-->
-                                                            <div class="menu-item px-3">
-                                                                <a href="#" class="menu-link px-3">
-                                                                    Staff Group
-                                                                </a>
-                                                            </div>
-                                                            <!--end::Menu item-->
-
-                                                            <!--begin::Menu item-->
-                                                            <div class="menu-item px-3">
-                                                                <a href="#" class="menu-link px-3">
-                                                                    Member Group
-                                                                </a>
-                                                            </div>
-                                                            <!--end::Menu item-->
-                                                        </div>
-                                                        <!--end::Menu sub-->
-                                                    </div>
-                                                    <!--end::Menu item-->
-
-                                                    <!--begin::Menu item-->
-                                                    <div class="menu-item px-3">
-                                                        <a href="#" class="menu-link px-3">
-                                                            New Contact
-                                                        </a>
-                                                    </div>
-                                                    <!--end::Menu item-->
-
-                                                    <!--begin::Menu separator-->
-                                                    <div class="separator mt-3 opacity-75"></div>
-                                                    <!--end::Menu separator-->
-
-                                                    <!--begin::Menu item-->
-                                                    <div class="menu-item px-3">
-                                                        <div class="menu-content px-3 py-3">
-                                                            <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                Generate Reports
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <!--end::Menu item-->
-                                                </div>
-                                                <!--end::Menu 2-->
-
-                                                <!--end::Menu-->
+                                                <!--begin::Add customer-->
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_add_customer">
+                                                    Add Customer
+                                                </button>
+                                                <!--end::Add customer-->
                                             </div>
-                                            <!--end::Header-->
+                                            <!--end::Toolbar-->
 
-                                            <!--begin::Body-->
-                                            <div class="card-body pt-2">
-                                                <!--begin::Nav-->
-                                                <ul class="nav nav-pills nav-pills-custom mb-3">
-                                                    <!--begin::Item-->
-                                                    <li class="nav-item mb-3 me-3 me-lg-6">
-                                                        <!--begin::Link-->
-                                                        <a class="nav-link d-flex justify-content-between flex-column flex-center overflow-hidden active w-80px h-85px py-4" data-bs-toggle="pill" href="#kt_stats_widget_2_tab_1">
-                                                            <!--begin::Icon-->
-                                                            <div class="nav-icon">
-                                                                <img alt="" src="./assets/media/svg/products-categories/t-shirt.svg" class="" />
-                                                            </div>
-                                                            <!--end::Icon-->
-
-                                                            <!--begin::Subtitle-->
-                                                            <span class="nav-text text-gray-700 fw-bold fs-6 lh-1">
-                                                                T-shirt
-                                                            </span>
-                                                            <!--end::Subtitle-->
-
-                                                            <!--begin::Bullet-->
-                                                            <span class="bullet-custom position-absolute bottom-0 w-100 h-4px bg-primary"></span>
-                                                            <!--end::Bullet-->
-                                                        </a>
-                                                        <!--end::Link-->
-                                                    </li>
-                                                    <!--end::Item-->
-
-                                                    <!--begin::Item-->
-                                                    <li class="nav-item mb-3 me-3 me-lg-6">
-                                                        <!--begin::Link-->
-                                                        <a class="nav-link d-flex justify-content-between flex-column flex-center overflow-hidden w-80px h-85px py-4" data-bs-toggle="pill" href="#kt_stats_widget_2_tab_2">
-                                                            <!--begin::Icon-->
-                                                            <div class="nav-icon">
-                                                                <img alt="" src="./assets/media/svg/products-categories/gaming.svg" class="" />
-                                                            </div>
-                                                            <!--end::Icon-->
-
-                                                            <!--begin::Subtitle-->
-                                                            <span class="nav-text text-gray-700 fw-bold fs-6 lh-1">
-                                                                Gaming
-                                                            </span>
-                                                            <!--end::Subtitle-->
-
-                                                            <!--begin::Bullet-->
-                                                            <span class="bullet-custom position-absolute bottom-0 w-100 h-4px bg-primary"></span>
-                                                            <!--end::Bullet-->
-                                                        </a>
-                                                        <!--end::Link-->
-                                                    </li>
-                                                    <!--end::Item-->
-
-                                                    <!--begin::Item-->
-                                                    <li class="nav-item mb-3 me-3 me-lg-6">
-                                                        <!--begin::Link-->
-                                                        <a class="nav-link d-flex justify-content-between flex-column flex-center overflow-hidden w-80px h-85px py-4" data-bs-toggle="pill" href="#kt_stats_widget_2_tab_3">
-                                                            <!--begin::Icon-->
-                                                            <div class="nav-icon">
-                                                                <img alt="" src="./assets/media/svg/products-categories/watch.svg" class="" />
-                                                            </div>
-                                                            <!--end::Icon-->
-
-                                                            <!--begin::Subtitle-->
-                                                            <span class="nav-text text-gray-600 fw-bold fs-6 lh-1">
-                                                                Watch
-                                                            </span>
-                                                            <!--end::Subtitle-->
-
-                                                            <!--begin::Bullet-->
-                                                            <span class="bullet-custom position-absolute bottom-0 w-100 h-4px bg-primary"></span>
-                                                            <!--end::Bullet-->
-                                                        </a>
-                                                        <!--end::Link-->
-                                                    </li>
-                                                    <!--end::Item-->
-
-                                                    <!--begin::Item-->
-                                                    <li class="nav-item mb-3 me-3 me-lg-6">
-                                                        <!--begin::Link-->
-                                                        <a class="nav-link d-flex justify-content-between flex-column flex-center overflow-hidden w-80px h-85px py-4" data-bs-toggle="pill" href="#kt_stats_widget_2_tab_4">
-                                                            <!--begin::Icon-->
-                                                            <div class="nav-icon">
-                                                                <img alt="" src="./assets/media/svg/products-categories/gloves.svg" class="nav-icon" />
-                                                            </div>
-                                                            <!--end::Icon-->
-
-                                                            <!--begin::Subtitle-->
-                                                            <span class="nav-text text-gray-600 fw-bold fs-6 lh-1">
-                                                                Gloves
-                                                            </span>
-                                                            <!--end::Subtitle-->
-
-                                                            <!--begin::Bullet-->
-                                                            <span class="bullet-custom position-absolute bottom-0 w-100 h-4px bg-primary"></span>
-                                                            <!--end::Bullet-->
-                                                        </a>
-                                                        <!--end::Link-->
-                                                    </li>
-                                                    <!--end::Item-->
-
-                                                    <!--begin::Item-->
-                                                    <li class="nav-item mb-3">
-                                                        <!--begin::Link-->
-                                                        <a class="nav-link d-flex justify-content-between flex-column flex-center overflow-hidden w-80px h-85px py-4" data-bs-toggle="pill" href="#kt_stats_widget_2_tab_5">
-                                                            <!--begin::Icon-->
-                                                            <div class="nav-icon">
-                                                                <img alt="" src="./assets/media/svg/products-categories/shoes.svg" class="nav-icon" />
-                                                            </div>
-                                                            <!--end::Icon-->
-
-                                                            <!--begin::Subtitle-->
-                                                            <span class="nav-text text-gray-600 fw-bold fs-6 lh-1">
-                                                                Shoes
-                                                            </span>
-                                                            <!--end::Subtitle-->
-
-                                                            <!--begin::Bullet-->
-                                                            <span class="bullet-custom position-absolute bottom-0 w-100 h-4px bg-primary"></span>
-                                                            <!--end::Bullet-->
-                                                        </a>
-                                                        <!--end::Link-->
-                                                    </li>
-                                                    <!--end::Item-->
-                                                </ul>
-                                                <!--end::Nav-->
-
-                                                <!--begin::Tab Content-->
-                                                <div class="tab-content">
-
-                                                    <!--begin::Tap pane-->
-                                                    <div class="tab-pane fade show active" id="kt_stats_widget_2_tab_1">
-                                                        <!--begin::Table container-->
-                                                        <div class="table-responsive">
-                                                            <!--begin::Table-->
-                                                            <table class="table table-row-dashed align-middle gs-0 gy-4 my-0">
-                                                                <!--begin::Table head-->
-                                                                <thead>
-                                                                    <tr class="fs-7 fw-bold text-gray-500 border-bottom-0">
-                                                                        <th class="ps-0 w-50px">ITEM</th>
-                                                                        <th class="min-w-125px"></th>
-                                                                        <th class="text-end min-w-100px">QTY</th>
-                                                                        <th class="pe-0 text-end min-w-100px">PRICE</th>
-                                                                        <th class="pe-0 text-end min-w-100px">TOTAL PRICE</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <!--end::Table head-->
-
-                                                                <!--begin::Table body-->
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/210.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Elephant 1802</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-2347</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x1</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$72.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$126.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/215.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Red Laga</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-1321</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x2</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$45.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$76.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/209.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">RiseUP</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-4312</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x3</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$84.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$168.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                                <!--end::Table body-->
-                                                            </table>
-                                                            <!--end::Table-->
-                                                        </div>
-                                                        <!--end::Table container-->
-                                                    </div>
-                                                    <!--end::Tap pane-->
-
-                                                    <!--begin::Tap pane-->
-                                                    <div class="tab-pane fade " id="kt_stats_widget_2_tab_2">
-                                                        <!--begin::Table container-->
-                                                        <div class="table-responsive">
-                                                            <!--begin::Table-->
-                                                            <table class="table table-row-dashed align-middle gs-0 gy-4 my-0">
-                                                                <!--begin::Table head-->
-                                                                <thead>
-                                                                    <tr class="fs-7 fw-bold text-gray-500 border-bottom-0">
-                                                                        <th class="ps-0 w-50px">ITEM</th>
-                                                                        <th class="min-w-125px"></th>
-                                                                        <th class="text-end min-w-100px">QTY</th>
-                                                                        <th class="pe-0 text-end min-w-100px">PRICE</th>
-                                                                        <th class="pe-0 text-end min-w-100px">TOTAL PRICE</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <!--end::Table head-->
-
-                                                                <!--begin::Table body-->
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/197.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Elephant 1802</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-4312</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x1</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$32.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$312.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/178.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Red Laga</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-3122</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x2</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$53.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$62.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/22.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">RiseUP</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-1142</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x3</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$74.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$139.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                                <!--end::Table body-->
-                                                            </table>
-                                                            <!--end::Table-->
-                                                        </div>
-                                                        <!--end::Table container-->
-                                                    </div>
-                                                    <!--end::Tap pane-->
-
-                                                    <!--begin::Tap pane-->
-                                                    <div class="tab-pane fade " id="kt_stats_widget_2_tab_3">
-                                                        <!--begin::Table container-->
-                                                        <div class="table-responsive">
-                                                            <!--begin::Table-->
-                                                            <table class="table table-row-dashed align-middle gs-0 gy-4 my-0">
-                                                                <!--begin::Table head-->
-                                                                <thead>
-                                                                    <tr class="fs-7 fw-bold text-gray-500 border-bottom-0">
-                                                                        <th class="ps-0 w-50px">ITEM</th>
-                                                                        <th class="min-w-125px"></th>
-                                                                        <th class="text-end min-w-100px">QTY</th>
-                                                                        <th class="pe-0 text-end min-w-100px">PRICE</th>
-                                                                        <th class="pe-0 text-end min-w-100px">TOTAL PRICE</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <!--end::Table head-->
-
-                                                                <!--begin::Table body-->
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/1.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Elephant 1324</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-1523</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x1</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$43.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$231.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/24.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Red Laga</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-5314</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x2</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$71.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$53.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/71.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">RiseUP</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-4222</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x3</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$23.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$213.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                                <!--end::Table body-->
-                                                            </table>
-                                                            <!--end::Table-->
-                                                        </div>
-                                                        <!--end::Table container-->
-                                                    </div>
-                                                    <!--end::Tap pane-->
-
-                                                    <!--begin::Tap pane-->
-                                                    <div class="tab-pane fade " id="kt_stats_widget_2_tab_4">
-                                                        <!--begin::Table container-->
-                                                        <div class="table-responsive">
-                                                            <!--begin::Table-->
-                                                            <table class="table table-row-dashed align-middle gs-0 gy-4 my-0">
-                                                                <!--begin::Table head-->
-                                                                <thead>
-                                                                    <tr class="fs-7 fw-bold text-gray-500 border-bottom-0">
-                                                                        <th class="ps-0 w-50px">ITEM</th>
-                                                                        <th class="min-w-125px"></th>
-                                                                        <th class="text-end min-w-100px">QTY</th>
-                                                                        <th class="pe-0 text-end min-w-100px">PRICE</th>
-                                                                        <th class="pe-0 text-end min-w-100px">TOTAL PRICE</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <!--end::Table head-->
-
-                                                                <!--begin::Table body-->
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/41.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Elephant 2635</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-1523</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x1</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$65.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$163.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/63.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Red Laga</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-2745</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x2</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$64.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$73.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/59.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">RiseUP</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-5173</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x3</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$54.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$173.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                                <!--end::Table body-->
-                                                            </table>
-                                                            <!--end::Table-->
-                                                        </div>
-                                                        <!--end::Table container-->
-                                                    </div>
-                                                    <!--end::Tap pane-->
-
-                                                    <!--begin::Tap pane-->
-                                                    <div class="tab-pane fade " id="kt_stats_widget_2_tab_5">
-                                                        <!--begin::Table container-->
-                                                        <div class="table-responsive">
-                                                            <!--begin::Table-->
-                                                            <table class="table table-row-dashed align-middle gs-0 gy-4 my-0">
-                                                                <!--begin::Table head-->
-                                                                <thead>
-                                                                    <tr class="fs-7 fw-bold text-gray-500 border-bottom-0">
-                                                                        <th class="ps-0 w-50px">ITEM</th>
-                                                                        <th class="min-w-125px"></th>
-                                                                        <th class="text-end min-w-100px">QTY</th>
-                                                                        <th class="pe-0 text-end min-w-100px">PRICE</th>
-                                                                        <th class="pe-0 text-end min-w-100px">TOTAL PRICE</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <!--end::Table head-->
-
-                                                                <!--begin::Table body-->
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/10.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Nike</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-2163</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x1</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$64.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$287.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/96.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Adidas</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-2162</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x2</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$76.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$51.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <img src="./assets/media/stock/ecommerce/13.gif" class="w-50px ms-n1" alt="" />
-                                                                        </td>
-                                                                        <td class="ps-0">
-                                                                            <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0">Puma</a>
-                                                                            <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">Item: #XDG-1537</span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6 ps-0 text-end">x3</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$27.00</span>
-                                                                        </td>
-                                                                        <td class="text-end pe-0">
-                                                                            <span class="text-gray-800 fw-bold d-block fs-6">$167.00</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                                <!--end::Table body-->
-                                                            </table>
-                                                            <!--end::Table-->
-                                                        </div>
-                                                        <!--end::Table container-->
-                                                    </div>
-                                                    <!--end::Tap pane-->
+                                            <!--begin::Group actions-->
+                                            <div class="d-flex justify-content-end align-items-center d-none" data-kt-customer-table-toolbar="selected">
+                                                <div class="fw-bold me-5">
+                                                    <span class="me-2" data-kt-customer-table-select="selected_count"></span> Selected
                                                 </div>
-                                                <!--end::Tab Content-->
+
+                                                <button type="button" class="btn btn-danger" data-kt-customer-table-select="delete_selected">
+                                                    Delete Selected
+                                                </button>
                                             </div>
-                                            <!--end: Card Body-->
+                                            <!--end::Group actions-->
                                         </div>
-                                        <!--end::Table widget 2-->
+                                        <!--end::Card toolbar-->
                                     </div>
-                                    <!--end::Col-->
+                                    <!--end::Card header-->
 
-                                    <!--begin::Col-->
-                                    <div class="col-xl-6 mb-5 mb-xl-10">
-                                        <!--begin::Chart widget 4-->
-                                        <div class="card card-flush overflow-hidden h-md-100">
-                                            <!--begin::Header-->
-                                            <div class="card-header py-5">
-                                                <!--begin::Title-->
-                                                <h3 class="card-title align-items-start flex-column">
-                                                    <span class="card-label fw-bold text-dark">Discounted Product Sales</span>
-                                                    <span class="text-gray-400 mt-1 fw-semibold fs-6">Users from all channels</span>
-                                                </h3>
-                                                <!--end::Title-->
+                                    <!--begin::Card body-->
+                                    <div class="card-body pt-0">
 
-                                                <!--begin::Toolbar-->
-                                                <div class="card-toolbar">
-                                                    <!--begin::Menu-->
-                                                    <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
+                                        <!--begin::Table-->
+                                        <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_customers_table">
+                                            <thead>
+                                                <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+                                                    <th class="w-10px pe-2">
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid me-3">
+                                                            <input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#kt_customers_table .form-check-input" value="1" />
+                                                        </div>
+                                                    </th>
+                                                    <th class="min-w-125px">Customer Name</th>
+                                                    <th class="min-w-125px">Email</th>
+                                                    <th class="min-w-125px">Status</th>
+                                                    <th class="min-w-125px">IP Address</th>
+                                                    <th class="min-w-125px">Created Date</th>
+                                                    <th class="text-end min-w-70px">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="fw-semibold text-gray-600">
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Emma Smith</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">smith@kpmg.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        176.67.75.212 </td>
+                                                    <td>
+                                                        24 Jun 2023, 11:05 am </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
 
-                                                        <i class="ki-outline ki-dots-square fs-1"></i>
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Melody Macy</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">melody@altbox.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        137.58.37.80 </td>
+                                                    <td>
+                                                        20 Jun 2023, 8:43 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Max Smith</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">max@kt.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        211.75.77.93 </td>
+                                                    <td>
+                                                        20 Dec 2023, 6:43 am </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Sean Bean</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">sean@dellito.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        174.53.63.122 </td>
+                                                    <td>
+                                                        19 Aug 2023, 5:20 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Brian Cox</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">brian@exchange.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        189.79.59.96 </td>
+                                                    <td>
+                                                        19 Aug 2023, 11:05 am </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Mikaela Collins</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">mik@pex.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        195.62.30.92 </td>
+                                                    <td>
+                                                        19 Aug 2023, 5:30 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Francis Mitcham</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">f.mit@kpmg.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        220.73.81.202 </td>
+                                                    <td>
+                                                        22 Sep 2023, 6:05 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Olivia Wild</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">olivia@corpmail.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        129.53.57.41 </td>
+                                                    <td>
+                                                        25 Jul 2023, 10:30 am </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Neil Owen</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">owen.neil@gmail.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        179.72.66.195 </td>
+                                                    <td>
+                                                        10 Nov 2023, 10:10 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Dan Wilson</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">dam@consilting.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        189.52.84.47 </td>
+                                                    <td>
+                                                        05 May 2023, 2:40 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Emma Bold</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">emma@intenso.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        157.63.24.139 </td>
+                                                    <td>
+                                                        24 Jun 2023, 5:20 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Ana Crown</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">ana.cf@limtel.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        126.71.89.12 </td>
+                                                    <td>
+                                                        10 Mar 2023, 10:10 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Robert Doe</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">robert@benko.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        190.64.28.53 </td>
+                                                    <td>
+                                                        22 Sep 2023, 11:05 am </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">John Miller</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">miller@mapple.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        160.67.71.148 </td>
+                                                    <td>
+                                                        20 Dec 2023, 5:20 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Lucy Kunic</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">lucy.m@fentech.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        111.58.50.0 </td>
+                                                    <td>
+                                                        05 May 2023, 5:30 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Emma Smith</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">smith@kpmg.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        206.65.35.136 </td>
+                                                    <td>
+                                                        25 Jul 2023, 6:43 am </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Melody Macy</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">melody@altbox.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        193.54.42.154 </td>
+                                                    <td>
+                                                        10 Nov 2023, 6:05 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Max Smith</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">max@kt.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        188.70.63.39 </td>
+                                                    <td>
+                                                        20 Jun 2023, 11:05 am </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Sean Bean</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">sean@dellito.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        206.74.73.21 </td>
+                                                    <td>
+                                                        24 Jun 2023, 11:30 am </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Brian Cox</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">brian@exchange.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        154.75.45.59 </td>
+                                                    <td>
+                                                        25 Oct 2023, 6:43 am </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Mikaela Collins</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">mik@pex.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        118.56.55.33 </td>
+                                                    <td>
+                                                        24 Jun 2023, 5:20 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Francis Mitcham</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">f.mit@kpmg.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        133.57.62.178 </td>
+                                                    <td>
+                                                        25 Oct 2023, 2:40 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Olivia Wild</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">olivia@corpmail.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        118.70.26.65 </td>
+                                                    <td>
+                                                        15 Apr 2023, 11:30 am </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Neil Owen</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">owen.neil@gmail.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        129.63.44.124 </td>
+                                                    <td>
+                                                        20 Jun 2023, 6:43 am </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Dan Wilson</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">dam@consilting.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        168.75.87.132 </td>
+                                                    <td>
+                                                        20 Jun 2023, 5:20 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Emma Bold</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">emma@intenso.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        191.68.29.73 </td>
+                                                    <td>
+                                                        22 Sep 2023, 11:05 am </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Ana Crown</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">ana.cf@limtel.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        198.55.68.172 </td>
+                                                    <td>
+                                                        24 Jun 2023, 5:30 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Robert Doe</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">robert@benko.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        157.61.80.123 </td>
+                                                    <td>
+                                                        15 Apr 2023, 6:43 am </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">John Miller</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">miller@mapple.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        151.71.34.128 </td>
+                                                    <td>
+                                                        15 Apr 2023, 11:30 am </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Lucy Kunic</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">lucy.m@fentech.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        209.67.90.228 </td>
+                                                    <td>
+                                                        25 Jul 2023, 10:10 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Emma Smith</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">smith@kpmg.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        184.77.32.182 </td>
+                                                    <td>
+                                                        19 Aug 2023, 8:43 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Melody Macy</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">melody@altbox.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        128.78.33.233 </td>
+                                                    <td>
+                                                        10 Mar 2023, 6:05 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Max Smith</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">max@kt.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        133.74.86.44 </td>
+                                                    <td>
+                                                        20 Jun 2023, 2:40 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Sean Bean</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">sean@dellito.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        112.64.46.4 </td>
+                                                    <td>
+                                                        25 Oct 2023, 11:30 am </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Brian Cox</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">brian@exchange.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        182.74.78.65 </td>
+                                                    <td>
+                                                        15 Apr 2023, 2:40 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Mikaela Collins</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">mik@pex.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        182.52.90.152 </td>
+                                                    <td>
+                                                        05 May 2023, 9:23 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Francis Mitcham</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">f.mit@kpmg.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        105.75.43.202 </td>
+                                                    <td>
+                                                        20 Jun 2023, 10:10 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Olivia Wild</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">olivia@corpmail.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-success">Active</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        189.50.51.239 </td>
+                                                    <td>
+                                                        19 Aug 2023, 10:30 am </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Neil Owen</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">owen.neil@gmail.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        207.76.32.117 </td>
+                                                    <td>
+                                                        25 Jul 2023, 10:10 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="details.html" class="text-gray-800 text-hover-primary mb-1">Dan Wilson</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-gray-600 text-hover-primary mb-1">dam@consilting.com</a>
+                                                    </td>
+                                                    <td>
+                                                        <!--begin::Badges-->
+                                                        <div class="badge badge-light-danger">Locked</div>
+                                                        <!--end::Badges-->
+                                                    </td>
+                                                    <td>
+                                                        177.59.23.10 </td>
+                                                    <td>
+                                                        10 Mar 2023, 5:20 pm </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                            Actions
+                                                            <i class="ki-outline ki-down fs-5 ms-1"></i> </a>
+                                                        <!--begin::Menu-->
+                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="../../customers/view.html" class="menu-link px-3">
+                                                                    View
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+
+                                                            <!--begin::Menu item-->
+                                                            <div class="menu-item px-3">
+                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">
+                                                                    Delete
+                                                                </a>
+                                                            </div>
+                                                            <!--end::Menu item-->
+                                                        </div>
+                                                        <!--end::Menu-->
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            <!--end::Table body-->
+                                        </table>
+                                        <!--end::Table-->
+                                    </div>
+                                    <!--end::Card body-->
+                                </div>
+                                <!--end::Card-->
+
+                                <!--begin::Modals-->
+                                <!--begin::Modal - Customers - Add-->
+                                <div class="modal fade" id="kt_modal_add_customer" tabindex="-1" aria-hidden="true">
+                                    <!--begin::Modal dialog-->
+                                    <div class="modal-dialog modal-dialog-centered mw-650px">
+                                        <!--begin::Modal content-->
+                                        <div class="modal-content">
+                                            <!--begin::Form-->
+                                            <form class="form" action="#" id="kt_modal_add_customer_form" data-kt-redirect="../../customers/list.html">
+                                                <!--begin::Modal header-->
+                                                <div class="modal-header" id="kt_modal_add_customer_header">
+                                                    <!--begin::Modal title-->
+                                                    <h2 class="fw-bold">Add a Customer</h2>
+                                                    <!--end::Modal title-->
+
+                                                    <!--begin::Close-->
+                                                    <div id="kt_modal_add_customer_close" class="btn btn-icon btn-sm btn-active-icon-primary">
+                                                        <i class="ki-outline ki-cross fs-1"></i>
+                                                    </div>
+                                                    <!--end::Close-->
+                                                </div>
+                                                <!--end::Modal header-->
+
+                                                <!--begin::Modal body-->
+                                                <div class="modal-body py-10 px-lg-17">
+                                                    <!--begin::Scroll-->
+                                                    <div class="scroll-y me-n7 pe-7" id="kt_modal_add_customer_scroll" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-max-height="auto" data-kt-scroll-dependencies="#kt_modal_add_customer_header" data-kt-scroll-wrappers="#kt_modal_add_customer_scroll" data-kt-scroll-offset="300px">
+                                                        <!--begin::Input group-->
+                                                        <div class="fv-row mb-7">
+                                                            <!--begin::Label-->
+                                                            <label class="required fs-6 fw-semibold mb-2">Name</label>
+                                                            <!--end::Label-->
+
+                                                            <!--begin::Input-->
+                                                            <input type="text" class="form-control form-control-solid" placeholder="" name="name" value="Sean Bean" />
+                                                            <!--end::Input-->
+                                                        </div>
+                                                        <!--end::Input group-->
+
+                                                        <!--begin::Input group-->
+                                                        <div class="fv-row mb-7">
+                                                            <!--begin::Label-->
+                                                            <label class="fs-6 fw-semibold mb-2">
+                                                                <span class="required">Email</span>
+
+
+                                                                <span class="ms-1" data-bs-toggle="tooltip" title="Email address must be active">
+                                                                    <i class="ki-outline ki-information-5 text-gray-500 fs-6"></i></span> </label>
+                                                            <!--end::Label-->
+
+                                                            <!--begin::Input-->
+                                                            <input type="email" class="form-control form-control-solid" placeholder="" name="email" value="sean@dellito.com" />
+                                                            <!--end::Input-->
+                                                        </div>
+                                                        <!--end::Input group-->
+
+                                                        <!--begin::Input group-->
+                                                        <div class="fv-row mb-15">
+                                                            <!--begin::Label-->
+                                                            <label class="fs-6 fw-semibold mb-2">Description</label>
+                                                            <!--end::Label-->
+
+                                                            <!--begin::Input-->
+                                                            <input type="text" class="form-control form-control-solid" placeholder="" name="description" />
+                                                            <!--end::Input-->
+                                                        </div>
+                                                        <!--end::Input group-->
+
+                                                        <!--begin::Billing toggle-->
+                                                        <div class="fw-bold fs-3 rotate collapsible mb-7" data-bs-toggle="collapse" href="#kt_modal_add_customer_billing_info" role="button" aria-expanded="false" aria-controls="kt_customer_view_details">
+                                                            Shipping Information
+                                                            <span class="ms-2 rotate-180">
+                                                                <i class="ki-outline ki-down fs-3"></i> </span>
+                                                        </div>
+                                                        <!--end::Billing toggle-->
+
+                                                        <!--begin::Billing form-->
+                                                        <div id="kt_modal_add_customer_billing_info" class="collapse show">
+                                                            <!--begin::Input group-->
+                                                            <div class="d-flex flex-column mb-7 fv-row">
+                                                                <!--begin::Label-->
+                                                                <label class="required fs-6 fw-semibold mb-2">Address Line 1</label>
+                                                                <!--end::Label-->
+
+                                                                <!--begin::Input-->
+                                                                <input class="form-control form-control-solid" placeholder="" name="address1" value="101, Collins Street" />
+                                                                <!--end::Input-->
+                                                            </div>
+                                                            <!--end::Input group-->
+
+                                                            <!--begin::Input group-->
+                                                            <div class="d-flex flex-column mb-7 fv-row">
+                                                                <!--begin::Label-->
+                                                                <label class="fs-6 fw-semibold mb-2">Address Line 2</label>
+                                                                <!--end::Label-->
+
+                                                                <!--begin::Input-->
+                                                                <input class="form-control form-control-solid" placeholder="" name="address2" value="" />
+                                                                <!--end::Input-->
+                                                            </div>
+                                                            <!--end::Input group-->
+
+                                                            <!--begin::Input group-->
+                                                            <div class="d-flex flex-column mb-7 fv-row">
+                                                                <!--begin::Label-->
+                                                                <label class="required fs-6 fw-semibold mb-2">Town</label>
+                                                                <!--end::Label-->
+
+                                                                <!--begin::Input-->
+                                                                <input class="form-control form-control-solid" placeholder="" name="city" value="Melbourne" />
+                                                                <!--end::Input-->
+                                                            </div>
+                                                            <!--end::Input group-->
+
+                                                            <!--begin::Input group-->
+                                                            <div class="row g-9 mb-7">
+                                                                <!--begin::Col-->
+                                                                <div class="col-md-6 fv-row">
+                                                                    <!--begin::Label-->
+                                                                    <label class="required fs-6 fw-semibold mb-2">State / Province</label>
+                                                                    <!--end::Label-->
+
+                                                                    <!--begin::Input-->
+                                                                    <input class="form-control form-control-solid" placeholder="" name="state" value="Victoria" />
+                                                                    <!--end::Input-->
+                                                                </div>
+                                                                <!--end::Col-->
+
+                                                                <!--begin::Col-->
+                                                                <div class="col-md-6 fv-row">
+                                                                    <!--begin::Label-->
+                                                                    <label class="required fs-6 fw-semibold mb-2">Post Code</label>
+                                                                    <!--end::Label-->
+
+                                                                    <!--begin::Input-->
+                                                                    <input class="form-control form-control-solid" placeholder="" name="postcode" value="3000" />
+                                                                    <!--end::Input-->
+                                                                </div>
+                                                                <!--end::Col-->
+                                                            </div>
+                                                            <!--end::Input group-->
+
+                                                            <!--begin::Input group-->
+                                                            <div class="d-flex flex-column mb-7 fv-row">
+                                                                <!--begin::Label-->
+                                                                <label class="fs-6 fw-semibold mb-2">
+                                                                    <span class="required">Country</span>
+
+
+                                                                    <span class="ms-1" data-bs-toggle="tooltip" title="Country of origination">
+                                                                        <i class="ki-outline ki-information-5 text-gray-500 fs-6"></i></span> </label>
+                                                                <!--end::Label-->
+
+                                                                <!--begin::Input-->
+                                                                <select name="country" aria-label="Select a Country" data-control="select2" data-placeholder="Select a Country..." data-dropdown-parent="#kt_modal_add_customer" class="form-select form-select-solid fw-bold">
+                                                                    <option value="">Select a Country...</option>
+                                                                    <option value="AF">Afghanistan</option>
+                                                                    <option value="AX">Aland Islands</option>
+                                                                    <option value="AL">Albania</option>
+                                                                    <option value="DZ">Algeria</option>
+                                                                    <option value="AS">American Samoa</option>
+                                                                    <option value="AD">Andorra</option>
+                                                                    <option value="AO">Angola</option>
+                                                                    <option value="AI">Anguilla</option>
+                                                                    <option value="AG">Antigua and Barbuda</option>
+                                                                    <option value="AR">Argentina</option>
+                                                                    <option value="AM">Armenia</option>
+                                                                    <option value="AW">Aruba</option>
+                                                                    <option value="AU">Australia</option>
+                                                                    <option value="AT">Austria</option>
+                                                                    <option value="AZ">Azerbaijan</option>
+                                                                    <option value="BS">Bahamas</option>
+                                                                    <option value="BH">Bahrain</option>
+                                                                    <option value="BD">Bangladesh</option>
+                                                                    <option value="BB">Barbados</option>
+                                                                    <option value="BY">Belarus</option>
+                                                                    <option value="BE">Belgium</option>
+                                                                    <option value="BZ">Belize</option>
+                                                                    <option value="BJ">Benin</option>
+                                                                    <option value="BM">Bermuda</option>
+                                                                    <option value="BT">Bhutan</option>
+                                                                    <option value="BO">Bolivia, Plurinational State of</option>
+                                                                    <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                                                                    <option value="BA">Bosnia and Herzegovina</option>
+                                                                    <option value="BW">Botswana</option>
+                                                                    <option value="BR">Brazil</option>
+                                                                    <option value="IO">British Indian Ocean Territory</option>
+                                                                    <option value="BN">Brunei Darussalam</option>
+                                                                    <option value="BG">Bulgaria</option>
+                                                                    <option value="BF">Burkina Faso</option>
+                                                                    <option value="BI">Burundi</option>
+                                                                    <option value="KH">Cambodia</option>
+                                                                    <option value="CM">Cameroon</option>
+                                                                    <option value="CA">Canada</option>
+                                                                    <option value="CV">Cape Verde</option>
+                                                                    <option value="KY">Cayman Islands</option>
+                                                                    <option value="CF">Central African Republic</option>
+                                                                    <option value="TD">Chad</option>
+                                                                    <option value="CL">Chile</option>
+                                                                    <option value="CN">China</option>
+                                                                    <option value="CX">Christmas Island</option>
+                                                                    <option value="CC">Cocos (Keeling) Islands</option>
+                                                                    <option value="CO">Colombia</option>
+                                                                    <option value="KM">Comoros</option>
+                                                                    <option value="CK">Cook Islands</option>
+                                                                    <option value="CR">Costa Rica</option>
+                                                                    <option value="CI">Côte d'Ivoire</option>
+                                                                    <option value="HR">Croatia</option>
+                                                                    <option value="CU">Cuba</option>
+                                                                    <option value="CW">Curaçao</option>
+                                                                    <option value="CZ">Czech Republic</option>
+                                                                    <option value="DK">Denmark</option>
+                                                                    <option value="DJ">Djibouti</option>
+                                                                    <option value="DM">Dominica</option>
+                                                                    <option value="DO">Dominican Republic</option>
+                                                                    <option value="EC">Ecuador</option>
+                                                                    <option value="EG">Egypt</option>
+                                                                    <option value="SV">El Salvador</option>
+                                                                    <option value="GQ">Equatorial Guinea</option>
+                                                                    <option value="ER">Eritrea</option>
+                                                                    <option value="EE">Estonia</option>
+                                                                    <option value="ET">Ethiopia</option>
+                                                                    <option value="FK">Falkland Islands (Malvinas)</option>
+                                                                    <option value="FJ">Fiji</option>
+                                                                    <option value="FI">Finland</option>
+                                                                    <option value="FR">France</option>
+                                                                    <option value="PF">French Polynesia</option>
+                                                                    <option value="GA">Gabon</option>
+                                                                    <option value="GM">Gambia</option>
+                                                                    <option value="GE">Georgia</option>
+                                                                    <option value="DE">Germany</option>
+                                                                    <option value="GH">Ghana</option>
+                                                                    <option value="GI">Gibraltar</option>
+                                                                    <option value="GR">Greece</option>
+                                                                    <option value="GL">Greenland</option>
+                                                                    <option value="GD">Grenada</option>
+                                                                    <option value="GU">Guam</option>
+                                                                    <option value="GT">Guatemala</option>
+                                                                    <option value="GG">Guernsey</option>
+                                                                    <option value="GN">Guinea</option>
+                                                                    <option value="GW">Guinea-Bissau</option>
+                                                                    <option value="HT">Haiti</option>
+                                                                    <option value="VA">Holy See (Vatican City State)</option>
+                                                                    <option value="HN">Honduras</option>
+                                                                    <option value="HK">Hong Kong</option>
+                                                                    <option value="HU">Hungary</option>
+                                                                    <option value="IS">Iceland</option>
+                                                                    <option value="IN">India</option>
+                                                                    <option value="ID">Indonesia</option>
+                                                                    <option value="IR">Iran, Islamic Republic of</option>
+                                                                    <option value="IQ">Iraq</option>
+                                                                    <option value="IE">Ireland</option>
+                                                                    <option value="IM">Isle of Man</option>
+                                                                    <option value="IL">Israel</option>
+                                                                    <option value="IT">Italy</option>
+                                                                    <option value="JM">Jamaica</option>
+                                                                    <option value="JP">Japan</option>
+                                                                    <option value="JE">Jersey</option>
+                                                                    <option value="JO">Jordan</option>
+                                                                    <option value="KZ">Kazakhstan</option>
+                                                                    <option value="KE">Kenya</option>
+                                                                    <option value="KI">Kiribati</option>
+                                                                    <option value="KP">Korea, Democratic People's Republic of</option>
+                                                                    <option value="KW">Kuwait</option>
+                                                                    <option value="KG">Kyrgyzstan</option>
+                                                                    <option value="LA">Lao People's Democratic Republic</option>
+                                                                    <option value="LV">Latvia</option>
+                                                                    <option value="LB">Lebanon</option>
+                                                                    <option value="LS">Lesotho</option>
+                                                                    <option value="LR">Liberia</option>
+                                                                    <option value="LY">Libya</option>
+                                                                    <option value="LI">Liechtenstein</option>
+                                                                    <option value="LT">Lithuania</option>
+                                                                    <option value="LU">Luxembourg</option>
+                                                                    <option value="MO">Macao</option>
+                                                                    <option value="MG">Madagascar</option>
+                                                                    <option value="MW">Malawi</option>
+                                                                    <option value="MY">Malaysia</option>
+                                                                    <option value="MV">Maldives</option>
+                                                                    <option value="ML">Mali</option>
+                                                                    <option value="MT">Malta</option>
+                                                                    <option value="MH">Marshall Islands</option>
+                                                                    <option value="MQ">Martinique</option>
+                                                                    <option value="MR">Mauritania</option>
+                                                                    <option value="MU">Mauritius</option>
+                                                                    <option value="MX">Mexico</option>
+                                                                    <option value="FM">Micronesia, Federated States of</option>
+                                                                    <option value="MD">Moldova, Republic of</option>
+                                                                    <option value="MC">Monaco</option>
+                                                                    <option value="MN">Mongolia</option>
+                                                                    <option value="ME">Montenegro</option>
+                                                                    <option value="MS">Montserrat</option>
+                                                                    <option value="MA">Morocco</option>
+                                                                    <option value="MZ">Mozambique</option>
+                                                                    <option value="MM">Myanmar</option>
+                                                                    <option value="NA">Namibia</option>
+                                                                    <option value="NR">Nauru</option>
+                                                                    <option value="NP">Nepal</option>
+                                                                    <option value="NL">Netherlands</option>
+                                                                    <option value="NZ">New Zealand</option>
+                                                                    <option value="NI">Nicaragua</option>
+                                                                    <option value="NE">Niger</option>
+                                                                    <option value="NG">Nigeria</option>
+                                                                    <option value="NU">Niue</option>
+                                                                    <option value="NF">Norfolk Island</option>
+                                                                    <option value="MP">Northern Mariana Islands</option>
+                                                                    <option value="NO">Norway</option>
+                                                                    <option value="OM">Oman</option>
+                                                                    <option value="PK">Pakistan</option>
+                                                                    <option value="PW">Palau</option>
+                                                                    <option value="PS">Palestinian Territory, Occupied</option>
+                                                                    <option value="PA">Panama</option>
+                                                                    <option value="PG">Papua New Guinea</option>
+                                                                    <option value="PY">Paraguay</option>
+                                                                    <option value="PE">Peru</option>
+                                                                    <option value="PH">Philippines</option>
+                                                                    <option value="PL">Poland</option>
+                                                                    <option value="PT">Portugal</option>
+                                                                    <option value="PR">Puerto Rico</option>
+                                                                    <option value="QA">Qatar</option>
+                                                                    <option value="RO">Romania</option>
+                                                                    <option value="RU">Russian Federation</option>
+                                                                    <option value="RW">Rwanda</option>
+                                                                    <option value="BL">Saint Barthélemy</option>
+                                                                    <option value="KN">Saint Kitts and Nevis</option>
+                                                                    <option value="LC">Saint Lucia</option>
+                                                                    <option value="MF">Saint Martin (French part)</option>
+                                                                    <option value="VC">Saint Vincent and the Grenadines</option>
+                                                                    <option value="WS">Samoa</option>
+                                                                    <option value="SM">San Marino</option>
+                                                                    <option value="ST">Sao Tome and Principe</option>
+                                                                    <option value="SA">Saudi Arabia</option>
+                                                                    <option value="SN">Senegal</option>
+                                                                    <option value="RS">Serbia</option>
+                                                                    <option value="SC">Seychelles</option>
+                                                                    <option value="SL">Sierra Leone</option>
+                                                                    <option value="SG">Singapore</option>
+                                                                    <option value="SX">Sint Maarten (Dutch part)</option>
+                                                                    <option value="SK">Slovakia</option>
+                                                                    <option value="SI">Slovenia</option>
+                                                                    <option value="SB">Solomon Islands</option>
+                                                                    <option value="SO">Somalia</option>
+                                                                    <option value="ZA">South Africa</option>
+                                                                    <option value="KR">South Korea</option>
+                                                                    <option value="SS">South Sudan</option>
+                                                                    <option value="ES">Spain</option>
+                                                                    <option value="LK">Sri Lanka</option>
+                                                                    <option value="SD">Sudan</option>
+                                                                    <option value="SR">Suriname</option>
+                                                                    <option value="SZ">Swaziland</option>
+                                                                    <option value="SE">Sweden</option>
+                                                                    <option value="CH">Switzerland</option>
+                                                                    <option value="SY">Syrian Arab Republic</option>
+                                                                    <option value="TW">Taiwan, Province of China</option>
+                                                                    <option value="TJ">Tajikistan</option>
+                                                                    <option value="TZ">Tanzania, United Republic of</option>
+                                                                    <option value="TH">Thailand</option>
+                                                                    <option value="TG">Togo</option>
+                                                                    <option value="TK">Tokelau</option>
+                                                                    <option value="TO">Tonga</option>
+                                                                    <option value="TT">Trinidad and Tobago</option>
+                                                                    <option value="TN">Tunisia</option>
+                                                                    <option value="TR">Turkey</option>
+                                                                    <option value="TM">Turkmenistan</option>
+                                                                    <option value="TC">Turks and Caicos Islands</option>
+                                                                    <option value="TV">Tuvalu</option>
+                                                                    <option value="UG">Uganda</option>
+                                                                    <option value="UA">Ukraine</option>
+                                                                    <option value="AE">United Arab Emirates</option>
+                                                                    <option value="GB">United Kingdom</option>
+                                                                    <option value="US" selected>United States</option>
+                                                                    <option value="UY">Uruguay</option>
+                                                                    <option value="UZ">Uzbekistan</option>
+                                                                    <option value="VU">Vanuatu</option>
+                                                                    <option value="VE">Venezuela, Bolivarian Republic of</option>
+                                                                    <option value="VN">Vietnam</option>
+                                                                    <option value="VI">Virgin Islands</option>
+                                                                    <option value="YE">Yemen</option>
+                                                                    <option value="ZM">Zambia</option>
+                                                                    <option value="ZW">Zimbabwe</option>
+                                                                </select>
+                                                                <!--end::Input-->
+                                                            </div>
+                                                            <!--end::Input group-->
+
+                                                            <!--begin::Input group-->
+                                                            <div class="fv-row mb-7">
+                                                                <!--begin::Wrapper-->
+                                                                <div class="d-flex flex-stack">
+                                                                    <!--begin::Label-->
+                                                                    <div class="me-5">
+                                                                        <!--begin::Label-->
+                                                                        <label class="fs-6 fw-semibold">Use as a billing adderess?</label>
+                                                                        <!--end::Label-->
+
+                                                                        <!--begin::Input-->
+                                                                        <div class="fs-7 fw-semibold text-muted">If you need more info, please check budget planning</div>
+                                                                        <!--end::Input-->
+                                                                    </div>
+                                                                    <!--end::Label-->
+
+                                                                    <!--begin::Switch-->
+                                                                    <label class="form-check form-switch form-check-custom form-check-solid">
+                                                                        <!--begin::Input-->
+                                                                        <input class="form-check-input" name="billing" type="checkbox" value="1" id="kt_modal_add_customer_billing" checked="checked" />
+                                                                        <!--end::Input-->
+
+                                                                        <!--begin::Label-->
+                                                                        <span class="form-check-label fw-semibold text-muted" for="kt_modal_add_customer_billing">
+                                                                            Yes
+                                                                        </span>
+                                                                        <!--end::Label-->
+                                                                    </label>
+                                                                    <!--end::Switch-->
+                                                                </div>
+                                                                <!--begin::Wrapper-->
+                                                            </div>
+                                                            <!--end::Input group-->
+                                                        </div>
+                                                        <!--end::Billing form-->
+                                                    </div>
+                                                    <!--end::Scroll-->
+                                                </div>
+                                                <!--end::Modal body-->
+
+                                                <!--begin::Modal footer-->
+                                                <div class="modal-footer flex-center">
+                                                    <!--begin::Button-->
+                                                    <button type="reset" id="kt_modal_add_customer_cancel" class="btn btn-light me-3">
+                                                        Discard
                                                     </button>
+                                                    <!--end::Button-->
 
-
-                                                    <!--begin::Menu 2-->
-                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu separator-->
-                                                        <div class="separator mb-3 opacity-75"></div>
-                                                        <!--end::Menu separator-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <a href="#" class="menu-link px-3">
-                                                                New Ticket
-                                                            </a>
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <a href="#" class="menu-link px-3">
-                                                                New Customer
-                                                            </a>
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                            <!--begin::Menu item-->
-                                                            <a href="#" class="menu-link px-3">
-                                                                <span class="menu-title">New Group</span>
-                                                                <span class="menu-arrow"></span>
-                                                            </a>
-                                                            <!--end::Menu item-->
-
-                                                            <!--begin::Menu sub-->
-                                                            <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                                <!--begin::Menu item-->
-                                                                <div class="menu-item px-3">
-                                                                    <a href="#" class="menu-link px-3">
-                                                                        Admin Group
-                                                                    </a>
-                                                                </div>
-                                                                <!--end::Menu item-->
-
-                                                                <!--begin::Menu item-->
-                                                                <div class="menu-item px-3">
-                                                                    <a href="#" class="menu-link px-3">
-                                                                        Staff Group
-                                                                    </a>
-                                                                </div>
-                                                                <!--end::Menu item-->
-
-                                                                <!--begin::Menu item-->
-                                                                <div class="menu-item px-3">
-                                                                    <a href="#" class="menu-link px-3">
-                                                                        Member Group
-                                                                    </a>
-                                                                </div>
-                                                                <!--end::Menu item-->
-                                                            </div>
-                                                            <!--end::Menu sub-->
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <a href="#" class="menu-link px-3">
-                                                                New Contact
-                                                            </a>
-                                                        </div>
-                                                        <!--end::Menu item-->
-
-                                                        <!--begin::Menu separator-->
-                                                        <div class="separator mt-3 opacity-75"></div>
-                                                        <!--end::Menu separator-->
-
-                                                        <!--begin::Menu item-->
-                                                        <div class="menu-item px-3">
-                                                            <div class="menu-content px-3 py-3">
-                                                                <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                    Generate Reports
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <!--end::Menu item-->
-                                                    </div>
-                                                    <!--end::Menu 2-->
-
-                                                    <!--end::Menu-->
-                                                </div>
-                                                <!--end::Toolbar-->
-                                            </div>
-                                            <!--end::Header-->
-
-                                            <!--begin::Card body-->
-                                            <div class="card-body d-flex justify-content-between flex-column pb-1 px-0">
-                                                <!--begin::Info-->
-                                                <div class="px-9 mb-5">
-                                                    <!--begin::Statistics-->
-                                                    <div class="d-flex align-items-center mb-2">
-                                                        <!--begin::Currency-->
-                                                        <span class="fs-4 fw-semibold text-gray-400 align-self-start me-1">$</span>
-                                                        <!--end::Currency-->
-
-                                                        <!--begin::Value-->
-                                                        <span class="fs-2hx fw-bold text-gray-800 me-2 lh-1 ls-n2">3,706</span>
-                                                        <!--end::Value-->
-
-                                                        <!--begin::Label-->
-                                                        <span class="badge badge-light-success fs-base">
-                                                            <i class="ki-outline ki-arrow-down fs-5 text-success ms-n1"></i> 4.5%
+                                                    <!--begin::Button-->
+                                                    <button type="submit" id="kt_modal_add_customer_submit" class="btn btn-primary">
+                                                        <span class="indicator-label">
+                                                            Submit
                                                         </span>
+                                                        <span class="indicator-progress">
+                                                            Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                                        </span>
+                                                    </button>
+                                                    <!--end::Button-->
+                                                </div>
+                                                <!--end::Modal footer-->
+                                            </form>
+                                            <!--end::Form-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end::Modal - Customers - Add--><!--begin::Modal - Adjust Balance-->
+                                <div class="modal fade" id="kt_customers_export_modal" tabindex="-1" aria-hidden="true">
+                                    <!--begin::Modal dialog-->
+                                    <div class="modal-dialog modal-dialog-centered mw-650px">
+                                        <!--begin::Modal content-->
+                                        <div class="modal-content">
+                                            <!--begin::Modal header-->
+                                            <div class="modal-header">
+                                                <!--begin::Modal title-->
+                                                <h2 class="fw-bold">Export Customers</h2>
+                                                <!--end::Modal title-->
+
+                                                <!--begin::Close-->
+                                                <div id="kt_customers_export_close" class="btn btn-icon btn-sm btn-active-icon-primary">
+                                                    <i class="ki-outline ki-cross fs-1"></i>
+                                                </div>
+                                                <!--end::Close-->
+                                            </div>
+                                            <!--end::Modal header-->
+
+                                            <!--begin::Modal body-->
+                                            <div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
+                                                <!--begin::Form-->
+                                                <form id="kt_customers_export_form" class="form" action="#">
+                                                    <!--begin::Input group-->
+                                                    <div class="fv-row mb-10">
+                                                        <!--begin::Label-->
+                                                        <label class="fs-5 fw-semibold form-label mb-5">Select Export Format:</label>
                                                         <!--end::Label-->
+
+                                                        <!--begin::Input-->
+                                                        <select name="country" data-control="select2" data-placeholder="Select a format" data-hide-search="true" name="format" class="form-select form-select-solid">
+                                                            <option value="excell">Excel</option>
+                                                            <option value="pdf">PDF</option>
+                                                            <option value="cvs">CVS</option>
+                                                            <option value="zip">ZIP</option>
+                                                        </select>
+                                                        <!--end::Input-->
                                                     </div>
-                                                    <!--end::Statistics-->
+                                                    <!--end::Input group-->
 
-                                                    <!--begin::Description-->
-                                                    <span class="fs-6 fw-semibold text-gray-400">Total Discounted Sales This Month</span>
-                                                    <!--end::Description-->
-                                                </div>
-                                                <!--end::Info-->
+                                                    <!--begin::Input group-->
+                                                    <div class="fv-row mb-10">
+                                                        <!--begin::Label-->
+                                                        <label class="fs-5 fw-semibold form-label mb-5">Select Date Range:</label>
+                                                        <!--end::Label-->
 
-                                                <!--begin::Chart-->
-                                                <div id="kt_charts_widget_4" class="min-h-auto ps-4 pe-6" style="height: 300px"></div>
-                                                <!--end::Chart-->
+                                                        <!--begin::Input-->
+                                                        <input class="form-control form-control-solid" placeholder="Pick a date" name="date" />
+                                                        <!--end::Input-->
+                                                    </div>
+                                                    <!--end::Input group-->
+
+                                                    <!--begin::Row-->
+                                                    <div class="row fv-row mb-15">
+                                                        <!--begin::Label-->
+                                                        <label class="fs-5 fw-semibold form-label mb-5">Payment Type:</label>
+                                                        <!--end::Label-->
+
+                                                        <!--begin::Radio group-->
+                                                        <div class="d-flex flex-column">
+                                                            <!--begin::Radio button-->
+                                                            <label class="form-check form-check-custom form-check-sm form-check-solid mb-3">
+                                                                <input class="form-check-input" type="checkbox" value="1" checked="checked" name="payment_type" />
+                                                                <span class="form-check-label text-gray-600 fw-semibold">
+                                                                    All
+                                                                </span>
+                                                            </label>
+                                                            <!--end::Radio button-->
+
+                                                            <!--begin::Radio button-->
+                                                            <label class="form-check form-check-custom form-check-sm form-check-solid mb-3">
+                                                                <input class="form-check-input" type="checkbox" value="2" checked="checked" name="payment_type" />
+                                                                <span class="form-check-label text-gray-600 fw-semibold">
+                                                                    Visa
+                                                                </span>
+                                                            </label>
+                                                            <!--end::Radio button-->
+
+                                                            <!--begin::Radio button-->
+                                                            <label class="form-check form-check-custom form-check-sm form-check-solid mb-3">
+                                                                <input class="form-check-input" type="checkbox" value="3" name="payment_type" />
+                                                                <span class="form-check-label text-gray-600 fw-semibold">
+                                                                    Mastercard
+                                                                </span>
+                                                            </label>
+                                                            <!--end::Radio button-->
+
+                                                            <!--begin::Radio button-->
+                                                            <label class="form-check form-check-custom form-check-sm form-check-solid">
+                                                                <input class="form-check-input" type="checkbox" value="4" name="payment_type" />
+                                                                <span class="form-check-label text-gray-600 fw-semibold">
+                                                                    American Express
+                                                                </span>
+                                                            </label>
+                                                            <!--end::Radio button-->
+                                                        </div>
+                                                        <!--end::Input group-->
+                                                    </div>
+                                                    <!--end::Row-->
+
+                                                    <!--begin::Actions-->
+                                                    <div class="text-center">
+                                                        <button type="reset" id="kt_customers_export_cancel" class="btn btn-light me-3">
+                                                            Discard
+                                                        </button>
+
+                                                        <button type="submit" id="kt_customers_export_submit" class="btn btn-primary">
+                                                            <span class="indicator-label">
+                                                                Submit
+                                                            </span>
+                                                            <span class="indicator-progress">
+                                                                Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <!--end::Actions-->
+                                                </form>
+                                                <!--end::Form-->
                                             </div>
-                                            <!--end::Card body-->
+                                            <!--end::Modal body-->
                                         </div>
-                                        <!--end::Chart widget 4-->
+                                        <!--end::Modal content-->
                                     </div>
-                                    <!--end::Col-->
+                                    <!--end::Modal dialog-->
                                 </div>
-                                <!--end::Row-->
-
-                                <!--begin::Row-->
-                                <div class="row gy-5 g-xl-10">
-                                    <!--begin::Col-->
-                                    <div class="col-xl-4 mb-xl-10">
-
-                                        <!--begin::Engage widget 1-->
-                                        <div class="card h-md-100" dir="ltr">
-                                            <!--begin::Body-->
-                                            <div class="card-body d-flex flex-column flex-center">
-                                                <!--begin::Heading-->
-                                                <div class="mb-2">
-                                                    <!--begin::Title-->
-                                                    <h1 class="fw-semibold text-gray-800 text-center lh-lg">
-                                                        Have you tried <br /> new
-                                                        <span class="fw-bolder"> eCommerce App ?</span>
-                                                    </h1>
-                                                    <!--end::Title-->
-
-                                                    <!--begin::Illustration-->
-                                                    <div class="py-10 text-center">
-                                                        <img src="./assets/media/svg/illustrations/easy/2.svg" class="theme-light-show w-200px" alt="" />
-                                                        <img src="./assets/media/svg/illustrations/easy/2-dark.svg" class="theme-dark-show w-200px" alt="" />
-                                                    </div>
-                                                    <!--end::Illustration-->
-                                                </div>
-                                                <!--end::Heading-->
-
-                                                <!--begin::Links-->
-                                                <div class="text-center mb-1">
-                                                    <!--begin::Link-->
-                                                    <a class="btn btn-sm btn-primary me-2" href="./apps/ecommerce/sales/listing.html">
-                                                        View App </a>
-                                                    <!--end::Link-->
-
-                                                    <!--begin::Link-->
-                                                    <a class="btn btn-sm btn-light" href="./apps/ecommerce/catalog/add-product.html">
-                                                        New Product </a>
-                                                    <!--end::Link-->
-                                                </div>
-                                                <!--end::Links-->
-                                            </div>
-                                            <!--end::Body-->
-                                        </div>
-                                        <!--end::Engage widget 1-->
-
-                                    </div>
-                                    <!--end::Col-->
-
-                                    <!--begin::Col-->
-                                    <div class="col-xl-8 mb-5 mb-xl-10">
-
-                                        <!--begin::Table Widget 4-->
-                                        <div class="card card-flush h-xl-100">
-                                            <!--begin::Card header-->
-                                            <div class="card-header pt-7">
-                                                <!--begin::Title-->
-                                                <h3 class="card-title align-items-start flex-column">
-                                                    <span class="card-label fw-bold text-gray-800">Product Orders</span>
-                                                    <span class="text-gray-400 mt-1 fw-semibold fs-6">Avg. 57 orders per day</span>
-                                                </h3>
-                                                <!--end::Title-->
-
-                                                <!--begin::Actions-->
-                                                <div class="card-toolbar">
-                                                    <!--begin::Filters-->
-                                                    <div class="d-flex flex-stack flex-wrap gap-4">
-                                                        <!--begin::Destination-->
-                                                        <div class="d-flex align-items-center fw-bold">
-                                                            <!--begin::Label-->
-                                                            <div class="text-gray-400 fs-7 me-2">Cateogry</div>
-                                                            <!--end::Label-->
-
-                                                            <!--begin::Select-->
-                                                            <select class="form-select form-select-transparent text-graY-800 fs-base lh-1 fw-bold py-0 ps-3 w-auto" data-control="select2" data-hide-search="true" data-dropdown-css-class="w-150px" data-placeholder="Select an option">
-                                                                <option></option>
-                                                                <option value="Show All" selected>Show All</option>
-                                                                <option value="a">Category A</option>
-                                                                <option value="b">Category A</option>
-                                                            </select>
-                                                            <!--end::Select-->
-                                                        </div>
-                                                        <!--end::Destination-->
-
-                                                        <!--begin::Status-->
-                                                        <div class="d-flex align-items-center fw-bold">
-                                                            <!--begin::Label-->
-                                                            <div class="text-gray-400 fs-7 me-2">Status</div>
-                                                            <!--end::Label-->
-
-                                                            <!--begin::Select-->
-                                                            <select class="form-select form-select-transparent text-dark fs-7 lh-1 fw-bold py-0 ps-3 w-auto" data-control="select2" data-hide-search="true" data-dropdown-css-class="w-150px" data-placeholder="Select an option" data-kt-table-widget-4="filter_status">
-                                                                <option></option>
-                                                                <option value="Show All" selected>Show All</option>
-                                                                <option value="Shipped">Shipped</option>
-                                                                <option value="Confirmed">Confirmed</option>
-                                                                <option value="Rejected">Rejected</option>
-                                                                <option value="Pending">Pending</option>
-                                                            </select>
-                                                            <!--end::Select-->
-                                                        </div>
-                                                        <!--end::Status-->
-
-                                                        <!--begin::Search-->
-                                                        <div class="position-relative my-1">
-                                                            <i class="ki-outline ki-magnifier fs-2 position-absolute top-50 translate-middle-y ms-4"></i> <input type="text" data-kt-table-widget-4="search" class="form-control w-150px fs-7 ps-12" placeholder="Search" />
-                                                        </div>
-                                                        <!--end::Search-->
-                                                    </div>
-                                                    <!--begin::Filters-->
-                                                </div>
-                                                <!--end::Actions-->
-                                            </div>
-                                            <!--end::Card header-->
-
-                                            <!--begin::Card body-->
-                                            <div class="card-body pt-2">
-                                                <!--begin::Table-->
-                                                <table class="table align-middle table-row-dashed fs-6 gy-3" id="kt_table_widget_4_table">
-                                                    <!--begin::Table head-->
-                                                    <thead>
-                                                        <!--begin::Table row-->
-                                                        <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
-                                                            <th class="min-w-100px">Order ID</th>
-                                                            <th class="text-end min-w-100px">Created</th>
-                                                            <th class="text-end min-w-125px">Customer</th>
-                                                            <th class="text-end min-w-100px">Total</th>
-                                                            <th class="text-end min-w-100px">Profit</th>
-                                                            <th class="text-end min-w-50px">Status</th>
-                                                            <th class="text-end"></th>
-                                                        </tr>
-                                                        <!--end::Table row-->
-                                                    </thead>
-                                                    <!--end::Table head-->
-
-                                                    <!--begin::Table body-->
-                                                    <tbody class="fw-bold text-gray-600">
-                                                        <tr data-kt-table-widget-4="subtable_template" class="d-none">
-                                                            <td colspan="2">
-                                                                <div class="d-flex align-items-center gap-3">
-                                                                    <a href="#" class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
-                                                                        <img src="#" data-kt-src-path="/metronic8/demo30/assets/media/stock/ecommerce/" alt="" data-kt-table-widget-4="template_image" />
-                                                                    </a>
-                                                                    <div class="d-flex flex-column text-muted">
-                                                                        <a href="#" class="text-gray-800 text-hover-primary fw-bold" data-kt-table-widget-4="template_name">Product name</a>
-                                                                        <div class="fs-7" data-kt-table-widget-4="template_description">Product description</div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <div class="text-gray-800 fs-7">Cost</div>
-                                                                <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_cost">1</div>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <div class="text-gray-800 fs-7">Qty</div>
-                                                                <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_qty">1</div>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <div class="text-gray-800 fs-7">Total</div>
-                                                                <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_total">name</div>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <div class="text-gray-800 fs-7 me-3">On hand</div>
-                                                                <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_stock">32</div>
-                                                            </td>
-                                                            <td></td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#XGY-346</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                7 min ago
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <a href="#" class="text-gray-600 text-hover-primary">Albert Flores</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                $630.00 </td>
-
-                                                            <td class="text-end">
-                                                                <span class="text-gray-800 fw-bolder">$86.70</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-warning">Pending</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-4="expand_row">
-                                                                    <i class="ki-outline ki-plus fs-4 m-0 toggle-off"></i> <i class="ki-outline ki-minus fs-4 m-0 toggle-on"></i> </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#YHD-047</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                52 min ago
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <a href="#" class="text-gray-600 text-hover-primary">Jenny Wilson</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                $25.00 </td>
-
-                                                            <td class="text-end">
-                                                                <span class="text-gray-800 fw-bolder">$4.20</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-primary">Confirmed</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-4="expand_row">
-                                                                    <i class="ki-outline ki-plus fs-4 m-0 toggle-off"></i> <i class="ki-outline ki-minus fs-4 m-0 toggle-on"></i> </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#SRR-678</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                1 hour ago
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <a href="#" class="text-gray-600 text-hover-primary">Robert Fox</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                $1,630.00 </td>
-
-                                                            <td class="text-end">
-                                                                <span class="text-gray-800 fw-bolder">$203.90</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-warning">Pending</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-4="expand_row">
-                                                                    <i class="ki-outline ki-plus fs-4 m-0 toggle-off"></i> <i class="ki-outline ki-minus fs-4 m-0 toggle-on"></i> </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#PXF-534</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                3 hour ago
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <a href="#" class="text-gray-600 text-hover-primary">Cody Fisher</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                $119.00 </td>
-
-                                                            <td class="text-end">
-                                                                <span class="text-gray-800 fw-bolder">$12.00</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-success">Shipped</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-4="expand_row">
-                                                                    <i class="ki-outline ki-plus fs-4 m-0 toggle-off"></i> <i class="ki-outline ki-minus fs-4 m-0 toggle-on"></i> </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#XGD-249</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                2 day ago
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <a href="#" class="text-gray-600 text-hover-primary">Arlene McCoy</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                $660.00 </td>
-
-                                                            <td class="text-end">
-                                                                <span class="text-gray-800 fw-bolder">$52.26</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-success">Shipped</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-4="expand_row">
-                                                                    <i class="ki-outline ki-plus fs-4 m-0 toggle-off"></i> <i class="ki-outline ki-minus fs-4 m-0 toggle-on"></i> </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#SKP-035</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                2 day ago
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <a href="#" class="text-gray-600 text-hover-primary">Eleanor Pena</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                $290.00 </td>
-
-                                                            <td class="text-end">
-                                                                <span class="text-gray-800 fw-bolder">$29.00</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-danger">Rejected</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-4="expand_row">
-                                                                    <i class="ki-outline ki-plus fs-4 m-0 toggle-off"></i> <i class="ki-outline ki-minus fs-4 m-0 toggle-on"></i> </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#SKP-567</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                7 min ago
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <a href="#" class="text-gray-600 text-hover-primary">Dan Wilson</a>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                $590.00 </td>
-
-                                                            <td class="text-end">
-                                                                <span class="text-gray-800 fw-bolder">$50.00</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-success">Shipped</span>
-                                                            </td>
-
-                                                            <td class="text-end">
-                                                                <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-4="expand_row">
-                                                                    <i class="ki-outline ki-plus fs-4 m-0 toggle-off"></i> <i class="ki-outline ki-minus fs-4 m-0 toggle-on"></i> </button>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <!--end::Table body-->
-                                                </table>
-                                                <!--end::Table-->
-                                            </div>
-                                            <!--end::Card body-->
-                                        </div>
-                                        <!--end::Table Widget 4-->
-                                    </div>
-                                    <!--end::Col-->
-                                </div>
-                                <!--end::Row-->
-
-                                <!--begin::Row-->
-                                <div class="row gy-5 g-xl-10">
-                                    <!--begin::Col-->
-                                    <div class="col-xl-4">
-
-                                        <!--begin::List widget 5-->
-                                        <div class="card card-flush h-xl-100">
-                                            <!--begin::Header-->
-                                            <div class="card-header pt-7">
-                                                <!--begin::Title-->
-                                                <h3 class="card-title align-items-start flex-column">
-                                                    <span class="card-label fw-bold text-dark">Product Delivery</span>
-                                                    <span class="text-gray-400 mt-1 fw-semibold fs-6">1M Products Shipped so far</span>
-                                                </h3>
-                                                <!--end::Title-->
-
-                                                <!--begin::Toolbar-->
-                                                <div class="card-toolbar">
-                                                    <a href="./apps/ecommerce/sales/details.html" class="btn btn-sm btn-light">Order Details</a>
-                                                </div>
-                                                <!--end::Toolbar-->
-                                            </div>
-                                            <!--end::Header-->
-
-                                            <!--begin::Body-->
-                                            <div class="card-body">
-                                                <!--begin::Scroll-->
-                                                <div class="hover-scroll-overlay-y pe-6 me-n6" style="height: 415px">
-                                                    <!--begin::Item-->
-                                                    <div class="border border-dashed border-gray-300 rounded px-7 py-3 mb-6">
-                                                        <!--begin::Info-->
-                                                        <div class="d-flex flex-stack mb-3">
-                                                            <!--begin::Wrapper-->
-                                                            <div class="me-3">
-                                                                <!--begin::Icon-->
-                                                                <img src="./assets/media/stock/ecommerce/210.gif" class="w-50px ms-n1 me-1" alt="" />
-                                                                <!--end::Icon-->
-
-                                                                <!--begin::Title-->
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fw-bold">Elephant 1802</a>
-                                                                <!--end::Title-->
-                                                            </div>
-                                                            <!--end::Wrapper-->
-
-                                                            <!--begin::Action-->
-                                                            <div class="m-0">
-                                                                <!--begin::Menu-->
-                                                                <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
-
-                                                                    <i class="ki-outline ki-dots-square fs-1"></i>
-                                                                </button>
-
-                                                                <!--begin::Menu 2-->
-                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mb-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Ticket
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Customer
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                                        <!--begin::Menu item-->
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            <span class="menu-title">New Group</span>
-                                                                            <span class="menu-arrow"></span>
-                                                                        </a>
-                                                                        <!--end::Menu item-->
-
-                                                                        <!--begin::Menu sub-->
-                                                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Admin Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Staff Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Member Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-                                                                        </div>
-                                                                        <!--end::Menu sub-->
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Contact
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mt-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content px-3 py-3">
-                                                                            <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                                Generate Reports
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-                                                                </div>
-                                                                <!--end::Menu 2-->
-
-                                                                <!--end::Menu-->
-                                                            </div>
-                                                            <!--end::Action-->
-                                                        </div>
-                                                        <!--end::Info-->
-
-                                                        <!--begin::Customer-->
-                                                        <div class="d-flex flex-stack">
-                                                            <!--begin::Name-->
-                                                            <span class="text-gray-400 fw-bold">To:
-                                                                <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fw-bold">
-                                                                    Jason Bourne </a>
-                                                            </span>
-                                                            <!--end::Name-->
-
-                                                            <!--begin::Label-->
-                                                            <span class="badge badge-light-success">Delivered</span>
-                                                            <!--end::Label-->
-                                                        </div>
-                                                        <!--end::Customer-->
-                                                    </div>
-                                                    <!--end::Item-->
-                                                    <!--begin::Item-->
-                                                    <div class="border border-dashed border-gray-300 rounded px-7 py-3 mb-6">
-                                                        <!--begin::Info-->
-                                                        <div class="d-flex flex-stack mb-3">
-                                                            <!--begin::Wrapper-->
-                                                            <div class="me-3">
-                                                                <!--begin::Icon-->
-                                                                <img src="./assets/media/stock/ecommerce/209.gif" class="w-50px ms-n1 me-1" alt="" />
-                                                                <!--end::Icon-->
-
-                                                                <!--begin::Title-->
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fw-bold">RiseUP</a>
-                                                                <!--end::Title-->
-                                                            </div>
-                                                            <!--end::Wrapper-->
-
-                                                            <!--begin::Action-->
-                                                            <div class="m-0">
-                                                                <!--begin::Menu-->
-                                                                <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
-
-                                                                    <i class="ki-outline ki-dots-square fs-1"></i>
-                                                                </button>
-
-                                                                <!--begin::Menu 2-->
-                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mb-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Ticket
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Customer
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                                        <!--begin::Menu item-->
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            <span class="menu-title">New Group</span>
-                                                                            <span class="menu-arrow"></span>
-                                                                        </a>
-                                                                        <!--end::Menu item-->
-
-                                                                        <!--begin::Menu sub-->
-                                                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Admin Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Staff Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Member Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-                                                                        </div>
-                                                                        <!--end::Menu sub-->
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Contact
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mt-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content px-3 py-3">
-                                                                            <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                                Generate Reports
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-                                                                </div>
-                                                                <!--end::Menu 2-->
-
-                                                                <!--end::Menu-->
-                                                            </div>
-                                                            <!--end::Action-->
-                                                        </div>
-                                                        <!--end::Info-->
-
-                                                        <!--begin::Customer-->
-                                                        <div class="d-flex flex-stack">
-                                                            <!--begin::Name-->
-                                                            <span class="text-gray-400 fw-bold">To:
-                                                                <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fw-bold">
-                                                                    Marie Durant </a>
-                                                            </span>
-                                                            <!--end::Name-->
-
-                                                            <!--begin::Label-->
-                                                            <span class="badge badge-light-primary">Shipping</span>
-                                                            <!--end::Label-->
-                                                        </div>
-                                                        <!--end::Customer-->
-                                                    </div>
-                                                    <!--end::Item-->
-                                                    <!--begin::Item-->
-                                                    <div class="border border-dashed border-gray-300 rounded px-7 py-3 mb-6">
-                                                        <!--begin::Info-->
-                                                        <div class="d-flex flex-stack mb-3">
-                                                            <!--begin::Wrapper-->
-                                                            <div class="me-3">
-                                                                <!--begin::Icon-->
-                                                                <img src="./assets/media/stock/ecommerce/214.gif" class="w-50px ms-n1 me-1" alt="" />
-                                                                <!--end::Icon-->
-
-                                                                <!--begin::Title-->
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fw-bold">Yellow Stone</a>
-                                                                <!--end::Title-->
-                                                            </div>
-                                                            <!--end::Wrapper-->
-
-                                                            <!--begin::Action-->
-                                                            <div class="m-0">
-                                                                <!--begin::Menu-->
-                                                                <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
-
-                                                                    <i class="ki-outline ki-dots-square fs-1"></i>
-                                                                </button>
-
-                                                                <!--begin::Menu 2-->
-                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mb-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Ticket
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Customer
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                                        <!--begin::Menu item-->
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            <span class="menu-title">New Group</span>
-                                                                            <span class="menu-arrow"></span>
-                                                                        </a>
-                                                                        <!--end::Menu item-->
-
-                                                                        <!--begin::Menu sub-->
-                                                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Admin Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Staff Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Member Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-                                                                        </div>
-                                                                        <!--end::Menu sub-->
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Contact
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mt-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content px-3 py-3">
-                                                                            <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                                Generate Reports
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-                                                                </div>
-                                                                <!--end::Menu 2-->
-
-                                                                <!--end::Menu-->
-                                                            </div>
-                                                            <!--end::Action-->
-                                                        </div>
-                                                        <!--end::Info-->
-
-                                                        <!--begin::Customer-->
-                                                        <div class="d-flex flex-stack">
-                                                            <!--begin::Name-->
-                                                            <span class="text-gray-400 fw-bold">To:
-                                                                <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fw-bold">
-                                                                    Dan Wilson </a>
-                                                            </span>
-                                                            <!--end::Name-->
-
-                                                            <!--begin::Label-->
-                                                            <span class="badge badge-light-danger">Confirmed</span>
-                                                            <!--end::Label-->
-                                                        </div>
-                                                        <!--end::Customer-->
-                                                    </div>
-                                                    <!--end::Item-->
-                                                    <!--begin::Item-->
-                                                    <div class="border border-dashed border-gray-300 rounded px-7 py-3 mb-6">
-                                                        <!--begin::Info-->
-                                                        <div class="d-flex flex-stack mb-3">
-                                                            <!--begin::Wrapper-->
-                                                            <div class="me-3">
-                                                                <!--begin::Icon-->
-                                                                <img src="./assets/media/stock/ecommerce/211.gif" class="w-50px ms-n1 me-1" alt="" />
-                                                                <!--end::Icon-->
-
-                                                                <!--begin::Title-->
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fw-bold">Elephant 1802</a>
-                                                                <!--end::Title-->
-                                                            </div>
-                                                            <!--end::Wrapper-->
-
-                                                            <!--begin::Action-->
-                                                            <div class="m-0">
-                                                                <!--begin::Menu-->
-                                                                <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
-
-                                                                    <i class="ki-outline ki-dots-square fs-1"></i>
-                                                                </button>
-
-                                                                <!--begin::Menu 2-->
-                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mb-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Ticket
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Customer
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                                        <!--begin::Menu item-->
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            <span class="menu-title">New Group</span>
-                                                                            <span class="menu-arrow"></span>
-                                                                        </a>
-                                                                        <!--end::Menu item-->
-
-                                                                        <!--begin::Menu sub-->
-                                                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Admin Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Staff Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Member Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-                                                                        </div>
-                                                                        <!--end::Menu sub-->
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Contact
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mt-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content px-3 py-3">
-                                                                            <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                                Generate Reports
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-                                                                </div>
-                                                                <!--end::Menu 2-->
-
-                                                                <!--end::Menu-->
-                                                            </div>
-                                                            <!--end::Action-->
-                                                        </div>
-                                                        <!--end::Info-->
-
-                                                        <!--begin::Customer-->
-                                                        <div class="d-flex flex-stack">
-                                                            <!--begin::Name-->
-                                                            <span class="text-gray-400 fw-bold">To:
-                                                                <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fw-bold">
-                                                                    Lebron Wayde </a>
-                                                            </span>
-                                                            <!--end::Name-->
-
-                                                            <!--begin::Label-->
-                                                            <span class="badge badge-light-success">Delivered</span>
-                                                            <!--end::Label-->
-                                                        </div>
-                                                        <!--end::Customer-->
-                                                    </div>
-                                                    <!--end::Item-->
-                                                    <!--begin::Item-->
-                                                    <div class="border border-dashed border-gray-300 rounded px-7 py-3 mb-6">
-                                                        <!--begin::Info-->
-                                                        <div class="d-flex flex-stack mb-3">
-                                                            <!--begin::Wrapper-->
-                                                            <div class="me-3">
-                                                                <!--begin::Icon-->
-                                                                <img src="./assets/media/stock/ecommerce/215.gif" class="w-50px ms-n1 me-1" alt="" />
-                                                                <!--end::Icon-->
-
-                                                                <!--begin::Title-->
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fw-bold">RiseUP</a>
-                                                                <!--end::Title-->
-                                                            </div>
-                                                            <!--end::Wrapper-->
-
-                                                            <!--begin::Action-->
-                                                            <div class="m-0">
-                                                                <!--begin::Menu-->
-                                                                <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
-
-                                                                    <i class="ki-outline ki-dots-square fs-1"></i>
-                                                                </button>
-
-                                                                <!--begin::Menu 2-->
-                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mb-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Ticket
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Customer
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                                        <!--begin::Menu item-->
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            <span class="menu-title">New Group</span>
-                                                                            <span class="menu-arrow"></span>
-                                                                        </a>
-                                                                        <!--end::Menu item-->
-
-                                                                        <!--begin::Menu sub-->
-                                                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Admin Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Staff Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Member Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-                                                                        </div>
-                                                                        <!--end::Menu sub-->
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Contact
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mt-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content px-3 py-3">
-                                                                            <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                                Generate Reports
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-                                                                </div>
-                                                                <!--end::Menu 2-->
-
-                                                                <!--end::Menu-->
-                                                            </div>
-                                                            <!--end::Action-->
-                                                        </div>
-                                                        <!--end::Info-->
-
-                                                        <!--begin::Customer-->
-                                                        <div class="d-flex flex-stack">
-                                                            <!--begin::Name-->
-                                                            <span class="text-gray-400 fw-bold">To:
-                                                                <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fw-bold">
-                                                                    Ana Simmons </a>
-                                                            </span>
-                                                            <!--end::Name-->
-
-                                                            <!--begin::Label-->
-                                                            <span class="badge badge-light-primary">Shipping</span>
-                                                            <!--end::Label-->
-                                                        </div>
-                                                        <!--end::Customer-->
-                                                    </div>
-                                                    <!--end::Item-->
-                                                    <!--begin::Item-->
-                                                    <div class="border border-dashed border-gray-300 rounded px-7 py-3 ">
-                                                        <!--begin::Info-->
-                                                        <div class="d-flex flex-stack mb-3">
-                                                            <!--begin::Wrapper-->
-                                                            <div class="me-3">
-                                                                <!--begin::Icon-->
-                                                                <img src="./assets/media/stock/ecommerce/192.gif" class="w-50px ms-n1 me-1" alt="" />
-                                                                <!--end::Icon-->
-
-                                                                <!--begin::Title-->
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fw-bold">Yellow Stone</a>
-                                                                <!--end::Title-->
-                                                            </div>
-                                                            <!--end::Wrapper-->
-
-                                                            <!--begin::Action-->
-                                                            <div class="m-0">
-                                                                <!--begin::Menu-->
-                                                                <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
-
-                                                                    <i class="ki-outline ki-dots-square fs-1"></i>
-                                                                </button>
-
-                                                                <!--begin::Menu 2-->
-                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mb-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Ticket
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Customer
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                                        <!--begin::Menu item-->
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            <span class="menu-title">New Group</span>
-                                                                            <span class="menu-arrow"></span>
-                                                                        </a>
-                                                                        <!--end::Menu item-->
-
-                                                                        <!--begin::Menu sub-->
-                                                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Admin Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Staff Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-
-                                                                            <!--begin::Menu item-->
-                                                                            <div class="menu-item px-3">
-                                                                                <a href="#" class="menu-link px-3">
-                                                                                    Member Group
-                                                                                </a>
-                                                                            </div>
-                                                                            <!--end::Menu item-->
-                                                                        </div>
-                                                                        <!--end::Menu sub-->
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <a href="#" class="menu-link px-3">
-                                                                            New Contact
-                                                                        </a>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-
-                                                                    <!--begin::Menu separator-->
-                                                                    <div class="separator mt-3 opacity-75"></div>
-                                                                    <!--end::Menu separator-->
-
-                                                                    <!--begin::Menu item-->
-                                                                    <div class="menu-item px-3">
-                                                                        <div class="menu-content px-3 py-3">
-                                                                            <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                                Generate Reports
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Menu item-->
-                                                                </div>
-                                                                <!--end::Menu 2-->
-
-                                                                <!--end::Menu-->
-                                                            </div>
-                                                            <!--end::Action-->
-                                                        </div>
-                                                        <!--end::Info-->
-
-                                                        <!--begin::Customer-->
-                                                        <div class="d-flex flex-stack">
-                                                            <!--begin::Name-->
-                                                            <span class="text-gray-400 fw-bold">To:
-                                                                <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fw-bold">
-                                                                    Kevin Leonard </a>
-                                                            </span>
-                                                            <!--end::Name-->
-
-                                                            <!--begin::Label-->
-                                                            <span class="badge badge-light-danger">Confirmed</span>
-                                                            <!--end::Label-->
-                                                        </div>
-                                                        <!--end::Customer-->
-                                                    </div>
-                                                    <!--end::Item-->
-                                                </div>
-                                                <!--end::Scroll-->
-                                            </div>
-                                            <!--end::Body-->
-                                        </div>
-                                        <!--end::List widget 5-->
-
-
-                                    </div>
-                                    <!--end::Col-->
-
-                                    <!--begin::Col-->
-                                    <div class="col-xl-8">
-
-                                        <!--begin::Table Widget 5-->
-                                        <div class="card card-flush h-xl-100">
-                                            <!--begin::Card header-->
-                                            <div class="card-header pt-7">
-                                                <!--begin::Title-->
-                                                <h3 class="card-title align-items-start flex-column">
-                                                    <span class="card-label fw-bold text-dark">Stock Report</span>
-                                                    <span class="text-gray-400 mt-1 fw-semibold fs-6">Total 2,356 Items in the Stock</span>
-                                                </h3>
-                                                <!--end::Title-->
-
-                                                <!--begin::Actions-->
-                                                <div class="card-toolbar">
-                                                    <!--begin::Filters-->
-                                                    <div class="d-flex flex-stack flex-wrap gap-4">
-                                                        <!--begin::Destination-->
-                                                        <div class="d-flex align-items-center fw-bold">
-                                                            <!--begin::Label-->
-                                                            <div class="text-muted fs-7 me-2">Cateogry</div>
-                                                            <!--end::Label-->
-
-                                                            <!--begin::Select-->
-                                                            <select class="form-select form-select-transparent text-dark fs-7 lh-1 fw-bold py-0 ps-3 w-auto" data-control="select2" data-hide-search="true" data-dropdown-css-class="w-150px" data-placeholder="Select an option">
-                                                                <option></option>
-                                                                <option value="Show All" selected>Show All</option>
-                                                                <option value="a">Category A</option>
-                                                                <option value="b">Category B</option>
-                                                            </select>
-                                                            <!--end::Select-->
-                                                        </div>
-                                                        <!--end::Destination-->
-
-                                                        <!--begin::Status-->
-                                                        <div class="d-flex align-items-center fw-bold">
-                                                            <!--begin::Label-->
-                                                            <div class="text-muted fs-7 me-2">Status</div>
-                                                            <!--end::Label-->
-
-                                                            <!--begin::Select-->
-                                                            <select class="form-select form-select-transparent text-dark fs-7 lh-1 fw-bold py-0 ps-3 w-auto" data-control="select2" data-hide-search="true" data-dropdown-css-class="w-150px" data-placeholder="Select an option" data-kt-table-widget-5="filter_status">
-                                                                <option></option>
-                                                                <option value="Show All" selected>Show All</option>
-                                                                <option value="In Stock">In Stock</option>
-                                                                <option value="Out of Stock">Out of Stock</option>
-                                                                <option value="Low Stock">Low Stock</option>
-                                                            </select>
-                                                            <!--end::Select-->
-                                                        </div>
-                                                        <!--end::Status-->
-
-                                                        <!--begin::Search-->
-                                                        <a href="./apps/ecommerce/catalog/products.html" class="btn btn-light btn-sm">View Stock</a>
-                                                        <!--end::Search-->
-                                                    </div>
-                                                    <!--begin::Filters-->
-                                                </div>
-                                                <!--end::Actions-->
-                                            </div>
-                                            <!--end::Card header-->
-
-                                            <!--begin::Card body-->
-                                            <div class="card-body">
-                                                <!--begin::Table-->
-                                                <table class="table align-middle table-row-dashed fs-6 gy-3" id="kt_table_widget_5_table">
-                                                    <!--begin::Table head-->
-                                                    <thead>
-                                                        <!--begin::Table row-->
-                                                        <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
-                                                            <th class="min-w-150px">Item</th>
-                                                            <th class="text-end pe-3 min-w-100px">Product ID</th>
-                                                            <th class="text-end pe-3 min-w-150px">Date Added</th>
-                                                            <th class="text-end pe-3 min-w-100px">Price</th>
-                                                            <th class="text-end pe-3 min-w-100px">Status</th>
-                                                            <th class="text-end pe-0 min-w-75px">Qty</th>
-                                                        </tr>
-                                                        <!--end::Table row-->
-                                                    </thead>
-                                                    <!--end::Table head-->
-
-                                                    <!--begin::Table body-->
-                                                    <tbody class="fw-bold text-gray-600">
-                                                        <tr>
-                                                            <!--begin::Item-->
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-dark text-hover-primary">Macbook Air M1</a>
-                                                            </td>
-                                                            <!--end::Item-->
-
-                                                            <!--begin::Product ID-->
-                                                            <td class="text-end">
-                                                                #XGY-356 </td>
-                                                            <!--end::Product ID-->
-
-                                                            <!--begin::Date added-->
-                                                            <td class="text-end">
-                                                                02 Apr, 2023 </td>
-                                                            <!--end::Date added-->
-
-                                                            <!--begin::Price-->
-                                                            <td class="text-end">
-                                                                $1,230 </td>
-                                                            <!--end::Price-->
-
-                                                            <!--begin::Status-->
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-primary">In Stock</span>
-                                                            </td>
-                                                            <!--end::Status-->
-
-                                                            <!--begin::Qty-->
-                                                            <td class="text-end" data-order="58">
-                                                                <span class="text-dark fw-bold">58 PCS</span>
-                                                            </td>
-                                                            <!--end::Qty-->
-                                                        </tr>
-                                                        <tr>
-                                                            <!--begin::Item-->
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-dark text-hover-primary">Surface Laptop 4</a>
-                                                            </td>
-                                                            <!--end::Item-->
-
-                                                            <!--begin::Product ID-->
-                                                            <td class="text-end">
-                                                                #YHD-047 </td>
-                                                            <!--end::Product ID-->
-
-                                                            <!--begin::Date added-->
-                                                            <td class="text-end">
-                                                                01 Apr, 2023 </td>
-                                                            <!--end::Date added-->
-
-                                                            <!--begin::Price-->
-                                                            <td class="text-end">
-                                                                $1,060 </td>
-                                                            <!--end::Price-->
-
-                                                            <!--begin::Status-->
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-danger">Out of Stock</span>
-                                                            </td>
-                                                            <!--end::Status-->
-
-                                                            <!--begin::Qty-->
-                                                            <td class="text-end" data-order="0">
-                                                                <span class="text-dark fw-bold">0 PCS</span>
-                                                            </td>
-                                                            <!--end::Qty-->
-                                                        </tr>
-                                                        <tr>
-                                                            <!--begin::Item-->
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-dark text-hover-primary">Logitech MX 250</a>
-                                                            </td>
-                                                            <!--end::Item-->
-
-                                                            <!--begin::Product ID-->
-                                                            <td class="text-end">
-                                                                #SRR-678 </td>
-                                                            <!--end::Product ID-->
-
-                                                            <!--begin::Date added-->
-                                                            <td class="text-end">
-                                                                24 Mar, 2023 </td>
-                                                            <!--end::Date added-->
-
-                                                            <!--begin::Price-->
-                                                            <td class="text-end">
-                                                                $64 </td>
-                                                            <!--end::Price-->
-
-                                                            <!--begin::Status-->
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-primary">In Stock</span>
-                                                            </td>
-                                                            <!--end::Status-->
-
-                                                            <!--begin::Qty-->
-                                                            <td class="text-end" data-order="290">
-                                                                <span class="text-dark fw-bold">290 PCS</span>
-                                                            </td>
-                                                            <!--end::Qty-->
-                                                        </tr>
-                                                        <tr>
-                                                            <!--begin::Item-->
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-dark text-hover-primary">AudioEngine HD3</a>
-                                                            </td>
-                                                            <!--end::Item-->
-
-                                                            <!--begin::Product ID-->
-                                                            <td class="text-end">
-                                                                #PXF-578 </td>
-                                                            <!--end::Product ID-->
-
-                                                            <!--begin::Date added-->
-                                                            <td class="text-end">
-                                                                24 Mar, 2023 </td>
-                                                            <!--end::Date added-->
-
-                                                            <!--begin::Price-->
-                                                            <td class="text-end">
-                                                                $1,060 </td>
-                                                            <!--end::Price-->
-
-                                                            <!--begin::Status-->
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-danger">Out of Stock</span>
-                                                            </td>
-                                                            <!--end::Status-->
-
-                                                            <!--begin::Qty-->
-                                                            <td class="text-end" data-order="46">
-                                                                <span class="text-dark fw-bold">46 PCS</span>
-                                                            </td>
-                                                            <!--end::Qty-->
-                                                        </tr>
-                                                        <tr>
-                                                            <!--begin::Item-->
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-dark text-hover-primary">HP Hyper LTR</a>
-                                                            </td>
-                                                            <!--end::Item-->
-
-                                                            <!--begin::Product ID-->
-                                                            <td class="text-end">
-                                                                #PXF-778 </td>
-                                                            <!--end::Product ID-->
-
-                                                            <!--begin::Date added-->
-                                                            <td class="text-end">
-                                                                16 Jan, 2023 </td>
-                                                            <!--end::Date added-->
-
-                                                            <!--begin::Price-->
-                                                            <td class="text-end">
-                                                                $4500 </td>
-                                                            <!--end::Price-->
-
-                                                            <!--begin::Status-->
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-primary">In Stock</span>
-                                                            </td>
-                                                            <!--end::Status-->
-
-                                                            <!--begin::Qty-->
-                                                            <td class="text-end" data-order="78">
-                                                                <span class="text-dark fw-bold">78 PCS</span>
-                                                            </td>
-                                                            <!--end::Qty-->
-                                                        </tr>
-                                                        <tr>
-                                                            <!--begin::Item-->
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-dark text-hover-primary">Dell 32 UltraSharp</a>
-                                                            </td>
-                                                            <!--end::Item-->
-
-                                                            <!--begin::Product ID-->
-                                                            <td class="text-end">
-                                                                #XGY-356 </td>
-                                                            <!--end::Product ID-->
-
-                                                            <!--begin::Date added-->
-                                                            <td class="text-end">
-                                                                22 Dec, 2023 </td>
-                                                            <!--end::Date added-->
-
-                                                            <!--begin::Price-->
-                                                            <td class="text-end">
-                                                                $1,060 </td>
-                                                            <!--end::Price-->
-
-                                                            <!--begin::Status-->
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-warning">Low Stock</span>
-                                                            </td>
-                                                            <!--end::Status-->
-
-                                                            <!--begin::Qty-->
-                                                            <td class="text-end" data-order="8">
-                                                                <span class="text-dark fw-bold">8 PCS</span>
-                                                            </td>
-                                                            <!--end::Qty-->
-                                                        </tr>
-                                                        <tr>
-                                                            <!--begin::Item-->
-                                                            <td>
-                                                                <a href="./apps/ecommerce/catalog/edit-product.html" class="text-dark text-hover-primary">Google Pixel 6 Pro</a>
-                                                            </td>
-                                                            <!--end::Item-->
-
-                                                            <!--begin::Product ID-->
-                                                            <td class="text-end">
-                                                                #XVR-425 </td>
-                                                            <!--end::Product ID-->
-
-                                                            <!--begin::Date added-->
-                                                            <td class="text-end">
-                                                                27 Dec, 2023 </td>
-                                                            <!--end::Date added-->
-
-                                                            <!--begin::Price-->
-                                                            <td class="text-end">
-                                                                $1,060 </td>
-                                                            <!--end::Price-->
-
-                                                            <!--begin::Status-->
-                                                            <td class="text-end">
-                                                                <span class="badge py-3 px-4 fs-7 badge-light-primary">In Stock</span>
-                                                            </td>
-                                                            <!--end::Status-->
-
-                                                            <!--begin::Qty-->
-                                                            <td class="text-end" data-order="124">
-                                                                <span class="text-dark fw-bold">124 PCS</span>
-                                                            </td>
-                                                            <!--end::Qty-->
-                                                        </tr>
-                                                    </tbody>
-                                                    <!--end::Table body-->
-                                                </table>
-                                                <!--end::Table-->
-                                            </div>
-                                            <!--end::Card body-->
-                                        </div>
-                                        <!--end::Table Widget 5-->
-                                    </div>
-                                    <!--end::Col-->
-                                </div>
-                                <!--end::Row-->
+                                <!--end::Modal - New Card--><!--end::Modals-->
                             </div>
                             <!--end::Content-->
                         </div>
@@ -3498,7 +3213,7 @@
                                     <!--begin::Record-->
                                     <div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-750px px-7 py-3 mb-5">
                                         <!--begin::Title-->
-                                        <a href="./apps/projects/project.html" class="fs-5 text-dark text-hover-primary fw-semibold w-375px min-w-200px">Meeting with customer</a>
+                                        <a href="../../projects/project.html" class="fs-5 text-dark text-hover-primary fw-semibold w-375px min-w-200px">Meeting with customer</a>
                                         <!--end::Title-->
 
                                         <!--begin::Label-->
@@ -3536,7 +3251,7 @@
                                         <!--end::Progress-->
 
                                         <!--begin::Action-->
-                                        <a href="./apps/projects/project.html" class="btn btn-sm btn-light btn-active-light-primary">View</a>
+                                        <a href="../../projects/project.html" class="btn btn-sm btn-light btn-active-light-primary">View</a>
                                         <!--end::Action-->
                                     </div>
                                     <!--end::Record-->
@@ -3544,7 +3259,7 @@
                                     <!--begin::Record-->
                                     <div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-750px px-7 py-3 mb-0">
                                         <!--begin::Title-->
-                                        <a href="./apps/projects/project.html" class="fs-5 text-dark text-hover-primary fw-semibold w-375px min-w-200px">Project Delivery Preparation</a>
+                                        <a href="../../projects/project.html" class="fs-5 text-dark text-hover-primary fw-semibold w-375px min-w-200px">Project Delivery Preparation</a>
                                         <!--end::Title-->
 
                                         <!--begin::Label-->
@@ -3576,7 +3291,7 @@
                                         <!--end::Progress-->
 
                                         <!--begin::Action-->
-                                        <a href="./apps/projects/project.html" class="btn btn-sm btn-light btn-active-light-primary">View</a>
+                                        <a href="../../projects/project.html" class="btn btn-sm btn-light btn-active-light-primary">View</a>
                                         <!--end::Action-->
                                     </div>
                                     <!--end::Record-->
@@ -3677,7 +3392,7 @@
                                             <!--begin::Info-->
                                             <div class="ms-1 fw-semibold">
                                                 <!--begin::Desc-->
-                                                <a href="./apps/projects/project.html" class="fs-6 text-hover-primary fw-bold">Finance KPI App Guidelines</a>
+                                                <a href="../../projects/project.html" class="fs-6 text-hover-primary fw-bold">Finance KPI App Guidelines</a>
                                                 <!--end::Desc-->
 
                                                 <!--begin::Number-->
@@ -3691,7 +3406,7 @@
                                         <!--begin::Item-->
                                         <div class="d-flex flex-aligns-center pe-10 pe-lg-20">
                                             <!--begin::Icon-->
-                                            <img alt="/metronic8/demo30/./demo30/apps/projects/project.html" class="w-30px me-3" src="./assets/media/svg/files/doc.svg" />
+                                            <img alt="/metronic8/demo30/../demo30/apps/projects/project.html" class="w-30px me-3" src="./assets/media/svg/files/doc.svg" />
                                             <!--end::Icon-->
 
                                             <!--begin::Info-->
@@ -3711,7 +3426,7 @@
                                         <!--begin::Item-->
                                         <div class="d-flex flex-aligns-center">
                                             <!--begin::Icon-->
-                                            <img alt="/metronic8/demo30/./demo30/apps/projects/project.html" class="w-30px me-3" src="./assets/media/svg/files/css.svg" />
+                                            <img alt="/metronic8/demo30/../demo30/apps/projects/project.html" class="w-30px me-3" src="./assets/media/svg/files/css.svg" />
                                             <!--end::Icon-->
 
                                             <!--begin::Info-->
@@ -4485,7 +4200,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">Iblender</a>
+                            <a href="../sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">Iblender</a>
 
                             <span class="text-gray-400 fw-semibold d-block">The best kitchen gadget in 2022</span>
                         </div>
@@ -4526,7 +4241,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">SmartCleaner</a>
+                            <a href="../sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">SmartCleaner</a>
 
                             <span class="text-gray-400 fw-semibold d-block">Smart tool for cooking</span>
                         </div>
@@ -4567,7 +4282,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">CameraMaxr</a>
+                            <a href="../sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">CameraMaxr</a>
 
                             <span class="text-gray-400 fw-semibold d-block">Professional camera for edge</span>
                         </div>
@@ -4608,7 +4323,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">$D Printer</a>
+                            <a href="../sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">$D Printer</a>
 
                             <span class="text-gray-400 fw-semibold d-block">Manfactoring unique objekts</span>
                         </div>
@@ -4649,7 +4364,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">MotionWire</a>
+                            <a href="../sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">MotionWire</a>
 
                             <span class="text-gray-400 fw-semibold d-block">Perfect animation tool</span>
                         </div>
@@ -4690,7 +4405,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">Samsung</a>
+                            <a href="../sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">Samsung</a>
 
                             <span class="text-gray-400 fw-semibold d-block">Profile info,Timeline etc</span>
                         </div>
@@ -4731,7 +4446,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="./apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">$D Printer</a>
+                            <a href="../sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">$D Printer</a>
 
                             <span class="text-gray-400 fw-semibold d-block">Manfactoring unique objekts</span>
                         </div>
@@ -6025,7 +5740,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="marketing.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="./dashboards/marketing.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Marketing </h3>
@@ -6045,7 +5760,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="social.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="./dashboards/social.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Social </h3>
@@ -6065,7 +5780,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="ecommerce.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="./dashboards/ecommerce.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Ecommerce </h3>
@@ -6085,7 +5800,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="store-analytics.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="./dashboards/store-analytics.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Store-analytics </h3>
@@ -6105,7 +5820,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="logistics.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="./dashboards/logistics.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Logistics </h3>
@@ -6125,7 +5840,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="delivery.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="./dashboards/delivery.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Delivery </h3>
@@ -6145,7 +5860,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="online-courses.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="./dashboards/online-courses.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Online-courses </h3>
@@ -6165,7 +5880,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="school.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="./dashboards/school.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         School </h3>
@@ -6185,7 +5900,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="crypto.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="./dashboards/crypto.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Crypto </h3>
@@ -6205,7 +5920,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="finance-performance.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="./dashboards/finance-performance.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Finance-performance </h3>
@@ -6225,7 +5940,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="website-analytics.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="./dashboards/website-analytics.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Website-analytics </h3>
@@ -6245,7 +5960,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="bidding.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="./dashboards/bidding.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Bidding </h3>
@@ -6265,7 +5980,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="podcast.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="./dashboards/podcast.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Podcast </h3>
@@ -6285,7 +6000,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="projects.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="./dashboards/projects.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Projects </h3>
@@ -6305,7 +6020,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="call-center.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="./dashboards/call-center.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Call-center </h3>
@@ -6325,7 +6040,7 @@
                                             <div class="col-md-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="pos.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="./dashboards/pos.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         POS </h3>
@@ -6358,7 +6073,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/projects/list/list.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../projects/list/list.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Projects </h3>
@@ -6378,7 +6093,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/ecommerce/catalog/products/products.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../catalog/products/products.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Ecommerce </h3>
@@ -6398,7 +6113,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/customers/list/list.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../customers/list/list.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Customers </h3>
@@ -6418,7 +6133,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/subscriptions/list/list.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../subscriptions/list/list.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Subscriptions </h3>
@@ -6438,7 +6153,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/user-management/users/list/list.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../user-management/users/list/list.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         User Management </h3>
@@ -6458,7 +6173,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/invoices/create/main.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../invoices/create/main.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Invoices </h3>
@@ -6478,7 +6193,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/support-center/overview/main.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../support-center/overview/main.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Support Center </h3>
@@ -6498,7 +6213,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/chat/private.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../chat/private.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Chat </h3>
@@ -6518,7 +6233,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/calendar/calendar.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../calendar/calendar.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Calendar </h3>
@@ -6538,7 +6253,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/file-manager/list/folders.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../file-manager/list/folders.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         File Manager </h3>
@@ -6558,7 +6273,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/inbox/listing/listing.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../inbox/listing/listing.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Inbox </h3>
@@ -6578,7 +6293,7 @@
                                             <div class="col-lg-4">
 
                                                 <!--begin::Preview-->
-                                                <a href="./apps/contacts/getting-started.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
+                                                <a href="../../contacts/getting-started.html" data-kt-href="true" class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden">
                                                     <!--begin::Title-->
                                                     <h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
                                                         Contacts </h3>
@@ -8804,25 +8519,25 @@
 
 
 
-                                                <a class="fw-6 fw-semibold" href="marketing.html">
+                                                <a class="fw-6 fw-semibold" href="./dashboards/marketing.html">
                                                     Marketing Dashboard </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="social.html">
+                                                <a class="fw-6 fw-semibold" href="./dashboards/social.html">
                                                     Social Dashboard </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="ecommerce.html">
+                                                <a class="fw-6 fw-semibold" href="./dashboards/ecommerce.html">
                                                     eCommerce Dashboard </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="store-analytics.html">
+                                                <a class="fw-6 fw-semibold" href="./dashboards/store-analytics.html">
                                                     Store Analytics </a>
 
                                             </div>
@@ -8836,31 +8551,31 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="logistics.html">
+                                                <a class="fw-6 fw-semibold" href="./dashboards/logistics.html">
                                                     Logistics </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="delivery.html">
+                                                <a class="fw-6 fw-semibold" href="./dashboards/delivery.html">
                                                     Delivery </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="online-courses.html">
+                                                <a class="fw-6 fw-semibold" href="./dashboards/online-courses.html">
                                                     Online Courses </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="school.html">
+                                                <a class="fw-6 fw-semibold" href="./dashboards/school.html">
                                                     Hello Tyler </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="crypto.html">
+                                                <a class="fw-6 fw-semibold" href="./dashboards/crypto.html">
                                                     My Balance: 37,045$ </a>
 
                                             </div>
@@ -8874,31 +8589,31 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="finance-performance.html">
+                                                <a class="fw-6 fw-semibold" href="./dashboards/finance-performance.html">
                                                     Finance Performance </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="website-analytics.html">
+                                                <a class="fw-6 fw-semibold" href="./dashboards/website-analytics.html">
                                                     Website Analytics </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="bidding.html">
+                                                <a class="fw-6 fw-semibold" href="./dashboards/bidding.html">
                                                     Bidding Dashboard </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="podcast.html">
+                                                <a class="fw-6 fw-semibold" href="./dashboards/podcast.html">
                                                     Podcast Dashboard </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="projects.html">
+                                                <a class="fw-6 fw-semibold" href="./dashboards/projects.html">
                                                     Projects Dashboard </a>
 
                                             </div>
@@ -8912,13 +8627,13 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="call-center.html">
+                                                <a class="fw-6 fw-semibold" href="./dashboards/call-center.html">
                                                     Call Center </a>
 
 
 
 
-                                                <a class="fw-6 fw-semibold" href="pos.html">
+                                                <a class="fw-6 fw-semibold" href="./dashboards/pos.html">
                                                     POS System </a>
 
                                             </div>
@@ -9806,17 +9521,17 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./apps/projects/list/list.html">
+                                                <a class="fw-6 fw-semibold" href="../../projects/list/list.html">
                                                     Projects </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./apps/ecommerce/catalog/products/products.html">
+                                                <a class="fw-6 fw-semibold" href="../catalog/products/products.html">
                                                     Ecommerce </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./apps/customers/list/list.html">
+                                                <a class="fw-6 fw-semibold" href="../../customers/list/list.html">
                                                     Customers </a>
 
                                             </div>
@@ -9829,17 +9544,17 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./apps/subscriptions/list/list.html">
+                                                <a class="fw-6 fw-semibold" href="../../subscriptions/list/list.html">
                                                     Subscriptions </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./apps/user-management/users/list/list.html">
+                                                <a class="fw-6 fw-semibold" href="../../user-management/users/list/list.html">
                                                     User Management </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./apps/invoices/create/main.html">
+                                                <a class="fw-6 fw-semibold" href="../../invoices/create/main.html">
                                                     Invoices </a>
 
                                             </div>
@@ -9852,17 +9567,17 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./apps/support-center/overview/main.html">
+                                                <a class="fw-6 fw-semibold" href="../../support-center/overview/main.html">
                                                     Support Center </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./apps/chat/private.html">
+                                                <a class="fw-6 fw-semibold" href="../../chat/private.html">
                                                     Chat </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./apps/calendar/calendar.html">
+                                                <a class="fw-6 fw-semibold" href="../../calendar/calendar.html">
                                                     Calendar </a>
 
                                             </div>
@@ -9875,17 +9590,17 @@
                                             <!--begin::List-->
                                             <div class="d-flex flex-column gap-3 gap-lg-5">
 
-                                                <a class="fw-6 fw-semibold" href="./apps/file-manager/list/folders.html">
+                                                <a class="fw-6 fw-semibold" href="../../file-manager/list/folders.html">
                                                     File Manager </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./apps/inbox/listing/listing.html">
+                                                <a class="fw-6 fw-semibold" href="../../inbox/listing/listing.html">
                                                     Inbox </a>
 
 
 
-                                                <a class="fw-6 fw-semibold" href="./apps/contacts/getting-started.html">
+                                                <a class="fw-6 fw-semibold" href="../../contacts/getting-started.html">
                                                     Contacts </a>
 
                                             </div>
@@ -10424,630 +10139,7 @@
         </div>
         <!--end::Modal dialog-->
     </div>
-    <!--end::Modal - Upgrade plan-->
-    <!--begin::Modal - View Users-->
-    <div class="modal fade" id="kt_modal_view_users" tabindex="-1" aria-hidden="true">
-        <!--begin::Modal dialog-->
-        <div class="modal-dialog mw-650px">
-            <!--begin::Modal content-->
-            <div class="modal-content">
-                <!--begin::Modal header-->
-                <div class="modal-header pb-0 border-0 justify-content-end">
-                    <!--begin::Close-->
-                    <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
-                        <i class="ki-outline ki-cross fs-1"></i>
-                    </div>
-                    <!--end::Close-->
-                </div>
-                <!--begin::Modal header-->
-
-                <!--begin::Modal body-->
-                <div class="modal-body scroll-y mx-5 mx-xl-18 pt-0 pb-15">
-                    <!--begin::Heading-->
-                    <div class="text-center mb-13">
-                        <!--begin::Title-->
-                        <h1 class="mb-3">Browse Users</h1>
-                        <!--end::Title-->
-
-                        <!--begin::Description-->
-                        <div class="text-muted fw-semibold fs-5">
-                            If you need more info, please check out our
-                            <a href="#" class="link-primary fw-bold">Users Directory</a>.
-                        </div>
-                        <!--end::Description-->
-                    </div>
-                    <!--end::Heading-->
-
-                    <!--begin::Users-->
-                    <div class="mb-15">
-                        <!--begin::List-->
-                        <div class="mh-375px scroll-y me-n7 pe-7">
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="./assets/media/avatars/300-6.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Emma Smith
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Art Director </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">smith@kpmg.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$23,000</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-danger text-danger fw-semibold">
-                                            M </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Melody Macy
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Marketing Analytic </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">melody@altbox.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$50,500</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="./assets/media/avatars/300-1.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Max Smith
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Software Enginer </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">max@kt.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$75,900</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="./assets/media/avatars/300-5.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Sean Bean
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Web Developer </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">sean@dellito.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$10,500</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="./assets/media/avatars/300-25.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Brian Cox
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                UI/UX Designer </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">brian@exchange.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$20,000</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-warning text-warning fw-semibold">
-                                            C </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Mikaela Collins
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Head Of Marketing </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">mik@pex.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$9,300</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="./assets/media/avatars/300-9.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Francis Mitcham
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Software Arcitect </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">f.mit@kpmg.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$15,000</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-danger text-danger fw-semibold">
-                                            O </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Olivia Wild
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                System Admin </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">olivia@corpmail.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$23,000</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-primary text-primary fw-semibold">
-                                            N </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Neil Owen
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Account Manager </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">owen.neil@gmail.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$45,800</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="./assets/media/avatars/300-23.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Dan Wilson
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Web Desinger </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">dam@consilting.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$90,500</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-danger text-danger fw-semibold">
-                                            E </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Emma Bold
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Corporate Finance </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">emma@intenso.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$5,000</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 border-bottom border-gray-300 border-bottom-dashed">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <img alt="Pic" src="./assets/media/avatars/300-12.jpg" />
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Ana Crown
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Customer Relationship </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">ana.cf@limtel.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$70,000</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                            <!--begin::User-->
-                            <div class="d-flex flex-stack py-5 ">
-                                <!--begin::Details-->
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-35px symbol-circle">
-                                        <span class="symbol-label bg-light-info text-info fw-semibold">
-                                            A </span>
-                                    </div>
-                                    <!--end::Avatar-->
-
-                                    <!--begin::Details-->
-                                    <div class="ms-6">
-                                        <!--begin::Name-->
-                                        <a href="#" class="d-flex align-items-center fs-5 fw-bold text-dark text-hover-primary">
-                                            Robert Doe
-
-                                            <span class="badge badge-light fs-8 fw-semibold ms-2">
-                                                Marketing Executive </span>
-                                        </a>
-                                        <!--end::Name-->
-
-                                        <!--begin::Email-->
-                                        <div class="fw-semibold text-muted">robert@benko.com</div>
-                                        <!--end::Email-->
-                                    </div>
-                                    <!--end::Details-->
-                                </div>
-                                <!--end::Details-->
-
-                                <!--begin::Stats-->
-                                <div class="d-flex">
-                                    <!--begin::Sales-->
-                                    <div class="text-end">
-                                        <div class="fs-5 fw-bold text-dark">$45,500</div>
-
-                                        <div class="fs-7 text-muted">Sales</div>
-                                    </div>
-                                    <!--end::Sales-->
-                                </div>
-                                <!--end::Stats-->
-                            </div>
-                            <!--end::User-->
-                        </div>
-                        <!--end::List-->
-                    </div>
-                    <!--end::Users-->
-
-                    <!--begin::Notice-->
-                    <div class="d-flex justify-content-between">
-                        <!--begin::Label-->
-                        <div class="fw-semibold">
-                            <label class="fs-6">Adding Users by Team Members</label>
-
-                            <div class="fs-7 text-muted">If you need more info, please check budget planning</div>
-                        </div>
-                        <!--end::Label-->
-
-                        <!--begin::Switch-->
-                        <label class="form-check form-switch form-check-custom form-check-solid">
-                            <input class="form-check-input" type="checkbox" value="" checked="checked" />
-
-                            <span class="form-check-label fw-semibold text-muted">
-                                Allowed
-                            </span>
-                        </label>
-                        <!--end::Switch-->
-                    </div>
-                    <!--end::Notice-->
-                </div>
-                <!--end::Modal body-->
-            </div>
-            <!--end::Modal content-->
-        </div>
-        <!--end::Modal dialog-->
-    </div>
-    <!--end::Modal - View Users--><!--begin::Modal - Users Search-->
+    <!--end::Modal - Upgrade plan--><!--begin::Modal - Users Search-->
     <div class="modal fade" id="kt_modal_users_search" tabindex="-1" aria-hidden="true">
         <!--begin::Modal dialog-->
         <div class="modal-dialog modal-dialog-centered mw-650px">
@@ -11895,15 +10987,15 @@
 
                                             <!--begin::Avatar-->
                                             <div class="symbol symbol-35px symbol-circle">
-                                                <img alt="Pic" src="./assets/media/avatars/300-12.jpg" />
+                                                <img alt="Pic" src="./assets/media/avatars/300-6.jpg" />
                                             </div>
                                             <!--end::Avatar-->
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ana Crown</a>
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Emma Smith</a>
 
-                                                <div class="fw-semibold text-muted">ana.cf@limtel.com</div>
+                                                <div class="fw-semibold text-muted">smith@kpmg.com</div>
                                             </div>
                                             <!--end::Details-->
                                         </div>
@@ -11968,10 +11060,660 @@
     </div>
     <!--end::Modal - Users Search-->
     <!--begin::Modal - Invite Friends-->
+    <div class="modal fade" id="kt_modal_invite_friends" tabindex="-1" aria-hidden="true">
+        <!--begin::Modal dialog-->
+        <div class="modal-dialog mw-650px">
+            <!--begin::Modal content-->
+            <div class="modal-content">
+                <!--begin::Modal header-->
+                <div class="modal-header pb-0 border-0 justify-content-end">
+                    <!--begin::Close-->
+                    <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+                        <i class="ki-outline ki-cross fs-1"></i>
+                    </div>
+                    <!--end::Close-->
+                </div>
+                <!--begin::Modal header-->
 
+                <!--begin::Modal body-->
+                <div class="modal-body scroll-y mx-5 mx-xl-18 pt-0 pb-15">
+                    <!--begin::Heading-->
+                    <div class="text-center mb-13">
+                        <!--begin::Title-->
+                        <h1 class="mb-3">Invite a Friend</h1>
+                        <!--end::Title-->
+
+                        <!--begin::Description-->
+                        <div class="text-muted fw-semibold fs-5">
+                            If you need more info, please check out
+                            <a href="#" class="link-primary fw-bold">FAQ Page</a>.
+                        </div>
+                        <!--end::Description-->
+                    </div>
+                    <!--end::Heading-->
+
+                    <!--begin::Google Contacts Invite-->
+                    <div class="btn btn-light-primary fw-bold w-100 mb-8">
+                        <img alt="Logo" src="./assets/media/svg/brand-logos/google-icon.svg" class="h-20px me-3" />
+                        Invite Gmail Contacts
+                    </div>
+                    <!--end::Google Contacts Invite-->
+
+                    <!--begin::Separator-->
+                    <div class="separator d-flex flex-center mb-8">
+                        <span class="text-uppercase bg-body fs-7 fw-semibold text-muted px-3">or</span>
+                    </div>
+                    <!--end::Separator-->
+
+                    <!--begin::Textarea-->
+                    <textarea class="form-control form-control-solid mb-8" rows="3" placeholder="Type or paste emails here">
+                </textarea>
+                    <!--end::Textarea-->
+
+                    <!--begin::Users-->
+                    <div class="mb-10">
+                        <!--begin::Heading-->
+                        <div class="fs-6 fw-semibold mb-2">Your Invitations</div>
+                        <!--end::Heading-->
+
+                        <!--begin::List-->
+                        <div class="mh-300px scroll-y me-n7 pe-7">
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src="./assets/media/avatars/300-6.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Emma Smith</a>
+
+                                        <div class="fw-semibold text-muted">smith@kpmg.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2" selected>Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <span class="symbol-label bg-light-danger text-danger fw-semibold">
+                                            M </span>
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Melody Macy</a>
+
+                                        <div class="fw-semibold text-muted">melody@altbox.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1" selected>Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src="./assets/media/avatars/300-1.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Max Smith</a>
+
+                                        <div class="fw-semibold text-muted">max@kt.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3" selected>Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src="./assets/media/avatars/300-5.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Sean Bean</a>
+
+                                        <div class="fw-semibold text-muted">sean@dellito.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2" selected>Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src="./assets/media/avatars/300-25.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Brian Cox</a>
+
+                                        <div class="fw-semibold text-muted">brian@exchange.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3" selected>Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <span class="symbol-label bg-light-warning text-warning fw-semibold">
+                                            C </span>
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Mikaela Collins</a>
+
+                                        <div class="fw-semibold text-muted">mik@pex.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2" selected>Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src="./assets/media/avatars/300-9.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Francis Mitcham</a>
+
+                                        <div class="fw-semibold text-muted">f.mit@kpmg.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3" selected>Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <span class="symbol-label bg-light-danger text-danger fw-semibold">
+                                            O </span>
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Olivia Wild</a>
+
+                                        <div class="fw-semibold text-muted">olivia@corpmail.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2" selected>Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <span class="symbol-label bg-light-primary text-primary fw-semibold">
+                                            N </span>
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Neil Owen</a>
+
+                                        <div class="fw-semibold text-muted">owen.neil@gmail.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1" selected>Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src="./assets/media/avatars/300-23.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Dan Wilson</a>
+
+                                        <div class="fw-semibold text-muted">dam@consilting.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3" selected>Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <span class="symbol-label bg-light-danger text-danger fw-semibold">
+                                            E </span>
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Emma Bold</a>
+
+                                        <div class="fw-semibold text-muted">emma@intenso.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2" selected>Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src="./assets/media/avatars/300-12.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ana Crown</a>
+
+                                        <div class="fw-semibold text-muted">ana.cf@limtel.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1" selected>Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <span class="symbol-label bg-light-info text-info fw-semibold">
+                                            A </span>
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Robert Doe</a>
+
+                                        <div class="fw-semibold text-muted">robert@benko.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3" selected>Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src="./assets/media/avatars/300-13.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">John Miller</a>
+
+                                        <div class="fw-semibold text-muted">miller@mapple.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3" selected>Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <span class="symbol-label bg-light-success text-success fw-semibold">
+                                            L </span>
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Lucy Kunic</a>
+
+                                        <div class="fw-semibold text-muted">lucy.m@fentech.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2" selected>Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src="./assets/media/avatars/300-21.jpg" />
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ethan Wilder</a>
+
+                                        <div class="fw-semibold text-muted">ethan@loop.com.au</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1" selected>Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3">Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                            <!--begin::User-->
+                            <div class="d-flex flex-stack py-4 ">
+                                <!--begin::Details-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Avatar-->
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <span class="symbol-label bg-light-primary text-primary fw-semibold">
+                                            N </span>
+                                    </div>
+                                    <!--end::Avatar-->
+
+                                    <!--begin::Details-->
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Neil Owen</a>
+
+                                        <div class="fw-semibold text-muted">owen.neil@gmail.com</div>
+                                    </div>
+                                    <!--end::Details-->
+                                </div>
+                                <!--end::Details-->
+
+                                <!--begin::Access menu-->
+                                <div class="ms-2 w-100px">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                        <option value="1">Guest</option>
+                                        <option value="2">Owner</option>
+                                        <option value="3" selected>Can Edit</option>
+                                    </select>
+                                </div>
+                                <!--end::Access menu-->
+                            </div>
+                            <!--end::User-->
+                        </div>
+                        <!--end::List-->
+                    </div>
+                    <!--end::Users-->
+
+                    <!--begin::Notice-->
+                    <div class="d-flex flex-stack">
+                        <!--begin::Label-->
+                        <div class="me-5 fw-semibold">
+                            <label class="fs-6">Adding Users by Team Members</label>
+                            <div class="fs-7 text-muted">If you need more info, please check budget planning</div>
+                        </div>
+                        <!--end::Label-->
+
+                        <!--begin::Switch-->
+                        <label class="form-check form-switch form-check-custom form-check-solid">
+                            <input class="form-check-input" type="checkbox" value="1" checked="checked" />
+
+                            <span class="form-check-label fw-semibold text-muted">
+                                Allowed
+                            </span>
+                        </label>
+                        <!--end::Switch-->
+                    </div>
+                    <!--end::Notice-->
+                </div>
+                <!--end::Modal body-->
+            </div>
+            <!--end::Modal content-->
+        </div>
+        <!--end::Modal dialog-->
+    </div>
     <!--end::Modal - Invite Friend--> <!--end::Modals-->
 
     <!--begin::Javascript-->
-    <?php
-    include './footer.php'
-    ?>
+    <script>
+        var hostUrl = "./assets/index.html";
+    </script>
+
+    <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+    <script src="./assets/plugins/global/plugins.bundle.js"></script>
+    <script src="./assets/js/scripts.bundle.js"></script>
+    <!--end::Global Javascript Bundle-->
+
+    <!--begin::Vendors Javascript(used for this page only)-->
+    <script src="./assets/plugins/custom/datatables/datatables.bundle.js"></script>
+    <!--end::Vendors Javascript-->
+
+    <!--begin::Custom Javascript(used for this page only)-->
+    <script src="./assets/js/custom/apps/ecommerce/customers/listing/listing.js"></script>
+    <script src="./assets/js/custom/apps/ecommerce/customers/listing/add.js"></script>
+    <script src="./assets/js/custom/apps/ecommerce/customers/listing/export.js"></script>
+    <script src="./assets/js/widgets.bundle.js"></script>
+    <script src="./assets/js/custom/widgets.js"></script>
+    <script src="./assets/js/custom/apps/chat/chat.js"></script>
+    <script src="./assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+    <script src="./assets/js/custom/utilities/modals/users-search.js"></script>
+    <!--end::Custom Javascript-->
+    <!--end::Javascript-->
+
+</body>
+<!--end::Body-->
+
+</html>
