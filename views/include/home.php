@@ -8,9 +8,7 @@
                             <div class="swiper-container swiper-group-1">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="banner-big banner-big-3 bg-22" style="
-                            background-image: url(./views/assets/imgs/page/homepage4/bg-banner.png);
-                          ">
+                                        <div class="banner-big banner-big-3 bg-22" style="background-image: url(./views/assets/imgs/page/homepage4/bg-banner.png);">
                                             <h1 class="color-gray-100 text-uppercase text-shadow">
                                                 Enjoy<br class="d-none d-lg-block" />
                                                 The Music
@@ -30,15 +28,11 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="mt-30">
-                                                <a class="btn btn-brand-2 btn-gray-1000" href="shop-list-2.html">Shop now</a><a class="btn btn-link text-underline" href="shop-list-2.html">Learn more</a>
-                                            </div>
+
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="banner-big banner-big-3 bg-22" style="
-                            background-image: url(./views/assets/imgs/page/homepage4/bg-banner-2.png);
-                          ">
+                                        <div class="banner-big banner-big-3 bg-22" style="background-image: url(./views/assets/imgs/page/homepage4/bg-banner-2.png);">
                                             <h1 class="color-gray-100 text-uppercase text-shadow">
                                                 360 DEGREE<br class="d-none d-lg-block" />
                                                 VIRTUAL REALITY
@@ -58,15 +52,11 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="mt-30">
-                                                <a class="btn btn-brand-2 btn-gray-1000" href="shop-list-2.html">Shop now</a><a class="btn btn-link text-underline" href="shop-list-2.html">Learn more</a>
-                                            </div>
+
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="banner-big banner-big-3 bg-22" style="
-                            background-image: url(./views/assets/imgs/page/homepage4/bg-banner-3.png);
-                          ">
+                                        <div class="banner-big banner-big-3 bg-22" style="background-image: url(./views/assets/imgs/page/homepage4/bg-banner-3.png);">
                                             <h1 class="color-gray-100 text-uppercase text-shadow">
                                                 Enjoy<br class="d-none d-lg-block" />
                                                 The Music
@@ -86,9 +76,7 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="mt-30">
-                                                <a class="btn btn-brand-2 btn-gray-1000" href="shop-list-2.html">Shop now</a><a class="btn btn-link text-underline" href="shop-list-2.html">Learn more</a>
-                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -100,23 +88,19 @@
                         <div class="row">
                             <div class="col-xl-7 col-lg-9 col-md-8 col-sm-12 mb-30">
                                 <div class="bg-metaverse bg-22 pt-25 mb-20 pl-20 h-175">
-                                    <h3 class="mb-10 font-32">Metaverse</h3>
-                                    <p class="font-16">The Future of Creativity</p>
-                                    <div class="mt-10">
-                                        <a class="btn btn-link-brand-2 btn-arrow-brand-2" href="shop-list-2.html">learn more</a>
-                                    </div>
+                                    <h3 class="mb-10 font-32">Siêu ưu đãi</h3>
+                                    <p class="font-16">Sản phẩm của tương lai</p>
+
                                 </div>
                                 <div class="bg-4 box-bdrd-4 bg-headphone pt-20 mh-307">
-                                    <span class="font-md color-brand-3">Headphone</span>
+                                    <span class="font-md color-brand-3">Tai nghe</span>
                                     <h4 class="font-32 color-gray-1000 mb-10 mt-5">
-                                        Rockez 547
+                                        Giảm giá
                                     </h4>
                                     <p class="color-brand-1 font-sm">
-                                        MUSIC EVERYWHERE<br class="d-none d-lg-block" />ANYTIME
+                                        Thỏa thích đặt hàng
                                     </p>
-                                    <div class="mt-35">
-                                        <a class="btn btn-brand-2 btn-arrow-right" href="shop-list-2.html">Shop Now</a>
-                                    </div>
+
                                 </div>
                             </div>
                             <div class="col-xl-5 col-lg-3 col-md-4 col-sm-12">
@@ -125,7 +109,14 @@
                                     <div class="swiper swiper-vertical-1">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion1.png" alt="Ecom" /></a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion2.png" alt="Ecom" /></a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion3.png" alt="Ecom" /></a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion4.png" alt="Ecom" /></a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion5.png" alt="Ecom" /></a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion6.png" alt="Ecom" /></a>
+                                                <a href="shop-list-2.html">
+                                                    <img src="./views/assets/imgs/page/homepage4/promotion1.png" alt="Ecom" />
+                                                </a>
+                                                <a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion2.png" alt="Ecom" />
+                                                </a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion3.png" alt="Ecom" />
+                                                </a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion4.png" alt="Ecom" />
+                                                </a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion5.png" alt="Ecom" /></a>
+                                                <a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion6.png" alt="Ecom" /></a>
                                             </div>
                                             <div class="swiper-slide">
                                                 <a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion2.png" alt="Ecom" /></a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion4.png" alt="Ecom" /></a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion6.png" alt="Ecom" /></a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion1.png" alt="Ecom" /></a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion3.png" alt="Ecom" /></a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion5.png" alt="Ecom" /></a>
@@ -323,13 +314,20 @@
                                                         <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./admin/assets/media/imageproduct/<?php echo $item['productImage'] ?>" alt="Ecom" /></a>
                                                     </div>
                                                     <div class="info-right">
-                                                        <a class="font-xs color-gray-500" href="shop-vendor-single.html">Dell</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Dell Optiplex 9020 Small Form Business Desktop
+                                                        <a class="font-xs color-gray-500" href="shop-vendor-single.html">Dell</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">
+                                                            Dell Optiplex 9020 Small Form Business Desktop
                                                             Tower PC</a>
                                                         <div class="rating">
-                                                            <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
+                                                            <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
+                                                            <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
+                                                            <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
+                                                            <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
+                                                            <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
+                                                            <span class="font-xs color-gray-500">(65)</span>
                                                         </div>
                                                         <div class="price-info">
-                                                            <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['productPrice'] ?></strong><span class="color-gray-500 price-line">$3225.6</span>
+                                                            <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['productPrice'] ?></strong>
+                                                            <span class="color-gray-500 price-line">$3225.6</span>
                                                         </div>
                                                         <div class="mt-20 box-btn-cart">
                                                             <a class="btn btn-cart" href="shop-cart.html">Add To Cart</a>
