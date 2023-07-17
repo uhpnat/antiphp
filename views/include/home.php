@@ -197,8 +197,8 @@
                                                     </div>
                                                     <div class="info-right">
                                                         <a class="font-xs color-gray-500" href="shop-vendor-single.html">Dell</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">
-                                                            Dell Optiplex 9020 Small Form Business Desktop
-                                                            Tower PC</a>
+                                                            <?php echo $item['productName'] ?>
+                                                        </a>
                                                         <div class="rating">
                                                             <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
                                                             <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
@@ -214,13 +214,13 @@
                                                         <div class="mt-20 box-btn-cart">
                                                             <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
                                                         </div>
-                                                        <ul class="list-features">
-                                                            <li>27-inch (diagonal) Retina 5K display</li>
+                                                        <!-- <ul class="list-features">
+                                                            <li><?php echo $item['productDesc1'] ?></li>
                                                             <li>
-                                                                3.1GHz 6-core 10th-generation Intel Core i5
+                                                            <?php echo $item['productDesc2'] ?>
                                                             </li>
-                                                            <li>AMD Radeon Pro 5300 graphics</li>
-                                                        </ul>
+                                                            <li><?php echo $item['productDesc3'] ?></li>
+                                                        </ul> -->
                                                     </div>
                                                 </div>
                                             </div>
