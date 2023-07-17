@@ -140,6 +140,22 @@ class product
         $result = $this->db->delete($query);
         // header("Location:categories.php");   
     }
+    public function formatImage($inputString, $replacementCharacter)
+    {
+        if (strlen($inputString) < 11) {
+            // Nếu chuỗi ngắn hơn 11 kí tự, không thể thay thế kí tự thứ 11.
+            return $inputString;
+        }
+
+        // Lấy phần của chuỗi từ vị trí 0 đến vị trí 9 (kí tự thứ 10) và phần từ vị trí 11 trở đi.
+        $partBefore = substr($inputString, 0, 10);
+        $partAfter = substr($inputString, 11);
+
+        // Kết hợp lại các phần với kí tự mới được thay thế vào vị trí 10.
+        $outputString = $partBefore . $replacementCharacter . $partAfter;
+
+        return $outputString;
+    }
 }
 
 
