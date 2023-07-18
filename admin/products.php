@@ -405,7 +405,7 @@ License: For each use you must have a valid license purchased only from above li
                                                             </a>
                                                         </div>
                                                         <div class="menu-item px-3">
-                                                            <a href="?delete=<?php $item['productId'] ?>" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">
+                                                            <a href="?delete=<?php echo $item['productId'] ?>" class="menu-link px-3">
                                                                 Delete
                                                             </a>
                                                         </div>
