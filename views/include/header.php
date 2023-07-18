@@ -116,7 +116,7 @@ $brand = new brand();
                     <div class="header-search">
                         <div class="box-header-search">
                             <form class="form-search" method="post" action="#">
-                                <div class="box-category">
+                                <!-- <div class="box-category">
                                     <select class="select-active select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
                                         <option>Danh mục</option>
                                         <option value="Computers Accessories">
@@ -135,7 +135,7 @@ $brand = new brand();
                                         </option>
                                         <option value="Cloud Software">Cloud Software</option>
                                     </select>
-                                </div>
+                                </div> -->
                                 <div class="box-keysearch">
                                     <input class="form-control font-xs" type="text" value="" placeholder="Tìm kiếm sản phẩm" />
                                 </div>
@@ -231,75 +231,16 @@ $brand = new brand();
                     </button>
                     <div class="sidebar-left dropdown-menu dropdown-menu-light" aria-labelledby="dropdownCategory" data-bs-popper="static">
                         <ul class="menu-texts menu-close">
-                            <li class="has-children">
-                                <a href="javascript:;"><span class="img-link"><img src="./views/assets/imgs/template/monitor.svg" alt="Ecom" /></span><span class="text-link">Computers &amp; Accessories</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="#">Computer Accessories</a></li>
-                                    <li><a href="#">Computer Cases</a></li>
-                                    <li><a href="#">Laptop</a></li>
-                                    <li><a href="#">HDD</a></li>
-                                    <li><a href="#">RAM</a></li>
-                                    <li><a href="#">Headphone</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-children">
-                                <a class="active" href="javascript:;"><span class="img-link"><img src="./views/assets/imgs/template/mobile.svg" alt="Ecom" /></span><span class="text-link">Cell Phones</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="#">Phone Accessories</a></li>
-                                    <li><a href="#">Phone Cases</a></li>
-                                    <li><a href="#">Postpaid Phones</a></li>
-                                    <li><a href="#">Unlocked Phones</a></li>
-                                    <li><a href="#">Prepaid Phones</a></li>
-                                    <li><a href="#">Prepaid Plans</a></li>
-                                    <li><a href="#">Refurbished Phones</a></li>
-                                    <li><a href="#">Straight Talk</a></li>
-                                    <li><a href="#">iPhone</a></li>
-                                    <li><a href="#">Samsung Galaxy</a></li>
-                                    <li><a href="#">Samsung Galaxy</a></li>
-                                    <li><a href="#">Samsung Galaxy</a></li>
-                                    <li><a href="#">Samsung Galaxy</a></li>
-                                    <li><a href="#">Samsung Galaxy</a></li>
-                                </ul>
-                            </li>
                             <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/game.svg" alt="Ecom" /></span><span class="text-link">Gaming Gatgets</span></a>
+                                <?php
+                                $showCategory = $cat->show_category();
+                                foreach ($showCategory as $item) {
+                                ?>
+                                    <a href="#"><span class="text-link"><?php echo $item['categoryName'] ?></span></a>
+                                <?php  } ?>
                             </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/clock.svg" alt="Ecom" /></span><span class="text-link">Smart watches</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/airpod.svg" alt="Ecom" /></span><span class="text-link">Airpod</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/airpods.svg" alt="Ecom" /></span><span class="text-link">Wired Headphone</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/mouse.svg" alt="Ecom" /></span><span class="text-link">Mouse &amp; Keyboard</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/music-play.svg" alt="Ecom" /></span><span class="text-link">Headphone</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/bluetooth.svg" alt="Ecom" /></span><span class="text-link">Bluetooth devices</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/clound.svg" alt="Ecom" /></span><span class="text-link">Cloud Software</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/electricity.svg" alt="Ecom" /></span><span class="text-link">Electric accessories</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/cpu.svg" alt="Ecom" /></span><span class="text-link">Mainboard &amp; CPU</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/devices.svg" alt="Ecom" /></span><span class="text-link">Desktop</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/driver.svg" alt="Ecom" /></span><span class="text-link">Speaker</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/lamp.svg" alt="Ecom" /></span><span class="text-link">Computer Decor</span></a>
-                            </li>
+
+
                         </ul>
                     </div>
                 </div>
