@@ -12,6 +12,8 @@ $us = new user();
 $cat = new category();
 $product = new product();
 $brand = new brand();
+
+
 ?>
 
 
@@ -103,8 +105,15 @@ $brand = new brand();
             <div class="main-header">
                 <div class="header-left">
                     <div class="header-logo">
+                        <a href="">
+                            <img style="width: 50px;" src="https://cdn1.iconfinder.com/data/icons/hobbies-flat-1/340/shop_sale_purchase_shopping_buy_lifestyle_bag_store-512.png" alt="">
+                            <!-- <img style="width: 20px;" src="https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/letter_S_blue-512.png" alt="">
+                            <img style="width: 20px;" src="https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/letter_H_blue-512.png" alt="">
+                            <img style="width: 20px;" src="https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/letter_O_blue-512.png" alt="">
+                            <img style="width: 20px;" src="https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/letter_P_blue-512.png" alt=""> -->
 
                         <a href="?page=home">Logo ở đây</a>
+                        </a>
                     </div>
                     <div class="header-search">
                         <div class="box-header-search">
@@ -149,7 +158,7 @@ $brand = new brand();
                     </div>
                     <div class="header-shop">
                         <div class="d-inline-block box-dropdown-cart">
-                            <span class="font-lg icon-list icon-account"><span>Account</span></span>
+                            <span class="font-lg icon-list icon-account"><span>Tài khoản</span></span>
                             <div class="dropdown-account">
                                 <ul>
                                     <li><a href="page-account.php">Tài khoản của tôi</a></li>
@@ -162,9 +171,9 @@ $brand = new brand();
                                 </ul>
                             </div>
                         </div>
-                        <a class="font-lg icon-list icon-wishlist" href="shop-wishlist.php"><span>Wishlist</span><span class="number-item font-xs">5</span></a>
+                        <!-- <a class="font-lg icon-list icon-wishlist" href="shop-wishlist.php"><span>Wishlist</span><span class="number-item font-xs">5</span></a> -->
                         <div class="d-inline-block box-dropdown-cart">
-                            <span class="font-lg icon-list icon-cart"><span>Cart</span><span class="number-item font-xs">2</span></span>
+                            <span class="font-lg icon-list icon-cart"><span>Giỏ Hàng</span><span class="number-item font-xs">2</span></span>
                             <div class="dropdown-cart">
                                 <div class="item-cart mb-20">
                                     <div class="cart-image">
@@ -194,7 +203,7 @@ $brand = new brand();
                                 <div class="cart-total">
                                     <div class="row">
                                         <div class="col-6 text-start">
-                                            <span class="font-md-bold color-brand-3">Total</span>
+                                            <span class="font-md-bold color-brand-3">Tổng giá</span>
                                         </div>
                                         <div class="col-6">
                                             <span class="font-md-bold color-brand-1">$2586.3</span>
@@ -202,16 +211,16 @@ $brand = new brand();
                                     </div>
                                     <div class="row mt-15">
                                         <div class="col-6 text-start">
-                                            <a class="btn btn-cart w-auto" href="?page=shop-cart">View cart</a>
+                                            <a class="btn btn-cart w-auto" href="?page=shop-cart">Xem giỏ</a>
                                         </div>
                                         <div class="col-6">
-                                            <a class="btn btn-buy w-auto" href="shop-checkout.php">Checkout</a>
+                                            <a class="btn btn-buy w-auto" href="shop-checkout.php">Mua hàng</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <a class="font-lg icon-list icon-compare" href="?page=shop-compare"><span>Compare</span></a>
+                        <!-- <a class="font-lg icon-list icon-compare" href="?page=shop-compare"><span>Compare</span></a> -->
                     </div>
                 </div>
             </div>
@@ -311,10 +320,6 @@ $brand = new brand();
                                     <li><a href="?page=shop-wishlist">Sản phẩm yêu thích</a></li>
                                 </ul>
                             </li>
-                            <li>
-                                <a href="?page=shop-vendor-list">Nhà Cung Cấp</a>
-                            </li>
-
                             <li>
                                 <a href="?page=blog-list">Tin Tức</a>
                             </li>

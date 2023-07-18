@@ -44,7 +44,8 @@ if (!isset($_GET['page'])) {
             include 'views/include/test.php';
             break;
         case 'shop-single-product':
-            $id = $_GET['id'];
+
+            $id = $_GET['productId'];
             echo $id;
             include 'views/include/shop-single-product.php';
             break;

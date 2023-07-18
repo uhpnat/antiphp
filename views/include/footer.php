@@ -96,7 +96,7 @@
 <script src="./views/assets/js/vendors/counterup.js"></script>
 <script src="./views/assets/js/vendors/jquery.countdown.min.js"></script>
 <!-- Count down-->
-<script src="./views/assets/js/vendors/jquery.elevatezoom.js"></script>
+<!-- <script src="./views/assets/js/vendors/jquery.elevatezoom.js"></script> -->
 <script src="./views/assets/js/vendors/slick.js"></script>
 <script src="./views/assets/js/main2513.js?v=3.0.0"></script>
 <script src="./views/assets/js/shop23cd.js?v=1.2.1"></script>
