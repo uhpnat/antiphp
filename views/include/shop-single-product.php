@@ -1,5 +1,6 @@
 <?php
 $singleProduct = $product->get_product_by_id($id);
+$upview = $product->upview($id);
 foreach ($singleProduct as $item) {
 
 ?>

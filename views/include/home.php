@@ -140,12 +140,12 @@
                         <ul class="nav nav-tabs text-start" role="tablist">
                             <li class="pl-0">
                                 <a class="active pl-0" href="#tab-1-featured" data-bs-toggle="tab" role="tab" aria-controls="tab-1-featured" aria-selected="true" data-index="1">
-                                    <h4>Xem nhiều nhất</h4>
+                                    <h4>Xem Nhiều Nhất</h4>
                                 </a>
                             </li>
                             <li>
                                 <a href="#tab-1-bestseller" data-bs-toggle="tab" role="tab" aria-controls="tab-1-bestseller" aria-selected="false" data-index="2">
-                                    <h4>Giảm giá sâu nhất</h4>
+                                    <h4>Trong kho</h4>
                                 </a>
                             </li>
 
@@ -173,8 +173,8 @@
                                 <div class="swiper-slide">
                                     <div class="list-products-5">
                                         <?php
-                                        $show_featured = $product->show_product();
-                                        foreach ($show_featured as $item) {
+                                        $showProductByView = $product->showProductByView('productView', 0, 5);
+                                        foreach ($showProductByView as $item) {
                                         ?>
                                             <div class="card-grid-style-3">
                                                 <div class="card-grid-inner">
@@ -182,14 +182,18 @@
 
                                                         <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a>
 
-                                                        <a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
+                                                        <a class="btn btn-quickview btn-tooltip" aria-label="<?php echo $item['productView'] ?> Lượt xem" href="" data-bs-toggle="modal"></a>
                                                     </div>
                                                     <div class="image-box">
-                                                        <span class="label bg-brand-2">-17%</span><a href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>"><img src="./admin/assets/media/imageproduct/<?php echo $item['productImage'] ?>" alt="Ecom" /></a>
+                                                        <span class="label bg-brand-2"><?php echo $product->phantramgiamgia($item['productPrice'], $item['discount']) ?>%</span>
+                                                        <a href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>">
+                                                            <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '')  ?>" alt="Ecom" />
+                                                        </a>
                                                     </div>
                                                     <div class="info-right">
-                                                        <a class="font-xs color-gray-500" href="shop-vendor-single.html">Dell</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">
-                                                            <?php echo $item['productName'] ?>
+                                                        <a class="font-xs color-gray-500" href=""><?php echo $nameBrand =  $product->getNameBrandByIdProduct($item['brandId'])[0]['brandName']; ?></a><br />
+                                                        <a class="color-brand-3 font-sm-bold" href="shop-single-product.html">
+                                                            <?php echo $product->limitText($item['productName'], 30) ?>
                                                         </a>
                                                         <div class="rating">
                                                             <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
@@ -200,19 +204,17 @@
                                                             <span class="font-xs color-gray-500">(65)</span>
                                                         </div>
                                                         <div class="price-info">
-                                                            <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['productPrice'] ?></strong>
-                                                            <span class="color-gray-500 price-line">$3225.6</span>
+                                                            <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? $item['productPrice'] : $item['discount']  ?></strong>
+                                                            <span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? $item['productPrice'] : '' ?></span>
                                                         </div>
                                                         <div class="mt-20 box-btn-cart">
                                                             <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
                                                         </div>
-                                                        <!-- <ul class="list-features">
-                                                            <li><?php echo $item['productDesc1'] ?></li>
-                                                            <li>
-                                                            <?php echo $item['productDesc2'] ?>
-                                                            </li>
-                                                            <li><?php echo $item['productDesc3'] ?></li>
-                                                        </ul> -->
+                                                        <ul class="list-features">
+                                                            <li><?php echo $product->limitText($item['productDesc1'], 40) ?></li>
+                                                            <li><?php echo $product->limitText($item['productDesc2'], 40) ?></li>
+                                                            <li><?php echo $product->limitText($item['productDesc3'], 40) ?></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
@@ -224,156 +226,56 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="list-products-5">
-                                        <div class="card-grid-style-3">
-                                            <div class="card-grid-inner">
-                                                <div class="tools">
-                                                    <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                </div>
-                                                <div class="image-box">
-                                                    <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp3.png" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="font-xs color-gray-500" href="shop-vendor-single.html">Dell</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Dell Optiplex 9020 Small Form Business Desktop
-                                                        Tower PC</a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
+                                        <?php
+                                        $showProductByView = $product->showProductByView('productView', 5, 5);
+                                        foreach ($showProductByView as $item) {
+                                        ?>
+                                            <div class="card-grid-style-3">
+                                                <div class="card-grid-inner">
+                                                    <div class="tools">
+
+                                                        <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a>
+
+                                                        <a class="btn btn-quickview btn-tooltip" aria-label="<?php echo $item['productView'] ?> Lượt xem" href="" data-bs-toggle="modal"></a>
                                                     </div>
-                                                    <div class="price-info">
-                                                        <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
+                                                    <div class="image-box">
+                                                        <span class="label bg-brand-2"><?php echo $product->phantramgiamgia($item['productPrice'], $item['discount']) ?>%</span>
+                                                        <a href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>">
+                                                            <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '')  ?>" alt="Ecom" />
+                                                        </a>
                                                     </div>
-                                                    <div class="mt-20 box-btn-cart">
-                                                        <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
+                                                    <div class="info-right">
+                                                        <a class="font-xs color-gray-500" href=""><?php echo $nameBrand =  $product->getNameBrandByIdProduct($item['brandId'])[0]['brandName']; ?></a><br />
+                                                        <a class="color-brand-3 font-sm-bold" href="shop-single-product.html">
+                                                            <?php echo $product->limitText($item['productName'], 30) ?>
+                                                        </a>
+                                                        <div class="rating">
+                                                            <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
+                                                            <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
+                                                            <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
+                                                            <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
+                                                            <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
+                                                            <span class="font-xs color-gray-500">(65)</span>
+                                                        </div>
+                                                        <div class="price-info">
+                                                            <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? $item['productPrice'] : $item['discount']  ?></strong>
+                                                            <span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? $item['productPrice'] : '' ?></span>
+                                                        </div>
+                                                        <div class="mt-20 box-btn-cart">
+                                                            <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
+                                                        </div>
+                                                        <ul class="list-features">
+                                                            <li><?php echo $product->limitText($item['productDesc1'], 40) ?></li>
+                                                            <li><?php echo $product->limitText($item['productDesc2'], 40) ?></li>
+                                                            <li><?php echo $product->limitText($item['productDesc3'], 40) ?></li>
+                                                        </ul>
                                                     </div>
-                                                    <ul class="list-features">
-                                                        <li>27-inch (diagonal) Retina 5K display</li>
-                                                        <li>
-                                                            3.1GHz 6-core 10th-generation Intel Core i5
-                                                        </li>
-                                                        <li>AMD Radeon Pro 5300 graphics</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-grid-style-3">
-                                            <div class="card-grid-inner">
-                                                <div class="tools">
-                                                    <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                </div>
-                                                <div class="image-box">
-                                                    <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp4.png" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="font-xs color-gray-500" href="shop-vendor-single.html">HP</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB
-                                                        RAM</a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                                                    </div>
-                                                    <div class="price-info">
-                                                        <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                                                    </div>
-                                                    <div class="mt-20 box-btn-cart">
-                                                        <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
-                                                    </div>
-                                                    <ul class="list-features">
-                                                        <li>27-inch (diagonal) Retina 5K display</li>
-                                                        <li>
-                                                            3.1GHz 6-core 10th-generation Intel Core i5
-                                                        </li>
-                                                        <li>AMD Radeon Pro 5300 graphics</li>
-                                                    </ul>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="card-grid-style-3">
-                                            <div class="card-grid-inner">
-                                                <div class="tools">
-                                                    <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                </div>
-                                                <div class="image-box">
-                                                    <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp5.png" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="font-xs color-gray-500" href="shop-vendor-single.html">Gateway</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Gateway 23.8&quot; All-in-one Desktop, Fully
-                                                        Adjustable Stand</a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                                                    </div>
-                                                    <div class="price-info">
-                                                        <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                                                    </div>
-                                                    <div class="mt-20 box-btn-cart">
-                                                        <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
-                                                    </div>
-                                                    <ul class="list-features">
-                                                        <li>27-inch (diagonal) Retina 5K display</li>
-                                                        <li>
-                                                            3.1GHz 6-core 10th-generation Intel Core i5
-                                                        </li>
-                                                        <li>AMD Radeon Pro 5300 graphics</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-grid-style-3">
-                                            <div class="card-grid-inner">
-                                                <div class="tools">
-                                                    <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                </div>
-                                                <div class="image-box">
-                                                    <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp6.png" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="font-xs color-gray-500" href="shop-vendor-single.html">HP</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">HP 22 All-in-One PC, Intel Pentium Silver
-                                                        J5040, 4GB RAM</a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                                                    </div>
-                                                    <div class="price-info">
-                                                        <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                                                    </div>
-                                                    <div class="mt-20 box-btn-cart">
-                                                        <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
-                                                    </div>
-                                                    <ul class="list-features">
-                                                        <li>27-inch (diagonal) Retina 5K display</li>
-                                                        <li>
-                                                            3.1GHz 6-core 10th-generation Intel Core i5
-                                                        </li>
-                                                        <li>AMD Radeon Pro 5300 graphics</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-grid-style-3">
-                                            <div class="card-grid-inner">
-                                                <div class="tools">
-                                                    <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                </div>
-                                                <div class="image-box">
-                                                    <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp7.png" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="font-xs color-gray-500" href="shop-vendor-single.html">HP</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">HP Slim Desktop, Intel Celeron J4025, 4GB RAM,
-                                                        256GB SSD</a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                                                    </div>
-                                                    <div class="price-info">
-                                                        <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                                                    </div>
-                                                    <div class="mt-20 box-btn-cart">
-                                                        <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
-                                                    </div>
-                                                    <ul class="list-features">
-                                                        <li>27-inch (diagonal) Retina 5K display</li>
-                                                        <li>
-                                                            3.1GHz 6-core 10th-generation Intel Core i5
-                                                        </li>
-                                                        <li>AMD Radeon Pro 5300 graphics</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <?php
+                                        }
+                                        ?>
+
                                     </div>
                                 </div>
                             </div>
@@ -415,7 +317,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -430,126 +331,6 @@
                                                 </div>
                                                 <div class="info-right">
                                                     <a class="font-xs color-gray-500" href="shop-vendor-single.html">Roku</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Class 4K UHD (2160P) LED Roku Smart TV HDR</a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                                                    </div>
-                                                    <div class="price-info">
-                                                        <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                                                    </div>
-                                                    <div class="mt-20 box-btn-cart">
-                                                        <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
-                                                    </div>
-                                                    <ul class="list-features">
-                                                        <li>27-inch (diagonal) Retina 5K display</li>
-                                                        <li>
-                                                            3.1GHz 6-core 10th-generation Intel Core i5
-                                                        </li>
-                                                        <li>AMD Radeon Pro 5300 graphics</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-grid-style-3">
-                                            <div class="card-grid-inner">
-                                                <div class="tools">
-                                                    <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                </div>
-                                                <div class="image-box">
-                                                    <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp2.png" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="font-xs color-gray-500" href="shop-vendor-single.html">SAMSUNG</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">SAMSUNG Galaxy Tab S7 Plus 12.4&quot; 128GB
-                                                        Mystic Black</a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                                                    </div>
-                                                    <div class="price-info">
-                                                        <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                                                    </div>
-                                                    <div class="mt-20 box-btn-cart">
-                                                        <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
-                                                    </div>
-                                                    <ul class="list-features">
-                                                        <li>27-inch (diagonal) Retina 5K display</li>
-                                                        <li>
-                                                            3.1GHz 6-core 10th-generation Intel Core i5
-                                                        </li>
-                                                        <li>AMD Radeon Pro 5300 graphics</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-grid-style-3">
-                                            <div class="card-grid-inner">
-                                                <div class="tools">
-                                                    <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                </div>
-                                                <div class="image-box">
-                                                    <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp3.png" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="font-xs color-gray-500" href="shop-vendor-single.html">HP</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">HP 11.6&quot; Chromebook, AMD A4, 4GB RAM, 32GB
-                                                        Storage</a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                                                    </div>
-                                                    <div class="price-info">
-                                                        <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                                                    </div>
-                                                    <div class="mt-20 box-btn-cart">
-                                                        <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
-                                                    </div>
-                                                    <ul class="list-features">
-                                                        <li>27-inch (diagonal) Retina 5K display</li>
-                                                        <li>
-                                                            3.1GHz 6-core 10th-generation Intel Core i5
-                                                        </li>
-                                                        <li>AMD Radeon Pro 5300 graphics</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-grid-style-3">
-                                            <div class="card-grid-inner">
-                                                <div class="tools">
-                                                    <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                </div>
-                                                <div class="image-box">
-                                                    <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp4.png" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="font-xs color-gray-500" href="shop-vendor-single.html">Apple</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">2022 Apple iMac with Retina 5K Display 8GB RAM,
-                                                        256GB SSD</a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                                                    </div>
-                                                    <div class="price-info">
-                                                        <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                                                    </div>
-                                                    <div class="mt-20 box-btn-cart">
-                                                        <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
-                                                    </div>
-                                                    <ul class="list-features">
-                                                        <li>27-inch (diagonal) Retina 5K display</li>
-                                                        <li>
-                                                            3.1GHz 6-core 10th-generation Intel Core i5
-                                                        </li>
-                                                        <li>AMD Radeon Pro 5300 graphics</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-grid-style-3">
-                                            <div class="card-grid-inner">
-                                                <div class="tools">
-                                                    <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                </div>
-                                                <div class="image-box">
-                                                    <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp5.png" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="font-xs color-gray-500" href="shop-vendor-single.html">SAMSUNG</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">SAMSUNG Galaxy Tab A7 Lite, 8.7&quot; Tablet
-                                                        32GB</a>
                                                     <div class="rating">
                                                         <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
                                                     </div>
@@ -586,7 +367,7 @@
                         <div class="head-main bd-gray-200">
                             <div class="row">
                                 <div class="col-xl-7 col-lg-6">
-                                    <h4 class="mb-5">Trending Products</h4>
+                                    <h4 class="mb-5">Sản Phẩn Bán Chạy</h4>
                                 </div>
                                 <div class="col-xl-5 col-lg-6">
                                     <!-- Button slider-->
@@ -605,286 +386,57 @@
                                 <div class="swiper-wrapper pt-5">
                                     <div class="swiper-slide">
                                         <div class="row">
-                                            <div class="col-xl-3 col-lg-6 col-md-6">
-                                                <div class="card-grid-style-3">
-                                                    <div class="card-grid-inner">
-                                                        <div class="tools">
-                                                            <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                        </div>
-                                                        <div class="image-box">
-                                                            <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp3.png" alt="Ecom" /></a>
-                                                        </div>
-                                                        <div class="info-right">
-                                                            <a class="font-xs color-gray-500" href="shop-vendor-single.html">SAMSUNG</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">SAMSUNG Galaxy Tab A7 Lite, 8.7&quot;
-                                                                Tablet 32GB</a>
-                                                            <div class="rating">
-                                                                <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
+                                            <?php
+                                            $showProductByView = $product->showProductByView('productSold', 0, 8);
+                                            foreach ($showProductByView as $item) {
+                                            ?>
+                                                <div class="col-xl-3 col-lg-6 col-md-6">
+                                                    <div class="card-grid-style-3">
+                                                        <div class="card-grid-inner">
+                                                            <div class="tools">
+
+                                                                <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a>
+
+                                                                <a class="btn btn-quickview btn-tooltip" aria-label="<?php echo $item['productView'] ?> Lượt xem" href="" data-bs-toggle="modal"></a>
                                                             </div>
-                                                            <div class="price-info">
-                                                                <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
+                                                            <div class="image-box">
+                                                                <span class="label bg-brand-2"><?php echo $product->phantramgiamgia($item['productPrice'], $item['discount']) ?>%</span>
+                                                                <a href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>">
+                                                                    <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '')  ?>" alt="Ecom" />
+                                                                </a>
                                                             </div>
-                                                            <div class="mt-20 box-btn-cart">
-                                                                <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
+                                                            <div class="info-right">
+                                                                <a class="font-xs color-gray-500" href=""><?php echo $nameBrand =  $product->getNameBrandByIdProduct($item['brandId'])[0]['brandName']; ?></a><br />
+                                                                <a class="color-brand-3 font-sm-bold" href="shop-single-product.html">
+                                                                    <?php echo $product->limitText($item['productName'], 25) ?>
+                                                                </a>
+                                                                <div class="rating">
+                                                                    <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
+                                                                    <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
+                                                                    <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
+                                                                    <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
+                                                                    <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" />
+                                                                    <span class="font-xs color-gray-500">(65)</span>
+                                                                </div>
+                                                                <div class="price-info">
+                                                                    <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? $item['productPrice'] : $item['discount']  ?></strong>
+                                                                    <span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? $item['productPrice'] : '' ?></span>
+                                                                </div>
+                                                                <div class="mt-20 box-btn-cart">
+                                                                    <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
+                                                                </div>
+                                                                <ul class="list-features">
+                                                                    <li><?php echo $product->limitText($item['productDesc1'], 35) ?></li>
+                                                                    <li><?php echo $product->limitText($item['productDesc2'], 35) ?></li>
+                                                                    <li><?php echo $product->limitText($item['productDesc3'], 35) ?></li>
+                                                                </ul>
                                                             </div>
-                                                            <ul class="list-features">
-                                                                <li>
-                                                                    27-inch (diagonal) Retina 5K display
-                                                                </li>
-                                                                <li>
-                                                                    3.1GHz 6-core 10th-generation Intel Core
-                                                                    i5
-                                                                </li>
-                                                                <li>AMD Radeon Pro 5300 graphics</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-3 col-lg-6 col-md-6">
-                                                <div class="card-grid-style-3">
-                                                    <div class="card-grid-inner">
-                                                        <div class="tools">
-                                                            <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                        </div>
-                                                        <div class="image-box">
-                                                            <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp4.png" alt="Ecom" /></a>
-                                                        </div>
-                                                        <div class="info-right">
-                                                            <a class="font-xs color-gray-500" href="shop-vendor-single.html">Dell</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Dell Optiplex 9020 Small Form Business
-                                                                Desktop</a>
-                                                            <div class="rating">
-                                                                <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                                                            </div>
-                                                            <div class="price-info">
-                                                                <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                                                            </div>
-                                                            <div class="mt-20 box-btn-cart">
-                                                                <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
-                                                            </div>
-                                                            <ul class="list-features">
-                                                                <li>
-                                                                    27-inch (diagonal) Retina 5K display
-                                                                </li>
-                                                                <li>
-                                                                    3.1GHz 6-core 10th-generation Intel Core
-                                                                    i5
-                                                                </li>
-                                                                <li>AMD Radeon Pro 5300 graphics</li>
-                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-xl-3 col-lg-6 col-md-6">
-                                                <div class="card-grid-style-3">
-                                                    <div class="card-grid-inner">
-                                                        <div class="tools">
-                                                            <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                        </div>
-                                                        <div class="image-box">
-                                                            <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp5.png" alt="Ecom" /></a>
-                                                        </div>
-                                                        <div class="info-right">
-                                                            <a class="font-xs color-gray-500" href="shop-vendor-single.html">Gateway</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Gateway 23.8&quot; All-in-one Desktop,
-                                                                Fully Adjustable</a>
-                                                            <div class="rating">
-                                                                <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                                                            </div>
-                                                            <div class="price-info">
-                                                                <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                                                            </div>
-                                                            <div class="mt-20 box-btn-cart">
-                                                                <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
-                                                            </div>
-                                                            <ul class="list-features">
-                                                                <li>
-                                                                    27-inch (diagonal) Retina 5K display
-                                                                </li>
-                                                                <li>
-                                                                    3.1GHz 6-core 10th-generation Intel Core
-                                                                    i5
-                                                                </li>
-                                                                <li>AMD Radeon Pro 5300 graphics</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-3 col-lg-6 col-md-6">
-                                                <div class="card-grid-style-3">
-                                                    <div class="card-grid-inner">
-                                                        <div class="tools">
-                                                            <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                        </div>
-                                                        <div class="image-box">
-                                                            <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp6.png" alt="Ecom" /></a>
-                                                        </div>
-                                                        <div class="info-right">
-                                                            <a class="font-xs color-gray-500" href="shop-vendor-single.html">HP</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">HP 22 All-in-One PC, Intel Pentium J5040,
-                                                                4GB RAM</a>
-                                                            <div class="rating">
-                                                                <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                                                            </div>
-                                                            <div class="price-info">
-                                                                <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                                                            </div>
-                                                            <div class="mt-20 box-btn-cart">
-                                                                <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
-                                                            </div>
-                                                            <ul class="list-features">
-                                                                <li>
-                                                                    27-inch (diagonal) Retina 5K display
-                                                                </li>
-                                                                <li>
-                                                                    3.1GHz 6-core 10th-generation Intel Core
-                                                                    i5
-                                                                </li>
-                                                                <li>AMD Radeon Pro 5300 graphics</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-3 col-lg-6 col-md-6">
-                                                <div class="card-grid-style-3">
-                                                    <div class="card-grid-inner">
-                                                        <div class="tools">
-                                                            <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                        </div>
-                                                        <div class="image-box">
-                                                            <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp7.png" alt="Ecom" /></a>
-                                                        </div>
-                                                        <div class="info-right">
-                                                            <a class="font-xs color-gray-500" href="shop-vendor-single.html">Roku</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Class 4K UHD (2160P) LED Roku Smart TV
-                                                                HDR</a>
-                                                            <div class="rating">
-                                                                <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                                                            </div>
-                                                            <div class="price-info">
-                                                                <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                                                            </div>
-                                                            <div class="mt-20 box-btn-cart">
-                                                                <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
-                                                            </div>
-                                                            <ul class="list-features">
-                                                                <li>
-                                                                    27-inch (diagonal) Retina 5K display
-                                                                </li>
-                                                                <li>
-                                                                    3.1GHz 6-core 10th-generation Intel Core
-                                                                    i5
-                                                                </li>
-                                                                <li>AMD Radeon Pro 5300 graphics</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-3 col-lg-6 col-md-6">
-                                                <div class="card-grid-style-3">
-                                                    <div class="card-grid-inner">
-                                                        <div class="tools">
-                                                            <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                        </div>
-                                                        <div class="image-box">
-                                                            <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp3.png" alt="Ecom" /></a>
-                                                        </div>
-                                                        <div class="info-right">
-                                                            <a class="font-xs color-gray-500" href="shop-vendor-single.html">SAMSUNG</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">SAMSUNG Galaxy Tab S7 Plus 12.4&quot; 128GB
-                                                                Mystic Black</a>
-                                                            <div class="rating">
-                                                                <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                                                            </div>
-                                                            <div class="price-info">
-                                                                <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                                                            </div>
-                                                            <div class="mt-20 box-btn-cart">
-                                                                <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
-                                                            </div>
-                                                            <ul class="list-features">
-                                                                <li>
-                                                                    27-inch (diagonal) Retina 5K display
-                                                                </li>
-                                                                <li>
-                                                                    3.1GHz 6-core 10th-generation Intel Core
-                                                                    i5
-                                                                </li>
-                                                                <li>AMD Radeon Pro 5300 graphics</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-3 col-lg-6 col-md-6">
-                                                <div class="card-grid-style-3">
-                                                    <div class="card-grid-inner">
-                                                        <div class="tools">
-                                                            <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                        </div>
-                                                        <div class="image-box">
-                                                            <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp4.png" alt="Ecom" /></a>
-                                                        </div>
-                                                        <div class="info-right">
-                                                            <a class="font-xs color-gray-500" href="shop-vendor-single.html">MSI</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">MSI Optix G272 27&quot; Full HD LED Gaming
-                                                                LCD Monitor</a>
-                                                            <div class="rating">
-                                                                <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                                                            </div>
-                                                            <div class="price-info">
-                                                                <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                                                            </div>
-                                                            <div class="mt-20 box-btn-cart">
-                                                                <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
-                                                            </div>
-                                                            <ul class="list-features">
-                                                                <li>
-                                                                    27-inch (diagonal) Retina 5K display
-                                                                </li>
-                                                                <li>
-                                                                    3.1GHz 6-core 10th-generation Intel Core
-                                                                    i5
-                                                                </li>
-                                                                <li>AMD Radeon Pro 5300 graphics</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-3 col-lg-6 col-md-6">
-                                                <div class="card-grid-style-3">
-                                                    <div class="card-grid-inner">
-                                                        <div class="tools">
-                                                            <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                        </div>
-                                                        <div class="image-box">
-                                                            <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp5.png" alt="Ecom" /></a>
-                                                        </div>
-                                                        <div class="info-right">
-                                                            <a class="font-xs color-gray-500" href="shop-vendor-single.html">Apple</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Apple AirPods Pro with MagSafe Charging
-                                                                Case</a>
-                                                            <div class="rating">
-                                                                <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                                                            </div>
-                                                            <div class="price-info">
-                                                                <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                                                            </div>
-                                                            <div class="mt-20 box-btn-cart">
-                                                                <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
-                                                            </div>
-                                                            <ul class="list-features">
-                                                                <li>
-                                                                    27-inch (diagonal) Retina 5K display
-                                                                </li>
-                                                                <li>
-                                                                    3.1GHz 6-core 10th-generation Intel Core
-                                                                    i5
-                                                                </li>
-                                                                <li>AMD Radeon Pro 5300 graphics</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <?php
+                                            }
+                                            ?>
                                         </div>
                                     </div>
                                 </div>
