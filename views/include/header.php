@@ -12,6 +12,7 @@ $us = new user();
 $cat = new category();
 $product = new product();
 $brand = new brand();
+
 ?>
 
 

@@ -122,6 +122,46 @@ class product
         $result = $this->db->select($query);
         return $result;
     }
+    // show_product by view product
+    public function showProductByView($table = 'productId', $skip_count = 0, $count = 5)
+    {
+        $query = "SELECT * FROM tbl_products ORDER BY ";
+
+        if ($table != 'productId') {
+            $query .= "$table DESC";
+        } else {
+            $query .= "productId DESC";
+        }
+
+        if ($skip_count > 0) {
+            $query .= " LIMIT $skip_count, $count";
+        } else {
+            $query .= " LIMIT $count";
+        }
+        $result = $this->db->select($query);
+        return $result;
+    }
+    // format text 
+    public function limitText($text, $maxLength)
+    {
+        if (mb_strlen($text) > $maxLength) {
+            $text = mb_substr($text, 0, $maxLength - 3) . '...';
+        }
+        return $text;
+    }
+    // tính phần trăm giảm giá
+    public function phantramgiamgia($a, $b)
+    {
+        if ($b === 0) {
+            return 0;
+        }
+        if ($a < $b) {
+            return "không hợp lệ";
+        }
+
+        $phantramgiamgia = (($a - $b) / $a) * 100;
+        return floor($phantramgiamgia);
+    }
     public function getNameBrandByIdProduct($id)
     {
         $query = "SELECT * FROM tbl_brand WHERE brandId = $id ";
@@ -155,6 +195,14 @@ class product
         $outputString = $partBefore . $replacementCharacter . $partAfter;
 
         return $outputString;
+    }
+    //Tăng lượt xem sản phẩm
+    public function upview($id)
+    {
+        $query = "UPDATE tbl_products SET productView = productView + 1
+        WHERE productId = '$id'";
+        $result = $this->db->update($query);
+        echo "<br>đã đăng lượt view";
     }
 }
 
