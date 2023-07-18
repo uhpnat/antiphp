@@ -1,4 +1,6 @@
 <?php
+@ob_start();
+session_start();
 include_once  './module/lib/database.php';
 include_once './module/helpers/format.php';
 spl_autoload_register(function ($className) {
@@ -13,7 +15,7 @@ $cat = new category();
 $product = new product();
 $brand = new brand();
 
-
+$cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
 ?>
 
 
@@ -173,40 +175,47 @@ $brand = new brand();
                         </div>
                         <!-- <a class="font-lg icon-list icon-wishlist" href="shop-wishlist.php"><span>Wishlist</span><span class="number-item font-xs">5</span></a> -->
                         <div class="d-inline-block box-dropdown-cart">
-                            <span class="font-lg icon-list icon-cart"><span>Giỏ Hàng</span><span class="number-item font-xs">2</span></span>
+                            <span class="font-lg icon-list icon-cart"><span>Giỏ Hàng</span><span class="number-item font-xs"><?php if(isset($cart_count)){echo $cart_count;} ?></span></span>
                             <div class="dropdown-cart">
+                                <?php 
+                                    
+                                    if (isset($_SESSION['cart'])){
+                                        $i = 1;
+                                        $tongTien =0;
+                                        foreach($_SESSION['cart'] as $cart) {
+                                            $tongGia = $cart['price'] * $cart['quantity'];
+                                            $tongTien += $tongGia;
+                                ?>
                                 <div class="item-cart mb-20">
                                     <div class="cart-image">
-                                        <img src="./views/assets/imgs/page/homepage1/imgsp5.png" alt="Ecom" />
+                                        <img src="./admin/assets/media/imageproduct/<?php echo $cart['image'] ;?>" alt="Ecom" />
                                     </div>
                                     <div class="cart-info">
-                                        <a class="font-sm-bold color-brand-3" href="shop-single-product.php">2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB
-                                            SSD</a>
+                                        <a class="font-sm-bold color-brand-3" href="?page=shop-single-product&productId=<?php echo $cart['id'] ;?>"><?php echo $cart['name'] ;?></a>
                                         <p>
-                                            <span class="color-brand-2 font-sm-bold">1 x $2856.4</span>
+                                            <span class="color-brand-2 font-sm-bold"><?php echo $cart['quantity'] ;?> x <?php echo $cart['price']." vnđ" ;?></span>
                                         </p>
                                     </div>
+                                    
                                 </div>
-                                <div class="item-cart mb-20">
-                                    <div class="cart-image">
-                                        <img src="./views/assets/imgs/page/homepage1/imgsp4.png" alt="Ecom" />
-                                    </div>
-                                    <div class="cart-info">
-                                        <a class="font-sm-bold color-brand-3" href="shop-single-product-2.php">2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB
-                                            SSD</a>
-                                        <p>
-                                            <span class="color-brand-2 font-sm-bold">1 x $2856.4</span>
-                                        </p>
-                                    </div>
-                                </div>
+                                
                                 <div class="border-bottom pt-0 mb-15"></div>
+                                
+                                <?php }}?>
                                 <div class="cart-total">
                                     <div class="row">
                                         <div class="col-6 text-start">
                                             <span class="font-md-bold color-brand-3">Tổng giá</span>
                                         </div>
                                         <div class="col-6">
-                                            <span class="font-md-bold color-brand-1">$2586.3</span>
+                                            <span class="font-md-bold color-brand-1"><?php 
+                                            if(isset($tongTien)){
+                                                echo $tongTien." vnđ";
+                                            }else{
+                                                echo '0';
+                                            }
+                           
+                                        ?></span>
                                         </div>
                                     </div>
                                     <div class="row mt-15">
@@ -214,7 +223,7 @@ $brand = new brand();
                                             <a class="btn btn-cart w-auto" href="?page=shop-cart">Xem giỏ</a>
                                         </div>
                                         <div class="col-6">
-                                            <a class="btn btn-buy w-auto" href="shop-checkout.php">Mua hàng</a>
+                                            <a class="btn btn-buy w-auto" href="?page=shop-checkout">Mua hàng</a>
                                         </div>
                                     </div>
                                 </div>

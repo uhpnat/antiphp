@@ -28,6 +28,8 @@ if (!isset($_GET['page'])) {
         case 'shop-compare':
             include 'views/include/shop-compare.php';
             break;
+        case 'shop-checkout':
+            include 'views/include/shop-checkout.php';
         case 'shop-vendor-list':
             include 'views/include/shop-vendor-list.php';
             break;
@@ -37,9 +39,7 @@ if (!isset($_GET['page'])) {
         case 'shop-cart':
             include 'views/include/shop-cart.php';
             break;
-        case 'shop-cart':
-            include 'views/include/shop-cart.php';
-            break;
+        
         case 'test':
             include 'views/include/test.php';
             break;
