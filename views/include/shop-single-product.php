@@ -3,16 +3,25 @@ $singleProduct = $product->get_product_by_id($id);
 $upview = $product->upview($id);
 
   if(isset($_POST['addToCart'])&&($_POST['addToCart'])){
-    $price = $_POST['price'];
-    $image = $_POST['image'];
-    $name = $_POST['name'];
-    $id = $_POST['id'];
-    $quantity = $_POST['quantity'];
+    if(isset($_POST['discount']) && $_POST['discount']!==""){
+      $price = $_POST['discount'];
+      $image = $_POST['image'];
+      $name = $_POST['name'];
+      $id = $_POST['id'];
+      $quantity = $_POST['quantity'];
+    }else{
+      $price = $_POST['price'];
+      $image = $_POST['image'];
+      $name = $_POST['name'];
+      $id = $_POST['id'];
+      $quantity = $_POST['quantity'];
+    }
+   
                                 
 
   if(isset($_SESSION['cart'][$id])){
     $_SESSION['cart'][$id]['quantity']++;
-    header("Location:?page=shop-single-product&productId=".$id);
+    header("Location:?page=shop-single-product&productId=$id");
   } else {
     $item = [
       'id' => $id,
@@ -22,13 +31,13 @@ $upview = $product->upview($id);
       'image' => $image
             ];
       $_SESSION['cart'][$id] = $item;
-      header("Location:?page=shop-single-product&productId=.$id");
+      header("Location:?page=shop-single-product&productId=$id");
                                   
       }
 }
+  foreach ($singleProduct as $item) {
+  ?>
 
-foreach ($singleProduct as $item) {
-?>
 
   <main class="main">
     <div class="section-box">
@@ -133,6 +142,7 @@ foreach ($singleProduct as $item) {
                       echo $item['productPrice'];
                     } else {
                       echo $price = $item['productPrice']*((100 - $item['discount'])/100);
+                      
                     } ?>
                   </h3>
                   <span class="color-gray-500 price-line font-xl line-througt">
@@ -169,6 +179,7 @@ foreach ($singleProduct as $item) {
                     </div>
                   </div>
 
+                  <input type="hidden" name="discount" value="<?php echo $price ?>">
                   <input type="hidden" name="image" value="<?php echo $item['productImage'] ?>">
                   <input type="hidden" name="id" value="<?php echo $item['productId'] ?>">
                   <input type="hidden" name="name" value="<?php echo $item['productName'] ?>">
