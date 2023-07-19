@@ -1,44 +1,40 @@
 <?php
 $singleProduct = $product->get_product_by_id($id);
 $upview = $product->upview($id);
+if(isset($_POST['addToCart'])&&($_POST['addToCart'])){
+  
+  $image = $_POST['image'];
+  $name = $_POST['name'];
+  $id = $_POST['id'];
+  $quantity = $_POST['quantity'];
+   $price = $_POST['discount'];
+   if($price==""){
+    $price = $_POST['price'];
+   }else{
+     $price = $_POST['discount'];
+   }
+  
+if(isset($_SESSION['cart'][$id])){
+$_SESSION['cart'][$id]['quantity']++;
+header("Location:?page=shop-single-product&productId=$id");
+} else {
+$item = [
+  'id' => $id,
+  'quantity' => $quantity,
+  'price' => $price,
+  'name' => $name,
+  'image' => $image
+        ];
+  $_SESSION['cart'][$id] = $item;
+  // var_dump($_SESSION['cart']);
 
-  if(isset($_POST['addToCart'])&&($_POST['addToCart'])){
-    if(isset($_POST['discount']) && $_POST['discount']!==""){
-      $price = $_POST['discount'];
-      $image = $_POST['image'];
-      $name = $_POST['name'];
-      $id = $_POST['id'];
-      $quantity = $_POST['quantity'];
-    }else{
-      $price = $_POST['price'];
-      $image = $_POST['image'];
-      $name = $_POST['name'];
-      $id = $_POST['id'];
-      $quantity = $_POST['quantity'];
-    }
-   
-                                
-
-  if(isset($_SESSION['cart'][$id])){
-    $_SESSION['cart'][$id]['quantity']++;
-    header("Location:?page=shop-single-product&productId=$id");
-  } else {
-    $item = [
-      'id' => $id,
-      'quantity' => $quantity,
-      'price' => $price,
-      'name' => $name,
-      'image' => $image
-            ];
-      $_SESSION['cart'][$id] = $item;
-      header("Location:?page=shop-single-product&productId=$id");
-                                  
-      }
+  header("Location:?page=shop-single-product&productId=$id");
+                              
+  }
 }
+  
   foreach ($singleProduct as $item) {
   ?>
-
-
   <main class="main">
     <div class="section-box">
       <div class="breadcrumbs-div">
@@ -179,7 +175,7 @@ $upview = $product->upview($id);
                     </div>
                   </div>
 
-                  <input type="hidden" name="discount" value="<?php echo $price ?>">
+                  <input type="hidden" name="discount" value="<?php  if(isset($price)){echo $price;} ?>">
                   <input type="hidden" name="image" value="<?php echo $item['productImage'] ?>">
                   <input type="hidden" name="id" value="<?php echo $item['productId'] ?>">
                   <input type="hidden" name="name" value="<?php echo $item['productName'] ?>">
@@ -504,4 +500,6 @@ $upview = $product->upview($id);
 
 
   </main>
-<?php } ?>
+<?php }
+  
+?>
