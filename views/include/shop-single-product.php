@@ -1,9 +1,43 @@
 <?php
 $singleProduct = $product->get_product_by_id($id);
 $upview = $product->upview($id);
-foreach ($singleProduct as $item) {
 
-?>
+  if(isset($_POST['addToCart'])&&($_POST['addToCart'])){
+    if(isset($_POST['discount']) && $_POST['discount']!==""){
+      $price = $_POST['discount'];
+      $image = $_POST['image'];
+      $name = $_POST['name'];
+      $id = $_POST['id'];
+      $quantity = $_POST['quantity'];
+    }else{
+      $price = $_POST['price'];
+      $image = $_POST['image'];
+      $name = $_POST['name'];
+      $id = $_POST['id'];
+      $quantity = $_POST['quantity'];
+    }
+   
+                                
+
+  if(isset($_SESSION['cart'][$id])){
+    $_SESSION['cart'][$id]['quantity']++;
+    header("Location:?page=shop-single-product&productId=$id");
+  } else {
+    $item = [
+      'id' => $id,
+      'quantity' => $quantity,
+      'price' => $price,
+      'name' => $name,
+      'image' => $image
+            ];
+      $_SESSION['cart'][$id] = $item;
+      header("Location:?page=shop-single-product&productId=$id");
+                                  
+      }
+}
+  foreach ($singleProduct as $item) {
+  ?>
+
 
   <main class="main">
     <div class="section-box">
@@ -27,13 +61,14 @@ foreach ($singleProduct as $item) {
       </div>
     </div>
     <section class="section-box shop-template">
+      <form action="" method="POST">
       <div class="container">
         <div class="row">
           <div class="col-lg-5">
             <div class="gallery-image">
               <div class="galleries">
                 <div class="detail-gallery">
-                  <label class="label">-17%</label>
+                  <label class="label"><?php echo $item['discount'] ?>%</label>
                   <div class="product-image-slider">
                     <figure class="border-radius-10">
                       <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], ''); ?>" alt="product image" />
@@ -106,7 +141,8 @@ foreach ($singleProduct as $item) {
                     <?php if ($item['discount'] == 0) {
                       echo $item['productPrice'];
                     } else {
-                      echo $item['discount'];
+                      echo $price = $item['productPrice']*((100 - $item['discount'])/100);
+                      
                     } ?>
                   </h3>
                   <span class="color-gray-500 price-line font-xl line-througt">
@@ -138,21 +174,29 @@ foreach ($singleProduct as $item) {
                     <div class="font-sm text-quantity">Số lượng</div>
                     <div class="box-quantity">
                       <div class="input-quantity">
-                        <input class="font-xl color-brand-3" type="text" value="1" /><span class="minus-cart"></span><span class="plus-cart"></span>
+                        <input class="font-xl color-brand-3" name="quantity" type="text" value="1" /><span class="minus-cart"></span><span class="plus-cart"></span>
                       </div>
                     </div>
                   </div>
+
+                  <input type="hidden" name="discount" value="<?php echo $price ?>">
+                  <input type="hidden" name="image" value="<?php echo $item['productImage'] ?>">
+                  <input type="hidden" name="id" value="<?php echo $item['productId'] ?>">
+                  <input type="hidden" name="name" value="<?php echo $item['productName'] ?>">
+                  <input type="hidden" name="price" value="<?php echo $item['productPrice'] ?>">
                   <div class="button-buy mt-15">
-                    <a class="btn btn-cart mb-15" href="shop-cart.html">Thêm Vào Giỏ Hàng</a><a class="btn btn-buy" href="shop-checkout.html">Mua Ngay</a>
+                    <input name="addToCart" type="submit" class="btn btn-cart mb-15" value="Thêm vào giỏ hàng" ><a class="btn btn-buy" href="?page=shop-checkout">Mua Ngay</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+       
         <div class="border-bottom pt-30 mb-40"></div>
 
       </div>
+      </form>  
     </section>
     <section class="section-box shop-template">
       <div class="container">

@@ -89,6 +89,7 @@ class product
         $productDesc,
         $productDesc1,
         $productDesc2,
+
         $productDesc3,
         $discount
     ) {
@@ -97,6 +98,7 @@ class product
             return $alert;
         } else {
 
+            $query = "UPDATE tbl_products SET productDesc3='$productDesc3', productDesc2='$productDesc2', productDesc1='$productDesc1', productDesc='$productDesc', productQuantity='$productQuantity', productPrice='$productPrice', brandId='$brandId', catId='$categoryId', productType='$status',productName='$productName' WHERE productId='$productId'";
             $query = "UPDATE tbl_products SET productDesc3='$productDesc3', productDesc2='$productDesc2', productDesc1='$productDesc1', productDesc='$productDesc', productQuantity='$productQuantity', productPrice='$productPrice', brandId='$brandId', catId='$categoryId', productType='$status',productName='$productName',discount='$discount' WHERE productId='$productId'";
             $result = $this->db->update($query);
             if ($result) {
@@ -122,6 +124,7 @@ class product
         $result = $this->db->select($query);
         return $result;
     }
+
     // show_product by view product
     public function showProductByView($table = 'productId', $skip_count = 0, $count = 5)
     {

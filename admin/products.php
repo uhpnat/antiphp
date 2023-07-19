@@ -405,7 +405,11 @@ License: For each use you must have a valid license purchased only from above li
                                                             </a>
                                                         </div>
                                                         <div class="menu-item px-3">
+<<<<<<< HEAD
+                                                            <a href="?delete=<?php $item['productId'] ?>" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">
+=======
                                                             <a href="?delete=<?php echo $item['productId'] ?>" class="menu-link px-3">
+>>>>>>> 5a647c1f81f0fb1871b63fa7150b09f17820fd2b
                                                                 Delete
                                                             </a>
                                                         </div>

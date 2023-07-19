@@ -226,6 +226,7 @@ License: For each use you must have a valid license purchased only from above li
                             $productDesc1 = $_POST['productDesc1'];
                             $productDesc2 = $_POST['productDesc2'];
                             $productDesc3 = $_POST['productDesc3'];
+
                             $discount = $_POST['discount'];
 
                             $addProduct = $product->update_product(
@@ -239,6 +240,7 @@ License: For each use you must have a valid license purchased only from above li
                                 $productDesc,
                                 $productDesc1,
                                 $productDesc2,
+
                                 $productDesc3,
                                 $discount
                             );
@@ -431,8 +433,11 @@ License: For each use you must have a valid license purchased only from above li
                                                                 <input type="text" name="productName" class="form-control mb-2" placeholder="Tên sản phẩm" value="<?php echo $itemId['productName']; ?>" />
                                                                 <label class="required form-label">Giá Sản Phẩm</label>
                                                                 <input type="number" name="productPrice" class="form-control mb-2" placeholder="Giá sản phẩm" value="<?php echo $itemId['productPrice']; ?>" />
+<<<<<<< HEAD
+=======
                                                                 <label class="required form-label">Giá Sau Khi Giảm</label>
                                                                 <input type="number" name="discount" class="form-control mb-2" placeholder="Giá Sau Khi Giảm" value="<?php echo $itemId['discount'] == 0 ? '' : $itemId['discount']; ?>" />
+>>>>>>> 5a647c1f81f0fb1871b63fa7150b09f17820fd2b
                                                                 <label class="required form-label">Số Lượng Sản Phẩm</label>
                                                                 <input type="number" name="productQuantity" class="form-control mb-2" placeholder="Số lượng" value="<?php echo $itemId['productQuantity']; ?>" />
                                                                 <!--end::Input-->

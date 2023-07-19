@@ -462,108 +462,36 @@
                                 <div class="swiper-container swiper-best-seller">
                                     <div class="swiper-wrapper pt-5">
                                         <div class="swiper-slide">
+                                        <?php
+                                        
+                                        $products = $product->showProductByView('productSale', 0, 6);
+                                        foreach ($products as $item) {
+                                        ?>
                                             <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
                                                 <div class="image-box">
-                                                    <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage2/camera.png" alt="Ecom" /></a>
+                                                    <span class="label bg-brand-2"><?php echo $item['discount']?>%</span><a href="shop-single-product.html"><img src="./admin/assets/media/imageproduct/<?php echo $item['productImage']?>" alt="Ecom" /></a>
                                                 </div>
                                                 <div class="info-right">
-                                                    <a class="color-brand-3 font-xs-bold" href="shop-single-product.html">LG 65&quot; Class 4K UHD Smart TV OLED A1
-                                                        Series
+                                                    <a class="color-brand-3 font-xs-bold" href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>"><?php echo $item['productName']?>
                                                     </a>
                                                     <div class="rating">
                                                         <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">
                                                             (65)</span>
                                                     </div>
                                                     <div class="price-info">
-                                                        <strong class="font-md-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 font-sm price-line">$3225.6</span>
+                                                        <strong class="font-md-bold color-brand-3 price-main"><?php  echo $price = $item['productPrice']*((100 - $item['discount'])/100) ?></strong><span class="color-gray-500 font-sm price-line"><?php echo $item['productPrice']?></span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                                                <div class="image-box">
-                                                    <a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage2/clock.png" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="color-brand-3 font-xs-bold" href="shop-single-product.html">Chromecast with Google TV - Streaming
-                                                        Entertainment</a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">
-                                                            (65)</span>
-                                                    </div>
-                                                    <div class="price-info">
-                                                        <strong class="font-md-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 font-sm price-line">$3225.6</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                                                <div class="image-box">
-                                                    <a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage2/airpod.png" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="color-brand-3 font-xs-bold" href="shop-single-product.html">2022 Apple iMac with Retina 5K Display 8GB RAM,
-                                                        256GB SSD</a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">
-                                                            (65)</span>
-                                                    </div>
-                                                    <div class="price-info">
-                                                        <strong class="font-md-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 font-sm price-line">$3225.6</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                                                <div class="image-box">
-                                                    <a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage2/camera.png" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="color-brand-3 font-xs-bold" href="shop-single-product.html">RCA 43&quot; Class 4K Ultra HD (2160P) HDR Roku
-                                                        Smart</a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">
-                                                            (65)</span>
-                                                    </div>
-                                                    <div class="price-info">
-                                                        <strong class="font-md-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 font-sm price-line">$3225.6</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                                                <div class="image-box">
-                                                    <a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage2/clock.png" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="color-brand-3 font-xs-bold" href="shop-single-product.html">Apple Watch Series 7 GPS + Cellular, 41mm
-                                                        Midnight</a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">
-                                                            (65)</span>
-                                                    </div>
-                                                    <div class="price-info">
-                                                        <strong class="font-md-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 font-sm price-line">$3225.6</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                                                <div class="image-box">
-                                                    <a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage2/airpod.png" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="color-brand-3 font-xs-bold" href="shop-single-product.html">HP 11.6&quot; Chromebook, AMD A4, 4GB RAM, 32GB
-                                                        Storage</a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">
-                                                            (65)</span>
-                                                    </div>
-                                                    <div class="price-info">
-                                                        <strong class="font-md-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 font-sm price-line">$3225.6</span>
-                                                    </div>
-                                                </div>
+                                        <?php }?>
+                                     
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                     <div class="banner-right h-500 text-center mb-30">
                         <span class="text-no font-11">No.9</span>
