@@ -1,40 +1,39 @@
 <?php
 $singleProduct = $product->get_product_by_id($id);
 $upview = $product->upview($id);
-if(isset($_POST['addToCart'])&&($_POST['addToCart'])){
-  
+if (isset($_POST['addToCart']) && ($_POST['addToCart'])) {
+
   $image = $_POST['image'];
   $name = $_POST['name'];
   $id = $_POST['id'];
   $quantity = $_POST['quantity'];
-   $price = $_POST['discount'];
-   if($price==""){
+  $price = $_POST['discount'];
+  if ($price == "") {
     $price = $_POST['price'];
-   }else{
-     $price = $_POST['discount'];
-   }
-  
-if(isset($_SESSION['cart'][$id])){
-$_SESSION['cart'][$id]['quantity']++;
-header("Location:?page=shop-single-product&productId=$id");
-} else {
-$item = [
-  'id' => $id,
-  'quantity' => $quantity,
-  'price' => $price,
-  'name' => $name,
-  'image' => $image
-        ];
-  $_SESSION['cart'][$id] = $item;
-  // var_dump($_SESSION['cart']);
+  } else {
+    $price = $_POST['discount'];
+  }
 
-  header("Location:?page=shop-single-product&productId=$id");
-                              
+  if (isset($_SESSION['cart'][$id])) {
+    $_SESSION['cart'][$id]['quantity']++;
+    header("Location:?page=shop-single-product&productId=$id");
+  } else {
+    $item = [
+      'id' => $id,
+      'quantity' => $quantity,
+      'price' => $price,
+      'name' => $name,
+      'image' => $image
+    ];
+    $_SESSION['cart'][$id] = $item;
+    // var_dump($_SESSION['cart']);
+
+    header("Location:?page=shop-single-product&productId=$id");
   }
 }
-  
-  foreach ($singleProduct as $item) {
-  ?>
+
+foreach ($singleProduct as $item) {
+?>
   <main class="main">
     <div class="section-box">
       <div class="breadcrumbs-div">
@@ -58,141 +57,142 @@ $item = [
     </div>
     <section class="section-box shop-template">
       <form action="" method="POST">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
-            <div class="gallery-image">
-              <div class="galleries">
-                <div class="detail-gallery">
-                  <label class="label"><?php echo $item['discount'] ?>%</label>
-                  <div class="product-image-slider">
-                    <figure class="border-radius-10">
-                      <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], ''); ?>" alt="product image" />
-                    </figure>
-                    <figure class="border-radius-10">
-                      <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '1'); ?>" alt="product image" />
-                    </figure>
-                    <figure class="border-radius-10">
-                      <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '2'); ?>" alt="product image" />
-                    </figure>
-                    <figure class="border-radius-10">
-                      <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '3'); ?>" alt="product image" />
-                    </figure>
-                    <figure class="border-radius-10">
-                      <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '4'); ?>" alt="product image" />
-                    </figure>
-                  </div>
-                </div>
-                <div class="slider-nav-thumbnails">
-                  <div>
-                    <div class="item-thumb">
-                      <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], ''); ?>" alt="product image" />
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="gallery-image">
+                <div class="galleries">
+                  <div class="detail-gallery">
+                    <label class="label"><?php echo $item['discount'] ?>%</label>
+                    <div class="product-image-slider">
+                      <figure class="border-radius-10">
+                        <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], ''); ?>" alt="product image" />
+                      </figure>
+                      <figure class="border-radius-10">
+                        <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '1'); ?>" alt="product image" />
+                      </figure>
+                      <figure class="border-radius-10">
+                        <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '2'); ?>" alt="product image" />
+                      </figure>
+                      <figure class="border-radius-10">
+                        <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '3'); ?>" alt="product image" />
+                      </figure>
+                      <figure class="border-radius-10">
+                        <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '4'); ?>" alt="product image" />
+                      </figure>
                     </div>
                   </div>
-                  <div>
-                    <div class="item-thumb">
-                      <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '1'); ?>" alt="product image" />
-                    </div>
-                  </div>
-                  <div>
-                    <div class="item-thumb">
-                      <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '2'); ?>" alt="product image" />
-                    </div>
-                  </div>
-                  <div>
-                    <div class="item-thumb">
-                      <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '3'); ?>" alt="product image" />
-                    </div>
-                  </div>
-                  <div>
-                    <div class="item-thumb">
-                      <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '4'); ?>" alt="product image" />
-                    </div>
-                  </div>
-
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <h3 class="color-brand-3 mb-25">
-              <?php echo $item['productName'] ?>
-            </h3>
-            <div class="row align-items-center">
-              <div class="col-lg-4 col-md-4 col-sm-3 mb-mobile">
-                <span class="bytext color-gray-500 font-xs font-medium">
-                  <div class="rating mt-5">
-                    <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500 font-medium">
-                      (65 reviews)</span>
-                  </div>
-              </div>
-
-            </div>
-            <div class="border-bottom pt-10 mb-20"></div>
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="box-product-price">
-                  <h3 class="color-brand-3 price-main d-inline-block mr-10">
-                    <?php if ($item['discount'] == 0) {
-                      echo $item['productPrice'];
-                    } else {
-                      echo $price = $item['productPrice']*((100 - $item['discount'])/100);
-                      
-                    } ?>
-                  </h3>
-                  <span class="color-gray-500 price-line font-xl line-througt">
-                    <?php if ($item['discount'] == 0) {
-                    } else {
-                      echo $item['productPrice'];
-                    } ?>
-                  </span>
-                </div>
-                <div class="box-progress-product mt-15 mb-20">
-                  <div class="progress mb-5">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <span class="font-xs color-gray-500">Sản phẩm đã bán: <?php echo $item['productSold']; ?>/<?php echo $item['productQuantity']; ?></span>
-                </div>
-                <div class="product-description color-gray-900">
-                  <ul class="list-dot">
-                    <li><?php echo $item['productDesc1'] ?></li>
-                    <li><?php echo $item['productDesc2'] ?></li>
-                    <li><?php echo $item['productDesc3'] ?></li>
-
-                  </ul>
-                </div>
-                <div class="border-bottom mt-20 mb-20"></div>
-              </div>
-              <div class="col-lg-5">
-                <div class="box-border-product">
-                  <div class="buy-product mt-10 d-flex">
-                    <div class="font-sm text-quantity">Số lượng</div>
-                    <div class="box-quantity">
-                      <div class="input-quantity">
-                        <input class="font-xl color-brand-3" name="quantity" type="text" value="1" /><span class="minus-cart"></span><span class="plus-cart"></span>
+                  <div class="slider-nav-thumbnails">
+                    <div>
+                      <div class="item-thumb">
+                        <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], ''); ?>" alt="product image" />
                       </div>
                     </div>
-                  </div>
+                    <div>
+                      <div class="item-thumb">
+                        <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '1'); ?>" alt="product image" />
+                      </div>
+                    </div>
+                    <div>
+                      <div class="item-thumb">
+                        <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '2'); ?>" alt="product image" />
+                      </div>
+                    </div>
+                    <div>
+                      <div class="item-thumb">
+                        <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '3'); ?>" alt="product image" />
+                      </div>
+                    </div>
+                    <div>
+                      <div class="item-thumb">
+                        <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '4'); ?>" alt="product image" />
+                      </div>
+                    </div>
 
-                  <input type="hidden" name="discount" value="<?php  if(isset($price)){echo $price;} ?>">
-                  <input type="hidden" name="image" value="<?php echo $item['productImage'] ?>">
-                  <input type="hidden" name="id" value="<?php echo $item['productId'] ?>">
-                  <input type="hidden" name="name" value="<?php echo $item['productName'] ?>">
-                  <input type="hidden" name="price" value="<?php echo $item['productPrice'] ?>">
-                  <div class="button-buy mt-15">
-                    <input name="addToCart" type="submit" class="btn btn-cart mb-15" value="Thêm vào giỏ hàng" ><a class="btn btn-buy" href="?page=shop-checkout">Mua Ngay</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <h3 class="color-brand-3 mb-25">
+                <?php echo $item['productName'] ?>
+              </h3>
+              <div class="row align-items-center">
+                <div class="col-lg-4 col-md-4 col-sm-3 mb-mobile">
+                  <span class="bytext color-gray-500 font-xs font-medium">
+                    <div class="rating mt-5">
+                      <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500 font-medium">
+                        (65 reviews)</span>
+                    </div>
+                </div>
+
+              </div>
+              <div class="border-bottom pt-10 mb-20"></div>
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="box-product-price">
+                    <h3 class="color-brand-3 price-main d-inline-block mr-10">
+                      <?php if ($item['discount'] == 0) {
+                        echo $item['productPrice'];
+                      } else {
+                        echo $price = $item['discount'];
+                      } ?>
+                    </h3>
+                    <span class="color-gray-500 price-line font-xl line-througt">
+                      <?php if ($item['discount'] == 0) {
+                      } else {
+                        echo $item['productPrice'];
+                      } ?>
+                    </span>
+                  </div>
+                  <div class="box-progress-product mt-15 mb-20">
+                    <div class="progress mb-5">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span class="font-xs color-gray-500">Sản phẩm đã bán: <?php echo $item['productSold']; ?>/<?php echo $item['productQuantity']; ?></span>
+                  </div>
+                  <div class="product-description color-gray-900">
+                    <ul class="list-dot">
+                      <li><?php echo $item['productDesc1'] ?></li>
+                      <li><?php echo $item['productDesc2'] ?></li>
+                      <li><?php echo $item['productDesc3'] ?></li>
+
+                    </ul>
+                  </div>
+                  <div class="border-bottom mt-20 mb-20"></div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="box-border-product">
+                    <div class="buy-product mt-10 d-flex">
+                      <div class="font-sm text-quantity">Số lượng</div>
+                      <div class="box-quantity">
+                        <div class="input-quantity">
+                          <input class="font-xl color-brand-3" name="quantity" type="text" value="1" /><span class="minus-cart"></span><span class="plus-cart"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <input type="hidden" name="discount" value="<?php if (isset($price)) {
+                                                                  echo $price;
+                                                                } ?>">
+                    <input type="hidden" name="image" value="<?php echo $item['productImage'] ?>">
+                    <input type="hidden" name="id" value="<?php echo $item['productId'] ?>">
+                    <input type="hidden" name="name" value="<?php echo $item['productName'] ?>">
+                    <input type="hidden" name="price" value="<?php echo $item['productPrice'] ?>">
+                    <div class="button-buy mt-15">
+                      <input name="addToCart" type="submit" class="btn btn-cart mb-15" value="Thêm vào giỏ hàng"><a class="btn btn-buy" href="?page=shop-checkout">Mua Ngay</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-       
-        <div class="border-bottom pt-30 mb-40"></div>
 
-      </div>
-      </form>  
+          <div class="border-bottom pt-30 mb-40"></div>
+
+        </div>
+      </form>
     </section>
     <section class="section-box shop-template">
       <div class="container">
@@ -501,5 +501,5 @@ $item = [
 
   </main>
 <?php }
-  
+
 ?>
