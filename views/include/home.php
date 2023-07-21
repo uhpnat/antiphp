@@ -86,7 +86,7 @@
                     </div>
                     <div class="col-xl-5 col-lg-12 col-md-12">
                         <div class="row">
-                            <div class="col-xl-7 col-lg-9 col-md-8 col-sm-12 mb-30">
+                            <div class="col-12">
                                 <div class="bg-metaverse bg-22 pt-25 mb-20 pl-20 h-175">
                                     <h3 class="mb-10 font-32">Siêu ưu đãi</h3>
                                     <p class="font-16">Sản phẩm của tương lai</p>
@@ -103,28 +103,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-xl-5 col-lg-3 col-md-4 col-sm-12">
-                                <div class="box-promotions">
-                                    <!-- Swiper-->
-                                    <div class="swiper swiper-vertical-1">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <a href="shop-list-2.html">
-                                                    <img src="./views/assets/imgs/page/homepage4/promotion1.png" alt="Ecom" />
-                                                </a>
-                                                <a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion2.png" alt="Ecom" />
-                                                </a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion3.png" alt="Ecom" />
-                                                </a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion4.png" alt="Ecom" />
-                                                </a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion5.png" alt="Ecom" /></a>
-                                                <a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion6.png" alt="Ecom" /></a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion2.png" alt="Ecom" /></a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion4.png" alt="Ecom" /></a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion6.png" alt="Ecom" /></a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion1.png" alt="Ecom" /></a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion3.png" alt="Ecom" /></a><a href="shop-list-2.html"><img src="./views/assets/imgs/page/homepage4/promotion5.png" alt="Ecom" /></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
