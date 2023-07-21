@@ -1,7 +1,17 @@
 <?php
 @ob_start();
 session_start();
-include_once  './module/lib/database.php';
+if (isset($_SESSION['name'])) {
+    $sId = $_SESSION['name'];
+    echo $_SESSION['name'];
+} else {
+    $random_number = mt_rand(1000, 9999);
+    $_SESSION['name'] = $random_number;
+    $sId = $_SESSION['name'];
+    echo $_SESSION['name'];
+}
+// session_destroy();
+include_once './module/lib/database.php';
 include_once './module/helpers/format.php';
 spl_autoload_register(function ($className) {
     include_once './module/classes/' . $className . '.php';
@@ -163,12 +173,12 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                             <span class="font-lg icon-list icon-account"><span>Tài khoản</span></span>
                             <div class="dropdown-account">
                                 <ul>
-                                    <li><a href="page-account.php">Tài khoản của tôi</a></li>
-                                    <li><a href="page-account.php">Theo dõi đơn hàng</a></li>
+                                    <li><a href="?page=page-account">Tài khoản của tôi</a></li>
+                                    <li><a href="?page=page-account">Theo dõi đơn hàng</a></li>
                                     <li>
-                                        <a href="page-account.php">Đơn đặt hàng của tôi</a>
+                                        <a href="?page=page-account">Đơn đặt hàng của tôi</a>
                                     </li>
-                                    <li><a href="page-account.php">Sản phẩm yêu thích</a></li>
+                                    <li><a href="?page=page-account">Sản phẩm yêu thích</a></li>
                                     <li><a href="?page=login">Đăng Xuất</a></li>
                                 </ul>
                             </div>

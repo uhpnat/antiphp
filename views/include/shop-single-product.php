@@ -1,6 +1,8 @@
 <?php
 $singleProduct = $product->get_product_by_id($id);
 $upview = $product->upview($id);
+var_dump($_SESSION['cart']);
+
 if (isset($_POST['addToCart']) && ($_POST['addToCart'])) {
 
   $image = $_POST['image'];
@@ -26,7 +28,6 @@ if (isset($_POST['addToCart']) && ($_POST['addToCart'])) {
       'image' => $image
     ];
     $_SESSION['cart'][$id] = $item;
-    // var_dump($_SESSION['cart']);
 
     header("Location:?page=shop-single-product&productId=$id");
   }
