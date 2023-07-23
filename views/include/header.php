@@ -1,6 +1,4 @@
 <?php
-@ob_start();
-session_start();
 include_once  './module/lib/database.php';
 include_once './module/helpers/format.php';
 spl_autoload_register(function ($className) {
@@ -33,10 +31,8 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
     <meta name="author" content="" />
     <link rel="shortcut icon" type="image/x-icon" href="./views/assets/imgs/template/favicon.svg" />
     <link href="./views/assets/css/style2513.css?v=3.0.0" rel="stylesheet" />
-    <title>AntiPHP</title>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 
 
 </head>
@@ -58,7 +54,6 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
     <!-- Loading -->
     <!-- Loading -->
     <!-- Loading -->
-
     <div class="topbar top-gray-1000">
         <div class="container-topbar">
             <div class="menu-topbar-left d-none d-xl-block">
@@ -175,8 +170,8 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                         </div>
                         <!-- <a class="font-lg icon-list icon-wishlist" href="shop-wishlist.php"><span>Wishlist</span><span class="number-item font-xs">5</span></a> -->
                         <div class="d-inline-block box-dropdown-cart">
-                            <span class="font-lg icon-list icon-cart"><span>Giỏ Hàng</span><span class="number-item font-xs"><?php if(isset($cart_count)){echo $cart_count;} ?></span></span>
-                            <div class="dropdown-cart">
+                            <span class="font-lg icon-list icon-cart"><span>Giỏ Hàng</span><span class="number-item font-xs badge"><?php if(isset($cart_count)){echo $cart_count;} ?></span></span>
+                            <div class="dropdown-cart" >
                                 <?php 
                                     
                                     if (isset($_SESSION['cart'])){

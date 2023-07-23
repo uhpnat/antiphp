@@ -138,7 +138,7 @@ $item = [
                       echo $item['productPrice'];
                     } else {
                       echo $price = $item['productPrice']*((100 - $item['discount'])/100);
-                      
+   
                     } ?>
                   </h3>
                   <span class="color-gray-500 price-line font-xl line-througt">
@@ -503,3 +503,24 @@ $item = [
 <?php }
   
 ?>
+<script>
+  $(".add-card").submit(function(e){
+  e.preventDefault();
+  
+  $.ajax({
+    type: "POST",
+    url: "./shop-cart.php",
+    data: $(this).serializeArray(),
+    
+    success: function(response) {
+      response = JSON.parse(response)
+      if(response.status == 0){
+        alert(response.message)
+      }else{
+        alert(response.message)
+        location.reload()
+      }
+    }
+  })
+  });
+</script>
