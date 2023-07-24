@@ -12,6 +12,7 @@ $user = new user();
 $cat = new category();
 $product = new product();
 $brand = new brand();
+$order = new order();
 ?>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
@@ -47,6 +48,9 @@ $brand = new brand();
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./list.php">Người dùng</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./order.php">Đơn hàng</a>
         </li>
 
       </ul>

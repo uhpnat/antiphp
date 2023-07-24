@@ -32,6 +32,10 @@ if (!isset($_GET['page'])) {
             break;
         case 'shop-checkout':
             include 'views/include/shop-checkout.php';
+            break;
+        case 'page-account':
+            include 'views/include/page-account.php';
+            break;
         case 'shop-vendor-list':
             include 'views/include/shop-vendor-list.php';
             break;
@@ -41,7 +45,7 @@ if (!isset($_GET['page'])) {
         case 'shop-cart':
             include 'views/include/shop-cart.php';
             break;
-        
+
         case 'test':
             include 'views/include/test.php';
             break;

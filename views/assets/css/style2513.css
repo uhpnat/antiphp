@@ -9483,8 +9483,8 @@ a:hover span {
   margin-bottom: 0px;
 }
 .list-orders .item-orders .image-orders {
-  min-width: 130px;
-  max-width: 130px;
+  min-width: 70px;
+  max-width: 70px;
   border: 1px solid #8c9ec5;
   text-align: center;
   padding: 8px;

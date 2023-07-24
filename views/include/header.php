@@ -1,5 +1,16 @@
 <?php
-include_once  './module/lib/database.php';
+
+if (isset($_SESSION['name'])) {
+    $sId = $_SESSION['name'];
+    echo $_SESSION['name'];
+} else {
+    $random_number = mt_rand(1000, 9999);
+    $_SESSION['name'] = $random_number;
+    $sId = $_SESSION['name'];
+    echo $_SESSION['name'];
+}
+// session_destroy();
+include_once './module/lib/database.php';
 include_once './module/helpers/format.php';
 spl_autoload_register(function ($className) {
     include_once './module/classes/' . $className . '.php';
@@ -12,6 +23,7 @@ $us = new user();
 $cat = new category();
 $product = new product();
 $brand = new brand();
+$order = new order();
 
 $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
 ?>
@@ -33,6 +45,9 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
     <link href="./views/assets/css/style2513.css?v=3.0.0" rel="stylesheet" />
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
 
 
 </head>
@@ -109,13 +124,13 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                             <img style="width: 20px;" src="https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/letter_O_blue-512.png" alt="">
                             <img style="width: 20px;" src="https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/letter_P_blue-512.png" alt=""> -->
 
-                        <a href="?page=home">Logo ở đây</a>
+                            <a href="?page=home">Logo ở đây</a>
                         </a>
                     </div>
                     <div class="header-search">
                         <div class="box-header-search">
                             <form class="form-search" method="post" action="#">
-                                <div class="box-category">
+                                <!-- <div class="box-category">
                                     <select class="select-active select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
                                         <option>Danh mục</option>
                                         <option value="Computers Accessories">
@@ -134,7 +149,7 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                                         </option>
                                         <option value="Cloud Software">Cloud Software</option>
                                     </select>
-                                </div>
+                                </div> -->
                                 <div class="box-keysearch">
                                     <input class="form-control font-xs" type="text" value="" placeholder="Tìm kiếm sản phẩm" />
                                 </div>
@@ -158,59 +173,62 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                             <span class="font-lg icon-list icon-account"><span>Tài khoản</span></span>
                             <div class="dropdown-account">
                                 <ul>
-                                    <li><a href="page-account.php">Tài khoản của tôi</a></li>
-                                    <li><a href="page-account.php">Theo dõi đơn hàng</a></li>
+                                    <li><a href="?page=page-account">Tài khoản của tôi</a></li>
+                                    <li><a href="?page=page-account">Theo dõi đơn hàng</a></li>
                                     <li>
-                                        <a href="page-account.php">Đơn đặt hàng của tôi</a>
+                                        <a href="?page=page-account">Đơn đặt hàng của tôi</a>
                                     </li>
-                                    <li><a href="page-account.php">Sản phẩm yêu thích</a></li>
+                                    <li><a href="?page=page-account">Sản phẩm yêu thích</a></li>
                                     <li><a href="?page=login">Đăng Xuất</a></li>
                                 </ul>
                             </div>
                         </div>
                         <!-- <a class="font-lg icon-list icon-wishlist" href="shop-wishlist.php"><span>Wishlist</span><span class="number-item font-xs">5</span></a> -->
                         <div class="d-inline-block box-dropdown-cart">
-                            <span class="font-lg icon-list icon-cart"><span>Giỏ Hàng</span><span class="number-item font-xs badge"><?php if(isset($cart_count)){echo $cart_count;} ?></span></span>
-                            <div class="dropdown-cart" >
-                                <?php 
-                                    
-                                    if (isset($_SESSION['cart'])){
-                                        $i = 1;
-                                        $tongTien =0;
-                                        foreach($_SESSION['cart'] as $cart) {
-                                            $tongGia = $cart['price'] * $cart['quantity'];
-                                            $tongTien += $tongGia;
+                            <span class="font-lg icon-list icon-cart"><span>Giỏ Hàng</span><span class="number-item font-xs"><?php if (isset($cart_count)) {
+                                                                                                                                    echo $cart_count;
+                                                                                                                                } ?></span></span>
+                            <div class="dropdown-cart">
+                                <?php
+
+                                if (isset($_SESSION['cart'])) {
+                                    $i = 1;
+                                    $tongTien = 0;
+                                    foreach ($_SESSION['cart'] as $cart) {
+                                        $tongGia = $cart['price'] * $cart['quantity'];
+                                        $tongTien += $tongGia;
                                 ?>
-                                <div class="item-cart mb-20">
-                                    <div class="cart-image">
-                                        <img src="./admin/assets/media/imageproduct/<?php echo $cart['image'] ;?>" alt="Ecom" />
-                                    </div>
-                                    <div class="cart-info">
-                                        <a class="font-sm-bold color-brand-3" href="?page=shop-single-product&productId=<?php echo $cart['id'] ;?>"><?php echo $cart['name'] ;?></a>
-                                        <p>
-                                            <span class="color-brand-2 font-sm-bold"><?php echo $cart['quantity'] ;?> x <?php echo $cart['price']." vnđ" ;?></span>
-                                        </p>
-                                    </div>
-                                    
-                                </div>
-                                
-                                <div class="border-bottom pt-0 mb-15"></div>
-                                
-                                <?php }}?>
+                                        <div class="item-cart mb-20">
+                                            <div class="cart-image">
+                                                <img src="./admin/assets/media/imageproduct/<?php echo $cart['image']; ?>" alt="Ecom" />
+                                            </div>
+                                            <div class="cart-info">
+                                                <a class="font-sm-bold color-brand-3" href="?page=shop-single-product&productId=<?php echo $cart['id']; ?>"><?php echo $cart['name']; ?></a>
+                                                <p>
+                                                    <span class="color-brand-2 font-sm-bold"><?php echo $cart['quantity']; ?> x <?php echo number_format($cart['price'])." đ"; ?></span>
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="border-bottom pt-0 mb-15"></div>
+
+                                <?php }
+                                } ?>
                                 <div class="cart-total">
                                     <div class="row">
                                         <div class="col-6 text-start">
                                             <span class="font-md-bold color-brand-3">Tổng giá</span>
                                         </div>
                                         <div class="col-6">
-                                            <span class="font-md-bold color-brand-1"><?php 
-                                            if(isset($tongTien)){
-                                                echo $tongTien." vnđ";
-                                            }else{
-                                                echo '0';
-                                            }
-                           
-                                        ?></span>
+                                            <span class="font-md-bold color-brand-1"><?php
+                                                                                        if (isset($tongTien)) {
+                                                                                            echo number_format($tongTien). " đ";
+                                                                                        } else {
+                                                                                            echo '0 đ';
+                                                                                        }
+
+                                                                                        ?></span>
                                         </div>
                                     </div>
                                     <div class="row mt-15">
@@ -237,75 +255,16 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                     </button>
                     <div class="sidebar-left dropdown-menu dropdown-menu-light" aria-labelledby="dropdownCategory" data-bs-popper="static">
                         <ul class="menu-texts menu-close">
-                            <li class="has-children">
-                                <a href="javascript:;"><span class="img-link"><img src="./views/assets/imgs/template/monitor.svg" alt="Ecom" /></span><span class="text-link">Computers &amp; Accessories</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="#">Computer Accessories</a></li>
-                                    <li><a href="#">Computer Cases</a></li>
-                                    <li><a href="#">Laptop</a></li>
-                                    <li><a href="#">HDD</a></li>
-                                    <li><a href="#">RAM</a></li>
-                                    <li><a href="#">Headphone</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-children">
-                                <a class="active" href="javascript:;"><span class="img-link"><img src="./views/assets/imgs/template/mobile.svg" alt="Ecom" /></span><span class="text-link">Cell Phones</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="#">Phone Accessories</a></li>
-                                    <li><a href="#">Phone Cases</a></li>
-                                    <li><a href="#">Postpaid Phones</a></li>
-                                    <li><a href="#">Unlocked Phones</a></li>
-                                    <li><a href="#">Prepaid Phones</a></li>
-                                    <li><a href="#">Prepaid Plans</a></li>
-                                    <li><a href="#">Refurbished Phones</a></li>
-                                    <li><a href="#">Straight Talk</a></li>
-                                    <li><a href="#">iPhone</a></li>
-                                    <li><a href="#">Samsung Galaxy</a></li>
-                                    <li><a href="#">Samsung Galaxy</a></li>
-                                    <li><a href="#">Samsung Galaxy</a></li>
-                                    <li><a href="#">Samsung Galaxy</a></li>
-                                    <li><a href="#">Samsung Galaxy</a></li>
-                                </ul>
-                            </li>
                             <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/game.svg" alt="Ecom" /></span><span class="text-link">Gaming Gatgets</span></a>
+                                <?php
+                                $showCategory = $cat->show_category();
+                                foreach ($showCategory as $item) {
+                                ?>
+                                    <a href="#"><span class="text-link"><?php echo $item['categoryName'] ?></span></a>
+                                <?php  } ?>
                             </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/clock.svg" alt="Ecom" /></span><span class="text-link">Smart watches</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/airpod.svg" alt="Ecom" /></span><span class="text-link">Airpod</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/airpods.svg" alt="Ecom" /></span><span class="text-link">Wired Headphone</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/mouse.svg" alt="Ecom" /></span><span class="text-link">Mouse &amp; Keyboard</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/music-play.svg" alt="Ecom" /></span><span class="text-link">Headphone</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/bluetooth.svg" alt="Ecom" /></span><span class="text-link">Bluetooth devices</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/clound.svg" alt="Ecom" /></span><span class="text-link">Cloud Software</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/electricity.svg" alt="Ecom" /></span><span class="text-link">Electric accessories</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/cpu.svg" alt="Ecom" /></span><span class="text-link">Mainboard &amp; CPU</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/devices.svg" alt="Ecom" /></span><span class="text-link">Desktop</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/driver.svg" alt="Ecom" /></span><span class="text-link">Speaker</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="img-link"><img src="./views/assets/imgs/template/lamp.svg" alt="Ecom" /></span><span class="text-link">Computer Decor</span></a>
-                            </li>
+
+
                         </ul>
                     </div>
                 </div>
