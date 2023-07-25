@@ -103,7 +103,6 @@
     <?php
     include 'header.php';
     ?>
-
     <!--begin::App-->
     <div class="d-flex flex-column flex-root app-root" id="kt_app_root">
         <!--begin::Page-->

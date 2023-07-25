@@ -1,4 +1,6 @@
 <?php
+@ob_start();
+session_start();
 include 'views/include/header.php';
 ?>
 <?php
@@ -53,7 +55,9 @@ if (!isset($_GET['page'])) {
             echo $id;
             include 'views/include/shop-single-product.php';
             break;
-
+        case 'action':
+            include 'views/include/action.php';
+            break;
         default:
             include 'views/include/404.php';
             break;

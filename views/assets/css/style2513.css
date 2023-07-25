@@ -3812,6 +3812,8 @@ a.text-brand-3:hover {
 .dropdown-cart.dropdown-open {
   display: block;
   visibility: visible;
+  height: 400px;
+  overflow-y: scroll;
 }
 
 .dropdown-account {

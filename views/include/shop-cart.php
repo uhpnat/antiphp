@@ -71,7 +71,7 @@
                                                 </div>
                                             </div>
                                             <div class="wishlist-price">
-                                                <h4 class="color-brand-3"><?php echo $cart['price'] . " vnđ"; ?></h4>
+                                                <h4 class="color-brand-3"><?php echo number_format($cart['price']). " đ"; ?></h4>
                                             </div>
                                             <div class="wishlist-status">
                                                 <div class="box-quantity">
@@ -82,7 +82,7 @@
                                             </div>
                                             <div class="wishlist-action">
                                                 <h4 class="color-brand-3"><?php if (isset($tongGia)) {
-                                                                                echo $tongGia;
+                                                                                echo number_format($tongGia).' đ' ;
                                                                             } ?></h4>
                                             </div>
                                             <div class="wishlist-remove"><a class="btn btn-delete" href="?page=shop-cart&delete=<?= $cart['id'] ?>"></a></div>
@@ -104,7 +104,7 @@
                                     <div class="col-6"><span class="font-md-bold color-gray-500">Thành tiền</span></div>
                                     <div class="col-6 text-end">
                                         <h4><?php if (isset($tongTien)) {
-                                                echo $tongTien . " vnđ";
+                                                echo number_format($tongTien).' đ';
                                             } ?></h4>
                                     </div>
                                 </div>
@@ -130,7 +130,7 @@
                                     <div class="col-6"><span class="font-md-bold color-gray-500">Tổng</span></div>
                                     <div class="col-6 text-end">
                                         <h4> <?php if (isset($tongTien)) {
-                                                    echo $tongTien . " vnđ";
+                                                    echo number_format($tongTien).' đ';
                                                 } ?></h4>
                                     </div>
                                 </div>

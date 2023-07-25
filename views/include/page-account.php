@@ -66,6 +66,7 @@
                         $show_order = $ct->show_box_order($sId);
                         if ($show_order != null) {
                             foreach ($show_order as $order) {
+                                $product = json_decode($order['product'], true) ;
 
                         ?>
                                 <div class="box-orders">
@@ -80,6 +81,8 @@
                                             } else {
                                                 echo '<span class="label-delivery label-cancel ">Xóa</span>';
                                             }
+                                            
+
                                             ?>
 
 
@@ -90,28 +93,27 @@
                                         <div class="list-orders">
                                             <div class="row">
 
-                                                <?php
-                                                $show_buy = $ct->show_box_buy($order['code']);
-                                                foreach ($show_buy as $item) {
-                                                    $get_product_by_id = $product->get_product_by_id($item['productId'])
-                                                ?>
+                                                <!-- $show_buy = $ct->show_box_buy($order['code']);
+                                             
+                                                var_dump($show_buy);
+                                                $get_product_by_id = $product->get_product_by_id($item['productId']); -->
+
+                                                <?php foreach($product['results'] as $value) {?>
                                                     <div class="col-6">
                                                         <div class="item-orders">
-                                                            <div class="quantity-orders"><img style="height: 70px;" src="./admin/assets/media/imageproduct/<?php echo $get_product_by_id[0]['productImage']  ?>" alt="Ecom"></div>
+                                                            <div class="quantity-orders"><img style="height: 70px;" src="./admin/assets/media/imageproduct/<?php echo $value['image'] ?>" alt="Ecom"></div>
                                                             <div class="info-orders">
-                                                                <h5 style="font-size: 16px;"><?php echo $get_product_by_id[0]['productName']  ?></h5>
+                                                                <h5 style="font-size: 16px;"></h5>
                                                             </div>
                                                             <div class="quantity-orders">
-                                                                <h5 style="font-size: 16px;">Số Lượng: <?php echo $item['quantity'] ?></h5>
+                                                                <h5 style="font-size: 16px;">Số Lượng:<?php echo $value['quantity'] ?></h5>
                                                             </div>
                                                             <div class="price-orders">
-                                                                <h3 style="font-size: 20px;"><?php echo $get_product_by_id[0]['productPrice'] * $item['quantity'] ?></h3>
+                                                                <h3 style="font-size: 20px;"><?php echo number_format($value['price'])  ?></h3>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                <?php
-                                                }
-                                                ?>
+                                               <?php }?>
                                             </div>
 
                                         </div>

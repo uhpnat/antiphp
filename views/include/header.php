@@ -1,6 +1,5 @@
 <?php
-@ob_start();
-session_start();
+
 if (isset($_SESSION['name'])) {
     $sId = $_SESSION['name'];
     echo $_SESSION['name'];
@@ -24,6 +23,7 @@ $us = new user();
 $cat = new category();
 $product = new product();
 $brand = new brand();
+$order = new order();
 
 $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
 ?>
@@ -43,10 +43,11 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
     <meta name="author" content="" />
     <link rel="shortcut icon" type="image/x-icon" href="./views/assets/imgs/template/favicon.svg" />
     <link href="./views/assets/css/style2513.css?v=3.0.0" rel="stylesheet" />
-    <title>AntiPHP</title>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    <!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
 
 
 </head>
@@ -68,7 +69,6 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
     <!-- Loading -->
     <!-- Loading -->
     <!-- Loading -->
-
     <div class="topbar top-gray-1000">
         <div class="container-topbar">
             <div class="menu-topbar-left d-none d-xl-block">
@@ -205,7 +205,7 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                                             <div class="cart-info">
                                                 <a class="font-sm-bold color-brand-3" href="?page=shop-single-product&productId=<?php echo $cart['id']; ?>"><?php echo $cart['name']; ?></a>
                                                 <p>
-                                                    <span class="color-brand-2 font-sm-bold"><?php echo $cart['quantity']; ?> x <?php echo $cart['price'] . " vnđ"; ?></span>
+                                                    <span class="color-brand-2 font-sm-bold"><?php echo $cart['quantity']; ?> x <?php echo number_format($cart['price'])." đ"; ?></span>
                                                 </p>
                                             </div>
 
@@ -223,9 +223,9 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                                         <div class="col-6">
                                             <span class="font-md-bold color-brand-1"><?php
                                                                                         if (isset($tongTien)) {
-                                                                                            echo $tongTien . " vnđ";
+                                                                                            echo number_format($tongTien). " đ";
                                                                                         } else {
-                                                                                            echo '0';
+                                                                                            echo '0 đ';
                                                                                         }
 
                                                                                         ?></span>

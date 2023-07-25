@@ -1,3 +1,4 @@
+
 <main class="main">
     <section class="section-box">
         <div class="banner-hero banner-1 pt-10">
@@ -183,11 +184,17 @@
                                                             <span class="font-xs color-gray-500">(65)</span>
                                                         </div>
                                                         <div class="price-info">
-                                                            <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? $item['productPrice'] : $item['discount']  ?></strong>
-                                                            <span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? $item['productPrice'] : '' ?></span>
+                                                            <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']).' đ'  : number_format($item['discount']).' đ'   ?></strong>
+                                                            <span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? number_format($item['productPrice']).' đ'  : '' ?></span>
                                                         </div>
+                                                        <input type="hidden"  name="id" value="<?php echo $item['productId'] ?>">
+                                                                <input type="hidden" id="name<?php echo $item['productId'] ?>"  value="<?php echo $item['productName'] ?>">
+                                                                <input type="hidden" id="discount<?php echo $item['productId'] ?>"  value="<?php echo $item['discount'] ?>">
+                                                                <input type="hidden" id="quantity<?php echo $item['productId'] ?>"  value="1">
+                                                                <input type="hidden" id="price<?php echo $item['productId'] ?>"  value="<?php echo $item['productPrice'] ?>">
+                                                                <input type="hidden" id="image<?php echo $item['productId'] ?>"  value="<?php echo $item['productImage'] ?>">
                                                         <div class="mt-20 box-btn-cart">
-                                                            <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
+                                                        <a class="btn btn-cart add_to_cart" id="<?php echo $item['productId'] ?>">Mua Ngay</a>
                                                         </div>
                                                         <ul class="list-features">
                                                             <li><?php echo $product->limitText($item['productDesc1'], 40) ?></li>
@@ -237,11 +244,17 @@
                                                             <span class="font-xs color-gray-500">(65)</span>
                                                         </div>
                                                         <div class="price-info">
-                                                            <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? $item['productPrice'] : $item['discount']  ?></strong>
-                                                            <span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? $item['productPrice'] : '' ?></span>
+                                                            <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']).' đ'  : number_format($item['discount']).' đ'   ?></strong>
+                                                            <span class="color-gray-500 price-line"><?php echo  $item['discount'] != 0 ? number_format($item['productPrice']).' đ'  : '' ?></span>
                                                         </div>
+                                                        <input type="hidden"  name="id" value="<?php echo $item['productId'] ?>">
+                                                                <input type="hidden" id="name<?php echo $item['productId'] ?>"  value="<?php echo $item['productName'] ?>">
+                                                                <input type="hidden" id="discount<?php echo $item['productId'] ?>"  value="<?php echo $item['discount'] ?>">
+                                                                <input type="hidden" id="quantity<?php echo $item['productId'] ?>"  value="1">
+                                                                <input type="hidden" id="price<?php echo $item['productId'] ?>"  value="<?php echo $item['productPrice'] ?>">
+                                                                <input type="hidden" id="image<?php echo $item['productId'] ?>"  value="<?php echo $item['productImage'] ?>">
                                                         <div class="mt-20 box-btn-cart">
-                                                            <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
+                                                            <a class="btn btn-cart add_to_cart" id="<?php echo $item['productId'] ?>">Mua Ngay</a>
                                                         </div>
                                                         <ul class="list-features">
                                                             <li><?php echo $product->limitText($item['productDesc1'], 40) ?></li>
@@ -361,9 +374,11 @@
                             </div>
                         </div>
                         <div class="box-swiper">
+
                             <div class="swiper-container swiper-tab-4">
                                 <div class="swiper-wrapper pt-5">
                                     <div class="swiper-slide">
+                                 
                                         <div class="row">
                                             <?php
                                             $showProductByView = $product->showProductByView('productSold', 0, 8);
@@ -398,12 +413,24 @@
                                                                     <span class="font-xs color-gray-500">(65)</span>
                                                                 </div>
                                                                 <div class="price-info">
-                                                                    <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? $item['productPrice'] : $item['discount']  ?></strong>
-                                                                    <span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? $item['productPrice'] : '' ?></span>
+                                                                    <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']).' đ'  : number_format($item['discount']).' đ'   ?></strong>
+                                                                    <span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? number_format($item['productPrice']).' đ'  : '' ?></span>
                                                                 </div>
+                                                                
+                                                                
+                                                                <input type="hidden"  name="id" value="<?php echo $item['productId'] ?>">
+                                                                <input type="hidden" id="name<?php echo $item['productId'] ?>"  value="<?php echo $item['productName'] ?>">
+                                                                <input type="hidden" id="discount<?php echo $item['productId'] ?>"  value="<?php echo $item['discount'] ?>">
+                                                                <input type="hidden" id="quantity<?php echo $item['productId'] ?>"  value="1">
+                                                                <input type="hidden" id="price<?php echo $item['productId'] ?>"  value="<?php echo $item['productPrice'] ?>">
+                                                                <input type="hidden" id="image<?php echo $item['productId'] ?>"  value="<?php echo $item['productImage'] ?>">
+
                                                                 <div class="mt-20 box-btn-cart">
-                                                                    <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
+                                                                    <button class="btn btn-cart add_to_cart" id="<?php echo $item['productId'] ?>" >Mua ngay</button>
+                                                                    
                                                                 </div>
+                                                                
+
                                                                 <ul class="list-features">
                                                                     <li><?php echo $product->limitText($item['productDesc1'], 35) ?></li>
                                                                     <li><?php echo $product->limitText($item['productDesc2'], 35) ?></li>
@@ -417,6 +444,7 @@
                                             }
                                             ?>
                                         </div>
+                       
                                     </div>
                                 </div>
                             </div>
@@ -425,8 +453,8 @@
                             <a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage4/banner-ads.png" alt="Ecom" /></a>
                         </div>
                     </div>
-
                 </div>
+             
                 <div class="col-xl-3 col-lg-4">
                     <div class="box-slider-item box-sidebar">
                         <div class="head">
@@ -445,7 +473,7 @@
                                         
                                         $products = $product->showProductByView('productSale', 0, 6);
                                         foreach ($products as $item) {
-                                        ?>
+                                        ?>  
                                             <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
                                                 <div class="image-box">
                                                     <span class="label bg-brand-2"><?php echo $item['discount']?>%</span><a href="shop-single-product.html"><img src="./admin/assets/media/imageproduct/<?php echo $item['productImage']?>" alt="Ecom" /></a>
@@ -457,9 +485,11 @@
                                                         <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">
                                                             (65)</span>
                                                     </div>
+                                                    
                                                     <div class="price-info">
-                                                        <strong class="font-md-bold color-brand-3 price-main"><?php  echo $price = $item['productPrice']*((100 - $item['discount'])/100) ?></strong><span class="color-gray-500 font-sm price-line"><?php echo $item['productPrice']?></span>
-                                                    </div>
+                                                            <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']).' đ'  : number_format($item['productPrice']*((100 - $item['discount'])/100))   ?></strong>
+                                                            <span class="color-gray-500 price-line"><?php echo $item['discount'] !== 0 ? number_format($item['productPrice']) :'' ?></span>
+                                                        </div>
                                                 </div>
                                             </div>
                                         <?php }?>
@@ -472,6 +502,7 @@
                         </div>
                         
                     </div>
+                    
                     <div class="banner-right h-500 text-center mb-30">
                         <span class="text-no font-11">No.9</span>
                         <h5 class="font-23 mt-20">
@@ -542,3 +573,113 @@
     </section>
 
 </main>
+<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+    <title>AntiPHP</title>
+<script type="text/javascript">
+    $(document).ready(function(){
+        // load_product()
+        // load_cart_data();
+
+// function load_product()
+// 	{
+// 		$.ajax({
+// 			url:"?page=home",
+// 			method:"POST",
+// 			success:function(data)
+// 			{
+// 				// $('#display_item').html(data);
+//                 console.log('hiển thị sản phẩm thành công')
+// 			}
+// 		});
+// 	}
+
+// function load_cart_data()
+// {
+//     $.ajax({
+//         url:"?page=action",
+//         method:"POST",
+//         dataType:"json",
+//         success:function(data)
+//         {
+//             console.log(data)
+//             // $('#cart_details').html(data.cart_details);
+//             $('.total_price').text(data.total_price);
+//             $('.badge').text(data.total_item);
+//         }
+//     });
+// }
+
+$(document).on('click', '.add_to_cart', function(){
+    
+
+    var product_id = $(this).attr("id");
+    var product_name = $('#name'+product_id+'').val();
+    var product_price = $('#price'+product_id+'').val();
+    var product_discount = $('#discount'+product_id+'').val();
+    var product_quantity = $('#quantity'+product_id).val();
+    var product_image = $('#image'+product_id).val();
+    var action = "add";
+    if(product_quantity > 0)
+    {   
+
+        $.ajax({
+            url:"?page=action",
+            method:"POST",
+            data:{product_id:product_id, product_name:product_name, product_price:product_price,product_discount:product_discount, product_quantity:product_quantity,product_image:product_image, action:action},
+            success:function(data)
+            {   
+                
+                toastr.success("Sản phẩm đã được thêm vào giỏ hàng")
+                setTimeout(function(){
+                window.location.reload();
+                }, 500);
+                
+            }
+        });
+    }
+    else
+    {
+        alert("");
+    }
+});
+
+// $(document).on('click', '.delete', function(){
+//     var product_id = $(this).attr("id");
+//     var action = 'remove';
+//     if(confirm("Are you sure you want to remove this product?"))
+//     {
+//         $.ajax({
+//             url:"?page=action",
+//             method:"POST",
+//             data:{product_id:product_id, action:action},
+//             success:function()
+//             {
+//                 alert("sản phẩm đã được xóa ");
+//             }
+//         })
+//     }
+//     else
+//     {
+//         return false;
+//     }
+// });
+
+// $(document).on('click', '#clear_cart', function(){
+//     var action = 'empty';
+//     $.ajax({
+//         url:"?page=action",
+//         method:"POST",
+//         data:{action:action},
+//         success:function()
+//         {
+//             load_cart_data();
+//             // $('#cart-popover').popover('hide');
+//             alert("Your Cart has been clear");
+//         }
+//     });
+// });
+
+});
+</script>

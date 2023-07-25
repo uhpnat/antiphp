@@ -1,29 +1,34 @@
 <?php
-// var_dump($_SESSION['cart']);
 $random_number = mt_rand(1000, 9999);
-
 if (isset($_POST['submit'])) {
   $code = $random_number;
   $customerId = $_SESSION['name'];
   $email = $_POST['email'];
-  $ten = $_POST['ten'];
-  $diachi = $_POST['diachi'];
-  $sdt = $_POST['sdt'];
-  $thongtinthem = $_POST['thongtinthem'];
-  $ct->order_product(
-    $code,
-    $customerId,
-    $email,
-    $ten,
-    $diachi,
-    $sdt,
-    $thongtinthem
+  $name = $_POST['ten'];
+  $address = $_POST['diachi'];
+  $phone = $_POST['sdt'];
+  $info = $_POST['thongtinthem'];
+  $data = array(
+    "success" => false,
+    "results" => array()
   );
-  foreach ($_SESSION['cart'] as $item) {
-    $ct->buy_product($item['id'], $_SESSION['name'], $item['quantity'], $code);
-    echo "Product";
-  }
+  if (isset($_SESSION['cart'])){
+    $total = 0;
+    foreach($_SESSION['cart'] as $key => $item) {
+      $ct->buy_product($item['id'], $_SESSION['name'], $item['quantity'], $code);
+      $total += $item['price'] * $item['quantity'];
+          $data['results'][] = array(
+            'id' => $item['id'],
+            'price'=>  $item['price'],
+            'name'=> $item['name'],
+            'quantity'=>  $item['quantity'],
+            'image'=>  $item['image'],
+          );}}
+  $cart = json_encode($data);
+  $order->order_product($code,$customerId,$email,$name,$address,$phone,$info,$cart,$total);
   unset($_SESSION['cart']);
+  echo '<script type="text/javascript">toastr.success("Đặt hàng thành công")</script>';
+  header( "Refresh:1; url=?page=home", true, 303);
 }
 
 ?>
@@ -127,7 +132,7 @@ if (isset($_POST['submit'])) {
                         <h5 class="color-gray-500">x<?php echo $cart['quantity']; ?></h5>
                       </div>
                       <div class="wishlist-price">
-                        <h4 class="color-brand-3 font-lg-bold"><?php echo $cart['price'] . ' vnđ' ?></h4>
+                        <h4 class="color-brand-3 font-lg-bold"><?php echo number_format($cart['price']). ' đ' ?></h4>
                       </div>
                     </div>
                   </div>
@@ -144,7 +149,7 @@ if (isset($_POST['submit'])) {
               <div class="row mb-10">
                 <div class="col-lg-6 col-6"><span class="font-md-bold color-brand-3">Thành tiền</span></div>
                 <div class="col-lg-6 col-6 text-end"><span class="font-lg-bold color-brand-3"><?php if (isset($tongTien)) {
-                                                                                                echo $tongTien . " vnđ";
+                                                                                                echo number_format($tongTien). " đ";
                                                                                               } ?></span></div>
               </div>
               <div class="border-bottom mb-10 pb-5">
@@ -156,7 +161,7 @@ if (isset($_POST['submit'])) {
               <div class="row">
                 <div class="col-lg-6 col-6"><span class="font-md-bold color-brand-3">Tổng tiền</span></div>
                 <div class="col-lg-6 col-6 text-end"><span class="font-lg-bold color-brand-3"><?php if (isset($tongTien)) {
-                                                                                                echo $tongTien . " vnđ";
+                                                                                                echo number_format($tongTien). " đ";
                                                                                               } ?></span></div>
               </div>
             </div>
