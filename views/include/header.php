@@ -1,8 +1,12 @@
 <?php
-
+if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
+    echo $_SESSION['login'];
+    echo $_SESSION['fullname'];
+    echo  $_SESSION['role'];
+}
 if (isset($_SESSION['name'])) {
     $sId = $_SESSION['name'];
-    echo $_SESSION['name'];
+    echo $sId;
 } else {
     $random_number = mt_rand(1000, 9999);
     $_SESSION['name'] = $random_number;
@@ -46,7 +50,7 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
 
 
@@ -173,13 +177,18 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                             <span class="font-lg icon-list icon-account"><span>Tài khoản</span></span>
                             <div class="dropdown-account">
                                 <ul>
+                                    <?php
+                                    if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
+                                        echo '  <li><a href="?page=logout">Đăng xuất</a></li>';
+                                    } else {
+                                        echo '  <li><a href="?page=login">Đăng nhập</a></li>';
+                                    }
+                                    ?>
+
                                     <li><a href="?page=page-account">Tài khoản của tôi</a></li>
-                                    <li><a href="?page=page-account">Theo dõi đơn hàng</a></li>
-                                    <li>
-                                        <a href="?page=page-account">Đơn đặt hàng của tôi</a>
-                                    </li>
-                                    <li><a href="?page=page-account">Sản phẩm yêu thích</a></li>
-                                    <li><a href="?page=login">Đăng Xuất</a></li>
+                                    <!-- <li><a href="?page=page-account">Theo dõi đơn hàng</a></li>
+                                    <li><a href="?page=page-account">Sản phẩm yêu thích</a></li> -->
+                                    <!-- <li><a href="?page=login">Đăng Xuất</a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -205,7 +214,7 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                                             <div class="cart-info">
                                                 <a class="font-sm-bold color-brand-3" href="?page=shop-single-product&productId=<?php echo $cart['id']; ?>"><?php echo $cart['name']; ?></a>
                                                 <p>
-                                                    <span class="color-brand-2 font-sm-bold"><?php echo $cart['quantity']; ?> x <?php echo number_format($cart['price'])." đ"; ?></span>
+                                                    <span class="color-brand-2 font-sm-bold"><?php echo $cart['quantity']; ?> x <?php echo number_format($cart['price']) . " đ"; ?></span>
                                                 </p>
                                             </div>
 
@@ -223,7 +232,7 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                                         <div class="col-6">
                                             <span class="font-md-bold color-brand-1"><?php
                                                                                         if (isset($tongTien)) {
-                                                                                            echo number_format($tongTien). " đ";
+                                                                                            echo number_format($tongTien) . " đ";
                                                                                         } else {
                                                                                             echo '0 đ';
                                                                                         }

@@ -58,6 +58,12 @@ if (!isset($_GET['page'])) {
         case 'action':
             include 'views/include/action.php';
             break;
+        case 'logout':
+            session_destroy();
+            $_SESSION['login'] = 0;
+            header('Location: ?page=home');
+            break;
+
         default:
             include 'views/include/404.php';
             break;

@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (isset($_SESSION['role']) && $_SESSION['role'] == 0) {
+} else {
+    header('Location: ../');
+}
+?>
 <!DOCTYPE html>
 
 <html lang="en">

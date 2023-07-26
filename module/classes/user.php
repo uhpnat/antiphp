@@ -72,6 +72,23 @@ class user
             }
         }
     }
+    public function checkLogin($email, $password)
+    {
+        $query = "SELECT * FROM users WHERE email = '$email' AND password = '$password' ";
+        $result = $this->db->select($query);
+        var_dump($result);
+        if ($result === false) {
+            echo '<script type="text/javascript">toastr.warning("Mật khẩu không khớp")</script>';
+        } else {
+            $_SESSION['login'] = 1;
+            $_SESSION['role'] = $result[0]['role'];
+            $_SESSION['fullname'] =  $result[0]['name'];
+            $_SESSION['name'] = $result[0]['id'];
+            echo '<script type="text/javascript">toastr.success("Đăng nhập thành công")</script>';
+            header("Refresh:1; url=?page=home", true, 303);
+        }
+        return $result;
+    }
 }
 
 
