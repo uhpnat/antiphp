@@ -1,7 +1,13 @@
 <main class="main">
     <section class="section-box shop-template mt-30">
         <div class="container box-account-template">
-            <h3>Bạn chưa đăng nhập (id của bạn là <?php echo $_SESSION['name'] ?> )</h3>
+            <?php
+            if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
+                echo '  <li><a href="?page=logout">Đăng xuất</a></li>';
+            } else {
+                echo '  <li><a href="?page=login">Đăng nhập</a></li>';
+            }
+            ?>
             <p class="font-md color-gray-500">Từ bảng điều khiển tài khoản của bạn. bạn có thể dễ dàng kiểm tra và xem các đơn đặt hàng gần đây của mình,
 
                 quản lý địa chỉ giao hàng và thanh toán của bạn, đồng thời chỉnh sửa mật khẩu và chi tiết tài khoản của bạn.</p>
@@ -66,7 +72,7 @@
                         $show_order = $ct->show_box_order($sId);
                         if ($show_order != null) {
                             foreach ($show_order as $order) {
-                                $product = json_decode($order['product'], true) ;
+                                $product = json_decode($order['product'], true);
 
                         ?>
                                 <div class="box-orders">
@@ -81,7 +87,7 @@
                                             } else {
                                                 echo '<span class="label-delivery label-cancel ">Xóa</span>';
                                             }
-                                            
+
 
                                             ?>
 
@@ -98,7 +104,7 @@
                                                 var_dump($show_buy);
                                                 $get_product_by_id = $product->get_product_by_id($item['productId']); -->
 
-                                                <?php foreach($product['results'] as $value) {?>
+                                                <?php foreach ($product['results'] as $value) { ?>
                                                     <div class="col-6">
                                                         <div class="item-orders">
                                                             <div class="quantity-orders"><img style="height: 70px;" src="./admin/assets/media/imageproduct/<?php echo $value['image'] ?>" alt="Ecom"></div>
@@ -113,7 +119,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                               <?php }?>
+                                                <?php } ?>
                                             </div>
 
                                         </div>
