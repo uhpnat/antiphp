@@ -3,9 +3,9 @@
         <div class="container box-account-template">
             <?php
             if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
-                echo '  <li><a href="?page=logout">Đăng xuất</a></li>';
+                echo '  <h3>Xin Chào ' . $_SESSION['fullname'] . '</h3>';
             } else {
-                echo '  <li><a href="?page=login">Đăng nhập</a></li>';
+                echo ' <h3  >Bạn Chưa Đăng Nhập : ID của bạn là  ' . $_SESSION['name'] . '</h3>';
             }
             ?>
             <p class="font-md color-gray-500">Từ bảng điều khiển tài khoản của bạn. bạn có thể dễ dàng kiểm tra và xem các đơn đặt hàng gần đây của mình,
