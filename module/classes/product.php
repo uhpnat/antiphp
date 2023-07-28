@@ -205,7 +205,7 @@ class product
         $query = "UPDATE tbl_products SET productView = productView + 1
         WHERE productId = '$id'";
         $result = $this->db->update($query);
-        echo "<br>đã đăng lượt view";
+        // echo "<br>đã đăng lượt view";
     }
 }
 

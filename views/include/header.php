@@ -1,17 +1,17 @@
 <?php
-if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
-    echo $_SESSION['login'];
-    echo $_SESSION['fullname'];
-    echo  $_SESSION['role'];
-}
+// if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
+//     echo $_SESSION['login'];
+//     echo $_SESSION['fullname'];
+//     echo  $_SESSION['role'];
+// }
 if (isset($_SESSION['name'])) {
     $sId = $_SESSION['name'];
-    echo $sId;
+    // echo $sId;
 } else {
     $random_number = mt_rand(1000, 9999);
     $_SESSION['name'] = $random_number;
     $sId = $_SESSION['name'];
-    echo $_SESSION['name'];
+    // echo $_SESSION['name'];
 }
 // session_destroy();
 include_once './module/lib/database.php';
@@ -121,14 +121,14 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
             <div class="main-header">
                 <div class="header-left">
                     <div class="header-logo">
-                        <a href="">
+                        <a href="?page=home">
                             <img style="width: 50px;" src="https://cdn1.iconfinder.com/data/icons/hobbies-flat-1/340/shop_sale_purchase_shopping_buy_lifestyle_bag_store-512.png" alt="">
                             <!-- <img style="width: 20px;" src="https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/letter_S_blue-512.png" alt="">
                             <img style="width: 20px;" src="https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/letter_H_blue-512.png" alt="">
                             <img style="width: 20px;" src="https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/letter_O_blue-512.png" alt="">
                             <img style="width: 20px;" src="https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/letter_P_blue-512.png" alt=""> -->
 
-                            <a href="?page=home">Logo ở đây</a>
+                            <!-- <a href="?page=home">Logo ở đây</a> -->
                         </a>
                     </div>
                     <div class="header-search">

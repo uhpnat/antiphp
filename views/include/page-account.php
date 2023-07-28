@@ -15,7 +15,7 @@
                 <ul class="nav nav-tabs nav-tabs-account" role="tablist">
                     <li><a class="active" href="#tab-notification" data-bs-toggle="tab" role="tab" aria-controls="tab-notification" aria-selected="true">Thông Báo</a></li>
                     <li><a href="#tab-orders" data-bs-toggle="tab" role="tab" aria-controls="tab-orders" aria-selected="true">Orders</a></li>
-                    <li><a href="#tab-setting" data-bs-toggle="tab" role="tab" aria-controls="tab-setting" aria-selected="true">Setting</a></li>
+                    <li><a href="#tab-setting" data-bs-toggle="tab" role="tab" aria-controls="tab-setting" aria-selected="true">Cài Đặt Thông Tin</a></li>
                 </ul>
                 <div class="border-bottom mt-20 mb-40"></div>
                 <div class="tab-content mt-30">
@@ -218,119 +218,47 @@
                     <div class="tab-pane fade" id="tab-setting" role="tabpanel" aria-labelledby="tab-setting">
                         <div class="row">
                             <div class="col-lg-6 mb-20">
-                                <form action="#" method="get">
-                                    <div class="row">
-                                        <div class="col-lg-12 mb-20">
-                                            <h5 class="font-md-bold color-brand-3 text-sm-start text-center">Contact information</h5>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="form-group">
-                                                <input class="form-control font-sm" type="text" placeholder="Fullname *">
+                                <form action="" method="post">
+                                    <?php
+                                    if (isset($_SESSION['login'])) {
+                                        if (isset($_POST['saveAccount'])) {
+                                            $us->update_address($_POST['fullName'], $_POST['address'], $_POST['phone'], $_SESSION['name']);
+                                            echo 'đã chạy';
+                                        }
+                                    ?>
+                                        <div class="row">
+                                            <div class="col-lg-12 mb-20">
+                                                <h5 class="font-md-bold color-brand-3 text-sm-start text-center">Thông Tin Liên Hệ</h5>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <input class="form-control font-sm" type="text" name="fullName" placeholder="Tên Của Bạn *" value="<?php echo $us->select_user_id($_SESSION['name'])[0]['name'] ?>">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <input class="form-control font-sm" type="text" name="phone" placeholder="Số Điện Thoại *" value="<?php echo $us->select_user_id($_SESSION['name'])[0]['phone'] ?>">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <input class="form-control font-sm" type="text" name="address" placeholder="Địa Chỉ *" value="<?php echo $us->select_user_id($_SESSION['name'])[0]['address'] ?>">
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12">
-                                            <div class="form-group">
-                                                <input class="form-control font-sm" type="text" placeholder="Username *">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="form-group">
-                                                <input class="form-control font-sm" type="text" placeholder="Phone Number *">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="form-group">
-                                                <input class="form-control font-sm" type="text" placeholder="Email *">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="form-group">
-                                                <label class="font-sm color-brand-3" for="checkboxOffers">
-                                                    <input class="checkboxOffer" id="checkboxOffers" type="checkbox">
-                                                    Keep me up to date on news and exclusive offers
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <h5 class="font-md-bold color-brand-3 mt-15 mb-20">Shipping address</h5>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input class="form-control font-sm" type="text" placeholder="First name*">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input class="form-control font-sm" type="text" placeholder="Last name*">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="form-group">
-                                                <input class="form-control font-sm" type="text" placeholder="Address 1*">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="form-group">
-                                                <input class="form-control font-sm" type="text" placeholder="Address 2*">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <select class="form-control font-sm select-style1 color-gray-700">
-                                                    <option value="">Select an option...</option>
-                                                    <option value="1">Option 1</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input class="form-control font-sm" type="text" placeholder="City*">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="form-group">
-                                                <input class="form-control font-sm" type="text" placeholder="PostCode / ZIP*">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input class="form-control font-sm" type="text" placeholder="Company name">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input class="form-control font-sm" type="text" placeholder="Phone*">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="form-group mb-0">
-                                                <textarea class="form-control font-sm" placeholder="Additional Information" rows="5"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="form-group mt-20">
-                                                <input class="btn btn-buy w-auto h54 font-md-bold" value="Save change">
-                                            </div>
-                                        </div>
-                                    </div>
+                                        <button type="submit" name="saveAccount" class="btn btn-primary">Lưu</button>
+                                    <?php
+                                    } else {
+                                    ?>
+                                        <h5>Bạn chưa đăng nhập</h5>
+                                    <?php
+                                    }
+                                    ?>
+
                                 </form>
                             </div>
                             <div class="col-lg-1 mb-20"></div>
-                            <div class="col-lg-5 mb-20">
-                                <div class="mt-40">
-                                    <h4 class="mb-10">Steven Job</h4>
-                                    <div class="mb-10">
-                                        <p class="font-sm color-brand-3 font-medium">Home Address:</p><span class="font-sm color-gray-500 font-medium">205 North Michigan Avenue, Suite 810 Chicago, 60601, USA</span>
-                                    </div>
-                                    <div class="mb-10">
-                                        <p class="font-sm color-brand-3 font-medium">Delivery address:</p><span class="font-sm color-gray-500 font-medium">205 North Michigan Avenue, Suite 810 Chicago, 60601, USA</span>
-                                    </div>
-                                    <div class="mb-10">
-                                        <p class="font-sm color-brand-3 font-medium">Phone Number:</p><span class="font-sm color-gray-500 font-medium">(+01) 234 567 89 - (+01) 688 866 99</span>
-                                    </div>
-                                    <div class="mb-10 mt-15"><a class="btn btn-cart w-auto">Set as Default</a></div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
