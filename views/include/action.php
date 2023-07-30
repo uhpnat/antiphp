@@ -1,5 +1,45 @@
 
 <?php  
+
+if(isset($_POST["status_id"])){
+     if($_POST["action"] == "updateStatus")  
+      {     
+        $status_id = $_POST["status_id"] ;
+        $status_value = $_POST["status_value"];
+        if($status_value == "Đã nhận"){
+          $status_value = 1;
+        }else{
+          $status_value = 0;
+        }
+        $order->update_status_id($status_value, $status_id);
+      }
+      if($_POST["action"] == "deleteOrder")  
+      {     
+          $status_id = $_POST["status_id"] ;
+          $status_value = $_POST["status_value"];
+          if($status_value == "Hủy"){
+            $status_value = 2;
+          }elseif($status_value == "Xóa"){
+               $status_value = 3;
+          }else{
+            $status_value = 0;
+          }
+          $order->update_status_id($status_value, $status_id);
+      } 
+      if($_POST["action"] == "cancelOrder")  
+      {     
+          $status_id = $_POST["status_id"] ;
+          $status_value = $_POST["status_value"];
+          if($status_value == "Hủy"){
+            $status_value = 2;
+          }elseif($status_value == "Xóa"){
+               $status_value = 3;
+          }else{
+            $status_value = 0;
+          }
+          $order->update_status_id($status_value, $status_id);
+      }   
+}
  if(isset($_POST["product_id"]))  
  {  
       if($_POST["action"] == "add")  

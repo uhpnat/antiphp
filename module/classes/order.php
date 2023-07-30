@@ -44,10 +44,40 @@ class order
         $result = $this->db->select($query);
         return $result;
     }
+    public function get_by_code($code)
+    {
+        $query = "SELECT *
+            FROM tbl_order
+            WHERE code = '$code'";
+        $result = $this->db->select($query);
+        return $result;
+    }
+    
     public function update_order_id($code, $address, $email, $phone, $name, $status, $id)
     {
         $query = "UPDATE tbl_order SET code='$code', address='$address',email='$email', phone='$phone',name='$name',status='$status' WHERE orderId='$id'";
         $this->db->update($query);
+    }
+    public function update_status_id($status,$id)
+    {
+        $query = "UPDATE tbl_order SET status='$status' WHERE code='$id'";
+        $this->db->update($query);
+    }
+    public function delete_order_id($id)
+    {
+        $query = "DELETE from tbl_order WHERE code='$id'";
+        $this->db->update($query);
+    }
+
+    public function order_deleted($info) {
+        $query = "INSERT INTO tbl_order_deleted (info) VALUE('$info')";
+        $this->db->insert($query);
+    }
+    public function get_all_order_deleted()
+    {
+        $query = "SELECT * FROM tbl_order_deleted";
+        $result = $this->db->select($query);
+        return $result;
     }
 }
 
