@@ -35,7 +35,7 @@ if (isset(($_POST['submit']))) {
                             </div>
                             <div class="form-group">
                                 <label class="mb-5 font-sm color-gray-700">Email *</label>
-                                <input name="email" class="form-control" type="text" placeholder="name@gmail.com">
+                                <input name="email" class="form-control" type="email" placeholder="name@gmail.com">
                             </div>
                             <div class="form-group">
                                 <label class="mb-5 font-sm color-gray-700">Mật Khẩu *</label>
