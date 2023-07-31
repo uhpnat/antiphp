@@ -14,7 +14,7 @@ class order
         $this->db = new Database();
         $this->fm = new Format();
     }
-    
+
     public function get_all_order()
     {
         $query = "SELECT * FROM tbl_order";
@@ -52,13 +52,13 @@ class order
         $result = $this->db->select($query);
         return $result;
     }
-    
+
     public function update_order_id($code, $address, $email, $phone, $name, $status, $id)
     {
         $query = "UPDATE tbl_order SET code='$code', address='$address',email='$email', phone='$phone',name='$name',status='$status' WHERE orderId='$id'";
         $this->db->update($query);
     }
-    public function update_status_id($status,$id)
+    public function update_status_id($status, $id)
     {
         $query = "UPDATE tbl_order SET status='$status' WHERE code='$id'";
         $this->db->update($query);
@@ -69,7 +69,8 @@ class order
         $this->db->update($query);
     }
 
-    public function order_deleted($info) {
+    public function order_deleted($info)
+    {
         $query = "INSERT INTO tbl_order_deleted (info) VALUE('$info')";
         $this->db->insert($query);
     }
@@ -78,6 +79,27 @@ class order
         $query = "SELECT * FROM tbl_order_deleted";
         $result = $this->db->select($query);
         return $result;
+    }
+    public function order_admin()
+    {
+        $query = "SELECT *
+            FROM tbl_cart";
+        $result = $this->db->select($query);
+        return $result;
+    }
+    public function xuly($xuly)
+    {
+        $query = "UPDATE tbl_order
+        SET status = status + 1
+        WHERE orderId = $xuly;";
+        $this->db->update($query);
+        echo '<script type="text/javascript">toastr.success("Cập Nhật Thành Công")</script>';
+    }
+    public function deleteOrder($id)
+    {
+        $query = "DELETE FROM tbl_order WHERE orderId = $id";
+        $this->db->delete($query);
+        echo '<script type="text/javascript">toastr.danger("Xóa Thành Công")</script>';
     }
 }
 
