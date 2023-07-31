@@ -12,23 +12,25 @@ if (isset($_POST['submit'])) {
     "success" => false,
     "results" => array()
   );
-  if (isset($_SESSION['cart'])){
+  if (isset($_SESSION['cart'])) {
     $total = 0;
-    foreach($_SESSION['cart'] as $key => $item) {
+    foreach ($_SESSION['cart'] as $key => $item) {
       $ct->buy_product($item['id'], $_SESSION['name'], $item['quantity'], $code);
       $total += $item['price'] * $item['quantity'];
-          $data['results'][] = array(
-            'id' => $item['id'],
-            'price'=>  $item['price'],
-            'name'=> $item['name'],
-            'quantity'=>  $item['quantity'],
-            'image'=>  $item['image'],
-          );}}
+      $data['results'][] = array(
+        'id' => $item['id'],
+        'price' =>  $item['price'],
+        'name' => $item['name'],
+        'quantity' =>  $item['quantity'],
+        'image' =>  $item['image'],
+      );
+    }
+  }
   $cart = json_encode($data);
-  $order->order_product($code,$customerId,$email,$name,$address,$phone,$info,$cart,$total);
+  $order->order_product($code, $customerId, $email, $name, $address, $phone, $info, $cart, $total);
   unset($_SESSION['cart']);
   echo '<script type="text/javascript">toastr.success("Đặt hàng thành công")</script>';
-  header( "Refresh:1; url=?page=home", true, 303);
+  header("Refresh:1; url=?page=home", true, 303);
 }
 
 ?>
@@ -58,36 +60,42 @@ if (isset($_POST['submit'])) {
                 <div class="col-lg-6 col-sm-6 mb-20">
                   <h5 class="font-md-bold color-brand-3 text-sm-start text-center">Thông tin liên lạc</h5>
                 </div>
-                <div class="col-lg-6 col-sm-6 mb-20 text-sm-end text-center"><span class="font-sm color-brand-3">Đăng nhập?</span><a class="font-sm color-brand-1" href="page-login.html"> Login</a></div>
+                <div class="col-lg-6 col-sm-6 mb-20 text-sm-end text-center"><span class="font-sm color-brand-3"> <?php if (!isset($_SESSION['login'])) {
+                                                                                                                    echo 'Đăng nhập?</span><a class="font-sm color-brand-1" href="?page=login"> Login</a>';
+                                                                                                                  } ?> </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input name="email" class="form-control font-sm" type="text" placeholder="Email*">
+                    <input name="email" class="form-control font-sm" type="text" placeholder="Email*" value="<?php $email = isset($_SESSION['login']) ? $us->select_user_id($_SESSION['name'])[0]['email'] : "";
+                                                                                                              echo $email; ?>">
                   </div>
                 </div>
-                <div class="col-lg-12">
+                <!-- <div class="col-lg-12">
                   <div class="form-group">
                     <label class="font-sm color-brand-3" for="checkboxOffers">
                       <input class="checkboxOffer" id="checkboxOffers" type="checkbox">Giữ cho tôi cập nhật tin tức và ưu đãi độc quyền
                     </label>
                   </div>
-                </div>
+                </div> -->
                 <div class="col-lg-12">
                   <h5 class="font-md-bold color-brand-3 mt-15 mb-20">Địa chỉ giao hàng</h5>
                 </div>
 
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input name="ten" class="form-control font-sm" type="text" placeholder="Họ tên*">
+                    <input name="ten" class="form-control font-sm" type="text" placeholder="Họ tên*" value="<?php $name = isset($_SESSION['login']) ? $us->select_user_id($_SESSION['name'])[0]['name'] : "";
+                                                                                                            echo $name; ?>">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input name="diachi" class="form-control font-sm" type="text" placeholder="Địa chỉ*">
+                    <input name="diachi" class="form-control font-sm" type="text" placeholder="Địa chỉ*" value="<?php $address = isset($_SESSION['login']) ? $us->select_user_id($_SESSION['name'])[0]['email'] : "";
+                                                                                                                echo $address;  ?>">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input name="sdt" class="form-control font-sm" type="text" placeholder="Số điện thoại*">
+                    <input name="sdt" class="form-control font-sm" type="text" placeholder="Số điện thoại*" value="<?php $phone = isset($_SESSION['login']) ? $us->select_user_id($_SESSION['name'])[0]['address'] : "";
+                                                                                                                    echo $phone;  ?>">
                   </div>
                 </div>
 
@@ -100,7 +108,7 @@ if (isset($_POST['submit'])) {
               </div>
             </div>
             <div class="row mt-20">
-              <div class="col-lg-6 col-5 mb-20"><a class="btn font-sm-bold color-brand-1 arrow-back-1" href="shop-cart.html">Quay về giỏ hàng</a></div>
+              <div class="col-lg-6 col-5 mb-20"><a class="btn font-sm-bold color-brand-1 arrow-back-1" href="?page=shop-cart">Quay về giỏ hàng</a></div>
               <div class="col-lg-6 col-7 mb-20 text-end"><button class="btn btn-buy w-auto arrow-next" type="submit" name="submit">Thanh toán khi nhận hàng</button></div>
             </div>
           </div>
@@ -131,8 +139,8 @@ if (isset($_POST['submit'])) {
                       <div class="wishlist-status">
                         <h5 class="color-gray-500">x<?php echo $cart['quantity']; ?></h5>
                       </div>
-                      <div class="wishlist-price">
-                        <h4 class="color-brand-3 font-lg-bold"><?php echo number_format($cart['price']). ' đ' ?></h4>
+                      <div class="product-info">
+                        <h4 class="color-brand-3 font-lg-bold"><?php echo number_format($cart['price']) . ' đ' ?></h4>
                       </div>
                     </div>
                   </div>
@@ -149,7 +157,7 @@ if (isset($_POST['submit'])) {
               <div class="row mb-10">
                 <div class="col-lg-6 col-6"><span class="font-md-bold color-brand-3">Thành tiền</span></div>
                 <div class="col-lg-6 col-6 text-end"><span class="font-lg-bold color-brand-3"><?php if (isset($tongTien)) {
-                                                                                                echo number_format($tongTien). " đ";
+                                                                                                echo number_format($tongTien) . " đ";
                                                                                               } ?></span></div>
               </div>
               <div class="border-bottom mb-10 pb-5">
@@ -161,7 +169,7 @@ if (isset($_POST['submit'])) {
               <div class="row">
                 <div class="col-lg-6 col-6"><span class="font-md-bold color-brand-3">Tổng tiền</span></div>
                 <div class="col-lg-6 col-6 text-end"><span class="font-lg-bold color-brand-3"><?php if (isset($tongTien)) {
-                                                                                                echo number_format($tongTien). " đ";
+                                                                                                echo number_format($tongTien) . " đ";
                                                                                               } ?></span></div>
               </div>
             </div>

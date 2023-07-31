@@ -18,7 +18,7 @@ if (isset($_POST['addToCart']) && ($_POST['addToCart'])) {
   }
 
   if (isset($_SESSION['cart'][$id])) {
-    $_SESSION['cart'][$id]['quantity']++;
+    $_SESSION['cart'][$id]['quantity']+=$quantity;
     header("Location:?page=shop-single-product&productId=$id");
   } else {
     $item = [

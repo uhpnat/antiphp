@@ -55,6 +55,12 @@ class user
         $query = "UPDATE users SET name ='$name',email ='$email',password ='$password',address = '$address',avatar= '$avatar',role='$role',phone='$phone'  WHERE id='$id'";
         $result = $this->db->update($query);
     }
+    public function update_address($name, $address, $phone, $id)
+    {
+        $query = "UPDATE users SET name ='$name',address = '$address',phone='$phone'  WHERE id='$id'";
+        $result = $this->db->update($query);
+        echo ' <script type="text/javascript">toastr.success("Cập nhật thông tin thành công")</script>';
+    }
 
     public function uploadImage()
     {
@@ -76,7 +82,6 @@ class user
     {
         $query = "SELECT * FROM users WHERE email = '$email' AND password = '$password' ";
         $result = $this->db->select($query);
-        var_dump($result);
         if ($result === false) {
             echo '<script type="text/javascript">toastr.warning("Mật khẩu không khớp")</script>';
         } else {

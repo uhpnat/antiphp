@@ -35,6 +35,9 @@
                                     $index = $_GET['increase'];
                                     if ($_SESSION['cart'][$index]['quantity'] > 1) {
                                         $_SESSION['cart'][$index]['quantity'] -= 1;
+
+                                    }if($_SESSION['cart'][$index]['quantity'] == 1){
+                                        unset($_SESSION['cart'][$index]);
                                     }
                                     header("Location: ?page=shop-cart");
                                 }
