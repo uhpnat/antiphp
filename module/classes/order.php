@@ -90,16 +90,18 @@ class order
     public function xuly($xuly)
     {
         $query = "UPDATE tbl_order
-        SET status = status + 1
+        SET status = status +1
         WHERE orderId = $xuly;";
         $this->db->update($query);
         echo '<script type="text/javascript">toastr.success("Cập Nhật Thành Công")</script>';
+        // header("Location: index.php");
     }
     public function deleteOrder($id)
     {
         $query = "DELETE FROM tbl_order WHERE orderId = $id";
         $this->db->delete($query);
         echo '<script type="text/javascript">toastr.danger("Xóa Thành Công")</script>';
+        // header("Refresh:1; url=?page=home", true, 303);
     }
 }
 

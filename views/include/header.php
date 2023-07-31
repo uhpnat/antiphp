@@ -55,14 +55,14 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-    
 
-    
-    
+
+
+
 
 
 </head>
@@ -188,15 +188,18 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                             <span class="font-lg icon-list icon-account"><span>Tài khoản</span></span>
                             <div class="dropdown-account">
                                 <ul>
+                                    <li><a href="?page=page-account">Tài khoản của tôi</a></li>
+
                                     <?php
                                     if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
                                         echo '  <li><a href="?page=logout">Đăng xuất</a></li>';
                                     } else {
                                         echo '  <li><a href="?page=login">Đăng nhập</a></li>';
                                     }
+
                                     ?>
 
-                                    <li><a href="?page=page-account">Tài khoản của tôi</a></li>
+
                                     <!-- <li><a href="?page=page-account">Theo dõi đơn hàng</a></li>
                                     <li><a href="?page=page-account">Sản phẩm yêu thích</a></li> -->
                                     <!-- <li><a href="?page=login">Đăng Xuất</a></li> -->
@@ -261,8 +264,14 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                                     </div>
                                 </div>
                             </div>
+
                         </div>
-                        <!-- <a class="font-lg icon-list icon-compare" href="?page=shop-compare"><span>Compare</span></a> -->
+                        <?php
+                        if (isset($_SESSION['role']) && $_SESSION['role'] == 0) {
+                            echo '   <a class="font-lg icon-list icon-compare" href="./admin"><span>Compare</span></a>';
+                        }
+                        ?>
+
                     </div>
                 </div>
             </div>
@@ -302,9 +311,6 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                                     <li><a href="?page=shop-compare">So sánh sản phẩm</a></li>
                                     <li><a href="?page=shop-wishlist">Sản phẩm yêu thích</a></li>
                                 </ul>
-                            </li>
-                            <li>
-                                <a href="?page=blog-list">Tin Tức</a>
                             </li>
                             <li><a href="?page=contact">Liên Hệ</a></li>
                         </ul>

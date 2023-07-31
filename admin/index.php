@@ -68,6 +68,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 0) {
     ?><?php
         if (isset($_GET['xuly'])) {
             $order->xuly($_GET['xuly']);
+            // header("Refresh:1; url=index.php", true, 303);
         }
         if (isset($_GET['deletexuly'])) {
             $order->deleteOrder($_GET['deletexuly']);
@@ -784,7 +785,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 0) {
                                                 ?>
                                                         <tr>
                                                             <td>
-                                                                <a href="" class="text-gray-800 text-hover-primary">#<?php echo $item['code'] ?></a>
+                                                                <a href="./vieworder.php?id=<?php echo $item['orderId'] ?>" class="text-gray-800 text-hover-primary">#<?php echo $item['code'] ?></a>
                                                             </td>
 
                                                             <td class="text-end">
@@ -822,7 +823,6 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 0) {
                                                                 }
 
                                                                 ?>
-
                                                             </td>
 
                                                         </tr>
