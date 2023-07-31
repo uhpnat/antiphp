@@ -475,6 +475,10 @@
                     <div class="tab-pane fade" id="tab-setting" role="tabpanel" aria-labelledby="tab-setting">
                         <div class="row">
                             <div class="col-lg-6 mb-20">
+<<<<<<< HEAD
+=======
+
+>>>>>>> d48318eda4f77d954e4f3e90bcb5bcf88f227405
                                 <form action="" method="post">
                                     <?php
                                     if (isset($_SESSION['login'])) {
@@ -503,6 +507,7 @@
                                                 </div>
                                             </div>
                                         </div>
+
                                         <button type="submit" name="saveAccount" class="btn btn-primary">Lưu</button>
                                     <?php
                                     } else {
@@ -515,7 +520,10 @@
                                 </form>
                             </div>
                             <div class="col-lg-1 mb-20"></div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> d48318eda4f77d954e4f3e90bcb5bcf88f227405
                         </div>
                     </div>
                 </div>
