@@ -52,7 +52,8 @@ if(isset($_POST["status_id"])){
         if($product_discount==0 || ""){
             $price = $product_price;
         }else{
-            $price = $product_discount;
+             $discount = $product_discount;
+             $price = $product_price*((100 - $discount)/100);
         }
         $product_image = $_POST["product_image"];
            if(isset($_SESSION["cart"][$product_id]))  
@@ -75,24 +76,23 @@ if(isset($_POST["status_id"])){
       }  
       if($_POST["action"] == "remove")  
       {  
-           foreach($_SESSION["cart"] as $keys => $values)  
-           {  
-                if($values["product_id"] == $_POST["product_id"])  
-                {  
-                     unset($_SESSION["cart"][$keys]);  
-                     $message = '<label class="text-success">Product Removed</label>';  
-                }  
-           }  
+          $id =$_POST["product_id"];
+          unset($_SESSION["cart"][$id]); 
       }  
-      if($_POST["action"] == "quantity_change")  
+      if($_POST["action"] == "minus-cart")  
       {  
-           foreach($_SESSION["cart"] as $keys => $values)  
-           {  
-                if($_SESSION["cart"][$keys]['product_id'] == $_POST["product_id"])  
-                {  
-                     $_SESSION["cart"][$keys]['product_quantity'] = $_POST["quantity"];  
-                }  
-           }  
+          $id =$_POST["product_id"];
+          if($_SESSION["cart"][$id]['quantity']>1){
+               $_SESSION["cart"][$id]['quantity']--;
+          }else{
+               unset($_SESSION["cart"][$id]); 
+          }
+      }   
+      if($_POST["action"] == "plus-cart")  
+      {  
+          $id =$_POST["product_id"];
+          $_SESSION["cart"][$id]['quantity']++;
+          
       }   
  }  
  

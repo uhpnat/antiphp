@@ -28,70 +28,9 @@
                                     <div class="wishlist-remove"><span class="font-md-bold color-brand-3">Xóa</span></div>
                                 </div>
                             </div>
-                            <div class="content-wishlist mb-20">
+                            <div class="content-wishlist mb-20" id="cart_details2">
 
-                                <?php
-                                if (isset($_GET['increase'])) {
-                                    $index = $_GET['increase'];
-                                    if ($_SESSION['cart'][$index]['quantity'] > 1) {
-                                        $_SESSION['cart'][$index]['quantity'] -= 1;
-
-                                    }if($_SESSION['cart'][$index]['quantity'] == 1){
-                                        unset($_SESSION['cart'][$index]);
-                                    }
-                                    header("Location: ?page=shop-cart");
-                                }
-                                if (isset($_GET['decrease'])) {
-                                    $index = $_GET['decrease'];
-                                    $_SESSION['cart'][$index]['quantity'] += 1;
-                                    header("Location: ?page=shop-cart");
-                                }
-                                if (isset($_GET['delete'])) {
-
-                                    $index = $_GET['delete'];
-                                    unset($_SESSION['cart'][$index]);
-                                    header("Location: ?page=shop-cart");
-                                }
-                                if (isset($_SESSION['cart'])) {
-                                    $i = 1;
-                                    $tongTien = 0;
-                                    foreach ($_SESSION['cart'] as $cart) {
-                                        $tongGia = $cart['price'] * $cart['quantity'];
-                                        $tongTien += $tongGia;
-                                ?>
-                                        <div class="item-wishlist">
-                                            <!-- <div class="wishlist-cb">
-                                    <input class="cb-layout cb-select" type="checkbox">
-                                </div> -->
-                                            <div class="wishlist-product">
-                                                <div class="product-wishlist">
-                                                    <div class="product-image"><a href="shop-single-product.html"><img src="./admin/assets/media/imageproduct/<?php echo $cart['image']; ?>" alt="Ecom"></a></div>
-                                                    <div class="product-info"><a href="shop-single-product.html">
-                                                            <h6 class="color-brand-3"><?php echo $cart['name']; ?></h6>
-                                                        </a>
-                                                        <!-- <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div> -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wishlist-price">
-                                                <h4 class="color-brand-3"><?php echo number_format($cart['price']). " đ"; ?></h4>
-                                            </div>
-                                            <div class="wishlist-status">
-                                                <div class="box-quantity">
-                                                    <div class="input-quantity">
-                                                        <input class="font-xl color-brand-3" type="text" value="<?php echo $cart['quantity']; ?>"><a href="?page=shop-cart&increase=<?= $cart['id'] ?>" class="minus-cart"></a><a href="?page=shop-cart&decrease=<?= $cart['id'] ?>" class="plus-cart"></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wishlist-action">
-                                                <h4 class="color-brand-3"><?php if (isset($tongGia)) {
-                                                                                echo number_format($tongGia).' đ' ;
-                                                                            } ?></h4>
-                                            </div>
-                                            <div class="wishlist-remove"><a class="btn btn-delete" href="?page=shop-cart&delete=<?= $cart['id'] ?>"></a></div>
-                                        </div>
-                                <?php }
-                                } ?>
+                               
                             </div>
                             <div class="row mb-40">
                                 <div class="col-lg-6 col-md-6 col-sm-6-col-6"><a class="btn btn-buy w-auto arrow-back mb-10" href="?page=home">Tiếp tục mua hàng</a></div>
@@ -106,9 +45,7 @@
                                 <div class="row">
                                     <div class="col-6"><span class="font-md-bold color-gray-500">Thành tiền</span></div>
                                     <div class="col-6 text-end">
-                                        <h4><?php if (isset($tongTien)) {
-                                                echo number_format($tongTien).' đ';
-                                            } ?></h4>
+                                        <h4 class="total"></h4>
                                     </div>
                                 </div>
                             </div>
@@ -132,9 +69,7 @@
                                 <div class="row">
                                     <div class="col-6"><span class="font-md-bold color-gray-500">Tổng</span></div>
                                     <div class="col-6 text-end">
-                                        <h4> <?php if (isset($tongTien)) {
-                                                    echo number_format($tongTien).' đ';
-                                                } ?></h4>
+                                        <h4 class="total"></h4>
                                     </div>
                                 </div>
                             </div>
