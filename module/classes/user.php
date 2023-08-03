@@ -94,6 +94,22 @@ class user
         }
         return $result;
     }
+    public function checkEmail($email)
+    {
+
+        // Kiểm tra xem email đã tồn tại hay chưa
+        $query = "SELECT email FROM users WHERE email = '$email'";
+        $result = $this->db->select($query);
+        if ($result == false) {
+            return true;
+        }
+        // var_dump($result);
+        if (count($result) > 0) {
+            return false;
+        }
+
+        // Mật khẩu và email chính xác
+    }
 }
 
 

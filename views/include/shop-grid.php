@@ -44,35 +44,74 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-20">
+                    <!-- <div ></div> -->
+
+                    <div class="row mt-20" id="searchProductHTMl">
+                        <?php
+
+
+                        $response = array("success" => false, "message" => "");
+                        if (isset($_POST['search']) && $_POST['search'] != "") {
+
+                            $data = $product->getDataSearch($_POST['search']);
+                            $response["message"] = $data;
+                            $response["success"] = true;
+                            // var_dump($response);
+                        } ?>
                         <?php
                         $hienThiSanPham = $product->show_product();
                         foreach ($hienThiSanPham as $item) {
+                            if (isset($_GET['searchCat'])) {
+                                if ($_GET['searchCat'] == $item['catId']) {
                         ?>
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div class="card-grid-style-3">
-                                    <div class="card-grid-inner">
-                                        <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                                        <div class="image-box"><span class="label bg-brand-2"><?php echo $product->phantramgiamgia($item['productPrice'], $item['discount']) ?>%</span><a href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>"><img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '4')  ?>" alt="Ecom"></a></div>
-                                        <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html"><?php echo $nameBrand =  $product->getNameBrandByIdProduct($item['brandId'])[0]['brandName']; ?></a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html"><?php echo $product->limitText($item['productName'], 50) ?></a>
-                                            <div class="rating"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                                            <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']) . ' đ'  : number_format($item['discount']) . ' đ'   ?></strong><span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? number_format($item['productPrice']) . ' đ'  : '' ?></span></div>
-                                            <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>">Mua ngay</a></div>
-                                            <ul class="list-features">
-                                                <li><?php echo $product->limitText($item['productDesc1'], 35) ?></li>
-                                                <li><?php echo $product->limitText($item['productDesc2'], 35) ?></li>
-                                                <li><?php echo $product->limitText($item['productDesc3'], 35) ?></li>
-                                            </ul>
+                                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <div class="card-grid-style-3">
+                                            <div class="card-grid-inner">
+                                                <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
+                                                <div class="image-box"><span class="label bg-brand-2"><?php echo $product->phantramgiamgia($item['productPrice'], $item['discount']) ?>%</span><a href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>"><img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '4')  ?>" alt="Ecom"></a></div>
+                                                <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html"><?php echo $nameBrand =  $product->getNameBrandByIdProduct($item['brandId'])[0]['brandName']; ?></a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html"><?php echo $product->limitText($item['productName'], 50) ?></a>
+                                                    <div class="rating"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
+                                                    <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']) . ' đ'  : number_format($item['discount']) . ' đ'   ?></strong><span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? number_format($item['productPrice']) . ' đ'  : '' ?></span></div>
+                                                    <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>">Mua ngay</a></div>
+                                                    <ul class="list-features">
+                                                        <li><?php echo $product->limitText($item['productDesc1'], 35) ?></li>
+                                                        <li><?php echo $product->limitText($item['productDesc2'], 35) ?></li>
+                                                        <li><?php echo $product->limitText($item['productDesc3'], 35) ?></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                <?php
+                                }
+                            } else {
+                                ?>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="card-grid-style-3">
+                                        <div class="card-grid-inner">
+                                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
+                                            <div class="image-box"><span class="label bg-brand-2"><?php echo $product->phantramgiamgia($item['productPrice'], $item['discount']) ?>%</span><a href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>"><img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '4')  ?>" alt="Ecom"></a></div>
+                                            <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html"><?php echo $nameBrand =  $product->getNameBrandByIdProduct($item['brandId'])[0]['brandName']; ?></a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html"><?php echo $product->limitText($item['productName'], 50) ?></a>
+                                                <div class="rating"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
+                                                <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']) . ' đ'  : number_format($item['discount']) . ' đ'   ?></strong><span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? number_format($item['productPrice']) . ' đ'  : '' ?></span></div>
+                                                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>">Mua ngay</a></div>
+                                                <ul class="list-features">
+                                                    <li><?php echo $product->limitText($item['productDesc1'], 35) ?></li>
+                                                    <li><?php echo $product->limitText($item['productDesc2'], 35) ?></li>
+                                                    <li><?php echo $product->limitText($item['productDesc3'], 35) ?></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                         <?php
+                            }
                         }
                         ?>
 
                     </div>
-                    <nav>
+                    <!-- <nav>
                         <ul class="pagination">
                             <li class="page-item"><a class="page-link page-prev" href="#"></a></li>
                             <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -83,7 +122,7 @@
                             <li class="page-item"><a class="page-link" href="#">6</a></li>
                             <li class="page-item"><a class="page-link page-next" href="#"></a></li>
                         </ul>
-                    </nav>
+                    </nav> -->
                 </div>
                 <div class="col-lg-3 order-last order-lg-first">
                     <div class="sidebar-border mb-0">
@@ -96,7 +135,7 @@
                                 $hienThiDanhMuc =  $cat->show_category();
                                 foreach ($hienThiDanhMuc as $item) {
                                 ?>
-                                    <li><a href="?page=shop-grid"><?php echo $item['categoryName'] ?></a></li>
+                                    <li><a href="?page=shop-grid&searchCat=<?php echo $item['categoryId']  ?>"><?php echo $item['categoryName'] ?></a></li>
                                     <!-- <span class="number">12</span> -->
                                 <?php
                                 } ?>

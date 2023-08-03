@@ -77,32 +77,66 @@
         </div>
     </div>
 </footer>
-<script
-      data-cfasync="false"
-      src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
-    <script src="./views/assets/js/vendors/modernizr-3.6.0.min.js"></script>
-    <script src="./views/assets/js/vendors/jquery-3.6.0.min.js"></script>
-    <script src="./views/assets/js/vendors/jquery-migrate-3.3.0.min.js"></script>
-    <script src="./views/assets/js/vendors/bootstrap.bundle.min.js"></script>
-    <script src="./views/assets/js/vendors/waypoints.js"></script>
-    <script src="./views/assets/js/vendors/wow.js"></script>
-    <script src="./views/assets/js/vendors/magnific-popup.js"></script>
-    <script src="./views/assets/js/vendors/perfect-scrollbar.min.js"></script>
-    <script src="./views/assets/js/vendors/select2.min.js"></script>
-    <script src="./views/assets/js/vendors/isotope.js"></script>
-    <script src="./views/assets/js/vendors/scrollup.js"></script>
-    <script src="./views/assets/js/vendors/swiper-bundle.min.js"></script>
-    <script src="./views/assets/js/vendors/noUISlider.js"></script>
-    <script src="./views/assets/js/vendors/slider.js"></script>
+<script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="./views/assets/js/vendors/modernizr-3.6.0.min.js"></script>
+<script src="./views/assets/js/vendors/jquery-3.6.0.min.js"></script>
+<script src="./views/assets/js/vendors/jquery-migrate-3.3.0.min.js"></script>
+<script src="./views/assets/js/vendors/bootstrap.bundle.min.js"></script>
+<script src="./views/assets/js/vendors/waypoints.js"></script>
+<script src="./views/assets/js/vendors/wow.js"></script>
+<script src="./views/assets/js/vendors/magnific-popup.js"></script>
+<script src="./views/assets/js/vendors/perfect-scrollbar.min.js"></script>
+<script src="./views/assets/js/vendors/select2.min.js"></script>
+<script src="./views/assets/js/vendors/isotope.js"></script>
+<script src="./views/assets/js/vendors/scrollup.js"></script>
+<script src="./views/assets/js/vendors/swiper-bundle.min.js"></script>
+<script src="./views/assets/js/vendors/noUISlider.js"></script>
+<script src="./views/assets/js/vendors/slider.js"></script>
 
-    <script src="./views/assets/js/vendors/counterup.js"></script>
-    <script src="./views/assets/js/vendors/jquery.countdown.min.js"></script>
+<script src="./views/assets/js/vendors/counterup.js"></script>
+<script src="./views/assets/js/vendors/jquery.countdown.min.js"></script>
 
-    <script src="./views/assets/js/vendors/jquery.elevatezoom.js"></script>
-    <script src="./views/assets/js/vendors/slick.js"></script>
-    <script src="./views/assets/js/main2513.js?v=3.0.0"></script>
-    <script src="./views/assets/js/shop23cd.js?v=1.2.1"></script>
+<script src="./views/assets/js/vendors/jquery.elevatezoom.js"></script>
+<script src="./views/assets/js/vendors/slick.js"></script>
+<script src="./views/assets/js/main2513.js?v=3.0.0"></script>
+<script src="./views/assets/js/shop23cd.js?v=1.2.1"></script>
+<script>
+    $(document).ready(function() {
+        var defaultValue = $("#searchProductHTMl").html();
+        $("#searchProduct").keyup(function() {
+
+            var search = $(this).val();
+            if (search != "") {
+                $.ajax({
+
+                    url: "?page=shop-grid",
+                    method: "POST",
+                    data: {
+                        search: search
+                    },
+                    dataType: "json",
+                    // success: function(response) {
+
+                    //     if (response.success == true && response.message != "") {
+
+                    //         $("#searchProductHTMl").html(response.message);
+                    //     } else {
+                    //         $("#searchProductHTMl").html("");
+                    //         $("#searchProductHTMl").html("Không có sản phẩm phù hợp");
+                    //     }
+                    // },
+                    // error: function(xhr, status, error) {
+                    //     console.log(error);
+                    // },
+
+                });
+            } else {
+                $("#searchProductHTMl").html(defaultValue);
+            }
+
+        });
+    });
+</script>
 </body>
 
 </html>
@@ -152,6 +186,7 @@ $(document).ready(function(){
     var product_discount = $('#discount'+product_id).val();
     var product_quantity = $('#quantity'+product_id).val();
     var product_image = $('#image'+product_id).val();
+    var product_quantityTotal = $('#quantityTotal'+product_id).val();
     var action = "add";
     if(product_quantity > 0)
     {
@@ -159,7 +194,7 @@ $(document).ready(function(){
         $.ajax({
             url:"?page=action",
             method:"POST",
-            data:{product_id:product_id, product_name:product_name, product_price:product_price,product_discount:product_discount, product_quantity:product_quantity,product_image:product_image, action:action},
+            data:{product_id:product_id, product_name:product_name, product_price:product_price,product_discount:product_discount, product_quantity:product_quantity,product_image:product_image,product_quantityTotal:product_quantityTotal, action:action},
             success:function(data)
             {   
 				toastr.success("Sản phẩm đã được thêm vào giỏ hàng");
@@ -170,7 +205,7 @@ $(document).ready(function(){
     }
     else
     {
-        alert("");
+        toastr.warning("Sản phẩm không đủ số lượng ");
     }
 });
 
@@ -229,11 +264,15 @@ $(document).ready(function(){
 	});
     $(document).on('click', '.plus-cart', function(){
 		var product_id = $(this).attr("id");
+        var product_quantityTotal = $('#quantityTotal'+product_id).val();
+        var updateQuantity = $('#updateQuantity'+product_id).val();
+
+
 		var action = 'plus-cart';
 		$.ajax({
 			url:"?page=action",
 			method:"POST",
-			data:{product_id:product_id,action:action},
+			data:{product_id:product_id,action:action,product_quantityTotal:product_quantityTotal,updateQuantity:updateQuantity},
 			success:function()
 			{
 				load_cart_data();

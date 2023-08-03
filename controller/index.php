@@ -1,6 +1,7 @@
 <?php
 @ob_start();
 session_start();
+
 include 'views/include/header.php';
 ?>
 <?php
@@ -11,6 +12,9 @@ if (!isset($_GET['page'])) {
     switch ($page) {
         case 'home':
             include 'views/include/home.php';
+            break;
+        case 'search':
+            include 'views/include/search.php';
             break;
         case 'shop-grid':
             include 'views/include/shop-grid.php';
@@ -69,6 +73,7 @@ if (!isset($_GET['page'])) {
     }
 }
 ?>
+
 <?php
 include 'views/include/footer.php';
 ?>

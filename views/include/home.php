@@ -1,4 +1,3 @@
-
 <main class="main">
     <section class="section-box">
         <div class="banner-hero banner-1 pt-10">
@@ -123,12 +122,6 @@
                                     <h4>Xem Nhiều Nhất</h4>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#tab-1-bestseller" data-bs-toggle="tab" role="tab" aria-controls="tab-1-bestseller" aria-selected="false" data-index="2">
-                                    <h4>Trong kho</h4>
-                                </a>
-                            </li>
-
                         </ul>
                         <!-- Button slider-->
                         <div class="box-button-slider">
@@ -155,12 +148,13 @@
                                         <?php
                                         $showProductByView = $product->showProductByView('productView', 0, 5);
                                         foreach ($showProductByView as $item) {
+                                            $id = $item['productId'];
                                         ?>
                                             <div class="card-grid-style-3">
                                                 <div class="card-grid-inner">
                                                     <div class="tools">
 
-                                                        <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a>
+                                                        <a class="btn btn-wishlist btn-tooltip mb-10" href="" aria-label="Add To Wishlist"></a>
 
                                                         <a class="btn btn-quickview btn-tooltip" aria-label="<?php echo $item['productView'] ?> Lượt xem" href="" data-bs-toggle="modal"></a>
                                                     </div>
@@ -172,7 +166,7 @@
                                                     </div>
                                                     <div class="info-right">
                                                         <a class="font-xs color-gray-500" href=""><?php echo $nameBrand =  $product->getNameBrandByIdProduct($item['brandId'])[0]['brandName']; ?></a><br />
-                                                        <a class="color-brand-3 font-sm-bold" href="shop-single-product.html">
+                                                        <a class="color-brand-3 font-sm-bold" href="">
                                                             <?php echo $product->limitText($item['productName'], 30) ?>
                                                         </a>
                                                         <div class="rating">
@@ -187,14 +181,16 @@
                                                             <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']).' đ'  : number_format($item['productPrice']*((100 - $item['discount'])/100)).' đ'   ?></strong>
                                                             <span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? number_format($item['productPrice']).' đ'  : '' ?></span>
                                                         </div>
-                                                        <input type="hidden"  name="id" value="<?php echo $item['productId'] ?>">
-                                                                <input type="hidden" id="name<?php echo $item['productId'] ?>"  value="<?php echo $item['productName'] ?>">
-                                                                <input type="hidden" id="discount<?php echo $item['productId'] ?>"  value="<?php echo $item['discount'] ?>">
-                                                                <input type="hidden" id="quantity<?php echo $item['productId'] ?>"  value="1">
-                                                                <input type="hidden" id="price<?php echo $item['productId'] ?>"  value="<?php echo $item['productPrice'] ?>">
-                                                                <input type="hidden" id="image<?php echo $item['productId'] ?>"  value="<?php echo $item['productImage'] ?>">
+                                                        <input type="hidden" id="quantityTotal<?php echo $item['productId'] ?>" name="quantityTotal" value="<?php echo ($item['productQuantity']- $item['productSold']) ?>">
+                                                                <input type="hidden" name="id" value="<?php echo $item['productId'] ?>">
+                                                                
+                                                                <input type="hidden" id="name<?php echo $item['productId'] ?>" value="<?php echo $item['productName'] ?>">
+                                                                <input type="hidden" id="discount<?php echo $item['productId'] ?>" value="<?php echo $item['discount'] ?>">
+                                                                <input type="hidden" id="quantity<?php echo $item['productId'] ?>" value="1">
+                                                                <input type="hidden" id="price<?php echo $item['productId'] ?>" value="<?php echo $item['productPrice'] ?>">
+                                                                <input type="hidden" id="image<?php echo $item['productId'] ?>" value="<?php echo $item['productImage'] ?>">
                                                         <div class="mt-20 box-btn-cart">
-                                                        <a class="btn btn-cart add_to_cart" id="<?php echo $item['productId'] ?>">Mua Ngay</a>
+                                                            <a class="btn btn-cart add_to_cart" id="<?php echo $item['productId'] ?>">Mua Ngay</a>
                                                         </div>
                                                         <ul class="list-features">
                                                             <li><?php echo $product->limitText($item['productDesc1'], 40) ?></li>
@@ -215,12 +211,15 @@
                                         <?php
                                         $showProductByView = $product->showProductByView('productView', 5, 5);
                                         foreach ($showProductByView as $item) {
+                                            $id = $item['productId'];
+                                            
+                                            
                                         ?>
                                             <div class="card-grid-style-3">
                                                 <div class="card-grid-inner">
                                                     <div class="tools">
 
-                                                        <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a>
+                                                        <a class="btn btn-wishlist btn-tooltip mb-10" href="" aria-label="Add To Wishlist"></a>
 
                                                         <a class="btn btn-quickview btn-tooltip" aria-label="<?php echo $item['productView'] ?> Lượt xem" href="" data-bs-toggle="modal"></a>
                                                     </div>
@@ -232,7 +231,7 @@
                                                     </div>
                                                     <div class="info-right">
                                                         <a class="font-xs color-gray-500" href=""><?php echo $nameBrand =  $product->getNameBrandByIdProduct($item['brandId'])[0]['brandName']; ?></a><br />
-                                                        <a class="color-brand-3 font-sm-bold" href="shop-single-product.html">
+                                                        <a class="color-brand-3 font-sm-bold" href="">
                                                             <?php echo $product->limitText($item['productName'], 30) ?>
                                                         </a>
                                                         <div class="rating">
@@ -247,12 +246,14 @@
                                                             <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']).' đ'  : number_format($item['productPrice']*((100 - $item['discount'])/100)).' đ'   ?></strong>
                                                             <span class="color-gray-500 price-line"><?php echo  $item['discount'] != 0 ? number_format($item['productPrice']).' đ'  : '' ?></span>
                                                         </div>
-                                                        <input type="hidden"  name="id" value="<?php echo $item['productId'] ?>">
-                                                                <input type="hidden" id="name<?php echo $item['productId'] ?>"  value="<?php echo $item['productName'] ?>">
-                                                                <input type="hidden" id="discount<?php echo $item['productId'] ?>"  value="<?php echo $item['discount'] ?>">
-                                                                <input type="hidden" id="quantity<?php echo $item['productId'] ?>"  value="1">
-                                                                <input type="hidden" id="price<?php echo $item['productId'] ?>"  value="<?php echo $item['productPrice'] ?>">
-                                                                <input type="hidden" id="image<?php echo $item['productId'] ?>"  value="<?php echo $item['productImage'] ?>">
+                                                        <input type="hidden" id="quantityTotal<?php echo $item['productId'] ?>" name="quantityTotal" value="<?php echo ($item['productQuantity']- $item['productSold']) ?>">
+                                                                <input type="hidden" name="id" value="<?php echo $item['productId'] ?>">
+                                                                <input type="hidden" id="quantityCart<?php echo $item['productId'] ?>" name="quantityCart" value="">
+                                                                <input type="hidden" id="name<?php echo $item['productId'] ?>" value="<?php echo $item['productName'] ?>">
+                                                                <input type="hidden" id="discount<?php echo $item['productId'] ?>" value="<?php echo $item['discount'] ?>">
+                                                                <input type="hidden" id="quantity<?php echo $item['productId'] ?>" value="1">
+                                                                <input type="hidden" id="price<?php echo $item['productId'] ?>" value="<?php echo $item['productPrice'] ?>">
+                                                                <input type="hidden" id="image<?php echo $item['productId'] ?>" value="<?php echo $item['productImage'] ?>">
                                                         <div class="mt-20 box-btn-cart">
                                                             <a class="btn btn-cart add_to_cart" id="<?php echo $item['productId'] ?>">Mua Ngay</a>
                                                         </div>
@@ -274,80 +275,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="tab-1-bestseller" role="tabpanel" aria-labelledby="tab-1-bestseller">
-                    <div class="box-swiper">
-                        <div class="swiper-container swiper-tab-2">
-                            <div class="swiper-wrapper pt-5">
-                                <div class="swiper-slide">
-                                    <div class="list-products-5">
-                                        <div class="card-grid-style-3">
-                                            <div class="card-grid-inner">
-                                                <div class="tools">
-                                                    <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                </div>
-                                                <div class="image-box">
-                                                    <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp1.png" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="font-xs color-gray-500" href="shop-vendor-single.html">Roku</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Class 4K UHD (2160P) LED Roku Smart TV HDR</a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                                                    </div>
-                                                    <div class="price-info">
-                                                        <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                                                    </div>
-                                                    <div class="mt-20 box-btn-cart">
-                                                        <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
-                                                    </div>
-                                                    <ul class="list-features">
-                                                        <li>27-inch (diagonal) Retina 5K display</li>
-                                                        <li>
-                                                            3.1GHz 6-core 10th-generation Intel Core i5
-                                                        </li>
-                                                        <li>AMD Radeon Pro 5300 graphics</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="list-products-5">
-                                        <div class="card-grid-style-3">
-                                            <div class="card-grid-inner">
-                                                <div class="tools">
-                                                    <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a>
-                                                </div>
-                                                <div class="image-box">
-                                                    <span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage1/imgsp1.png" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="font-xs color-gray-500" href="shop-vendor-single.html">Roku</a><br /><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Class 4K UHD (2160P) LED Roku Smart TV HDR</a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">(65)</span>
-                                                    </div>
-                                                    <div class="price-info">
-                                                        <strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span>
-                                                    </div>
-                                                    <div class="mt-20 box-btn-cart">
-                                                        <a class="btn btn-cart" href="shop-cart.html">Mua Ngay</a>
-                                                    </div>
-                                                    <ul class="list-features">
-                                                        <li>27-inch (diagonal) Retina 5K display</li>
-                                                        <li>
-                                                            3.1GHz 6-core 10th-generation Intel Core i5
-                                                        </li>
-                                                        <li>AMD Radeon Pro 5300 graphics</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -378,18 +306,18 @@
                             <div class="swiper-container swiper-tab-4">
                                 <div class="swiper-wrapper pt-5">
                                     <div class="swiper-slide">
-                                 
                                         <div class="row">
                                             <?php
                                             $showProductByView = $product->showProductByView('productSold', 0, 8);
                                             foreach ($showProductByView as $item) {
+                                                $id = $item['productId'];
                                             ?>
                                                 <div class="col-xl-3 col-lg-6 col-md-6">
                                                     <div class="card-grid-style-3">
                                                         <div class="card-grid-inner">
                                                             <div class="tools">
 
-                                                                <a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a>
+                                                                <a class="btn btn-wishlist btn-tooltip mb-10" href="" aria-label="Add To Wishlist"></a>
 
                                                                 <a class="btn btn-quickview btn-tooltip" aria-label="<?php echo $item['productView'] ?> Lượt xem" href="" data-bs-toggle="modal"></a>
                                                             </div>
@@ -401,7 +329,7 @@
                                                             </div>
                                                             <div class="info-right">
                                                                 <a class="font-xs color-gray-500" href=""><?php echo $nameBrand =  $product->getNameBrandByIdProduct($item['brandId'])[0]['brandName']; ?></a><br />
-                                                                <a class="color-brand-3 font-sm-bold" href="shop-single-product.html">
+                                                                <a class="color-brand-3 font-sm-bold" href="">
                                                                     <?php echo $product->limitText($item['productName'], 25) ?>
                                                                 </a>
                                                                 <div class="rating">
@@ -417,19 +345,20 @@
                                                                     <span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? number_format($item['productPrice']).' đ'  : '' ?></span>
                                                                 </div>
                                                                 
-                                                                
-                                                                <input type="hidden"  name="id" value="<?php echo $item['productId'] ?>">
-                                                                <input type="hidden" id="name<?php echo $item['productId'] ?>"  value="<?php echo $item['productName'] ?>">
-                                                                <input type="hidden" id="discount<?php echo $item['productId'] ?>"  value="<?php echo $item['discount'] ?>">
-                                                                <input type="hidden" id="quantity<?php echo $item['productId'] ?>"  value="1">
-                                                                <input type="hidden" id="price<?php echo $item['productId'] ?>"  value="<?php echo $item['productPrice'] ?>">
-                                                                <input type="hidden" id="image<?php echo $item['productId'] ?>"  value="<?php echo $item['productImage'] ?>">
+                                                                <input type="hidden" id="quantityTotal<?php echo $item['productId'] ?>" name="quantityTotal" value="<?php echo ($item['productQuantity']- $item['productSold']) ?>">
+                                                                <input type="hidden" name="id" value="<?php echo $item['productId'] ?>">
+                                                                <input type="hidden" id="quantityCart<?php echo $item['productId'] ?>" name="quantityCart" value="">
+                                                                <input type="hidden" id="name<?php echo $item['productId'] ?>" value="<?php echo $item['productName'] ?>">
+                                                                <input type="hidden" id="discount<?php echo $item['productId'] ?>" value="<?php echo $item['discount'] ?>">
+                                                                <input type="hidden" id="quantity<?php echo $item['productId'] ?>" value="1">
+                                                                <input type="hidden" id="price<?php echo $item['productId'] ?>" value="<?php echo $item['productPrice'] ?>">
+                                                                <input type="hidden" id="image<?php echo $item['productId'] ?>" value="<?php echo $item['productImage'] ?>">
 
                                                                 <div class="mt-20 box-btn-cart">
-                                                                    <button class="btn btn-cart add_to_cart" id="<?php echo $item['productId'] ?>" >Mua ngay</button>
-                                                                    
+                                                                    <button class="btn btn-cart add_to_cart" id="<?php echo $item['productId'] ?>">Mua ngay</button>
+
                                                                 </div>
-                                                                
+
 
                                                                 <ul class="list-features">
                                                                     <li><?php echo $product->limitText($item['productDesc1'], 35) ?></li>
@@ -444,17 +373,17 @@
                                             }
                                             ?>
                                         </div>
-                       
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="mt-20">
-                            <a href="shop-single-product.html"><img src="./views/assets/imgs/page/homepage4/banner-ads.png" alt="Ecom" /></a>
+                            <a href=""><img src="./views/assets/imgs/page/homepage4/banner-ads.png" alt="Ecom" /></a>
                         </div>
                     </div>
                 </div>
-             
+
                 <div class="col-xl-3 col-lg-4">
                     <div class="box-slider-item box-sidebar">
                         <div class="head">
@@ -469,53 +398,53 @@
                                 <div class="swiper-container swiper-best-seller">
                                     <div class="swiper-wrapper pt-5">
                                         <div class="swiper-slide">
-                                        <?php
-                                        
-                                        $products = $product->showProductByView('productSale', 0, 6);
-                                        foreach ($products as $item) {
-                                        ?>  
-                                            <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                                                <div class="image-box">
-                                                    <span class="label bg-brand-2"><?php echo $item['discount']?>%</span><a href="shop-single-product.html"><img src="./admin/assets/media/imageproduct/<?php echo $item['productImage']?>" alt="Ecom" /></a>
-                                                </div>
-                                                <div class="info-right">
-                                                    <a class="color-brand-3 font-xs-bold" href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>"><?php echo $item['productName']?>
-                                                    </a>
-                                                    <div class="rating">
-                                                        <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">
-                                                            (65)</span>
+                                            <?php
+
+                                            $products = $product->showProductByView('productSale', 0, 6);
+                                            foreach ($products as $item) {
+                                            ?>
+                                                <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
+                                                    <div class="image-box">
+                                                        <span class="label bg-brand-2"><?php echo $item['discount'] ?>%</span><a href=""><img src="./admin/assets/media/imageproduct/<?php echo $item['productImage'] ?>" alt="Ecom" /></a>
                                                     </div>
-                                                    
-                                                    <div class="price-info">
-                                                            <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']).' đ'  : number_format($item['productPrice']*((100 - $item['discount'])/100))   ?></strong>
-                                                            <span class="color-gray-500 price-line"><?php echo $item['discount'] !== 0 ? number_format($item['productPrice']) :'' ?></span>
+                                                    <div class="info-right">
+                                                        <a class="color-brand-3 font-xs-bold" href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>"><?php echo $item['productName'] ?>
+                                                        </a>
+                                                        <div class="rating">
+                                                            <img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom" /><span class="font-xs color-gray-500">
+                                                                (65)</span>
                                                         </div>
+
+                                                        <div class="price-info">
+                                                            <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']) . ' đ'  : number_format($item['productPrice'] * ((100 - $item['discount']) / 100))   ?></strong>
+                                                            <span class="color-gray-500 price-line"><?php echo $item['discount'] !== 0 ? number_format($item['productPrice']) : '' ?></span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        <?php }?>
-                                     
-                                            </div>
+                                            <?php } ?>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
-                    
-                    <div class="banner-right h-500 text-center mb-30">
-                        <span class="text-no font-11">No.9</span>
-                        <h5 class="font-23 mt-20">
-                            Sensitive Touch<br class="d-none d-lg-block" />without
-                            fingerprint
-                        </h5>
-                        <p class="text-desc font-16 mt-15">
-                            Smooth handle and accurate click
-                        </p>
-                    </div>
+
+                </div>
+
+                <div class="banner-right h-500 text-center mb-30">
+                    <span class="text-no font-11">No.9</span>
+                    <h5 class="font-23 mt-20">
+                        Sensitive Touch<br class="d-none d-lg-block" />without
+                        fingerprint
+                    </h5>
+                    <p class="text-desc font-16 mt-15">
+                        Smooth handle and accurate click
+                    </p>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <section class="section-box pt-50">
         <div class="container">

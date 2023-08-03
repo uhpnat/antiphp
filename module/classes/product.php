@@ -207,6 +207,46 @@ class product
         $result = $this->db->update($query);
         // echo "<br>đã đăng lượt view";
     }
+
+
+
+    //tim kiem san pham 
+    public function getDataSearch($search)
+    {
+        $query = "SELECT * FROM tbl_products WHERE productName LIKE '%$search%'";
+        $data = "";
+        $result = $this->db->select($query);
+        if ($result == false) {
+            echo "<h2>Không có sản phẩm phù hợp</h2>'
+            . '<h3>Tất Cả Sản Phẩm </h3> <br> <hr> <br><br>'";
+
+            return 0;
+        }
+        foreach ($result as $item) {
+            $data .=  '
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="card-grid-style-3">
+                <div class="card-grid-inner">
+                    <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
+                    <div class="image-box"><a href="?page=shop-single-product&productId=' . $item['productId'] . '"><img src="./admin/assets/media/imageproduct/' . $item['productImage'] . '" alt="Ecom"></a></div>
+                    <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Apple</a><br><a class="color-brand-3 font-sm-bold" href="">' . $item['productName'] . '</a>
+                        <div class="rating"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
+                        <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">' . $item['productPrice'] . '</strong><span class="color-gray-500 price-line"></span></div>
+                        <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="?page=shop-single-product&productId=' . $item['productId'] . '">Mua ngay</a></div>
+                        <ul class="list-features">
+                            <li>' . $item['productDesc1'] . '</li>
+                            <li>' . $item['productDesc2'] . '</li>
+                            <li>' . $item['productDesc3'] . '</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            ';
+        }
+        echo $data . '<h3>Tất Cả Sản Phẩm </h3> <br> <hr> <br><br>';
+        return $data;
+    }
 }
 
 

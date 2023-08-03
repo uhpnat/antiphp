@@ -55,14 +55,14 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-    
 
-    
-    
+
+
+
 
 
 </head>
@@ -145,28 +145,9 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                     <div class="header-search">
                         <div class="box-header-search">
                             <form class="form-search" method="post" action="#">
-                                <!-- <div class="box-category">
-                                    <select class="select-active select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                                        <option>Danh mục</option>
-                                        <option value="Computers Accessories">
-                                            Computers Accessories
-                                        </option>
-                                        <option value="Cell Phones">Cell Phones</option>
-                                        <option value="Gaming Gatgets">Gaming Gatgets</option>
-                                        <option value="Smart watches">Smart watches</option>
-                                        <option value="Wired Headphone">Wired Headphone</option>
-                                        <option value="Mouse &amp; Keyboard">
-                                            Mouse Keyboard
-                                        </option>
-                                        <option value="Headphone">Headphone</option>
-                                        <option value="Bluetooth devices">
-                                            Bluetooth devices
-                                        </option>
-                                        <option value="Cloud Software">Cloud Software</option>
-                                    </select>
-                                </div> -->
+
                                 <div class="box-keysearch">
-                                    <input class="form-control font-xs" type="text" value="" placeholder="Tìm kiếm sản phẩm" />
+                                    <input class="form-control font-xs" type="text" name="search" value="" id="searchProduct" placeholder="Tìm kiếm sản phẩm" />
                                 </div>
                             </form>
                         </div>
@@ -188,15 +169,18 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                             <span class="font-lg icon-list icon-account"><span>Tài khoản</span></span>
                             <div class="dropdown-account">
                                 <ul>
+                                    <li><a href="?page=page-account">Tài khoản của tôi</a></li>
+
                                     <?php
                                     if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
                                         echo '  <li><a href="?page=logout">Đăng xuất</a></li>';
                                     } else {
                                         echo '  <li><a href="?page=login">Đăng nhập</a></li>';
                                     }
+
                                     ?>
 
-                                    <li><a href="?page=page-account">Tài khoản của tôi</a></li>
+
                                     <!-- <li><a href="?page=page-account">Theo dõi đơn hàng</a></li>
                                     <li><a href="?page=page-account">Sản phẩm yêu thích</a></li> -->
                                     <!-- <li><a href="?page=login">Đăng Xuất</a></li> -->
@@ -240,16 +224,8 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                                 <a class="active" href="?page=home">Trang Chủ</a>
 
                             </li>
-                            <li class="has-children">
-                                <a href="?page=shop-grid">Cửa Hàng</a>
-                                <ul class="sub-menu two-col">
-                                    <li><a href="?page=shop-cart">Trang giỏ hàng</a></li>
-                                    <li><a href="?page=shop-compare">So sánh sản phẩm</a></li>
-                                    <li><a href="?page=shop-wishlist">Sản phẩm yêu thích</a></li>
-                                </ul>
-                            </li>
                             <li>
-                                <a href="?page=blog-list">Tin Tức</a>
+                                <a href="?page=shop-grid">Cửa Hàng</a>
                             </li>
                             <li><a href="?page=contact">Liên Hệ</a></li>
                         </ul>

@@ -29,6 +29,7 @@ if(isset($_SESSION["cart"]))
                                                     <div class="input-quantity">
                                                         <input class="font-xl color-brand-3" type="text" value="'.$values["quantity"].'"><span id="'.$values["id"].'" class="minus-cart"></span>
                                                         <span id="'.$values["id"].'" class="plus-cart"></span>
+                                                        <input type="hidden" id="updateQuantity'.$values["id"].'" value="'.$values["quantity"].'">
                                                     </div>
                                                 </div>
                                             </div>
