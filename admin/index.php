@@ -816,6 +816,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 0) {
                                                                     echo '<a href="?xuly=' . $item['orderId'] . '" "  class=" btn badge py-3 px-4 fs-7 badge-light-primary">Đã Xử Lý</a>';
                                                                 } else if ($status == 2) {
                                                                     echo '<span  class=" btn badge py-3 px-4 fs-7 badge-light-success">Đang Giao</span>';
+                                                                    echo '<a href="?xuly=' . $item['orderId'] . '" "  class=" btn badge py-3 px-4 fs-7 badge-light-danger">Hủy Đơn</a>';
                                                                 } else if ($status == 3) {
                                                                     echo '<a href="?deletexuly=' . $item['orderId'] . '" "  class=" btn badge py-3 px-4 fs-7 badge-light-danger">Đơn Bị Hủy</a>';
                                                                 } else {

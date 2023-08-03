@@ -145,28 +145,9 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                     <div class="header-search">
                         <div class="box-header-search">
                             <form class="form-search" method="post" action="#">
-                                <!-- <div class="box-category">
-                                    <select class="select-active select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                                        <option>Danh mục</option>
-                                        <option value="Computers Accessories">
-                                            Computers Accessories
-                                        </option>
-                                        <option value="Cell Phones">Cell Phones</option>
-                                        <option value="Gaming Gatgets">Gaming Gatgets</option>
-                                        <option value="Smart watches">Smart watches</option>
-                                        <option value="Wired Headphone">Wired Headphone</option>
-                                        <option value="Mouse &amp; Keyboard">
-                                            Mouse Keyboard
-                                        </option>
-                                        <option value="Headphone">Headphone</option>
-                                        <option value="Bluetooth devices">
-                                            Bluetooth devices
-                                        </option>
-                                        <option value="Cloud Software">Cloud Software</option>
-                                    </select>
-                                </div> -->
+
                                 <div class="box-keysearch">
-                                    <input class="form-control font-xs" type="text" value="" placeholder="Tìm kiếm sản phẩm" />
+                                    <input class="form-control font-xs" type="text" name="search" value="" id="searchProduct" placeholder="Tìm kiếm sản phẩm" />
                                 </div>
                             </form>
                         </div>
@@ -304,13 +285,8 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                                 <a class="active" href="?page=home">Trang Chủ</a>
 
                             </li>
-                            <li class="has-children">
+                            <li>
                                 <a href="?page=shop-grid">Cửa Hàng</a>
-                                <ul class="sub-menu two-col">
-                                    <li><a href="?page=shop-cart">Trang giỏ hàng</a></li>
-                                    <li><a href="?page=shop-compare">So sánh sản phẩm</a></li>
-                                    <li><a href="?page=shop-wishlist">Sản phẩm yêu thích</a></li>
-                                </ul>
                             </li>
                             <li><a href="?page=contact">Liên Hệ</a></li>
                         </ul>

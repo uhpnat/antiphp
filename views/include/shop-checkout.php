@@ -27,10 +27,14 @@ if (isset($_POST['submit'])) {
     }
   }
   $cart = json_encode($data);
-  $order->order_product($code, $customerId, $email, $name, $address, $phone, $info, $cart, $total);
-  unset($_SESSION['cart']);
-  echo '<script type="text/javascript">toastr.success("Đặt hàng thành công")</script>';
-  header("Refresh:1; url=?page=home", true, 303);
+  if ($email != null || $name != null  || $address != null || $phone != null) {
+    $order->order_product($code, $customerId, $email, $name, $address, $phone, $info, $cart, $total);
+    unset($_SESSION['cart']);
+    echo '<script type="text/javascript">toastr.success("Đặt hàng thành công")</script>';
+    header("Refresh:1; url=?page=home", true, 303);
+  } else {
+    echo '<script type="text/javascript">toastr.warning("Vui long điền đầy đủ thông tin")</script>';
+  }
 }
 
 ?>
@@ -88,13 +92,13 @@ if (isset($_POST['submit'])) {
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input name="diachi" class="form-control font-sm" type="text" placeholder="Địa chỉ*" value="<?php $address = isset($_SESSION['login']) ? $us->select_user_id($_SESSION['name'])[0]['email'] : "";
+                    <input name="diachi" class="form-control font-sm" type="text" placeholder="Địa chỉ*" value="<?php $address = isset($_SESSION['login']) ? $us->select_user_id($_SESSION['name'])[0]['address'] : "";
                                                                                                                 echo $address;  ?>">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input name="sdt" class="form-control font-sm" type="text" placeholder="Số điện thoại*" value="<?php $phone = isset($_SESSION['login']) ? $us->select_user_id($_SESSION['name'])[0]['address'] : "";
+                    <input name="sdt" class="form-control font-sm" type="text" placeholder="Số điện thoại*" value="<?php $phone = isset($_SESSION['login']) ? $us->select_user_id($_SESSION['name'])[0]['phone'] : "";
                                                                                                                     echo $phone;  ?>">
                   </div>
                 </div>
@@ -149,10 +153,10 @@ if (isset($_POST['submit'])) {
                 </div>
             <?php }
             } ?>
-            <div class="form-group d-flex mt-15">
+            <!-- <div class="form-group d-flex mt-15">
               <input class="form-control mr-15" placeholder="Nhập mã giảm giá">
               <button class="btn btn-buy w-auto">Áp dụng</button>
-            </div>
+            </div> -->
             <div class="form-group mb-0">
               <div class="row mb-10">
                 <div class="col-lg-6 col-6"><span class="font-md-bold color-brand-3">Thành tiền</span></div>

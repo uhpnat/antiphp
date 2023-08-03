@@ -167,7 +167,7 @@ foreach ($singleProduct as $item) {
                                             <div class="font-sm text-quantity">Số lượng</div>
                                             <div class="box-quantity">
                                                 <div class="input-quantity">
-                                                    <input class="font-xl color-brand-3" name="quantity" type="text" value="1" /><span class="minus-cart"></span><span class="plus-cart"></span>
+                                                    <input class="font-xl color-brand-3" name="quantity" type="number" value="1" /><span class="minus-cart"></span><span class="plus-cart"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -181,7 +181,7 @@ foreach ($singleProduct as $item) {
                                         <input type="hidden" name="price" value="<?php echo $item['productPrice'] ?>">
                                         <div class="button-buy mt-15">
                                             <input name="addToCart" type="submit" class="btn btn-cart mb-15" value="Thêm vào giỏ hàng">
-                                            <a class="btn btn-buy" href="?page=shop-checkout">Mua Ngay</a>
+                                            <!-- <a class="btn btn-buy" href="?page=shop-checkout">Mua Ngay</a> -->
                                         </div>
                                     </div>
                                 </div>

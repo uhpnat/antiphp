@@ -1,6 +1,7 @@
 
 <?php
 
+
 if (isset($_POST["status_id"])) {
      if ($_POST["action"] == "updateStatus") {
           $status_id = $_POST["status_id"];

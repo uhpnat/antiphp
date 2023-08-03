@@ -44,7 +44,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-20">
+                    <!-- <div ></div> -->
+
+                    <div class="row mt-20" id="searchProductHTMl">
+                        <?php
+
+
+                        $response = array("success" => false, "message" => "");
+                        if (isset($_POST['search']) && $_POST['search'] != "") {
+
+                            $data = $product->getDataSearch($_POST['search']);
+                            $response["message"] = $data;
+                            $response["success"] = true;
+                            // var_dump($response);
+                        } ?>
                         <?php
                         $hienThiSanPham = $product->show_product();
                         foreach ($hienThiSanPham as $item) {
@@ -98,7 +111,7 @@
                         ?>
 
                     </div>
-                    <nav>
+                    <!-- <nav>
                         <ul class="pagination">
                             <li class="page-item"><a class="page-link page-prev" href="#"></a></li>
                             <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -109,7 +122,7 @@
                             <li class="page-item"><a class="page-link" href="#">6</a></li>
                             <li class="page-item"><a class="page-link page-next" href="#"></a></li>
                         </ul>
-                    </nav>
+                    </nav> -->
                 </div>
                 <div class="col-lg-3 order-last order-lg-first">
                     <div class="sidebar-border mb-0">
