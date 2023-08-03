@@ -37,7 +37,7 @@ if(!empty($_SESSION["cart"]))
                                             <span class="font-md-bold color-brand-3">Tổng giá</span>
                                         </div>
                                         <div class="col-6">
-                                            <span class="font-md-bold color-brand-1">'.number_format($total_price).'</span>
+                                            <span class="font-md-bold color-brand-1 total"></span>
                                         </div>
                                     </div>
                                     <div class="row mt-15">
