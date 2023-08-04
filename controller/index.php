@@ -67,7 +67,6 @@ if (!isset($_GET['page'])) {
             $_SESSION['login'] = 0;
             header('Location: ?page=home');
             break;
-
         default:
             include 'views/include/404.php';
             break;

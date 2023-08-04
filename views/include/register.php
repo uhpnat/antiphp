@@ -1,7 +1,7 @@
 <?php
 
 
-if (isset(($_POST['submit']))) {
+if (isset($_POST['submit'])) {
     $fullName = $_POST['fullName'];
     $email = $_POST['email'];
     $password = $_POST['password'];

@@ -10,28 +10,41 @@ if (isset($_POST['addToCart']) && ($_POST['addToCart'])) {
     $name = $_POST['name'];
     $id = $_POST['id'];
     $quantity = $_POST['quantity'];
-    $price = $_POST['discount'];
-    if ($price == "") {
-        $price = $_POST['price'];
+    $discount = $_POST['discount'];
+    $productPrice = $_POST['price'];
+    $productQuantity = $_POST['quantityTotal'];
+    $price=0;
+    if ($discount == "" || $discount == 0) {
+        $price = $productPrice;
     } else {
-        $price = $_POST['discount'];
-    }
+        $price = $productPrice * ((100 - $discount) / 100);
+    } 
+    if($quantity <= $productQuantity){
+        if (isset($_SESSION['cart'][$id])) { 
+            if($_SESSION['cart'][$id]['quantity'] + $quantity <= $productQuantity){
+                $_SESSION['cart'][$id]['quantity']+=$quantity;
+            echo '<script type="text/javascript">toastr.success("Đã thêm vào giỏ hàng")</script>';
+            }else{
+                echo '<script type="text/javascript">toastr.warning("Sản phẩm không đủ số lượng ")</script>';
+                
+            }
+            
+        } else {
+            $item = [
+                'id' => $id,
+                'quantity' => $quantity,
+                'price' => $price,
+                'name' => $name,
+                'image' => $image
+            ];
+            $_SESSION['cart'][$id] = $item;
+            echo '<script type="text/javascript">toastr.success("Đã thêm vào giỏ hàng")</script>';
+        }
+    }else{
+        echo '<script type="text/javascript">toastr.warning("Sản phẩm không đủ số lượng ")</script>';
 
-    if (isset($_SESSION['cart'][$id])) {
-        $_SESSION['cart'][$id]['quantity']++;
-        header("Location:?page=shop-single-product&productId=$id");
-    } else {
-        $item = [
-            'id' => $id,
-            'quantity' => $quantity,
-            'price' => $price,
-            'name' => $name,
-            'image' => $image
-        ];
-        $_SESSION['cart'][$id] = $item;
-
-        header("Location:?page=shop-single-product&productId=$id");
     }
+    
 }
 
 foreach ($singleProduct as $item) {
@@ -133,7 +146,7 @@ foreach ($singleProduct as $item) {
                                             <?php if ($item['discount'] == 0) {
                                                 echo number_format($item['productPrice']) . ' đ';
                                             } else {
-                                                echo $price = number_format($item['discount']);
+                                                echo $price = number_format($item['productPrice'] * ((100 - $item['discount']) / 100));
                                             } ?>
                                         </h3>
                                         <span class="color-gray-500 price-line font-xl line-througt">
@@ -167,15 +180,14 @@ foreach ($singleProduct as $item) {
                                             <div class="font-sm text-quantity">Số lượng</div>
                                             <div class="box-quantity">
                                                 <div class="input-quantity">
-                                                    <input class="font-xl color-brand-3" name="quantity" type="number" value="1" /><span class="minus-cart"></span><span class="plus-cart"></span>
+                                                    <input class="font-xl color-brand-3" name="quantity" type="text" value="1"/>
+                                                    <span class="minus-cart"></span><span class="plus-cart"></span>
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <input type="hidden" name="discount" value="<?php if (isset($price)) {
-                                                                                        echo $price;
-                                                                                    } ?>">
                                         <input type="hidden" name="image" value="<?php echo $item['productImage'] ?>">
+                                        <input type="hidden" name="quantityTotal" value="<?php echo ($item['productQuantity']- $item['productSold']) ?>">
+                                        <input type="hidden" name="discount" value="<?php echo $item['discount'] ?>">
                                         <input type="hidden" name="id" value="<?php echo $item['productId'] ?>">
                                         <input type="hidden" name="name" value="<?php echo $item['productName'] ?>">
                                         <input type="hidden" name="price" value="<?php echo $item['productPrice'] ?>">
