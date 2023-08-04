@@ -68,11 +68,20 @@
                                         <div class="card-grid-style-3">
                                             <div class="card-grid-inner">
                                                 <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                                                <div class="image-box"><span class="label bg-brand-2"><?php echo $product->phantramgiamgia($item['productPrice'], $item['discount']) ?>%</span><a href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>"><img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '4')  ?>" alt="Ecom"></a></div>
+                                                <div class="image-box"><span class="label bg-brand-2"><?php echo $item['discount'] ?>%</span><a href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>"><img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '4')  ?>" alt="Ecom"></a></div>
                                                 <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html"><?php echo $nameBrand =  $product->getNameBrandByIdProduct($item['brandId'])[0]['brandName']; ?></a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html"><?php echo $product->limitText($item['productName'], 50) ?></a>
                                                     <div class="rating"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                                                    <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']) . ' đ'  : number_format($item['productPrice']*((100 - $item['discount'])/100)) . ' đ'   ?></strong><span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? number_format($item['productPrice']) . ' đ'  : '' ?></span></div>
-                                                    <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>">Mua ngay</a></div>
+                                                    <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']) . ' đ'  : number_format($item['productPrice'] * ((100 - $item['discount']) / 100)) . ' đ'   ?></strong><span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? number_format($item['productPrice']) . ' đ'  : '' ?></span></div>
+                                                    <!-- <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>">Mua ngay</a></div> -->
+                                                    <input type="hidden" id="quantityTotal<?php echo $item['productId'] ?>" name="quantityTotal" value="<?php echo ($item['productQuantity'] - $item['productSold']) ?>">
+                                                    <input type="hidden" name="id" value="<?php echo $item['productId'] ?>">
+
+                                                    <input type="hidden" id="name<?php echo $item['productId'] ?>" value="<?php echo $item['productName'] ?>">
+                                                    <input type="hidden" id="discount<?php echo $item['productId'] ?>" value="<?php echo $item['discount'] ?>">
+                                                    <input type="hidden" id="quantity<?php echo $item['productId'] ?>" value="1">
+                                                    <input type="hidden" id="price<?php echo $item['productId'] ?>" value="<?php echo $item['productPrice'] ?>">
+                                                    <input type="hidden" id="image<?php echo $item['productId'] ?>" value="<?php echo $item['productImage'] ?>">
+                                                    <a class="btn btn-cart add_to_cart" id="<?php echo $item['productId'] ?>">Mua Ngay</a>
                                                     <ul class="list-features">
                                                         <li><?php echo $product->limitText($item['productDesc1'], 35) ?></li>
                                                         <li><?php echo $product->limitText($item['productDesc2'], 35) ?></li>
@@ -91,19 +100,19 @@
                                     <div class="card-grid-style-3">
                                         <div class="card-grid-inner">
                                             <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                                            <div class="image-box"><span class="label bg-brand-2"><?php echo $product->phantramgiamgia($item['productPrice'], $item['discount']) ?>%</span><a href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>"><img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '4')  ?>" alt="Ecom"></a></div>
+                                            <div class="image-box"><span class="label bg-brand-2"><?php echo $item['discount'] ?>%</span><a href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>"><img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '4')  ?>" alt="Ecom"></a></div>
                                             <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html"><?php echo $nameBrand =  $product->getNameBrandByIdProduct($item['brandId'])[0]['brandName']; ?></a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html"><?php echo $product->limitText($item['productName'], 50) ?></a>
                                                 <div class="rating"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                                                <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']) . ' đ'  : number_format($item['discount']) . ' đ'   ?></strong><span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? number_format($item['productPrice']) . ' đ'  : '' ?></span></div>
+                                                <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']) . ' đ'  : number_format($item['productPrice'] * ((100 - $item['discount']) / 100)) . ' đ'   ?></strong><span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? number_format($item['productPrice']) . ' đ'  : '' ?></span></div>
                                                 <!-- <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>">Mua ngay</a></div> -->
-                                                <input type="hidden" id="quantityTotal<?php echo $item['productId'] ?>" name="quantityTotal" value="<?php echo ($item['productQuantity']- $item['productSold']) ?>">
-                                                                <input type="hidden" name="id" value="<?php echo $item['productId'] ?>">
-                                                                
-                                                                <input type="hidden" id="name<?php echo $item['productId'] ?>" value="<?php echo $item['productName'] ?>">
-                                                                <input type="hidden" id="discount<?php echo $item['productId'] ?>" value="<?php echo $item['discount'] ?>">
-                                                                <input type="hidden" id="quantity<?php echo $item['productId'] ?>" value="1">
-                                                                <input type="hidden" id="price<?php echo $item['productId'] ?>" value="<?php echo $item['productPrice'] ?>">
-                                                                <input type="hidden" id="image<?php echo $item['productId'] ?>" value="<?php echo $item['productImage'] ?>">
+                                                <input type="hidden" id="quantityTotal<?php echo $item['productId'] ?>" name="quantityTotal" value="<?php echo ($item['productQuantity'] - $item['productSold']) ?>">
+                                                <input type="hidden" name="id" value="<?php echo $item['productId'] ?>">
+
+                                                <input type="hidden" id="name<?php echo $item['productId'] ?>" value="<?php echo $item['productName'] ?>">
+                                                <input type="hidden" id="discount<?php echo $item['productId'] ?>" value="<?php echo $item['discount'] ?>">
+                                                <input type="hidden" id="quantity<?php echo $item['productId'] ?>" value="1">
+                                                <input type="hidden" id="price<?php echo $item['productId'] ?>" value="<?php echo $item['productPrice'] ?>">
+                                                <input type="hidden" id="image<?php echo $item['productId'] ?>" value="<?php echo $item['productImage'] ?>">
                                                 <a class="btn btn-cart add_to_cart" id="<?php echo $item['productId'] ?>">Mua Ngay</a>
                                                 <ul class="list-features">
                                                     <li><?php echo $product->limitText($item['productDesc1'], 35) ?></li>
@@ -120,18 +129,6 @@
                         ?>
 
                     </div>
-                    <!-- <nav>
-                        <ul class="pagination">
-                            <li class="page-item"><a class="page-link page-prev" href="#"></a></li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link active" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                            <li class="page-item"><a class="page-link" href="#">6</a></li>
-                            <li class="page-item"><a class="page-link page-next" href="#"></a></li>
-                        </ul>
-                    </nav> -->
                 </div>
                 <div class="col-lg-3 order-last order-lg-first">
                     <div class="sidebar-border mb-0">
@@ -149,214 +146,9 @@
                                 <?php
                                 } ?>
                             </ul>
-                            <!-- <div>
-                                <div class="collapse" id="moreMenu">
-                                    <ul class="list-nav-arrow">
-                                        <li><a href="?page=shop-grid">Home theater<span class="number">98</span></a></li>
-                                        <li><a href="?page=shop-grid">Cameras & drones<span class="number">124</span></a></li>
-                                        <li><a href="?page=shop-grid">PC gaming<span class="number">56</span></a></li>
-                                        <li><a href="?page=shop-grid">Smart home<span class="number">87</span></a></li>
-                                        <li><a href="?page=shop-grid">Networking<span class="number">36</span></a></li>
-                                    </ul>
-                                </div><a class="link-see-more mt-5" data-bs-toggle="collapse" href="#moreMenu" role="button" aria-expanded="false" aria-controls="moreMenu">See More</a>
-                            </div> -->
+
                         </div>
                     </div>
-                    <!-- <div class="sidebar-border mb-40">
-                        <div class="sidebar-head">
-                            <h6 class="color-gray-900">Products Filter</h6>
-                        </div>
-                        <div class="sidebar-content">
-                            <h6 class="color-gray-900 mt-10 mb-10">Price</h6>
-                            <div class="box-slider-range mt-20 mb-15">
-                                <div class="row mb-20">
-                                    <div class="col-sm-12">
-                                        <div id="slider-range"></div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <label class="lb-slider font-sm color-gray-500">Price Range:</label><span class="min-value-money font-sm color-gray-1000"></span>
-                                        <label class="lb-slider font-sm font-medium color-gray-1000"></label>-
-                                        <span class="max-value-money font-sm font-medium color-gray-1000"></span>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <input class="form-control min-value" type="hidden" name="min-value" value="">
-                                        <input class="form-control max-value" type="hidden" name="max-value" value="">
-                                    </div>
-                                </div>
-                            </div>
-                            <ul class="list-checkbox">
-                                <li>
-                                    <label class="cb-container">
-                                        <input type="checkbox" checked="checked"><span class="text-small">Free - $100</span><span class="checkmark"></span>
-                                    </label><span class="number-item">145</span>
-                                </li>
-                                <li>
-                                    <label class="cb-container">
-                                        <input type="checkbox"><span class="text-small">$100 - $200</span><span class="checkmark"></span>
-                                    </label><span class="number-item">56</span>
-                                </li>
-                                <li>
-                                    <label class="cb-container">
-                                        <input type="checkbox"><span class="text-small">$200 - $400</span><span class="checkmark"></span>
-                                    </label><span class="number-item">23</span>
-                                </li>
-                                <li>
-                                    <label class="cb-container">
-                                        <input type="checkbox"><span class="text-small">$400 - $600</span><span class="checkmark"></span>
-                                    </label><span class="number-item">43</span>
-                                </li>
-                                <li>
-                                    <label class="cb-container">
-                                        <input type="checkbox"><span class="text-small">$600 - $800</span><span class="checkmark"></span>
-                                    </label><span class="number-item">65</span>
-                                </li>
-                                <li>
-                                    <label class="cb-container">
-                                        <input type="checkbox"><span class="text-small">Over $1000</span><span class="checkmark"></span>
-                                    </label><span class="number-item">56</span>
-                                </li>
-                            </ul>
-                            <h6 class="color-gray-900 mt-20 mb-10">Brands</h6>
-                            <ul class="list-checkbox">
-                                <li>
-                                    <label class="cb-container">
-                                        <input type="checkbox" checked="checked"><span class="text-small">Apple</span><span class="checkmark"></span>
-                                    </label><span class="number-item">12</span>
-                                </li>
-                                <li>
-                                    <label class="cb-container">
-                                        <input type="checkbox"><span class="text-small">Sony</span><span class="checkmark"></span>
-                                    </label><span class="number-item">34</span>
-                                </li>
-                                <li>
-                                    <label class="cb-container">
-                                        <input type="checkbox"><span class="text-small">Toshiba</span><span class="checkmark"></span>
-                                    </label><span class="number-item">56</span>
-                                </li>
-                                <li>
-                                    <label class="cb-container">
-                                        <input type="checkbox"><span class="text-small">Assus</span><span class="checkmark"></span>
-                                    </label><span class="number-item">78</span>
-                                </li>
-                                <li>
-                                    <label class="cb-container">
-                                        <input type="checkbox"><span class="text-small">Samsung</span><span class="checkmark"></span>
-                                    </label><span class="number-item">23</span>
-                                </li>
-                            </ul>
-                            <h6 class="color-gray-900 mt-20 mb-10">Color</h6>
-                            <ul class="list-color">
-                                <li><a class="color-red active" href="#"></a><span>Red</span></li>
-                                <li><a class="color-green" href="#"></a><span>Green</span></li>
-                                <li><a class="color-blue" href="#"></a><span>Blue</span></li>
-                                <li><a class="color-purple" href="#"></a><span>Purple</span></li>
-                                <li><a class="color-black" href="#"></a><span>Black</span></li>
-                                <li><a class="color-gray" href="#"></a><span>Gray</span></li>
-                                <li><a class="color-pink" href="#"></a><span>Pink</span></li>
-                                <li><a class="color-brown" href="#"></a><span>Brown</span></li>
-                                <li><a class="color-yellow" href="#"></a><span>Yellow</span></li>
-                            </ul><a class="btn btn-filter font-sm color-brand-3 font-medium mt-10" href="#ModalFiltersForm" data-bs-toggle="modal">More Fillters</a>
-                        </div>
-                    </div> -->
-                    <!-- <div class="box-slider-item mb-30">
-                        <div class="head pb-15 border-brand-2">
-                            <h5 class="color-gray-900">Best seller</h5>
-                        </div>
-                        <div class="content-slider">
-                            <div class="box-swiper slide-shop">
-                                <div class="swiper-container swiper-best-seller">
-                                    <div class="swiper-wrapper pt-5">
-                                        <div class="swiper-slide">
-                                            <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                                                <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-3.html"><img src="./views/assets/imgs/page/homepage2/camera.png" alt="Ecom"></a>
-                                                </div>
-                                                <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">HP Slim Desktop, Intel Celeron J4025, 4GB RAM</a>
-                                                    <div class="rating"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                                                    <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$150</strong><span class="color-gray-500 font-sm price-line">$187</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                                                <div class="image-box"><a href="shop-single-product-3.html"><img src="./views/assets/imgs/page/homepage2/clock.png" alt="Ecom"></a>
-                                                </div>
-                                                <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">Class 4K UHD (2160P) LED Roku Smart TV HDR</a>
-                                                    <div class="rating"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                                                    <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$2900</strong><span class="color-gray-500 font-sm price-line">$3200</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                                                <div class="image-box"><a href="shop-single-product-3.html"><img src="./views/assets/imgs/page/homepage2/airpod.png" alt="Ecom"></a>
-                                                </div>
-                                                <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">HP 11.6&quot; Chromebook, AMD A4, 4GB RAM, 32GB Storage</a>
-                                                    <div class="rating"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                                                    <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$160</strong><span class="color-gray-500 font-sm price-line">$168</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                                                <div class="image-box"><a href="shop-single-product-3.html"><img src="./views/assets/imgs/page/homepage2/cat-img-7.png" alt="Ecom"></a>
-                                                </div>
-                                                <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">LG 65&quot; Class 4K UHD Smart TV OLED A1 Series</a>
-                                                    <div class="rating"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                                                    <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$325</strong><span class="color-gray-500 font-sm price-line">$392</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                                                <div class="image-box"><a href="shop-single-product-3.html"><img src="./views/assets/imgs/page/homepage2/cat-img-8.png" alt="Ecom"></a>
-                                                </div>
-                                                <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">Lenovo Legion 5i 15.6&quot; Laptop, Intel Core i5</a>
-                                                    <div class="rating"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                                                    <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$150</strong><span class="color-gray-500 font-sm price-line">$187</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                                                <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-3.html"><img src="./views/assets/imgs/page/homepage2/cat-img-1.png" alt="Ecom"></a>
-                                                </div>
-                                                <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">SAMSUNG Galaxy Tab A7 Lite, 8.7&quot; Tablet 32GB</a>
-                                                    <div class="rating"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                                                    <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$2900</strong><span class="color-gray-500 font-sm price-line">$3200</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                                                <div class="image-box"><a href="shop-single-product-3.html"><img src="./views/assets/imgs/page/homepage2/cat-img-2.png" alt="Ecom"></a>
-                                                </div>
-                                                <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">Apple AirPods Pro with MagSafe Charging</a>
-                                                    <div class="rating"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                                                    <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$160</strong><span class="color-gray-500 font-sm price-line">$168</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                                                <div class="image-box"><a href="shop-single-product-3.html"><img src="./views/assets/imgs/page/homepage2/cat-img-3.png" alt="Ecom"></a>
-                                                </div>
-                                                <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">Razer Power Up Gaming Bundle V2 - Cynosa</a>
-                                                    <div class="rating"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><img src="./views/assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                                                    <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$325</strong><span class="color-gray-500 font-sm price-line">$392</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next swiper-button-next-style-2 swiper-button-next-bestseller"></div>
-                                <div class="swiper-button-prev swiper-button-prev-style-2 swiper-button-prev-bestseller"></div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="box-slider-item">
-                        <div class="head pb-15 border-brand-2">
-                            <h5 class="color-gray-900">Product Tags</h5>
-                        </div>
-                        <div class="content-slider mb-50"><a class="btn btn-border mr-5" href="?page=shop-grid">Games</a><a class="btn btn-border mr-5" href="?page=shop-grid">Electronics</a><a class="btn btn-border mr-5" href="?page=shop-grid">Video</a><a class="btn btn-border mr-5" href="?page=shop-grid">Cellphone</a><a class="btn btn-border mr-5" href="?page=shop-grid">Indoor</a><a class="btn btn-border mr-5" href="?page=shop-grid">VGA Card</a><a class="btn btn-border mr-5" href="?page=shop-grid">USB</a><a class="btn btn-border mr-5" href="?page=shop-grid">Lightning</a><a class="btn btn-border mr-5" href="?page=shop-grid">Camera</a><a class="btn btn-border" href="?page=shop-grid">Window</a><a class="btn btn-border mr-5" href="?page=shop-grid">Air Vent</a><a class="btn btn-border mr-5" href="?page=shop-grid">Bedroom</a><a class="btn btn-border mr-5" href="?page=shop-grid">Laptop</a><a class="btn btn-border mr-5" href="?page=shop-grid">Dashboard</a><a class="btn btn-border mr-5" href="?page=shop-grid">Keyboard</a></div>
-                    </div> -->
                     <div class="banner-right h-500 text-center mb-30"><span class="text-no font-11">No.9</span>
                         <h5 class="font-23 mt-20">Sensitive Touch<br class="d-none d-lg-block">without fingerprint</h5>
                         <p class="text-desc font-16 mt-15">Smooth handle and accurate click</p><a href="shop-single-product-2.html">View Details</a>

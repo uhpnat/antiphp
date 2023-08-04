@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
     }
   }
   $cart = json_encode($data);
-  if ($email != null || $name != null  || $address != null || $phone != null) {
+  if ($email != null && $name != null  && $address != null && $phone != null) {
     $order->order_product($code, $customerId, $email, $name, $address, $phone, $info, $cart, $total);
     unset($_SESSION['cart']);
     echo '<script type="text/javascript">toastr.success("Đặt hàng thành công")</script>';

@@ -63,7 +63,14 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
 
 
 
-
+    <style>
+        .header .main-header .header-left .header-shop .number-item {
+            color: #2b3e4e;
+            margin-bottom: 2px;
+            background-color: white;
+            font-weight: bold;
+        }
+    </style>
 
 </head>
 

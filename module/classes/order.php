@@ -87,10 +87,10 @@ class order
         $result = $this->db->select($query);
         return $result;
     }
-    public function xuly($xuly)
+    public function xuly($xuly, $status)
     {
         $query = "UPDATE tbl_order
-        SET status = status +1
+        SET status = $status
         WHERE orderId = $xuly;";
         $this->db->update($query);
         echo '<script type="text/javascript">toastr.success("Cập Nhật Thành Công")</script>';

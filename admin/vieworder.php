@@ -196,10 +196,10 @@ License: For each use you must have a valid license purchased only from above li
 
                                     <!--begin::Title-->
                                     <h1 class="page-heading d-flex text-white fw-bolder fs-2 flex-column justify-content-center my-0">
-                                        Products Viewed Report
+
                                         <!--begin::Description-->
-                                        <span class="page-desc text-white opacity-50 fs-6 fw-bold pt-4">
-                                            Page Description </span>
+                                        <!-- <span class="page-desc text-white opacity-50 fs-6 fw-bold pt-4">
+                                            Page Description </span> -->
                                         <!--end::Description-->
                                     </h1>
                                     <!--end::Title-->
@@ -207,53 +207,7 @@ License: For each use you must have a valid license purchased only from above li
                                 <!--end::Page title-->
 
                                 <!--begin::Items-->
-                                <div class="d-flex gap-4 gap-lg-13">
-                                    <!--begin::Item-->
-                                    <div class="d-flex flex-column">
-                                        <!--begin::Number-->
-                                        <span class="text-white fw-bold fs-3 mb-1">$23,467.92</span>
-                                        <!--end::Number-->
 
-                                        <!--begin::Section-->
-                                        <div class="text-white opacity-50 fw-bold">Avg. Monthly Sales</div>
-                                        <!--end::Section-->
-                                    </div>
-                                    <!--end::Item-->
-                                    <!--begin::Item-->
-                                    <div class="d-flex flex-column">
-                                        <!--begin::Number-->
-                                        <span class="text-white fw-bold fs-3 mb-1">$1,748.03</span>
-                                        <!--end::Number-->
-
-                                        <!--begin::Section-->
-                                        <div class="text-white opacity-50 fw-bold">Today Spending</div>
-                                        <!--end::Section-->
-                                    </div>
-                                    <!--end::Item-->
-                                    <!--begin::Item-->
-                                    <div class="d-flex flex-column">
-                                        <!--begin::Number-->
-                                        <span class="text-white fw-bold fs-3 mb-1">3.8%</span>
-                                        <!--end::Number-->
-
-                                        <!--begin::Section-->
-                                        <div class="text-white opacity-50 fw-bold">Overall Share</div>
-                                        <!--end::Section-->
-                                    </div>
-                                    <!--end::Item-->
-                                    <!--begin::Item-->
-                                    <div class="d-flex flex-column">
-                                        <!--begin::Number-->
-                                        <span class="text-white fw-bold fs-3 mb-1">-7.4%</span>
-                                        <!--end::Number-->
-
-                                        <!--begin::Section-->
-                                        <div class="text-white opacity-50 fw-bold">7 Days</div>
-                                        <!--end::Section-->
-                                    </div>
-                                    <!--end::Item-->
-
-                                </div>
                                 <!--end::Items-->
                             </div>
                             <!--end::Toolbar wrapper--->
@@ -389,14 +343,14 @@ License: For each use you must have a valid license purchased only from above li
                                                             <td>
                                                                 <div class="d-flex align-items-center">
                                                                     <!--begin::Thumbnail-->
-                                                                    <a href="../catalog/edit-product.html" class="symbol symbol-50px">
+                                                                    <a href="" class="symbol symbol-50px">
                                                                         <span class="symbol-label" style="background-image:url(assets/media/imageproduct/<?php echo $item['image'] ?>);"></span>
                                                                     </a>
                                                                     <!--end::Thumbnail-->
 
                                                                     <div class="ms-5">
                                                                         <!--begin::Title-->
-                                                                        <a href="../catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name"><?php echo $item['name'] ?></a>
+                                                                        <a href="" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name"><?php echo $item['name'] ?></a>
                                                                         <!--end::Title-->
                                                                     </div>
                                                                 </div>

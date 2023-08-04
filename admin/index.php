@@ -67,7 +67,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 0) {
     include 'header.php';
     ?><?php
         if (isset($_GET['xuly'])) {
-            $order->xuly($_GET['xuly']);
+            $order->xuly($_GET['xuly'], $_GET['status']);
             // header("Refresh:1; url=index.php", true, 303);
         }
         if (isset($_GET['deletexuly'])) {
@@ -168,7 +168,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 0) {
                                         <span class="text-white fw-bold fs-3 mb-1"><?php
                                                                                     $DoanhThu = 0;
                                                                                     foreach ($order->get_all_order() as $item) {
-                                                                                        if ($item['status'] == 1)
+                                                                                        if ($item['status'] == 4)
                                                                                             $DoanhThu += $item['totalPrice'];
                                                                                     }
                                                                                     echo number_format($DoanhThu);
@@ -811,12 +811,12 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 0) {
                                                                 <?php
                                                                 $status = $item['status'];
                                                                 if ($status == 0) {
-                                                                    echo '<a href="?xuly=' . $item['orderId'] . '" "  class=" btn badge py-3 px-4 fs-7 badge-light-warning">Chờ Xử Lý</button>';
+                                                                    echo '<a href="?xuly=' . $item['orderId'] . '&status=1" "  class=" btn badge py-3 px-4 fs-7 badge-light-warning">Chờ Xử Lý</button>';
                                                                 } else if ($status == 1) {
-                                                                    echo '<a href="?xuly=' . $item['orderId'] . '" "  class=" btn badge py-3 px-4 fs-7 badge-light-primary">Đã Xử Lý</a>';
+                                                                    echo '<a href="?xuly=' . $item['orderId'] . '&status=2" "  class=" btn badge py-3 px-4 fs-7 badge-light-primary">Đã Xử Lý</a>';
                                                                 } else if ($status == 2) {
-                                                                    echo '<span  class=" btn badge py-3 px-4 fs-7 badge-light-success">Đang Giao</span>';
-                                                                    echo '<a href="?xuly=' . $item['orderId'] . '" "  class=" btn badge py-3 px-4 fs-7 badge-light-danger">Hủy Đơn</a>';
+                                                                    echo '<a href="?xuly=' . $item['orderId'] . '&status=4" "  class=" btn badge py-3 px-4 fs-7 badge-light-success">Hoàn Thành</button>';
+                                                                    echo '<a href="?xuly=' . $item['orderId'] . '&status=3" "  class=" btn badge py-3 px-4 fs-7 badge-light-danger">Hủy Đơn</a>';
                                                                 } else if ($status == 3) {
                                                                     echo '<a href="?deletexuly=' . $item['orderId'] . '" "  class=" btn badge py-3 px-4 fs-7 badge-light-danger">Đơn Bị Hủy</a>';
                                                                 } else {

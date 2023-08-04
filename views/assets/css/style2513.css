@@ -3362,7 +3362,8 @@ a.text-brand-3:hover {
   background-position: 0px 2px;
 }
 .header .main-header .header-left .header-shop .number-item {
-  background-color: #fd9636;
+  color: yellowgreen;
+  font-weight: bold;
   border-radius: 50%;
   position: absolute;
   top: -8px;
@@ -3371,7 +3372,7 @@ a.text-brand-3:hover {
   height: 20px;
   color: #ffffff;
   text-align: center;
-  line-height: 20px;
+  /* line-height: 20px !important; */
   display: inline-block;
 }
 .header .main-header .header-right {
