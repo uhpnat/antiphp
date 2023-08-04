@@ -148,7 +148,6 @@
                                         <?php
                                         $showProductByView = $product->showProductByView('productView', 0, 5);
                                         foreach ($showProductByView as $item) {
-                                            $id = $item['productId'];
                                         ?>
                                             <div class="card-grid-style-3">
                                                 <div class="card-grid-inner">
@@ -159,8 +158,8 @@
                                                         <a class="btn btn-quickview btn-tooltip" aria-label="<?php echo $item['productView'] ?> Lượt xem" href="" data-bs-toggle="modal"></a>
                                                     </div>
                                                     <div class="image-box">
-                                                        <span class="label bg-brand-2"><?php echo $item['discount'] ?>%</span>
-                                                        <a href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>">
+                                                        <span class="label bg-brand-2"><?php echo $product->phantramgiamgia($item['productPrice'], $item['discount']) ?>%</span>
+                                                        <a href="?page=shop-single-product&productId=<?php echo $item['productId'] ?> ">
                                                             <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '')  ?>" alt="Ecom" />
                                                         </a>
                                                     </div>
@@ -178,17 +177,15 @@
                                                             <span class="font-xs color-gray-500">(65)</span>
                                                         </div>
                                                         <div class="price-info">
-                                                            <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']).' đ'  : number_format($item['productPrice']*((100 - $item['discount'])/100)).' đ'   ?></strong>
-                                                            <span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? number_format($item['productPrice']).' đ'  : '' ?></span>
+                                                            <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']) . ' đ'  : number_format($item['discount']) . ' đ'   ?></strong>
+                                                            <span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? number_format($item['productPrice']) . ' đ'  : '' ?></span>
                                                         </div>
-                                                        <input type="hidden" id="quantityTotal<?php echo $item['productId'] ?>" name="quantityTotal" value="<?php echo ($item['productQuantity']- $item['productSold']) ?>">
-                                                                <input type="hidden" name="id" value="<?php echo $item['productId'] ?>">
-                                                                
-                                                                <input type="hidden" id="name<?php echo $item['productId'] ?>" value="<?php echo $item['productName'] ?>">
-                                                                <input type="hidden" id="discount<?php echo $item['productId'] ?>" value="<?php echo $item['discount'] ?>">
-                                                                <input type="hidden" id="quantity<?php echo $item['productId'] ?>" value="1">
-                                                                <input type="hidden" id="price<?php echo $item['productId'] ?>" value="<?php echo $item['productPrice'] ?>">
-                                                                <input type="hidden" id="image<?php echo $item['productId'] ?>" value="<?php echo $item['productImage'] ?>">
+                                                        <input type="hidden" name="id" value="<?php echo $item['productId'] ?>">
+                                                        <input type="hidden" id="name<?php echo $item['productId'] ?>" value="<?php echo $item['productName'] ?>">
+                                                        <input type="hidden" id="discount<?php echo $item['productId'] ?>" value="<?php echo $item['discount'] ?>">
+                                                        <input type="hidden" id="quantity<?php echo $item['productId'] ?>" value="1">
+                                                        <input type="hidden" id="price<?php echo $item['productId'] ?>" value="<?php echo $item['productPrice'] ?>">
+                                                        <input type="hidden" id="image<?php echo $item['productId'] ?>" value="<?php echo $item['productImage'] ?>">
                                                         <div class="mt-20 box-btn-cart">
                                                             <a class="btn btn-cart add_to_cart" id="<?php echo $item['productId'] ?>">Mua Ngay</a>
                                                         </div>
@@ -211,9 +208,6 @@
                                         <?php
                                         $showProductByView = $product->showProductByView('productView', 5, 5);
                                         foreach ($showProductByView as $item) {
-                                            $id = $item['productId'];
-                                            
-                                            
                                         ?>
                                             <div class="card-grid-style-3">
                                                 <div class="card-grid-inner">
@@ -224,7 +218,7 @@
                                                         <a class="btn btn-quickview btn-tooltip" aria-label="<?php echo $item['productView'] ?> Lượt xem" href="" data-bs-toggle="modal"></a>
                                                     </div>
                                                     <div class="image-box">
-                                                        <span class="label bg-brand-2"><?php echo $item['discount'] ?>%</span>
+                                                        <span class="label bg-brand-2"><?php echo $product->phantramgiamgia($item['productPrice'], $item['discount']) ?>%</span>
                                                         <a href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>">
                                                             <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '')  ?>" alt="Ecom" />
                                                         </a>
@@ -243,17 +237,15 @@
                                                             <span class="font-xs color-gray-500">(65)</span>
                                                         </div>
                                                         <div class="price-info">
-                                                            <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']).' đ'  : number_format($item['productPrice']*((100 - $item['discount'])/100)).' đ'   ?></strong>
-                                                            <span class="color-gray-500 price-line"><?php echo  $item['discount'] != 0 ? number_format($item['productPrice']).' đ'  : '' ?></span>
+                                                            <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']) . ' đ'  : number_format($item['discount']) . ' đ'   ?></strong>
+                                                            <span class="color-gray-500 price-line"><?php echo  $item['discount'] != 0 ? number_format($item['productPrice']) . ' đ'  : '' ?></span>
                                                         </div>
-                                                        <input type="hidden" id="quantityTotal<?php echo $item['productId'] ?>" name="quantityTotal" value="<?php echo ($item['productQuantity']- $item['productSold']) ?>">
-                                                                <input type="hidden" name="id" value="<?php echo $item['productId'] ?>">
-                                                                <input type="hidden" id="quantityCart<?php echo $item['productId'] ?>" name="quantityCart" value="">
-                                                                <input type="hidden" id="name<?php echo $item['productId'] ?>" value="<?php echo $item['productName'] ?>">
-                                                                <input type="hidden" id="discount<?php echo $item['productId'] ?>" value="<?php echo $item['discount'] ?>">
-                                                                <input type="hidden" id="quantity<?php echo $item['productId'] ?>" value="1">
-                                                                <input type="hidden" id="price<?php echo $item['productId'] ?>" value="<?php echo $item['productPrice'] ?>">
-                                                                <input type="hidden" id="image<?php echo $item['productId'] ?>" value="<?php echo $item['productImage'] ?>">
+                                                        <input type="hidden" name="id" value="<?php echo $item['productId'] ?>">
+                                                        <input type="hidden" id="name<?php echo $item['productId'] ?>" value="<?php echo $item['productName'] ?>">
+                                                        <input type="hidden" id="discount<?php echo $item['productId'] ?>" value="<?php echo $item['discount'] ?>">
+                                                        <input type="hidden" id="quantity<?php echo $item['productId'] ?>" value="1">
+                                                        <input type="hidden" id="price<?php echo $item['productId'] ?>" value="<?php echo $item['productPrice'] ?>">
+                                                        <input type="hidden" id="image<?php echo $item['productId'] ?>" value="<?php echo $item['productImage'] ?>">
                                                         <div class="mt-20 box-btn-cart">
                                                             <a class="btn btn-cart add_to_cart" id="<?php echo $item['productId'] ?>">Mua Ngay</a>
                                                         </div>
@@ -306,11 +298,11 @@
                             <div class="swiper-container swiper-tab-4">
                                 <div class="swiper-wrapper pt-5">
                                     <div class="swiper-slide">
+
                                         <div class="row">
                                             <?php
                                             $showProductByView = $product->showProductByView('productSold', 0, 8);
                                             foreach ($showProductByView as $item) {
-                                                $id = $item['productId'];
                                             ?>
                                                 <div class="col-xl-3 col-lg-6 col-md-6">
                                                     <div class="card-grid-style-3">
@@ -322,7 +314,7 @@
                                                                 <a class="btn btn-quickview btn-tooltip" aria-label="<?php echo $item['productView'] ?> Lượt xem" href="" data-bs-toggle="modal"></a>
                                                             </div>
                                                             <div class="image-box">
-                                                                <span class="label bg-brand-2"><?php echo $item['discount']?>%</span>
+                                                                <span class="label bg-brand-2"><?php echo $product->phantramgiamgia($item['productPrice'], $item['discount']) ?>%</span>
                                                                 <a href="?page=shop-single-product&productId=<?php echo $item['productId'] ?>">
                                                                     <img src="./admin/assets/media/imageproduct/<?php echo $product->formatImage($item['productImage'], '')  ?>" alt="Ecom" />
                                                                 </a>
@@ -341,13 +333,12 @@
                                                                     <span class="font-xs color-gray-500">(65)</span>
                                                                 </div>
                                                                 <div class="price-info">
-                                                                    <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']).' đ'  : number_format($item['productPrice']*((100 - $item['discount'])/100)).' đ'   ?></strong>
-                                                                    <span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? number_format($item['productPrice']).' đ'  : '' ?></span>
+                                                                    <strong class="font-lg-bold color-brand-3 price-main"><?php echo $item['discount'] == 0 ? number_format($item['productPrice']) . ' đ'  : number_format($item['discount']) . ' đ'   ?></strong>
+                                                                    <span class="color-gray-500 price-line"><?php echo $item['discount'] != 0 ? number_format($item['productPrice']) . ' đ'  : '' ?></span>
                                                                 </div>
-                                                                
-                                                                <input type="hidden" id="quantityTotal<?php echo $item['productId'] ?>" name="quantityTotal" value="<?php echo ($item['productQuantity']- $item['productSold']) ?>">
+
+
                                                                 <input type="hidden" name="id" value="<?php echo $item['productId'] ?>">
-                                                                <input type="hidden" id="quantityCart<?php echo $item['productId'] ?>" name="quantityCart" value="">
                                                                 <input type="hidden" id="name<?php echo $item['productId'] ?>" value="<?php echo $item['productName'] ?>">
                                                                 <input type="hidden" id="discount<?php echo $item['productId'] ?>" value="<?php echo $item['discount'] ?>">
                                                                 <input type="hidden" id="quantity<?php echo $item['productId'] ?>" value="1">
@@ -500,4 +491,119 @@
             </div>
         </div>
     </section>
+
 </main>
+<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+<title>AntiPHP</title>
+<script type="text/javascript">
+    $(document).ready(function() {
+        // load_product()
+        // load_cart_data();
+
+        // function load_product()
+        // 	{
+        // 		$.ajax({
+        // 			url:"?page=home",
+        // 			method:"POST",
+        // 			success:function(data)
+        // 			{
+        // 				// $('#display_item').html(data);
+        //                 console.log('hiển thị sản phẩm thành công')
+        // 			}
+        // 		});
+        // 	}
+
+        // function load_cart_data()
+        // {
+        //     $.ajax({
+        //         url:"?page=action",
+        //         method:"POST",
+        //         dataType:"json",
+        //         success:function(data)
+        //         {
+        //             console.log(data)
+        //             // $('#cart_details').html(data.cart_details);
+        //             $('.total_price').text(data.total_price);
+        //             $('.badge').text(data.total_item);
+        //         }
+        //     });
+        // }
+
+        $(document).on('click', '.add_to_cart', function() {
+
+
+            var product_id = $(this).attr("id");
+            var product_name = $('#name' + product_id + '').val();
+            var product_price = $('#price' + product_id + '').val();
+            var product_discount = $('#discount' + product_id + '').val();
+            var product_quantity = $('#quantity' + product_id).val();
+            var product_image = $('#image' + product_id).val();
+            var action = "add";
+            if (product_quantity > 0) {
+
+                $.ajax({
+                    url: "?page=action",
+                    method: "POST",
+                    data: {
+                        product_id: product_id,
+                        product_name: product_name,
+                        product_price: product_price,
+                        product_discount: product_discount,
+                        product_quantity: product_quantity,
+                        product_image: product_image,
+                        action: action
+                    },
+                    success: function(data) {
+
+                        toastr.success("Sản phẩm đã được thêm vào giỏ hàng")
+                        setTimeout(function() {
+                            window.location.reload();
+                        }, 500);
+
+                    }
+                });
+            } else {
+                alert("");
+            }
+        });
+
+        // $(document).on('click', '.delete', function(){
+        //     var product_id = $(this).attr("id");
+        //     var action = 'remove';
+        //     if(confirm("Are you sure you want to remove this product?"))
+        //     {
+        //         $.ajax({
+        //             url:"?page=action",
+        //             method:"POST",
+        //             data:{product_id:product_id, action:action},
+        //             success:function()
+        //             {
+        //                 alert("sản phẩm đã được xóa ");
+        //             }
+        //         })
+        //     }
+        //     else
+        //     {
+        //         return false;
+        //     }
+        // });
+
+        // $(document).on('click', '#clear_cart', function(){
+        //     var action = 'empty';
+        //     $.ajax({
+        //         url:"?page=action",
+        //         method:"POST",
+        //         data:{action:action},
+        //         success:function()
+        //         {
+        //             load_cart_data();
+        //             // $('#cart-popover').popover('hide');
+        //             alert("Your Cart has been clear");
+        //         }
+        //     });
+        // });
+
+    });
+</script>

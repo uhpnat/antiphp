@@ -15,18 +15,9 @@
                 bạn.</p>
             <div class="box-tabs mb-100">
                 <ul class="nav nav-tabs nav-tabs-account" role="tablist">
-<<<<<<< HEAD
-                    <!-- <li><a class="active" href="#tab-notification" data-bs-toggle="tab" role="tab"
-                            aria-controls="tab-notification" aria-selected="true">Thông Báo</a></li> -->
-                    <li><a href="#tab-orders" data-bs-toggle="tab" role="tab" aria-controls="tab-orders"
-                            aria-selected="true">Orders</a></li>
-                    <li><a href="#tab-setting" data-bs-toggle="tab" role="tab" aria-controls="tab-setting"
-                            aria-selected="true">Setting</a></li>
-=======
 
                     <li><a href="#tab-orders" data-bs-toggle="tab" role="tab" aria-controls="tab-orders" aria-selected="true">Orders</a></li>
                     <li><a href="#tab-setting" data-bs-toggle="tab" role="tab" aria-controls="tab-setting" aria-selected="true">Cài Đặt Thông Tin</a></li>
->>>>>>> 7672ca003574abd5ed46c4e88f2e381b39fd57ca
                 </ul>
                 <div class="border-bottom mt-20 mb-40"></div>
                 <div class="tab-content mt-30">
@@ -453,10 +444,7 @@
                     <div class="tab-pane fade" id="tab-setting" role="tabpanel" aria-labelledby="tab-setting">
                         <div class="row">
                             <div class="col-lg-6 mb-20">
-<<<<<<< HEAD
-=======
 
->>>>>>> d48318eda4f77d954e4f3e90bcb5bcf88f227405
                                 <form action="" method="post">
                                     <?php
                                     if (isset($_SESSION['login'])) {
@@ -498,10 +486,6 @@
                                 </form>
                             </div>
                             <div class="col-lg-1 mb-20"></div>
-<<<<<<< HEAD
-
-=======
->>>>>>> d48318eda4f77d954e4f3e90bcb5bcf88f227405
                         </div>
                     </div>
                 </div>

@@ -189,9 +189,70 @@ $cart_count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                         </div>
                         <!-- <a class="font-lg icon-list icon-wishlist" href="shop-wishlist.php"><span>Wishlist</span><span class="number-item font-xs">5</span></a> -->
                         <div class="d-inline-block box-dropdown-cart">
-                            <span class="font-lg icon-list icon-cart"><span>Giỏ Hàng</span><span class="number-item font-xs badge"></span></span>
-                            <div class="dropdown-cart" id="cart_details"></div>
+                            <span class="font-lg icon-list icon-cart"><span>Giỏ Hàng</span><span class="number-item font-xs"><?php if (isset($cart_count)) {
+                                                                                                                                    echo $cart_count;
+                                                                                                                                } ?></span></span>
+                            <div class="dropdown-cart">
+                                <?php
+
+                                if (isset($_SESSION['cart'])) {
+                                    $i = 1;
+                                    $tongTien = 0;
+                                    foreach ($_SESSION['cart'] as $cart) {
+                                        $tongGia = $cart['price'] * $cart['quantity'];
+                                        $tongTien += $tongGia;
+                                ?>
+                                        <div class="item-cart mb-20">
+                                            <div class="cart-image">
+                                                <img src="./admin/assets/media/imageproduct/<?php echo $cart['image']; ?>" alt="Ecom" />
+                                            </div>
+                                            <div class="cart-info">
+                                                <a class="font-sm-bold color-brand-3" href="?page=shop-single-product&productId=<?php echo $cart['id']; ?>"><?php echo $cart['name']; ?></a>
+                                                <p>
+                                                    <span class="color-brand-2 font-sm-bold"><?php echo $cart['quantity']; ?> x <?php echo number_format($cart['price']) . " đ"; ?></span>
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="border-bottom pt-0 mb-15"></div>
+
+                                <?php }
+                                } ?>
+                                <div class="cart-total">
+                                    <div class="row">
+                                        <div class="col-6 text-start">
+                                            <span class="font-md-bold color-brand-3">Tổng giá</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <span class="font-md-bold color-brand-1"><?php
+                                                                                        if (isset($tongTien)) {
+                                                                                            echo number_format($tongTien) . " đ";
+                                                                                        } else {
+                                                                                            echo '0 đ';
+                                                                                        }
+
+                                                                                        ?></span>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-15">
+                                        <div class="col-6 text-start">
+                                            <a class="btn btn-cart w-auto" href="?page=shop-cart">Xem giỏ</a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a class="btn btn-buy w-auto" href="?page=shop-checkout">Mua hàng</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+                        <?php
+                        if (isset($_SESSION['role']) && $_SESSION['role'] == 0) {
+                            echo '   <a class="font-lg icon-list icon-compare" href="./admin"><span>Compare</span></a>';
+                        }
+                        ?>
+
                     </div>
                 </div>
             </div>
